@@ -2,7 +2,7 @@
     "id": "897543945-437a-4757-adef345834",
     "name": "catalogue-crowdSourced_type1.json",
     "itemDescription": "Crowd Sourced type 1 data",
-    "refBaseSchema": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/base_schemas/v0.0.1/iudx_data_model_schema.json",
+    "refBaseSchema": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/v0.0.0/base_schemas/v0.0.1/iudx_data_model_schema.json",
     "refBaseSchemaRelease": "v0.0.1",
     "baseDataModel": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/crowdSourced/crowdSourced_type1.json",
     "provider": {

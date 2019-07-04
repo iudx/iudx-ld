@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/schema#",
-    "id": "https://raw.githubusercontent.org/rraks/iudx-ld/base_schemas/common.json",
+    "id": "https://raw.githubusercontent.org/rraks/iudx-ld/v0.0.0/base_schemas/common.json",
     "title": "IUDX-LD Common Definitions",
     "description": "IUDX-LD Common",
     "definitions": {
@@ -128,16 +128,16 @@
         "coordinates": {
             "oneOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.org/rraks/iudx-ld/base_schemas/geometry-schema.json#/definitions/position"
+                    "$ref": "https://raw.githubusercontent.org/rraks/iudx-ld/v0.0.0/base_schemas/geometry-schema.json#/definitions/position"
                 },
                 {
-                    "$ref": "https://raw.githubusercontent.org/rraks/iudx-ld/base_schemas/geometry-schema.json#/definitions/positionArray"
+                    "$ref": "https://raw.githubusercontent.org/rraks/iudx-ld/v0.0.0/base_schemas/geometry-schema.json#/definitions/positionArray"
                 },
                 {
-                    "$ref": "https://raw.githubusercontent.org/rraks/iudx-ld/base_schemas/geometry-schema.json#/definitions/lineString"
+                    "$ref": "https://raw.githubusercontent.org/rraks/iudx-ld/v0.0.0/base_schemas/geometry-schema.json#/definitions/lineString"
                 },
                 {
-                    "$ref": "https://raw.githubusercontent.org/rraks/iudx-ld/base_schemas/geometry-schema.json#/definitions/polygon"
+                    "$ref": "https://raw.githubusercontent.org/rraks/iudx-ld/v0.0.0/base_schemas/geometry-schema.json#/definitions/polygon"
                 }
             ]
         },
@@ -163,7 +163,7 @@
         "productSchema": {
             "brand": {
                 "type": "object",
-                "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/core_defs.json#/definitions/Property",
+                "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/v0.0.0/base_schemas/core_defs.json#/definitions/Property",
                 "describes": "Brand name/Organisation",
                 "properties": {
                     "name": { 

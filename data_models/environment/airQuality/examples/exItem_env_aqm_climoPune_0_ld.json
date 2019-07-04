@@ -1,0 +1,109 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0_ld.json"
+    ],
+    "@id": "8898kwiorit9490494",
+    "DEVICEID": {
+        "type": "Property",
+        "value": "169af06f-bfee-3513-56e5-847957490-sensoragent"
+    },
+    "NAME": {
+        "type": "Property",
+        "value": "A_Bt_Square_30"
+    },
+    "accessObjectURL": {
+        "object": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/environment/airQuality/examples/exApiObject_env_aqm_climoPune_0.json",
+        "type": "Relationship"
+    },
+    "accessObjectVariables": {
+        "type": "Property",
+        "value": {
+            "NAME": "A_Bt_Square_30",
+            "ip": "https://pune.iudx.org.in",
+            "port": "443",
+            "resourceClass": "aqm-bosch-climo"
+        }
+    },
+    "createdAt": {
+        "type": "TimeProperty",
+        "value": "2019-02-20T10:30:06.093121"
+    },
+    "deviceModelInfo": {
+        "type": "Property",
+        "value": {
+            "type": "Property",
+            "value": {
+                "brand": "Bosch-Climo",
+                "name": "Bosch-Climo",
+                "url": "http://www.boschclimo.com/"
+            }
+        }
+    },
+    "itemDescription": {
+        "type": "Property",
+        "value": "Description for Bosch-Climo AQM resource"
+    },
+    "itemStatus": {
+        "type": "Property",
+        "value": "active"
+    },
+    "itemType": {
+        "type": "Property",
+        "value": "resourceItem"
+    },
+    "latestResourceData": {
+        "type": "Property",
+        "value": "https://pune.iudx.org.in/api/1.0.0/resource/latest/aqm-bosch-climo/XYZ"
+    },
+    "location": {
+        "type": "GeoProperty",
+        "value": {
+            "type": "Point",
+            "value": [
+                18.516644,
+                73.854009
+            ]
+        }
+    },
+    "provider": {
+        "object": "iudx_iri:pscdcl",
+        "type": "Relationship"
+    },
+    "refBaseSchema": {
+        "object": "https://raw.githubusercontent.com/rraks/iudx-ld/master/v0.0.0/base_schemas/resourceItem_schema.json",
+        "type": "Relationship"
+    },
+    "refDataModel": {
+        "object": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0_ld.json",
+        "type": "Relationship"
+    },
+    "resourceId": {
+        "type": "Property",
+        "value": "A_Bt_Square_30"
+    },
+    "resourceServer": {
+        "object": "iudx_iri:pscdcl_server",
+        "type": "Relationship"
+    },
+    "tags": {
+        "type": "Property",
+        "value": [
+            "air",
+            "pollution",
+            "SO2",
+            "CO2",
+            "CO",
+            "NO",
+            "NO2",
+            "PM2.5",
+            "PM10",
+            "Humidity",
+            "Temperature",
+            "Ozone",
+            "O",
+            "Noise",
+            "Light",
+            "UV"
+        ]
+    }
+}

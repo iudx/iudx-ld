@@ -1,0 +1,52 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/v0.0.0/base_schemas/iudx_resourceServer_schema.json",
+    "title": "IUDX-LD ResourceServer",
+    "description": "IUDX-LD ResourceItem",
+    "type": "object",
+    "properties": {
+        "@context": {
+            "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/v0.0.0/base_schemas/common_defs.json#/definitions/LdContext"
+        },
+        "id": {
+            "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/v0.0.0/base_schemas/common_defs.json#/definitions/id"
+        },
+        "serverUri": {
+            "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/v0.0.0/base_schemas/core_defs.json#/definitions/Property",
+            "format": "uri",
+            "describes": "Ip address along with port"
+        },
+        "serverDescription": {
+            "type": "string",
+            "describes": "Text description of this server."
+        },
+        "provider": {
+            "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/v0.0.0/base_schemas/core_defs.json#/definitions/Relationship"
+        },
+        "location": {
+            "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/v0.0.0/base_schemas/core_defs.json#/definitions/GeoProperty"
+        },
+        "serverStatus": {
+            "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/v0.0.0/base_schemas/v0.0.1/iudx_base_def.json#/definitions/statusSchema"
+        },
+        "createdAt" : {
+            "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/v0.0.0/base_schemas/common_defs.json#/definitions/createdAt"
+        },
+        "modifiedAt" : {
+            "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/v0.0.0/base_schemas/common_defs.json#/definitions/modifiedAt"
+        },
+        "deprecatedAt" : {
+            "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/v0.0.0/base_schemas/common_defs.json#/definitions/deprecatedAt"
+        },
+        "additionalProperties": {
+            "anyOf": [
+                {
+                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/v0.0.0/base_schemas/core_defs.json#/definitions/Property"
+                },
+                {
+                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/v0.0.0/base_schemas/core_defs.json#/definitions/Relationship"
+                }
+            ]
+        }
+    }
+}

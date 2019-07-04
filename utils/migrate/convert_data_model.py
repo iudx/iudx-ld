@@ -5,16 +5,17 @@ from os.path import isfile, join
 import re
 
 
-data_model = "../temp/data_models/environment/floodSensor/env_flood_climoPune_0.json"
+data_model = "../temp/data_models/environment/airQuality/env_aqm_climoPune_0.json"
 dm_list = data_model.split("/")
 dm_name = dm_list[-1]
-path_to_dm = dm_list[data_model.index("data_models"):]
+path_to_dm = dm_list[dm_list.index("data_models"):-1]
 path_to_dm_folder = "".join(a+"/" for a in dm_list[:-1])
 folder_path = "".join(a+"/" for a in path_to_dm)
+print(folder_path)
 
 
-core_context = "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/core_context.json"
-dm_url = "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/" + folder_path + dm_name + "/properties/"
+core_context = "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_context.json"
+dm_url = "https://raw.githubusercontent.com/rraks/iudx-ld/master/" + folder_path + dm_name + "#/properties/"
 
 dm = {}
 with open(data_model, "r") as f:
@@ -43,12 +44,14 @@ def makeOneOf(prop):
     return tmpl
 
 def mkTimeProp(prop):
-    return {"allOf": [{ "$ref":  "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/core_defs.json#/definitions/TimeProperty"}]}
+    return {"allOf": [{ "$ref":  "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/TimeProperty"}]}
 
 
 
 props.pop("location")
-props["deviceModelInfo"] = {"allOf": [{ "$ref":  "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/miscSchemaOrgDefs.json#/definitions/product"}]}
+
+if("deviceModelInfo" in props.keys()):
+    props["deviceModelInfo"] = {"allOf": [{ "$ref":  "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json#/definitions/product"}]}
 
 for prop in props:
     if(re.search('time', prop, re.IGNORECASE)):
@@ -70,7 +73,7 @@ for prop in props:
         props[prop]["valueSchema"] = valueSchema
         oneOf = makeOneOf(prop)
         props[prop]["allOf"] = []
-        props[prop]["allOf"].append({"$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/core_defs.json#/definitions/Property"})
+        props[prop]["allOf"].append({"$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"})
         props[prop].pop("type")
         props[prop].update(oneOf)
 

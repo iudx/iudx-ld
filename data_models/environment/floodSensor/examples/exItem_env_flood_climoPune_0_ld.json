@@ -1,6 +1,6 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/rraks/iudx-ld/master/temp/data_models/environment/floodSensor/env_flood_climoPune_0_ld.json"
+        "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/environment/floodSensor/env_flood_climoPune_0_ld.json"
     ],
     "@id": "akdfi74938nid8kjfvko4",
     "NAME": {
@@ -12,7 +12,7 @@
         "value": "FWR015"
     },
     "accessObjectURL": {
-        "object": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/floodSensor/examples/exApiObject_env_flood_climoPune_0.json",
+        "object": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/environment/floodSensor/examples/exApiObject_env_flood_climoPune_0.json",
         "type": "Relationship"
     },
     "accessObjectVariables": {
@@ -59,11 +59,11 @@
         "type": "Relationship"
     },
     "refBaseSchema": {
-        "object": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/resourceItem_schema.json",
+        "object": "https://raw.githubusercontent.com/rraks/iudx-ld/master/v0.0.0/base_schemas/resourceItem_schema.json",
         "type": "Relationship"
     },
     "refDataModel": {
-        "object": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/floodSensor/examples/exdataModel_env_flood_climoPune_0.json#/dataModelSchema",
+        "object": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/environment/floodSensor/env_flood_climoPune_0_ld.json",
         "type": "Relationship"
     },
     "resourceId": {

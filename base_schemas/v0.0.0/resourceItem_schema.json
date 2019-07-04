@@ -1,0 +1,107 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/v0.0.0/base_schemas/iudx_resourceItem_schema.json",
+    "title": "IUDX-LD ResourceItem",
+    "description": "IUDX-LD ResourceItem",
+    "type": "object",
+    "properties": {
+        "@context": {
+            "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/v0.0.0/base_schemas/common_defs.json#/definitions/LdContext"
+        },
+        "id": {
+            "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/v0.0.0/base_schemas/common_defs.json#/definitions/id"
+        },
+        "tags": {
+            "describes": "Array of keywords describing this item",
+            "allOf": [{"$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/v0.0.0/base_schemas/core_defs.json#/definitions/Property"}],
+            "type": "object",
+            "properties": {
+                "value": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "refBaseSchema": {
+            "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/v0.0.0/base_schemas/core_defs.json#/definitions/Relationship",
+            "describes": "Base schema for this item"
+        },
+        "resourceServer": {
+            "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/v0.0.0/base_schemas/core_defs.json#/definitions/Relationship",
+            "describes": "The resource server which hosts this resource item"
+        },
+        "itemDescription": {
+            "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/v0.0.0/base_schemas/core_defs.json#/definitions/Property",
+            "describes": "Text description of this item."
+        },
+        "type": {
+            "type": "string",
+            "describes": "Release type of this resource_item"
+        },
+        "refDataModel": {
+            "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/v0.0.0/base_schemas/core_defs.json#/definitions/Relationship",
+            "describes": "Reference to the data model for this resource item."
+        },
+        "provider": {
+            "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/v0.0.0/base_schemas/core_defs.json#/definitions/Relationship",
+            "describes": "Link to the provider of this resource"
+        },
+        "resourceGroup": {
+            "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/v0.0.0/base_schemas/core_defs.json#/definitions/Relationship",
+            "describes": "iri to group node"
+        },
+        "resourceId": {
+            "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/v0.0.0/base_schemas/core_defs.json#/definitions/Property",
+            "describes": "id of this resource on the resource server"
+        },
+        "location": {
+            "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/v0.0.0/base_schemas/core_defs.json#/definitions/GeoProperty"
+        },
+        "itemStatus": {
+            "type": "object",
+            "properties": {
+                "value": {
+                    "type": "string",
+                    "enum": ["active", "deprecated"]
+                }
+            }
+        },
+        "createdAt" : {
+            "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/v0.0.0/base_schemas/core_defs.json#/definitions/TimeProperty"
+        },
+        "modifiedAt" : {
+            "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/v0.0.0/base_schemas/core_defs.json#/definitions/TimeProperty"
+        },
+        "deprecatedAt" : {
+            "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/v0.0.0/base_schemas/core_defs.json#/definitions/TimeProperty"
+        },
+        "accessObject": {
+            "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/v0.0.0/base_schemas/core_defs.json#/definitions/Property",
+            "describes": "OpenAPI 3.0 object"
+        },
+        "accessObjectURL": {
+            "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/v0.0.0/base_schemas/core_defs.json#/definitions/Relationship",
+            "describes": "OpenAPI 3.0 object url"
+        },
+        "accessObjectVariables": {
+            "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/v0.0.0/base_schemas/core_defs.json#/definitions/Property",
+            "describes": "item specific API variables"
+        },
+        "itemType": {
+            "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/v0.0.0/base_schemas/core_defs.json#/definitions/Property",
+            "describes": "iudx item type"
+        },
+        "additionalProperties": {
+            "anyOf": [
+                {
+                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/v0.0.0/base_schemas/core_defs.json#/definitions/Property"
+                },
+                {
+                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/v0.0.0/base_schemas/core_defs.json#/definitions/Relationship"
+                }
+            ]
+        }
+    }
+}

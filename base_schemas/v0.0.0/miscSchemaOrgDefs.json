@@ -2,47 +2,47 @@
     "@context": {
         "releaseDate": {
             "@context": "https://schema.org/releaseDate",
-            "@type": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/iudx_resourceItem_schema.json#/definitions/Property"
+            "@type": "https://raw.githubusercontent.com/rraks/iudx-ld/master/v0.0.0/base_schemas/iudx_resourceItem_schema.json#/definitions/Property"
         },
         "url": {
             "@context": "https://schema.org/url",
-            "@type": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/iudx_resourceItem_schema.json#/definitions/Property"
+            "@type": "https://raw.githubusercontent.com/rraks/iudx-ld/master/v0.0.0/base_schemas/iudx_resourceItem_schema.json#/definitions/Property"
         },
         "productID": {
             "@context": "https://schema.org/productID",
-            "@type": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/iudx_resourceItem_schema.json#/definitions/Property"
+            "@type": "https://raw.githubusercontent.com/rraks/iudx-ld/master/v0.0.0/base_schemas/iudx_resourceItem_schema.json#/definitions/Property"
         },
         "mpn": {
             "@context": "https://schema.org/mpn",
-            "@type": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/iudx_resourceItem_schema.json#/definitions/Property"
+            "@type": "https://raw.githubusercontent.com/rraks/iudx-ld/master/v0.0.0/base_schemas/iudx_resourceItem_schema.json#/definitions/Property"
         },
         "model": {
             "@context": "https://schema.org/model",
-            "@type": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/iudx_resourceItem_schema.json#/definitions/Property"
+            "@type": "https://raw.githubusercontent.com/rraks/iudx-ld/master/v0.0.0/base_schemas/iudx_resourceItem_schema.json#/definitions/Property"
         },
         "product": {
             "@context":  "https://schema.org/Product",
-            "@type": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/iudx_resourceItem_schema.json#/definitions/Property"
+            "@type": "https://raw.githubusercontent.com/rraks/iudx-ld/master/v0.0.0/base_schemas/iudx_resourceItem_schema.json#/definitions/Property"
         },
         "alternateName": {
             "@context":  "https://schema.org/alternateName",
-            "@type": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/core_defs.json#/definitions/Property"
+            "@type": "https://raw.githubusercontent.com/rraks/iudx-ld/master/v0.0.0/base_schemas/core_defs.json#/definitions/Property"
         },
         "name": {
             "@context":  "https://schema.org/name",
-            "@type": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/core_defs.json#/definitions/Property"
+            "@type": "https://raw.githubusercontent.com/rraks/iudx-ld/master/v0.0.0/base_schemas/core_defs.json#/definitions/Property"
         }
     },
     "$schema": "http://json-schema.org/draft-07/schema#",
     "describes": "Base schema of catalog entries",
     "definitions": {
         "name": {
-            "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/core_defs.json#/definitions/Property",
+            "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/v0.0.0/base_schemas/core_defs.json#/definitions/Property",
             "type": "string",
             "describes": "Name of the thing"
         },
         "url": {
-            "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/core_defs.json#/definitions/Property",
+            "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/v0.0.0/base_schemas/core_defs.json#/definitions/Property",
             "value": {
                 "type": "string",
                 "format": "uri"
@@ -50,14 +50,14 @@
             "describes": "URL of the thing"
         },
         "alternateName": {
-            "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/core_defs.json#/definitions/Property",
+            "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/v0.0.0/base_schemas/core_defs.json#/definitions/Property",
             "value": {
                 "type": "string"
             },
             "describes": "Alternate name for the thing"
         },
         "product": {
-            "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/core_defs.json#/definitions/Property",
+            "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/v0.0.0/base_schemas/core_defs.json#/definitions/Property",
             "type": "object",
             "properties": {
                 "type": {

@@ -2,7 +2,7 @@
   "id": "897543945-437a-4757-adef345834",
   "name": "catalogue-wifi_hotspot_Pune_0",
   "itemDescription": "Data Model for data from WiFi HotSpots deployed in Pune City",
-  "refBaseSchema": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/base_schemas/v0.0.1/iudx_data_model_schema.json",
+  "refBaseSchema": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/v0.0.0/base_schemas/v0.0.1/iudx_data_model_schema.json",
   "refBaseSchemaRelease": "v0.0.1",
   "baseDataModel": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/WiFi/hotspot/wifi_hotspot_Pune_0.json",
   "provider": {

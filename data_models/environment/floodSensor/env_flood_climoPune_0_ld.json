@@ -1,46 +1,46 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "@context": [
-        "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/core_context.json",
+        "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_context.json",
         {
             "ALERT": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/env_flood_climoPune_0.json/properties/ALERT",
+                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/environment/floodSensor/env_flood_climoPune_0.json#/properties/ALERT",
                 "@type": "Property"
             },
             "CUR_LEVEL": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/env_flood_climoPune_0.json/properties/CUR_LEVEL",
+                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/environment/floodSensor/env_flood_climoPune_0.json#/properties/CUR_LEVEL",
                 "@type": "Property"
             },
             "DANGER": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/env_flood_climoPune_0.json/properties/DANGER",
+                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/environment/floodSensor/env_flood_climoPune_0.json#/properties/DANGER",
                 "@type": "Property"
             },
             "LASTUPDATEDATETIME": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/env_flood_climoPune_0.json/properties/LASTUPDATEDATETIME",
+                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/environment/floodSensor/env_flood_climoPune_0.json#/properties/LASTUPDATEDATETIME",
                 "@type": "TimeProperty"
             },
             "M_DISTANCE": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/env_flood_climoPune_0.json/properties/M_DISTANCE",
+                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/environment/floodSensor/env_flood_climoPune_0.json#/properties/M_DISTANCE",
                 "@type": "Property"
             },
             "NAME": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/env_flood_climoPune_0.json/properties/NAME",
+                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/environment/floodSensor/env_flood_climoPune_0.json#/properties/NAME",
                 "@type": "Property"
             },
             "REF_LEVEL": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/env_flood_climoPune_0.json/properties/REF_LEVEL",
+                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/environment/floodSensor/env_flood_climoPune_0.json#/properties/REF_LEVEL",
                 "@type": "Property"
             },
             "SITE_STATUS": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/env_flood_climoPune_0.json/properties/SITE_STATUS",
+                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/environment/floodSensor/env_flood_climoPune_0.json#/properties/SITE_STATUS",
                 "@type": "Property"
             },
             "STATION_ID": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/env_flood_climoPune_0.json/properties/STATION_ID",
+                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/environment/floodSensor/env_flood_climoPune_0.json#/properties/STATION_ID",
                 "@type": "Property"
             },
             "STATUS": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/env_flood_climoPune_0.json/properties/STATUS",
+                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/environment/floodSensor/env_flood_climoPune_0.json#/properties/STATUS",
                 "@type": "Property"
             },
             "uo": "http://units.open.org/",
@@ -52,7 +52,7 @@
         "ALERT": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
             "describes": "Reference Alert Level setting for the given sensing station. If CUR_LEVEL is greater than ALERT then a flooding 'Alert' is generated",
@@ -77,7 +77,7 @@
         "CUR_LEVEL": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
             "describes": "Current flooding level  detected by a given sensing station. Sensing device uses 'REF_LEVEL' and 'M_DISTANCE' parameters to compute CUR_LEVEL",
@@ -102,7 +102,7 @@
         "DANGER": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
             "describes": "Reference Danger Level setting for the given sensing station. If CUR_LEVEL is greater than DANGER then the flooding status is flagged as 'Danger'",
@@ -127,14 +127,14 @@
         "LASTUPDATEDATETIME": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/core_defs.json#/definitions/TimeProperty"
+                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/TimeProperty"
                 }
             ]
         },
         "M_DISTANCE": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
             "describes": "Parameter used to compute CUR_LEVEL. (Need further clarification)",
@@ -159,7 +159,7 @@
         "NAME": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
             "describes": "Name of the device.",
@@ -184,7 +184,7 @@
         "REF_LEVEL": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
             "describes": "Parameter used to compute CUR_LEVEL. (Need further clarification)",
@@ -209,7 +209,7 @@
         "SITE_STATUS": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
             "describes": "Functional status of flood sensing site/station/device",
@@ -238,7 +238,7 @@
         "STATION_ID": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
             "describes": "Sensing station ID as per the device data model",
@@ -263,7 +263,7 @@
         "STATUS": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
             "describes": "Flooding Level STATUS",
@@ -293,7 +293,7 @@
         "deviceModelInfo": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/miscSchemaOrgDefs.json#/definitions/product"
+                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json#/definitions/product"
                 }
             ]
         }

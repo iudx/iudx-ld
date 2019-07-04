@@ -1,19 +1,19 @@
 import json
 
 
-dataModelPath = "https://raw.githubusercontent.com/rraks/iudx-ld/master/temp/data_models/environment/floodSensor/env_flood_climoPune_0_ld.json"
-itemPath = "../temp/data_models/environment/floodSensor/examples/exItem_env_flood_climoPune_0.json"
+dataModelPath = "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0_ld.json"
+itemPath = "../temp/data_models/environment/airQuality/examples/exItem_env_aqm_climoPune_0.json"
 itemNameList = itemPath.split("/")
 itemName = itemNameList[-1]
 path_to_item = "".join(a+"/" for a in itemNameList[:itemNameList.index("examples")+1])
 
 
-resourceItemSchemaPath = "../base_schemas/resourceItem_schema.json"
+resourceItemSchemaPath = "../base_schemas/v0.0.0/resourceItem_schema.json"
 
 
 
 
-refBaseSchema = "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/resourceItem_schema.json"
+refBaseSchema = "https://raw.githubusercontent.com/rraks/iudx-ld/master/v0.0.0/base_schemas/resourceItem_schema.json"
 
 item = {}
 with open(itemPath,"r") as f:
@@ -75,7 +75,7 @@ item.pop("__itemStatus")
 item["createdAt"] = mkTimeProperty(item["__createdAt"])
 item.pop("__createdAt")
 
-item["accessObjectURL"] = mkRelationship(item["accessInformation"][0]["accessSchema"])
+item["accessObjectURL"] = mkRelationship(item["accessInformation"][0]["accessSchema"].replace("rbccps-iisc","rraks").replace("iudx-schemas", "iudx-ld"))
 item["resourceServer"] = mkRelationship("iudx_iri:pscdcl_server")
 
 item["resourceId"] = {}
