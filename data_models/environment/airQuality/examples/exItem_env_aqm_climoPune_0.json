@@ -1,6 +1,6 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0_ld.json"
+        "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json"
     ],
     "@id": "8898kwiorit9490494",
     "DEVICEID": {
@@ -74,7 +74,7 @@
         "type": "Relationship"
     },
     "refDataModel": {
-        "object": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0_ld.json",
+        "object": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json",
         "type": "Relationship"
     },
     "resourceId": {

@@ -77,15 +77,6 @@
                 "object": {
                     "type": "string",
                     "format": "uri"
-                },
-                "observedAt": {
-                    "$ref": "#/definitions/TimeProperty"
-                },
-                "createdAt": {
-                    "$ref": "#/definitions/TimeProperty"
-                },
-                "modifiedAt": {
-                    "$ref": "#/definitions/TimeProperty"
                 }
             },
             "required": [

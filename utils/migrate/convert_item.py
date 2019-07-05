@@ -1,14 +1,14 @@
 import json
 
 
-dataModelPath = "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0_ld.json"
-itemPath = "../temp/data_models/environment/airQuality/examples/exItem_env_aqm_climoPune_0.json"
+dataModelPath = "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/crowdSourced/crowdSourced_type1.json"
+itemPath = "../../temp/data_models/crowdSourced/examples/exItem_crowdSourced_type1_0.json"
 itemNameList = itemPath.split("/")
 itemName = itemNameList[-1]
 path_to_item = "".join(a+"/" for a in itemNameList[:itemNameList.index("examples")+1])
 
 
-resourceItemSchemaPath = "../base_schemas/v0.0.0/resourceItem_schema.json"
+resourceItemSchemaPath = "../../base_schemas/v0.0.0/resourceItem_schema.json"
 
 
 
@@ -49,6 +49,14 @@ def mkLocation(prop):
     temp["value"]["value"] = [prop["latitude"], prop["longitude"]]
     return temp
 
+def mkLocationArea(prop):
+    temp = {}
+    temp["type"] = "GeoProperty"
+    temp["value"] = {}
+    temp["value"]["type"] = "Polygon"
+    temp["value"]["value"] = prop["area"] 
+    return temp
+
 
 item.pop("refBaseSchemaRelease")
 
@@ -59,12 +67,17 @@ item["refBaseSchema"] = mkRelationship(refBaseSchema)
 
 item["provider"] = mkRelationship("iudx_iri:pscdcl")
 item["refDataModel"] = mkRelationship(dataModelPath)
-item["itemDescription"] = mkProperty(item["itemDescription"])
+item["itemDescription"] = (item["itemDescription"])
 
 t = item["tags"]
 item["tags"] = mkProperty(t)
 
-item["location"] = mkLocation(item["location"])
+if "location" in item.keys():
+    item["location"] = mkLocation(item["location"])
+
+if "locationCoverage" in item.keys():
+    item["locationCoverage"] = mkLocationArea(item["locationCoverage"])
+
 
 item["itemType"] = mkProperty("resourceItem" )
 item.pop("__itemType")
@@ -87,7 +100,8 @@ item["accessObjectVariables"]["value"] = {}
 item["accessObjectVariables"]["value"]["ip"] = item["accessInformation"][0]["accessVariables"]["resourceServerId"][:-4]
 item["accessObjectVariables"]["value"]["port"] = item["accessInformation"][0]["accessVariables"]["resourceServerId"][-3:]
 item["accessObjectVariables"]["value"]["resourceClass"] = item["accessInformation"][0]["accessVariables"]["resourceClass"]
-item["accessObjectVariables"]["value"]["NAME"] = item["NAME"]
+if("NAME" in item.keys()):
+    item["accessObjectVariables"]["value"]["NAME"] = item["NAME"]
 item.pop("accessInformation")
 
 if("deviceModelInfo" in item.keys()):
@@ -108,8 +122,8 @@ print(dm_fields)
 for dmField in dm_fields:
     item[dmField] = mkProperty(item[dmField])
 
-print(path_to_item + itemName[:-5] + "_ld.json")
-with open(path_to_item + itemName[:-5] + "_ld.json", "w") as f:
+print(path_to_item + itemName)
+with open(path_to_item + itemName, "w") as f:
     json.dump(item, f, indent=4, sort_keys=True)
 
 

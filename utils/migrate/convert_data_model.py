@@ -5,7 +5,7 @@ from os.path import isfile, join
 import re
 
 
-data_model = "../temp/data_models/environment/airQuality/env_aqm_climoPune_0.json"
+data_model = "../../temp/data_models/crowdSourced/crowdSourced_type1.json"
 dm_list = data_model.split("/")
 dm_name = dm_list[-1]
 path_to_dm = dm_list[dm_list.index("data_models"):-1]
@@ -48,7 +48,18 @@ def mkTimeProp(prop):
 
 
 
-props.pop("location")
+
+if "locationCoverage" in props.keys():
+    props.pop("locationCoverage")
+    props["locationCoverage"] = {"allOf": [{ "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/v0.0.0/base_schemas/core_defs.json#/definitions/GeoProperty" }]}
+    context["locationCoverage"] = {"@id":dm_url + "location", "@type": "GeoProperty"}
+
+if "location" in props.keys():
+    props.pop("location")
+    props["location"] = {"allOf": [{ "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/v0.0.0/base_schemas/core_defs.json#/definitions/GeoProperty" }]}
+    context["location"] = {"@id":dm_url + "location", "@type": "GeoProperty"}
+
+
 
 if("deviceModelInfo" in props.keys()):
     props["deviceModelInfo"] = {"allOf": [{ "$ref":  "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json#/definitions/product"}]}
@@ -83,10 +94,11 @@ dm["@context"] = []
 dm["@context"].append(core_context)
 dm["@context"].append({})
 dm["@context"][1] = context
-dm.pop("required")
+if("required" in dm.keys()):
+    dm.pop("required")
 
-print(path_to_dm_folder + dm_name[:-5] + "_ld.json")
-with open(path_to_dm_folder + dm_name[:-5] + "_ld.json", "w") as f:
+print(path_to_dm_folder + dm_name)
+with open(path_to_dm_folder + dm_name, "w") as f:
     json.dump(dm, f, indent=4, sort_keys=True)
 
 

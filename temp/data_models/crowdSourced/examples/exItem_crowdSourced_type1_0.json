@@ -1,35 +1,115 @@
 {
-    "id": "akdfi74938nid8kjfvko4",
-    "itemDescription": "ChangeBhai crowdSourced data",
-    "refDataModel": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/crowdSourced/crowdSourced_type1.json",
-    "refBaseSchema": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/v0.0.0/base_schemas/v0.0.0/iudx_data_item_schema.json",
-    "refBaseSchemaRelease": "v0.0.0",
-    "provider": {
-        "entityId": "ChangeBhai",
-        "entityIdentityType": "X509",
-        "entityIdentityProviderURL" : "https://ca.iudx.org.in",
-        "entityURL" : "https://www.changebhai.in/"
+    "@context": [
+        "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/crowdSourced/crowdSourced_type1.json"
+    ],
+    "@id": "akdfi74938nid8kjfvko4",
+    "accessObjectURL": {
+        "object": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/crowdSourced/examples/exApiObject_crowdSourced_type1.json",
+        "type": "Relationship"
     },
-    "tags": ["crowd","sourced","Garbage","Footpaths","Roads","Encroachment","Illegal Ads","Wrong Parking", "Street Lights","Signages","Bus Stops","Dividers","Stray Menace","Public Toilets","Traffic Signals","Traffic Violations","Road Markings", "Images", "geo", "tagged"],
-    "latestResourceData": "https://pune.iudx.org.in/api/1.0.0/resource/search/changebhai/18.530257/73.847793/1000",
-    "__itemStatus": "active",
-    "__itemType": "item",
-    "__createdAt": "2019-02-20T10:30:06.093121",
-    "accessInformation": [
-        {
-            "resourceType": "table",
-            "accessSchemaType": "openAPI",
-            "accessSchema": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/crowdSourced/examples/exApiObject_crowdSourced_type1.json",
-            "accessVariables": {
-                "resourceId": "changebhai",
-                "resourceServerId": "https://pune.iudx.org.in:443",
-                "resourceClass": "crowdSourced",
-                "NAME": "changebhai"
+    "accessObjectVariables": {
+        "type": "Property",
+        "value": {
+            "ip": "https://pune.iudx.org.in",
+            "port": "443",
+            "resourceClass": "crowdSourced"
+        }
+    },
+    "createdAt": {
+        "type": "TimeProperty",
+        "value": "2019-02-20T10:30:06.093121"
+    },
+    "itemDescription": "ChangeBhai crowdSourced data",
+    "itemStatus": {
+        "type": "Property",
+        "value": "active"
+    },
+    "itemType": {
+        "type": "Property",
+        "value": "resourceItem"
+    },
+    "latestResourceData": {
+        "type": "Property",
+        "value": "https://pune.iudx.org.in/api/1.0.0/resource/search/changebhai/18.530257/73.847793/1000"
+    },
+    "locationCoverage": {
+        "type": "Property",
+        "value": {
+            "type": "GeoProperty",
+            "value": {
+                "type": "Polygon",
+                "value": [
+                    [
+                        18.41375,
+                        73.864222
+                    ],
+                    [
+                        18.471242,
+                        73.971131
+                    ],
+                    [
+                        18.588876,
+                        73.983472
+                    ],
+                    [
+                        18.635243,
+                        73.886433
+                    ],
+                    [
+                        18.582381,
+                        73.753722
+                    ],
+                    [
+                        18.49367,
+                        73.742467
+                    ]
+                ]
             }
         }
-    ],
-    "locationCoverage": {
-        "area": [ [18.413750, 73.864222], [18.471242, 73.971131], [18.588876, 73.983472], [18.635243, 73.886433], [18.582381, 73.753722], [18.493670, 73.742467] ],
-        "coverageDescription": "Pune"
+    },
+    "provider": {
+        "object": "iudx_iri:pscdcl",
+        "type": "Relationship"
+    },
+    "refBaseSchema": {
+        "object": "https://raw.githubusercontent.com/rraks/iudx-ld/master/v0.0.0/base_schemas/resourceItem_schema.json",
+        "type": "Relationship"
+    },
+    "refDataModel": {
+        "object": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/crowdSourced/crowdSourced_type1.json",
+        "type": "Relationship"
+    },
+    "resourceId": {
+        "type": "Property",
+        "value": "changebhai"
+    },
+    "resourceServer": {
+        "object": "iudx_iri:pscdcl_server",
+        "type": "Relationship"
+    },
+    "tags": {
+        "type": "Property",
+        "value": [
+            "crowd",
+            "sourced",
+            "Garbage",
+            "Footpaths",
+            "Roads",
+            "Encroachment",
+            "Illegal Ads",
+            "Wrong Parking",
+            "Street Lights",
+            "Signages",
+            "Bus Stops",
+            "Dividers",
+            "Stray Menace",
+            "Public Toilets",
+            "Traffic Signals",
+            "Traffic Violations",
+            "Road Markings",
+            "Images",
+            "geo",
+            "tagged"
+        ]
     }
 }

@@ -1,0 +1,208 @@
+{
+    "openapi": "3.0.1",
+    "info": {
+        "title": "FloodSensor",
+        "description": "Flood Sensor data model for flood sensors deployed in Pune City",
+        "version": "1.0.0"
+    },
+    "servers": [
+        {
+            "url": "https://{ip}:{port}/api/1.0.0/resource/",
+            "description": "API server URL",
+            "variables": {
+                "ip": {
+                    "default": "localhost",
+                    "description": "For local testing"
+                },
+                "port": {
+                    "default": "8080",
+                    "description": "For local testing"
+                }
+            }
+        }
+    ],
+    "paths": {
+        "/query/flood-sensor/{NAME}/{startTime}/{endTime}": {
+            "get": {
+                "description": "Get the query results",
+                "operationId": "query",
+                "responses": {
+                    "200": {
+                        "description": "Get array of flood sensor readings",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/SensorPacketArray"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "parameters": [
+                {
+                    "name": "NAME",
+                    "in": "path",
+                    "description": "Name of the location",
+                    "required": true,
+                    "schema": {
+                        "type": "string"
+                    }
+                },
+                {
+                    "name": "id",
+                    "in": "header",
+                    "description": "Id of the user",
+                    "required": true,
+                    "schema": {
+                        "type": "string"
+                    }
+                },
+                {
+                    "name": "apikey",
+                    "in": "header",
+                    "description": "Api key of the user",
+                    "required": true,
+                    "schema": {
+                        "type": "string"
+                    }
+                },
+                {
+                    "name": "startTime",
+                    "in": "path",
+                    "description": "Query start time",
+                    "required": true,
+                    "schema": {
+                        "type": "string"
+                    }
+                },
+                {
+                    "name": "endTime",
+                    "in": "path",
+                    "description": "Query end time",
+                    "required": true,
+                    "schema": {
+                        "type": "string"
+                    }
+                }
+            ]
+        },
+        "/latest/flood-sensor/{NAME}": {
+            "get": {
+                "description": "Get the latest data",
+                "operationId": "latest",
+                "parameters": [
+                    {
+                        "name": "NAME",
+                        "in": "path",
+                        "description": "Name of the station at which the flood sensor is deployed",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "id",
+                        "in": "header",
+                        "description": "Id of the user",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "apikey",
+                        "in": "header",
+                        "description": "Api key of the user",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/SensorPacket"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "SensorPacket": {
+                "description": "Wrapper object for the sensor message",
+                "required": [
+                    "FloodSensor"
+                ],
+                "type": "object",
+                "properties": {
+                    "FloodSensor": {
+                        "$ref": "#/components/schemas/FloodSensor"
+                    }
+                }
+            },
+            "FloodSensor": {
+                "title": "Root Type for SensorPacket",
+                "description": "Sensor response from the api as json object",
+                "type": "object",
+                "properties": {
+                    "DANGER": {
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/floodSensor/examples/exdataModel_env_flood_climoPune_0.json#/dataModelSchema/properties/DANGER"
+                    },
+                    "CUR_LEVEL": {
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/floodSensor/examples/exdataModel_env_flood_climoPune_0.json#/dataModelSchema/properties/CUR_LEVEL"
+                    },
+                    "STATUS": {
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/floodSensor/examples/exdataModel_env_flood_climoPune_0.json#/dataModelSchema/properties/STATUS"
+                    },
+                    "M_DISTANCE": {
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/floodSensor/examples/exdataModel_env_flood_climoPune_0.json#/dataModelSchema/properties/M_DISTANCE"
+                    },
+                    "REF_LEVEL": {
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/floodSensor/examples/exdataModel_env_flood_climoPune_0.json#/dataModelSchema/properties/REF_LEVEL"
+                    },
+                    "LASTUPDATEDATETIME": {
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/floodSensor/examples/exdataModel_env_flood_climoPune_0.json#/dataModelSchema/properties/LASTUPDATEDATETIME"
+                    },
+                    "SITE_STATUS": {
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/floodSensor/examples/exdataModel_env_flood_climoPune_0.json#/dataModelSchema/properties/SITE_STATUS"
+                    },
+                    "ALERT": {
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/floodSensor/examples/exdataModel_env_flood_climoPune_0.json#/dataModelSchema/properties/ALERT"
+                    },
+                    "STATION_ID": {
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/floodSensor/examples/exdataModel_env_flood_climoPune_0.json#/dataModelSchema/properties/STATION_ID"
+                    },
+                    "NAME": {
+                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/environment/floodSensor/examples/exdataModel_env_flood_climoPune_0.json#/dataModelSchema/properties/NAME"
+                    }
+                },
+                "example": "{\n    \"DANGER\": \"2.0\",\n    \"CUR_LEVEL\": \"0.37\",\n    \"STATUS\": \"Normal\",\n    \"M_DISTANCE\": \"4.63\",\n    \"REF_LEVEL\": \"5.0\",\n    \"LASTUPDATEDATETIME\": \"2019-02-20T14:48:49.136+05:30\",\n    \"SITE_STATUS\": \"Active\",\n    \"ALERT\": \"1.0\",\n    \"STATION_ID\": \"FWR015\",\n    \"NAME\": \"Kalash\"\n}"
+            },
+            "SensorPacketArray": {
+                "description": "Array of sensor packets",
+                "required": [
+                    "array"
+                ],
+                "type": "object",
+                "properties": {
+                    "array": {
+                        "description": "Packet Array",
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/SensorPacket"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

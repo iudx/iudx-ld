@@ -43,6 +43,10 @@
                 "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/environment/floodSensor/env_flood_climoPune_0.json#/properties/STATUS",
                 "@type": "Property"
             },
+            "location": {
+                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/environment/floodSensor/env_flood_climoPune_0.json#/properties/location",
+                "@type": "GeoProperty"
+            },
             "uo": "http://units.open.org/",
             "xsd": "http://www.w3.org/2001/XMLSchema#"
         }
@@ -294,6 +298,13 @@
             "allOf": [
                 {
                     "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json#/definitions/product"
+                }
+            ]
+        },
+        "location": {
+            "allOf": [
+                {
+                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/v0.0.0/base_schemas/core_defs.json#/definitions/GeoProperty"
                 }
             ]
         }

@@ -1,6 +1,6 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/environment/floodSensor/env_flood_climoPune_0_ld.json"
+        "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/environment/floodSensor/env_flood_climoPune_0.json"
     ],
     "@id": "akdfi74938nid8kjfvko4",
     "NAME": {
@@ -28,10 +28,7 @@
         "type": "TimeProperty",
         "value": "2019-02-20T10:30:06.093121"
     },
-    "itemDescription": {
-        "type": "Property",
-        "value": "Flood sensing station"
-    },
+    "itemDescription":  "Flood sensing station",
     "itemStatus": {
         "type": "Property",
         "value": "active"
@@ -63,7 +60,7 @@
         "type": "Relationship"
     },
     "refDataModel": {
-        "object": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/environment/floodSensor/env_flood_climoPune_0_ld.json",
+        "object": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/environment/floodSensor/env_flood_climoPune_0.json",
         "type": "Relationship"
     },
     "resourceId": {

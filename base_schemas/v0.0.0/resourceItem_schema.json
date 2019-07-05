@@ -33,12 +33,9 @@
             "describes": "The resource server which hosts this resource item"
         },
         "itemDescription": {
-            "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/v0.0.0/base_schemas/core_defs.json#/definitions/Property",
-            "describes": "Text description of this item."
-        },
-        "type": {
+            "allOf": [{"$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/v0.0.0/base_schemas/core_defs.json#/definitions/Property"}],
             "type": "string",
-            "describes": "Release type of this resource_item"
+            "describes": "Text description of this item."
         },
         "refDataModel": {
             "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/v0.0.0/base_schemas/core_defs.json#/definitions/Relationship",
@@ -49,17 +46,25 @@
             "describes": "Link to the provider of this resource"
         },
         "resourceGroup": {
-            "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/v0.0.0/base_schemas/core_defs.json#/definitions/Relationship",
+            "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/v0.0.0/base_schemas/core_defs.json#/definitions/Property",
             "describes": "iri to group node"
         },
         "resourceId": {
             "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/v0.0.0/base_schemas/core_defs.json#/definitions/Property",
             "describes": "id of this resource on the resource server"
         },
-        "location": {
-            "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/v0.0.0/base_schemas/core_defs.json#/definitions/GeoProperty"
+        "resourceType": {
+            "allOf": [{"$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/v0.0.0/base_schemas/core_defs.json#/definitions/Property"}],
+            "type": "object",
+            "properties": {
+                "value": {
+                    "type": "string",
+                    "enum": ["table", "file", "message", "messageStream", "gis", "media", "service", "other"]
+                }
+            }
         },
         "itemStatus": {
+            "allOf": [{"$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/v0.0.0/base_schemas/core_defs.json#/definitions/Property"}],
             "type": "object",
             "properties": {
                 "value": {
@@ -91,7 +96,9 @@
         },
         "itemType": {
             "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/v0.0.0/base_schemas/core_defs.json#/definitions/Property",
-            "describes": "iudx item type"
+            "describes": "iudx item type",
+            "type": "string",
+            "enum": ["resourceItem"]
         },
         "additionalProperties": {
             "anyOf": [

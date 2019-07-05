@@ -1,4 +1,6 @@
 {
+    "@context": {
+    },
     "$schema": "http://json-schema.org/schema#",
     "id": "https://raw.githubusercontent.org/rraks/iudx-ld/v0.0.0/base_schemas/common.json",
     "title": "IUDX-LD Common Definitions",
@@ -86,115 +88,6 @@
                     }
                 }
             ]
-        },
-        "Endpoint": {
-            "type": "object",
-            "required": [
-                "uri"
-            ],
-            "properties": {
-                "uri": {
-                    "type": "string",
-                    "format": "uri"
-                },
-                "accept": {
-                    "type": "string",
-                    "enum": [
-                        "application/json",
-                        "application/ld+json"
-                    ]
-                }
-            }
-        },
-        "georel": {
-            "anyOf": [
-                {
-                    "type": "string",
-                    "enum": [
-                        "equals",
-                        "disjoint",
-                        "intersects",
-                        "within",
-                        "contains",
-                        "overlaps"
-                    ]
-                },
-                {
-                    "type": "string",
-                    "pattern": "^near;((maxDistance==\\d+)|(minDistance==\\d+))$"
-                }
-            ]
-        },
-        "coordinates": {
-            "oneOf": [
-                {
-                    "$ref": "https://raw.githubusercontent.org/rraks/iudx-ld/v0.0.0/base_schemas/geometry-schema.json#/definitions/position"
-                },
-                {
-                    "$ref": "https://raw.githubusercontent.org/rraks/iudx-ld/v0.0.0/base_schemas/geometry-schema.json#/definitions/positionArray"
-                },
-                {
-                    "$ref": "https://raw.githubusercontent.org/rraks/iudx-ld/v0.0.0/base_schemas/geometry-schema.json#/definitions/lineString"
-                },
-                {
-                    "$ref": "https://raw.githubusercontent.org/rraks/iudx-ld/v0.0.0/base_schemas/geometry-schema.json#/definitions/polygon"
-                }
-            ]
-        },
-        "geometry": {
-            "type": "string",
-            "enum": [
-                "Point",
-                "MultiPoint",
-                "LineString",
-                "MultiLineString",
-                "Polygon",
-                "MultiPolygon"
-            ]
-        },
-        "timerel": {
-            "type": "string",
-            "enum": [
-                "before",
-                "after",
-                "between"
-            ]
-        },
-        "productSchema": {
-            "brand": {
-                "type": "object",
-                "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/v0.0.0/base_schemas/core_defs.json#/definitions/Property",
-                "describes": "Brand name/Organisation",
-                "properties": {
-                    "name": { 
-                        "$ref": "#/definitions/nameSchema"
-                    },
-                    "url": {
-                        "$ref": "#/definitions/nameSchema"
-                    }
-                }
-            },
-            "model": {
-                "type": "string",
-                "describes": "Textual representation of the model of the product."
-            },
-            "mpn": {
-                "type": "string",
-                "describes": "The Manufacturer Part Number (MPN) of the product."
-            },
-            "productID": {
-                "type": "string",
-                "describes": "Product identifier, such as ISBN number."
-            },
-            "releaseDate": {
-                "type": "string",
-                "format": "date-time",
-                "describes": "The release date of a product. Can be used to identify the exact variant of a product."
-            },
-            "url": {
-                "$ref": "#/definitions/nameSchema",
-                "describes": "Product home page."
-            }
         }
     }
 }
