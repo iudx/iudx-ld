@@ -13,7 +13,7 @@ resourceItemSchemaPath = "../../base_schemas/v0.0.0/resourceItem_schema.json"
 
 
 
-refBaseSchema = "https://raw.githubusercontent.com/rraks/iudx-ld/master/v0.0.0/base_schemas/resourceItem_schema.json"
+refBaseSchema = "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/resourceItem_schema.json"
 
 item = {}
 with open(itemPath,"r") as f:

@@ -3,7 +3,7 @@
     "type": "object",
     "allOf": [
         {
-            "$ref": "v0.0.0/base_schemas/iudx_data_item_schema.json#"
+            "$ref": "base_schemas/v0.0.0/iudx_data_item_schema.json#"
         }
     ],
     "describes": "Describes the intelligent transport management system datamodel",

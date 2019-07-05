@@ -51,12 +51,12 @@ def mkTimeProp(prop):
 
 if "locationCoverage" in props.keys():
     props.pop("locationCoverage")
-    props["locationCoverage"] = {"allOf": [{ "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/v0.0.0/base_schemas/core_defs.json#/definitions/GeoProperty" }]}
+    props["locationCoverage"] = {"allOf": [{ "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/GeoProperty" }]}
     context["locationCoverage"] = {"@id":dm_url + "location", "@type": "GeoProperty"}
 
 if "location" in props.keys():
     props.pop("location")
-    props["location"] = {"allOf": [{ "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/v0.0.0/base_schemas/core_defs.json#/definitions/GeoProperty" }]}
+    props["location"] = {"allOf": [{ "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/GeoProperty" }]}
     context["location"] = {"@id":dm_url + "location", "@type": "GeoProperty"}
 
 

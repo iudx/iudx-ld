@@ -2,7 +2,7 @@
   "id": "akdfi74938nid8kjfvko4",
   "itemDescription": "WiFi HotSpot",
   "refDataModel": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/WiFi/hotspot/wifi_hotspot_Pune_0.json",
-  "refBaseSchema": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/v0.0.0/base_schemas/v0.0.1/iudx_resource_item_schema.json",
+  "refBaseSchema": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/base_schemas/v0.0.0/v0.0.1/iudx_resource_item_schema.json",
   "refBaseSchemaRelease": "v0.0.1",
   "provider": {
     "refItemName": "PSCDCL",

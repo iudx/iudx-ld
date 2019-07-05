@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/schema#",
-    "id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/v0.0.0/base_schemas/core_defs.json",
+    "id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json",
     "title": "IUDX-LD meta model definitions ",
     "description": "IUDX-LD meta-model",
     "type": "object",
@@ -105,7 +105,7 @@
                             "enum": ["GeoProperty"]
                         },
                         "value": {
-                            "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/v0.0.0/base_schemas/geometry-schema.json#"
+                            "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/geometry-schema.json#"
                         },
                         "observedAt": {
                             "$ref": "#/definitions/TimeProperty"
