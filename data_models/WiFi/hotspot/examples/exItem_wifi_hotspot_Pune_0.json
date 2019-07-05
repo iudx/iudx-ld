@@ -42,16 +42,13 @@
         "value": "https://pune.iudx.org.in/api/1.0.0/resource/latest/wifi-hotspot/XYZ"
     },
     "location": {
-        "type": "Property",
+        "type": "GeoProperty",
         "value": {
-            "type": "GeoProperty",
-            "value": {
-                "type": "Point",
-                "value": [
-                    18.52019,
-                    73.8468899
-                ]
-            }
+            "type": "Point",
+            "value": [
+                18.52019,
+                73.8468899
+            ]
         }
     },
     "provider": {

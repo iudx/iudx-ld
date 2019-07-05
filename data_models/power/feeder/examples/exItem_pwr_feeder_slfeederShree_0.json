@@ -46,16 +46,13 @@
         "value": "https://pune.iudx.org.in/api/1.0.0/resource/latest/streetlight-feeder-sree/XYZ"
     },
     "location": {
-        "type": "Property",
+        "type": "GeoProperty",
         "value": {
-            "type": "GeoProperty",
-            "value": {
-                "type": "Point",
-                "value": [
-                    18.4813499,
-                    73.89856
-                ]
-            }
+            "type": "Point",
+            "value": [
+                18.4813499,
+                73.89856
+            ]
         }
     },
     "provider": {

@@ -1,8 +1,8 @@
 import json
 
 
-dataModelPath = "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/crowdSourced/crowdSourced_type1.json"
-itemPath = "../../temp/data_models/crowdSourced/examples/exItem_crowdSourced_type1_0.json"
+dataModelPath = "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/crowdSourced/crowdSourced_type2.json"
+itemPath = "../../temp/data_models/crowdSourced/examples/exItem_crowdSourced_type2_0.json"
 itemNameList = itemPath.split("/")
 itemName = itemNameList[-1]
 path_to_item = "".join(a+"/" for a in itemNameList[:itemNameList.index("examples")+1])
@@ -54,7 +54,7 @@ def mkLocationArea(prop):
     temp["type"] = "GeoProperty"
     temp["value"] = {}
     temp["value"]["type"] = "Polygon"
-    temp["value"]["value"] = prop["area"] 
+    temp["value"]["value"] = [prop["area"]]
     return temp
 
 
@@ -74,6 +74,7 @@ item["tags"] = mkProperty(t)
 
 if "location" in item.keys():
     item["location"] = mkLocation(item["location"])
+
 
 if "locationCoverage" in item.keys():
     item["locationCoverage"] = mkLocationArea(item["locationCoverage"])
@@ -116,11 +117,12 @@ item["@context"] = []
 item["@context"].append(dataModelPath)
 
 
-dm_fields = list( set(item.keys()) - set(schema.keys()) - set(["@id"]) ) 
+dm_fields = list( set(item.keys()) - set(schema.keys()) - set(["@id"]) - set(["location"]) - set(["locationCoverage"])) 
 print(dm_fields)
 
 for dmField in dm_fields:
     item[dmField] = mkProperty(item[dmField])
+
 
 print(path_to_item + itemName)
 with open(path_to_item + itemName, "w") as f:

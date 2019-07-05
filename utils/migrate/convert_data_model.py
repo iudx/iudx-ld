@@ -5,7 +5,7 @@ from os.path import isfile, join
 import re
 
 
-data_model = "../../temp/data_models/crowdSourced/crowdSourced_type1.json"
+data_model = "../../temp/data_models/crowdSourced/crowdSourced_type2.json"
 dm_list = data_model.split("/")
 dm_name = dm_list[-1]
 path_to_dm = dm_list[dm_list.index("data_models"):-1]
