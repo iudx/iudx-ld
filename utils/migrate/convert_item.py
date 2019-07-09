@@ -1,7 +1,7 @@
 import json
 
 
-dataModelPath = "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/crowdSourced/crowdSourced_type2.json"
+dataModelPath = "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/crowdSourced/crowdSourced_type2.json"
 itemPath = "../../temp/data_models/crowdSourced/examples/exItem_crowdSourced_type2_0.json"
 itemNameList = itemPath.split("/")
 itemName = itemNameList[-1]
@@ -13,7 +13,7 @@ resourceItemSchemaPath = "../../base_schemas/v0.0.0/resourceItem_schema.json"
 
 
 
-refBaseSchema = "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/resourceItem_schema.json"
+refBaseSchema = "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/resourceItem_schema.json"
 
 item = {}
 with open(itemPath,"r") as f:
@@ -89,7 +89,7 @@ item.pop("__itemStatus")
 item["createdAt"] = mkTimeProperty(item["__createdAt"])
 item.pop("__createdAt")
 
-item["accessObjectURL"] = mkRelationship(item["accessInformation"][0]["accessSchema"].replace("rbccps-iisc","rraks").replace("iudx-schemas", "iudx-ld"))
+item["accessObjectURL"] = mkRelationship(item["accessInformation"][0]["accessSchema"].replace("rbccps-iisc","iudx").replace("iudx-schemas", "iudx-ld"))
 item["resourceServer"] = mkRelationship("iudx_iri:pscdcl_server")
 
 item["resourceId"] = {}

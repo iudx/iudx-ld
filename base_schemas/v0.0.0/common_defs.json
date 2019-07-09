@@ -2,7 +2,7 @@
     "@context": {
     },
     "$schema": "http://json-schema.org/schema#",
-    "id": "https://raw.githubusercontent.org/rraks/iudx-ld/base_schemas/v0.0.0/common.json",
+    "id": "https://raw.githubusercontent.org/iudx/iudx-ld/base_schemas/v0.0.0/common.json",
     "title": "IUDX-LD Common Definitions",
     "description": "IUDX-LD Common",
     "definitions": {

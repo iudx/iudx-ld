@@ -1,38 +1,38 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "@context": [
-        "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_context.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_context.json",
         {
             "Category": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/crowdSourced/crowdSourced_type1.json#/properties/Category",
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/crowdSourced/crowdSourced_type1.json#/properties/Category",
                 "@type": "Property"
             },
             "Image": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/crowdSourced/crowdSourced_type1.json#/properties/Image",
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/crowdSourced/crowdSourced_type1.json#/properties/Image",
                 "@type": "Property"
             },
             "Latitude": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/crowdSourced/crowdSourced_type1.json#/properties/Latitude",
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/crowdSourced/crowdSourced_type1.json#/properties/Latitude",
                 "@type": "Property"
             },
             "Longitude": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/crowdSourced/crowdSourced_type1.json#/properties/Longitude",
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/crowdSourced/crowdSourced_type1.json#/properties/Longitude",
                 "@type": "Property"
             },
             "Radius": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/crowdSourced/crowdSourced_type1.json#/properties/Radius",
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/crowdSourced/crowdSourced_type1.json#/properties/Radius",
                 "@type": "Property"
             },
             "Severity": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/crowdSourced/crowdSourced_type1.json#/properties/Severity",
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/crowdSourced/crowdSourced_type1.json#/properties/Severity",
                 "@type": "Property"
             },
             "id": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/crowdSourced/crowdSourced_type1.json#/properties/id",
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/crowdSourced/crowdSourced_type1.json#/properties/id",
                 "@type": "Property"
             },
             "locationCoverage": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/crowdSourced/crowdSourced_type1.json#/properties/location",
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/crowdSourced/crowdSourced_type1.json#/properties/location",
                 "@type": "GeoProperty"
             },
             "uo": "http://units.open.org/",
@@ -44,7 +44,7 @@
         "Category": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
             "describes": "Classification of the image",
@@ -87,7 +87,7 @@
         "Image": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
             "describes": "Link of the image",
@@ -113,7 +113,7 @@
         "Latitude": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
             "describes": "Latitude of the geo-tagged image",
@@ -138,7 +138,7 @@
         "Longitude": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
             "describes": "Longitude of the geo-tagged image",
@@ -163,7 +163,7 @@
         "Radius": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
             "describes": "Radius of the area for which geo-tagged images are required",
@@ -188,7 +188,7 @@
         "Severity": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
             "describes": "Severity of the category",
@@ -218,7 +218,7 @@
         "id": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
             "describes": "id of the geo-tagged image",
@@ -243,7 +243,7 @@
         "locationCoverage": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/GeoProperty"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/GeoProperty"
                 }
             ]
         }

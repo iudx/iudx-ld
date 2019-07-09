@@ -1,74 +1,74 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "@context": [
-        "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_context.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_context.json",
         {
             "B_PHASE_CURRENT": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json#/properties/B_PHASE_CURRENT",
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json#/properties/B_PHASE_CURRENT",
                 "@type": "Property"
             },
             "B_PHASE_POWER": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json#/properties/B_PHASE_POWER",
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json#/properties/B_PHASE_POWER",
                 "@type": "Property"
             },
             "B_PHASE_VOLTAGE": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json#/properties/B_PHASE_VOLTAGE",
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json#/properties/B_PHASE_VOLTAGE",
                 "@type": "Property"
             },
             "LASTUPDATEDATETIME": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json#/properties/LASTUPDATEDATETIME",
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json#/properties/LASTUPDATEDATETIME",
                 "@type": "TimeProperty"
             },
             "LIGHT_STATUS": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json#/properties/LIGHT_STATUS",
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json#/properties/LIGHT_STATUS",
                 "@type": "Property"
             },
             "NAME": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json#/properties/NAME",
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json#/properties/NAME",
                 "@type": "Property"
             },
             "PANEL_ID": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json#/properties/PANEL_ID",
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json#/properties/PANEL_ID",
                 "@type": "Property"
             },
             "PANEL_NAME": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json#/properties/PANEL_NAME",
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json#/properties/PANEL_NAME",
                 "@type": "Property"
             },
             "R_PHASE_CURRENT": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json#/properties/R_PHASE_CURRENT",
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json#/properties/R_PHASE_CURRENT",
                 "@type": "Property"
             },
             "R_PHASE_POWER": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json#/properties/R_PHASE_POWER",
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json#/properties/R_PHASE_POWER",
                 "@type": "Property"
             },
             "R_PHASE_VOLTAGE": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json#/properties/R_PHASE_VOLTAGE",
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json#/properties/R_PHASE_VOLTAGE",
                 "@type": "Property"
             },
             "TOTAL_LIGHTS": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json#/properties/TOTAL_LIGHTS",
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json#/properties/TOTAL_LIGHTS",
                 "@type": "Property"
             },
             "TOTAL_LOAD": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json#/properties/TOTAL_LOAD",
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json#/properties/TOTAL_LOAD",
                 "@type": "Property"
             },
             "Y_PHASE_CURRENT": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json#/properties/Y_PHASE_CURRENT",
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json#/properties/Y_PHASE_CURRENT",
                 "@type": "Property"
             },
             "Y_PHASE_POWER": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json#/properties/Y_PHASE_POWER",
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json#/properties/Y_PHASE_POWER",
                 "@type": "Property"
             },
             "Y_PHASE_VOLTAGE": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json#/properties/Y_PHASE_VOLTAGE",
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json#/properties/Y_PHASE_VOLTAGE",
                 "@type": "Property"
             },
             "location": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json#/properties/location",
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json#/properties/location",
                 "@type": "GeoProperty"
             },
             "uo": "http://units.open.org/",
@@ -81,7 +81,7 @@
         "B_PHASE_CURRENT": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
             "describes": "Gives B Phase Current",
@@ -107,7 +107,7 @@
         "B_PHASE_POWER": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
             "describes": "Gives B Phase Power",
@@ -133,7 +133,7 @@
         "B_PHASE_VOLTAGE": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
             "describes": "Gives B Phase Voltage",
@@ -159,14 +159,14 @@
         "LASTUPDATEDATETIME": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/TimeProperty"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/TimeProperty"
                 }
             ]
         },
         "LIGHT_STATUS": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
             "describes": "Currents status of the feeder device",
@@ -195,7 +195,7 @@
         "NAME": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
             "describes": "Name of the locality",
@@ -220,7 +220,7 @@
         "PANEL_ID": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
             "describes": "Uniquie ID assigned to the mounted panel",
@@ -245,7 +245,7 @@
         "PANEL_NAME": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
             "describes": "Name of the Panel Mounted",
@@ -270,7 +270,7 @@
         "R_PHASE_CURRENT": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
             "describes": "Gives R Phase Current",
@@ -296,7 +296,7 @@
         "R_PHASE_POWER": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
             "describes": "Gives R Phase Power",
@@ -322,7 +322,7 @@
         "R_PHASE_VOLTAGE": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
             "describes": "Gives R Phase Voltage",
@@ -348,7 +348,7 @@
         "TOTAL_LIGHTS": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
             "describes": "Indication of the number of Lights under the given feeder",
@@ -373,7 +373,7 @@
         "TOTAL_LOAD": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
             "describes": "Total expected load on the feeder.",
@@ -398,7 +398,7 @@
         "Y_PHASE_CURRENT": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
             "describes": "Gives Y Phase Current",
@@ -424,7 +424,7 @@
         "Y_PHASE_POWER": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
             "describes": "Gives Y Phase Power",
@@ -450,7 +450,7 @@
         "Y_PHASE_VOLTAGE": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
             "describes": "Gives Y Phase Voltage",
@@ -476,14 +476,14 @@
         "deviceModelInfo": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json#/definitions/product"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json#/definitions/product"
                 }
             ]
         },
         "location": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/GeoProperty"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/GeoProperty"
                 }
             ]
         }

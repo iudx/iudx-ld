@@ -1,6 +1,6 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/WiFi/hotspot/wifi_hotspot_Pune_0.json"
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/WiFi/hotspot/wifi_hotspot_Pune_0.json"
     ],
     "@id": "akdfi74938nid8kjfvko4",
     "HOTSPOT_ID": {
@@ -12,7 +12,7 @@
         "value": "XYZ"
     },
     "accessObjectURL": {
-        "object": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/WiFi/hotspot/examples/exApiObject_wifi_hotspot_Pune_0.json",
+        "object": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/WiFi/hotspot/examples/exApiObject_wifi_hotspot_Pune_0.json",
         "type": "Relationship"
     },
     "accessObjectVariables": {
@@ -59,11 +59,11 @@
         "type": "Relationship"
     },
     "refBaseSchema": {
-        "object": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/resourceItem_schema.json",
+        "object": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/resourceItem_schema.json",
         "type": "Relationship"
     },
     "refDataModel": {
-        "object": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/WiFi/hotspot/wifi_hotspot_Pune_0.json",
+        "object": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/WiFi/hotspot/wifi_hotspot_Pune_0.json",
         "type": "Relationship"
     },
     "resourceId": {

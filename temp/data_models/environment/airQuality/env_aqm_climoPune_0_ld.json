@@ -1,134 +1,134 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "@context": [
-        "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_context.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_context.json",
         {
             "AIR_PRESSURE": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/AIR_PRESSURE",
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/AIR_PRESSURE",
                 "@type": "Property"
             },
             "AQI": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/AQI",
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/AQI",
                 "@type": "Property"
             },
             "AQI_POLLUTANT": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/AQI_POLLUTANT",
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/AQI_POLLUTANT",
                 "@type": "Property"
             },
             "CATEGORY": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/CATEGORY",
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/CATEGORY",
                 "@type": "Property"
             },
             "CO2_MAX": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/CO2_MAX",
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/CO2_MAX",
                 "@type": "Property"
             },
             "CO2_MIN": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/CO2_MIN",
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/CO2_MIN",
                 "@type": "Property"
             },
             "CO_MAX": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/CO_MAX",
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/CO_MAX",
                 "@type": "Property"
             },
             "CO_MIN": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/CO_MIN",
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/CO_MIN",
                 "@type": "Property"
             },
             "DEVICEID": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/DEVICEID",
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/DEVICEID",
                 "@type": "Property"
             },
             "HUMIDITY": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/HUMIDITY",
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/HUMIDITY",
                 "@type": "Property"
             },
             "LASTUPDATEDATETIME": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/LASTUPDATEDATETIME",
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/LASTUPDATEDATETIME",
                 "@type": "TimeProperty"
             },
             "LIGHT": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/LIGHT",
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/LIGHT",
                 "@type": "Property"
             },
             "NAME": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/NAME",
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/NAME",
                 "@type": "Property"
             },
             "NO2_MAX": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/NO2_MAX",
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/NO2_MAX",
                 "@type": "Property"
             },
             "NO2_MIN": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/NO2_MIN",
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/NO2_MIN",
                 "@type": "Property"
             },
             "NO_MAX": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/NO_MAX",
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/NO_MAX",
                 "@type": "Property"
             },
             "NO_MIN": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/NO_MIN",
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/NO_MIN",
                 "@type": "Property"
             },
             "OZONE_MAX": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/OZONE_MAX",
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/OZONE_MAX",
                 "@type": "Property"
             },
             "OZONE_MIN": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/OZONE_MIN",
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/OZONE_MIN",
                 "@type": "Property"
             },
             "PM10_MAX": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/PM10_MAX",
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/PM10_MAX",
                 "@type": "Property"
             },
             "PM10_MIN": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/PM10_MIN",
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/PM10_MIN",
                 "@type": "Property"
             },
             "PM2_MAX": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/PM2_MAX",
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/PM2_MAX",
                 "@type": "Property"
             },
             "PM2_MIN": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/PM2_MIN",
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/PM2_MIN",
                 "@type": "Property"
             },
             "SO2_MAX": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/SO2_MAX",
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/SO2_MAX",
                 "@type": "Property"
             },
             "SO2_MIN": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/SO2_MIN",
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/SO2_MIN",
                 "@type": "Property"
             },
             "SOUND": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/SOUND",
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/SOUND",
                 "@type": "Property"
             },
             "STATUS": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/STATUS",
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/STATUS",
                 "@type": "Property"
             },
             "TEMPRATURE_MAX": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/TEMPRATURE_MAX",
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/TEMPRATURE_MAX",
                 "@type": "Property"
             },
             "TEMPRATURE_MIN": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/TEMPRATURE_MIN",
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/TEMPRATURE_MIN",
                 "@type": "Property"
             },
             "UV_MAX": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/UV_MAX",
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/UV_MAX",
                 "@type": "Property"
             },
             "UV_MIN": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/UV_MIN",
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/UV_MIN",
                 "@type": "Property"
             },
             "location": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/location",
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/location",
                 "@type": "GeoProperty"
             },
             "uo": "http://units.open.org/",
@@ -140,7 +140,7 @@
         "AIR_PRESSURE": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
             "describes": "Measured Air pressure",
@@ -166,7 +166,7 @@
         "AQI": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
             "describes": "Overall AQI ",
@@ -192,7 +192,7 @@
         "AQI_POLLUTANT": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
             "describes": "Major pollutant in the AQI index.",
@@ -226,7 +226,7 @@
         "CATEGORY": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
             "describes": "Quality indication",
@@ -259,7 +259,7 @@
         "CO2_MAX": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
             "describes": "Maximum value of CO2 for the last 24 hours",
@@ -285,7 +285,7 @@
         "CO2_MIN": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
             "describes": "Minimum value of CO2 for the last 24 hours",
@@ -311,7 +311,7 @@
         "CO_MAX": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
             "describes": "Maximum value of CO for the last 24 hours",
@@ -337,7 +337,7 @@
         "CO_MIN": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
             "describes": "Minimum value of CO for the last 24 hours",
@@ -363,7 +363,7 @@
         "DEVICEID": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
             "describes": "Device ID's as per the device data model",
@@ -388,7 +388,7 @@
         "HUMIDITY": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
             "describes": "Relative humidity",
@@ -414,14 +414,14 @@
         "LASTUPDATEDATETIME": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/TimeProperty"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/TimeProperty"
                 }
             ]
         },
         "LIGHT": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
             "describes": "Light in lux",
@@ -447,7 +447,7 @@
         "NAME": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
             "describes": "Name of the device.",
@@ -472,7 +472,7 @@
         "NO2_MAX": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
             "describes": "Maximum value of NO2 for the last 24 hours",
@@ -498,7 +498,7 @@
         "NO2_MIN": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
             "describes": "Minimum value of NO2 for the last 24 hours",
@@ -524,7 +524,7 @@
         "NO_MAX": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
             "describes": "Maximum value of NO for the last 24 hours",
@@ -550,7 +550,7 @@
         "NO_MIN": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
             "describes": "Minimum value of NO for the last 24 hours",
@@ -576,7 +576,7 @@
         "OZONE_MAX": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
             "describes": "Maximum value of Ozone for the last 24 hours",
@@ -602,7 +602,7 @@
         "OZONE_MIN": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
             "describes": "Minimum value of Ozone for the last 24 hours",
@@ -628,7 +628,7 @@
         "PM10_MAX": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
             "describes": "Maximum value of PM10 for the last 24 hours",
@@ -654,7 +654,7 @@
         "PM10_MIN": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
             "describes": "Minimum value of PM10 for the last 24 hours",
@@ -680,7 +680,7 @@
         "PM2_MAX": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
             "describes": "Maximum value of PM2.5 for the last 24 hours",
@@ -706,7 +706,7 @@
         "PM2_MIN": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
             "describes": "Minimum value of PM2.5 for the last 24 hours",
@@ -732,7 +732,7 @@
         "SO2_MAX": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
             "describes": "Maximum value of SO2 for the last 24 hours",
@@ -758,7 +758,7 @@
         "SO2_MIN": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
             "describes": "Minimum value of SO2 for the last 24 hours",
@@ -784,7 +784,7 @@
         "SOUND": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
             "description": "Instantaneous Noise level",
@@ -810,7 +810,7 @@
         "STATUS": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
             "describes": "Indiates if the resource is on or off",
@@ -839,7 +839,7 @@
         "TEMPRATURE_MAX": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
             "describes": "Maximum value of Temperature for the last 24 hours",
@@ -865,7 +865,7 @@
         "TEMPRATURE_MIN": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
             "describes": "Minimum value of Temperature for the last 24 hours",
@@ -891,7 +891,7 @@
         "UV_MAX": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
             "describes": "Maximum value of UV for the last 24 hours",
@@ -917,7 +917,7 @@
         "UV_MIN": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
             "describes": "Minimum value of UV for the last 24 hours",
@@ -943,14 +943,14 @@
         "deviceModelInfo": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json#/definitions/product"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json#/definitions/product"
                 }
             ]
         },
         "location": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/GeoProperty"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/GeoProperty"
                 }
             ]
         }

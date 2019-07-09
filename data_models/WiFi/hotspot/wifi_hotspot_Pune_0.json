@@ -1,42 +1,42 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "@context": [
-        "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_context.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_context.json",
         {
             "ACCESS_POINT_COUNT": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/WiFi/hotspot/wifi_hotspot_Pune_0.json#/properties/ACCESS_POINT_COUNT",
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/WiFi/hotspot/wifi_hotspot_Pune_0.json#/properties/ACCESS_POINT_COUNT",
                 "@type": "Property"
             },
             "DOWNLOAD_RATE": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/WiFi/hotspot/wifi_hotspot_Pune_0.json#/properties/DOWNLOAD_RATE",
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/WiFi/hotspot/wifi_hotspot_Pune_0.json#/properties/DOWNLOAD_RATE",
                 "@type": "Property"
             },
             "HOTSPOT_ID": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/WiFi/hotspot/wifi_hotspot_Pune_0.json#/properties/HOTSPOT_ID",
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/WiFi/hotspot/wifi_hotspot_Pune_0.json#/properties/HOTSPOT_ID",
                 "@type": "Property"
             },
             "LASTUPDATEDATETIME": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/WiFi/hotspot/wifi_hotspot_Pune_0.json#/properties/LASTUPDATEDATETIME",
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/WiFi/hotspot/wifi_hotspot_Pune_0.json#/properties/LASTUPDATEDATETIME",
                 "@type": "TimeProperty"
             },
             "LOCATION_STATUS": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/WiFi/hotspot/wifi_hotspot_Pune_0.json#/properties/LOCATION_STATUS",
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/WiFi/hotspot/wifi_hotspot_Pune_0.json#/properties/LOCATION_STATUS",
                 "@type": "Property"
             },
             "NAME": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/WiFi/hotspot/wifi_hotspot_Pune_0.json#/properties/NAME",
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/WiFi/hotspot/wifi_hotspot_Pune_0.json#/properties/NAME",
                 "@type": "Property"
             },
             "UPLOAD_RATE": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/WiFi/hotspot/wifi_hotspot_Pune_0.json#/properties/UPLOAD_RATE",
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/WiFi/hotspot/wifi_hotspot_Pune_0.json#/properties/UPLOAD_RATE",
                 "@type": "Property"
             },
             "USER_COUNT": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/WiFi/hotspot/wifi_hotspot_Pune_0.json#/properties/USER_COUNT",
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/WiFi/hotspot/wifi_hotspot_Pune_0.json#/properties/USER_COUNT",
                 "@type": "Property"
             },
             "location": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/WiFi/hotspot/wifi_hotspot_Pune_0.json#/properties/location",
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/WiFi/hotspot/wifi_hotspot_Pune_0.json#/properties/location",
                 "@type": "GeoProperty"
             },
             "uo": "http://units.open.org/",
@@ -48,7 +48,7 @@
         "ACCESS_POINT_COUNT": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
             "describes": "Number of WiFi Access points associated with the hotspot. It is an integer encoded as a string.",
@@ -73,7 +73,7 @@
         "DOWNLOAD_RATE": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
             "describes": "Aggregate Download Rate for the hotspot location. It is a number encoded as a string. The units should be interpreted after convert 'string' type to 'number' type",
@@ -99,7 +99,7 @@
         "HOTSPOT_ID": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
             "describes": "Hotspot ID as per the device data model",
@@ -124,14 +124,14 @@
         "LASTUPDATEDATETIME": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/TimeProperty"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/TimeProperty"
                 }
             ]
         },
         "LOCATION_STATUS": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
             "describes": "Hotspot functional or not",
@@ -160,7 +160,7 @@
         "NAME": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
             "describes": "Name of the device.",
@@ -185,7 +185,7 @@
         "UPLOAD_RATE": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
             "describes": " Aggregate upload rate for the hotspot location. It is a number encoded as a string. The units should be interpreted after convert 'string' type to 'number' type",
@@ -211,7 +211,7 @@
         "USER_COUNT": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
             "describes": "Number of users connected to the hotspot. It is an integer encoded as a string.",
@@ -236,7 +236,7 @@
         "location": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/GeoProperty"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/GeoProperty"
                 }
             ]
         }

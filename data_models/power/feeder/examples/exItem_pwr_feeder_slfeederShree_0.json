@@ -1,6 +1,6 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json"
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json"
     ],
     "@id": "u7734jd399834r8696",
     "NAME": {
@@ -16,7 +16,7 @@
         "value": "KN-13"
     },
     "accessObjectURL": {
-        "object": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/power/feeder/examples/exApiObject_pwr_feeder_slfeederShree_0.json",
+        "object": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/power/feeder/examples/exApiObject_pwr_feeder_slfeederShree_0.json",
         "type": "Relationship"
     },
     "accessObjectVariables": {
@@ -60,11 +60,11 @@
         "type": "Relationship"
     },
     "refBaseSchema": {
-        "object": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/resourceItem_schema.json",
+        "object": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/resourceItem_schema.json",
         "type": "Relationship"
     },
     "refDataModel": {
-        "object": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json",
+        "object": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json",
         "type": "Relationship"
     },
     "resourceId": {

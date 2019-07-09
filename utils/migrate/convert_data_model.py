@@ -14,8 +14,8 @@ folder_path = "".join(a+"/" for a in path_to_dm)
 print(folder_path)
 
 
-core_context = "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_context.json"
-dm_url = "https://raw.githubusercontent.com/rraks/iudx-ld/master/" + folder_path + dm_name + "#/properties/"
+core_context = "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_context.json"
+dm_url = "https://raw.githubusercontent.com/iudx/iudx-ld/master/" + folder_path + dm_name + "#/properties/"
 
 dm = {}
 with open(data_model, "r") as f:
@@ -44,25 +44,25 @@ def makeOneOf(prop):
     return tmpl
 
 def mkTimeProp(prop):
-    return {"allOf": [{ "$ref":  "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/TimeProperty"}]}
+    return {"allOf": [{ "$ref":  "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/TimeProperty"}]}
 
 
 
 
 if "locationCoverage" in props.keys():
     props.pop("locationCoverage")
-    props["locationCoverage"] = {"allOf": [{ "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/GeoProperty" }]}
+    props["locationCoverage"] = {"allOf": [{ "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/GeoProperty" }]}
     context["locationCoverage"] = {"@id":dm_url + "location", "@type": "GeoProperty"}
 
 if "location" in props.keys():
     props.pop("location")
-    props["location"] = {"allOf": [{ "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/GeoProperty" }]}
+    props["location"] = {"allOf": [{ "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/GeoProperty" }]}
     context["location"] = {"@id":dm_url + "location", "@type": "GeoProperty"}
 
 
 
 if("deviceModelInfo" in props.keys()):
-    props["deviceModelInfo"] = {"allOf": [{ "$ref":  "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json#/definitions/product"}]}
+    props["deviceModelInfo"] = {"allOf": [{ "$ref":  "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json#/definitions/product"}]}
 
 for prop in props:
     if(re.search('time', prop, re.IGNORECASE)):
@@ -84,7 +84,7 @@ for prop in props:
         props[prop]["valueSchema"] = valueSchema
         oneOf = makeOneOf(prop)
         props[prop]["allOf"] = []
-        props[prop]["allOf"].append({"$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"})
+        props[prop]["allOf"].append({"$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"})
         props[prop].pop("type")
         props[prop].update(oneOf)
 

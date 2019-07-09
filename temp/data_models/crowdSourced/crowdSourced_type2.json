@@ -1,74 +1,74 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "@context": [
-        "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_context.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_context.json",
         {
             "Audit_Date": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/crowdSourced/crowdSourced_type2.json#/properties/Audit_Date",
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/crowdSourced/crowdSourced_type2.json#/properties/Audit_Date",
                 "@type": "Property"
             },
             "Audit_Time": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/crowdSourced/crowdSourced_type2.json#/properties/Audit_Time",
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/crowdSourced/crowdSourced_type2.json#/properties/Audit_Time",
                 "@type": "TimeProperty"
             },
             "Feeling": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/crowdSourced/crowdSourced_type2.json#/properties/Feeling",
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/crowdSourced/crowdSourced_type2.json#/properties/Feeling",
                 "@type": "Property"
             },
             "Gender_Usage": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/crowdSourced/crowdSourced_type2.json#/properties/Gender_Usage",
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/crowdSourced/crowdSourced_type2.json#/properties/Gender_Usage",
                 "@type": "Property"
             },
             "Images": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/crowdSourced/crowdSourced_type2.json#/properties/Images",
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/crowdSourced/crowdSourced_type2.json#/properties/Images",
                 "@type": "Property"
             },
             "Latitude": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/crowdSourced/crowdSourced_type2.json#/properties/Latitude",
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/crowdSourced/crowdSourced_type2.json#/properties/Latitude",
                 "@type": "Property"
             },
             "Lighting": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/crowdSourced/crowdSourced_type2.json#/properties/Lighting",
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/crowdSourced/crowdSourced_type2.json#/properties/Lighting",
                 "@type": "Property"
             },
             "Longitude": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/crowdSourced/crowdSourced_type2.json#/properties/Longitude",
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/crowdSourced/crowdSourced_type2.json#/properties/Longitude",
                 "@type": "Property"
             },
             "Openness": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/crowdSourced/crowdSourced_type2.json#/properties/Openness",
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/crowdSourced/crowdSourced_type2.json#/properties/Openness",
                 "@type": "Property"
             },
             "People": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/crowdSourced/crowdSourced_type2.json#/properties/People",
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/crowdSourced/crowdSourced_type2.json#/properties/People",
                 "@type": "Property"
             },
             "Public_Transport": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/crowdSourced/crowdSourced_type2.json#/properties/Public_Transport",
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/crowdSourced/crowdSourced_type2.json#/properties/Public_Transport",
                 "@type": "Property"
             },
             "Safety_Score": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/crowdSourced/crowdSourced_type2.json#/properties/Safety_Score",
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/crowdSourced/crowdSourced_type2.json#/properties/Safety_Score",
                 "@type": "Property"
             },
             "Security": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/crowdSourced/crowdSourced_type2.json#/properties/Security",
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/crowdSourced/crowdSourced_type2.json#/properties/Security",
                 "@type": "Property"
             },
             "Visibility": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/crowdSourced/crowdSourced_type2.json#/properties/Visibility",
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/crowdSourced/crowdSourced_type2.json#/properties/Visibility",
                 "@type": "Property"
             },
             "Walkpath": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/crowdSourced/crowdSourced_type2.json#/properties/Walkpath",
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/crowdSourced/crowdSourced_type2.json#/properties/Walkpath",
                 "@type": "Property"
             },
             "id": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/crowdSourced/crowdSourced_type2.json#/properties/id",
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/crowdSourced/crowdSourced_type2.json#/properties/id",
                 "@type": "Property"
             },
             "locationCoverage": {
-                "@id": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/crowdSourced/crowdSourced_type2.json#/properties/location",
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/crowdSourced/crowdSourced_type2.json#/properties/location",
                 "@type": "GeoProperty"
             },
             "uo": "http://units.open.org/",
@@ -80,7 +80,7 @@
         "Audit_Date": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
             "describes": "Date on which the image was cpatured",
@@ -105,14 +105,14 @@
         "Audit_Time": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/TimeProperty"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/TimeProperty"
                 }
             ]
         },
         "Feeling": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
             "describes": "Feel of safety in the locality, rated over a score of 0-3.",
@@ -139,7 +139,7 @@
         "Gender_Usage": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
             "describes": "Gender friendly atmosphere of the locality, rated over a score of 0-3.",
@@ -166,7 +166,7 @@
         "Images": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
             "describes": "Link of the image",
@@ -195,7 +195,7 @@
         "Latitude": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
             "describes": "Latitude of the geo-tagged image",
@@ -220,7 +220,7 @@
         "Lighting": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
             "describes": "Indicates if the place is well-lighted, rated over a score of 0-3.",
@@ -247,7 +247,7 @@
         "Longitude": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
             "describes": "Longitude of the geo-tagged image",
@@ -272,7 +272,7 @@
         "Openness": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
             "describes": "Gives a measure of the free area, rated over a score of 0-3.",
@@ -299,7 +299,7 @@
         "People": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
             "describes": "Number of people in the image, rated over a score of 0-3.",
@@ -326,7 +326,7 @@
         "Public_Transport": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
             "describes": "Availabity of public transport, rated over a score of 0-3.",
@@ -353,7 +353,7 @@
         "Safety_Score": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
             "describes": "Safetipin computed safety score for the locality",
@@ -378,7 +378,7 @@
         "Security": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
             "describes": "Security in the place depending on the surroundings, rated over a score of 0-3.",
@@ -405,7 +405,7 @@
         "Visibility": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
             "describes": "Clear visibilty of the things in the image, rated over a score of 0-3.",
@@ -432,7 +432,7 @@
         "Walkpath": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
             "describes": "Presence and usability of a walkway, rated over a score of 0-3.",
@@ -459,7 +459,7 @@
         "id": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
             "describes": "id of the geo-tagged image",
@@ -484,7 +484,7 @@
         "locationCoverage": {
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/GeoProperty"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/GeoProperty"
                 }
             ]
         }

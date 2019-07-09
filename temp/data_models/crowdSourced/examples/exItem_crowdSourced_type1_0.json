@@ -1,10 +1,10 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/crowdSourced/crowdSourced_type1.json"
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/crowdSourced/crowdSourced_type1.json"
     ],
     "@id": "akdfi74938nid8kjfvko4",
     "accessObjectURL": {
-        "object": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/crowdSourced/examples/exApiObject_crowdSourced_type1.json",
+        "object": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/crowdSourced/examples/exApiObject_crowdSourced_type1.json",
         "type": "Relationship"
     },
     "accessObjectVariables": {
@@ -71,11 +71,11 @@
         "type": "Relationship"
     },
     "refBaseSchema": {
-        "object": "https://raw.githubusercontent.com/rraks/iudx-ld/master/base_schemas/v0.0.0/resourceItem_schema.json",
+        "object": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/resourceItem_schema.json",
         "type": "Relationship"
     },
     "refDataModel": {
-        "object": "https://raw.githubusercontent.com/rraks/iudx-ld/master/data_models/crowdSourced/crowdSourced_type1.json",
+        "object": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/crowdSourced/crowdSourced_type1.json",
         "type": "Relationship"
     },
     "resourceId": {
