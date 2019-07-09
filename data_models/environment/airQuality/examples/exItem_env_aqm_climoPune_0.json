@@ -39,10 +39,7 @@
             }
         }
     },
-    "itemDescription": {
-        "type": "Property",
-        "value": "Description for Bosch-Climo AQM resource"
-    },
+    "itemDescription": "Description for Bosch-Climo AQM resource",
     "itemStatus": {
         "type": "Property",
         "value": "active"
