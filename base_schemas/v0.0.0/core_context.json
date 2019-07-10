@@ -3,6 +3,7 @@
         "iudx": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/",
         "iudx_iri": "https://iri.iudx.org/",
         "core": "iudx:core_defs.json#/definitions/",
+        "schemaorg": "https://schema.org/",
         "id": "@id",
         "type": "@type",
         "value": "core:hasValue",
@@ -17,6 +18,29 @@
         "Relationship": {
             "@id":"core:Relationship",
             "@type": "core:Relationship"
+        },
+        "unitCode":{
+            "@id":"core:unitCode",
+            "@type": "http://purl.org/goodrelations/v1#hasUnitOfMeasurement",
+            "@type": "schemaorg:unitCode",
+            "@type": "core:Property"
+        },
+        "unitText":{
+            "@id": "core:unitText",
+            "@type":"schemaorg:unitText",
+            "@type": "core:Property"
+        },
+        "minValue":{
+            "@id":"core:minValue",
+            "@type":"schemaorg:minValue",
+            "@type": "http://purl.org/goodrelations/v1#hasMinValue",
+            "@type": "core:Property"
+        },
+        "maxValue":{
+            "@id":"core:maxValue",
+            "@type":"schemaorg:maxValue",
+            "@type": "http://purl.org/goodrelations/v1#hasMaxValue",
+            "@type": "core:Property"
         },
         "GeoProperty": {
             "@id":"core:GeoProperty",
