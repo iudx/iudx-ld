@@ -20,26 +20,27 @@
             "@type": "core:Relationship"
         },
         "unitCode":{
-            "@id":"core:unitCode",
+            "@id":"schemaorg:unitCode",
             "@type": "http://purl.org/goodrelations/v1#hasUnitOfMeasurement",
-            "@type": "schemaorg:unitCode",
+            "@type": "core:unitCode",
             "@type": "core:Property"
         },
         "unitText":{
-            "@id": "core:unitText",
+            "@id":"schemaorg:unitText",
             "@type":"schemaorg:unitText",
+            "@type": "core:unitText",
             "@type": "core:Property"
         },
         "minValue":{
-            "@id":"core:minValue",
-            "@type":"schemaorg:minValue",
+            "@id":"schemaorg:minValue",
             "@type": "http://purl.org/goodrelations/v1#hasMinValue",
+            "@type": "core:minValue",
             "@type": "core:Property"
         },
         "maxValue":{
-            "@id":"core:maxValue",
-            "@type":"schemaorg:maxValue",
+            "@id":"schemaorg:maxValue",
             "@type": "http://purl.org/goodrelations/v1#hasMaxValue",
+            "@type": "core:maxValue",
             "@type": "core:Property"
         },
         "GeoProperty": {
