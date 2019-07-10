@@ -143,26 +143,22 @@
         "unitCode": {
             "allOf": [{"$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"}],
             "type": "string",
-            "describes": "Identifier/Code for Unit of measurement as defined by the UN/CEFACT. Also used by schema.org (https://schema.org/unitCode). A detailed list of codes is provided at http://www.unece.org/fileadmin/DAM/cefact/recommendations/rec20/rec20_Rev9e_2014.xls",
-            "sameAs": ["https://schema.org/unitCode","http://purl.org/goodrelations/v1#hasUnitOfMeasurement"]
+            "describes": "Identifier/Code for Unit of measurement as defined by the UN/CEFACT. Also used by schema.org (https://schema.org/unitCode). A detailed list of codes is provided at http://www.unece.org/fileadmin/DAM/cefact/recommendations/rec20/rec20_Rev9e_2014.xls"
         },
         "unitText": {
             "allOf": [{"$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"}],
             "type": "string",
-            "describes": "A string to describe a unit of measurement. May be useful when a unit code for a unit is not available. Can also be used to describe the unit Code textually.",
-            "sameAs": ["https://schema.org/unitText"]
+            "describes": "A string to describe a unit of measurement. May be useful when a unit code for a unit is not available. Can also be used to describe the unit Code textually."
         },
         "minValue": {
             "allOf": [{"$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"}],
             "type": "number",
-            "describes": "The lower numeric limit of the described quantitative property.",
-            "sameAs": ["https://schema.org/minValue","http://purl.org/goodrelations/v1#hasMinValue"]
+            "describes": "The lower numeric limit of the described quantitative property."
         },
         "maxValue": {
             "allOf": [{"$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"}],
             "type": "number",
-            "describes": "The upper numeric limit of the described quantitative property.",
-            "sameAs": ["https://schema.org/maxValue","http://purl.org/goodrelations/v1#hasMaxValue"]
+            "describes": "The upper numeric limit of the described quantitative property."
         }
     }
 }
