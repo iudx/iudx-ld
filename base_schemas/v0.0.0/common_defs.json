@@ -1,6 +1,4 @@
 {
-    "@context": {
-    },
     "$schema": "http://json-schema.org/schema#",
     "id": "https://raw.githubusercontent.org/iudx/iudx-ld/base_schemas/v0.0.0/common.json",
     "title": "IUDX-LD Common Definitions",
@@ -46,22 +44,6 @@
             "type": "string",
             "enum": ["active", "deprecated"],
             "describes": "Status of an item. In production version of catalogue, for purposes of provenance, one can choose to not delete an item but set its status to 'deprecated'. All the older versions of an updated item may be persisted by setting their status as 'deprecated'. Only the current item containing latest updates should have status set to 'active'."
-        },
-        "units": {
-            "type": "string",
-            "describes": "units for the measured quantity if applicable"
-        },
-        "range": {
-            "type": "object",
-            "properties": {
-                "minimum": {
-                    "type": "number"
-                },
-                "maximum": {
-                    "type": "number"
-                }
-            },
-            "describes": "units for the measured quantity if applicable"
         },
         "LdContext": {
             "anyOf": [
