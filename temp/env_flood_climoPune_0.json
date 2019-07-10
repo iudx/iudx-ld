@@ -5,7 +5,8 @@
         {
             "ALERT": {
                 "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/floodSensor/env_flood_climoPune_0.json#/properties/ALERT",
-                "@type": "Property"
+                "@type": "Property",
+                "units": "ppm"
             },
             "CUR_LEVEL": {
                 "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/floodSensor/env_flood_climoPune_0.json#/properties/CUR_LEVEL",
