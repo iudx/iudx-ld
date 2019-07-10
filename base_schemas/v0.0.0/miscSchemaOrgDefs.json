@@ -1,35 +1,35 @@
 {
     "@context": {
         "releaseDate": {
-            "@context": "https://schema.org/releaseDate",
+            "@id": "https://schema.org/releaseDate",
             "@type": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/iudx_resourceItem_schema.json#/definitions/Property"
         },
         "url": {
-            "@context": "https://schema.org/url",
+            "@id": "https://schema.org/url",
             "@type": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/iudx_resourceItem_schema.json#/definitions/Property"
         },
         "productID": {
-            "@context": "https://schema.org/productID",
+            "@id": "https://schema.org/productID",
             "@type": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/iudx_resourceItem_schema.json#/definitions/Property"
         },
         "mpn": {
-            "@context": "https://schema.org/mpn",
+            "@id": "https://schema.org/mpn",
             "@type": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/iudx_resourceItem_schema.json#/definitions/Property"
         },
         "model": {
-            "@context": "https://schema.org/model",
+            "@id": "https://schema.org/model",
             "@type": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/iudx_resourceItem_schema.json#/definitions/Property"
         },
         "product": {
-            "@context":  "https://schema.org/Product",
+            "@id":  "https://schema.org/Product",
             "@type": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/iudx_resourceItem_schema.json#/definitions/Property"
         },
         "alternateName": {
-            "@context":  "https://schema.org/alternateName",
+            "@id":  "https://schema.org/alternateName",
             "@type": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
         },
         "name": {
-            "@context":  "https://schema.org/name",
+            "@id":  "https://schema.org/name",
             "@type": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
         }
     },
