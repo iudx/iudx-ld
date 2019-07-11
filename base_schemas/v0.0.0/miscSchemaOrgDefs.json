@@ -1,86 +1,111 @@
 {
     "@context": {
+        "iudx": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/",
+        "core": "iudx:core_defs.json#/definitions/",
+        "schemaorg": "schemaorg:",
         "releaseDate": {
-            "@id": "https://schema.org/releaseDate",
-            "@type": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/iudx_resourceItem_schema.json#/definitions/Property"
+            "@id": "schemaorg:releaseDate",
+            "@type": "core:Property"
         },
         "url": {
-            "@id": "https://schema.org/url",
-            "@type": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/iudx_resourceItem_schema.json#/definitions/Property"
+            "@id": "schemaorg:url",
+            "@type": "core:Property"
         },
         "productID": {
-            "@id": "https://schema.org/productID",
-            "@type": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/iudx_resourceItem_schema.json#/definitions/Property"
+            "@id": "schemaorg:productID",
+            "@type": "core:Property"
         },
         "mpn": {
-            "@id": "https://schema.org/mpn",
-            "@type": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/iudx_resourceItem_schema.json#/definitions/Property"
+            "@id": "schemaorg:mpn",
+            "@type": "core:Property"
+        },
+        "brand": {
+            "@id": "schemaorg:brand",
+            "@type": "core:Property"
         },
         "model": {
-            "@id": "https://schema.org/model",
-            "@type": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/iudx_resourceItem_schema.json#/definitions/Property"
+            "@id": "schemaorg:model",
+            "@type": "core:Property"
         },
         "product": {
-            "@id":  "https://schema.org/Product",
-            "@type": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/iudx_resourceItem_schema.json#/definitions/Property"
+            "@id":  "schemaorg:Product",
+            "@type": "core:Property"
         },
         "alternateName": {
-            "@id":  "https://schema.org/alternateName",
-            "@type": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+            "@id":  "schemaorg:alternateName",
+            "@type": "core:Property"
         },
         "name": {
-            "@id":  "https://schema.org/name",
-            "@type": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+            "@id":  "schemaorg:name",
+            "@type": "core:Property"
         }
     },
     "$schema": "http://json-schema.org/draft-07/schema#",
     "describes": "Base schema of catalog entries",
     "definitions": {
         "name": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "allOf": [{"$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"}],
             "type": "string",
             "describes": "Name of the thing"
         },
         "url": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
-            "value": {
-                "type": "string",
-                "format": "uri"
-            },
+            "allOf": [{"$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"}],
+            "type": "string",
+            "format": "uri",
             "describes": "URL of the thing"
         },
         "alternateName": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "allOf": [{"$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"}],
             "value": {
                 "type": "string"
             },
             "describes": "Alternate name for the thing"
         },
-        "product": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+        "unitCode": {
+            "allOf": [{"$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"}],
+            "type": "string",
+            "describes": "Identifier/Code for Unit of measurement as defined by the UN/CEFACT. A detailed list of codes is provided at http://www.unece.org/fileadmin/DAM/cefact/recommendations/rec20/rec20_Rev9e_2014.xls"
+        },
+        "unitText": {
+            "allOf": [{"$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"}],
+            "type": "string",
+            "describes": "A string to describe a unit of measurement. May be useful when a unit code for a unit is not available. Can also be used to describe the unit Code textually."
+        },
+        "minValue": {
+            "allOf": [{"$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"}],
+            "type": "number",
+            "describes": "The lower numeric limit of the described quantitative property."
+        },
+        "maxValue": {
+            "allOf": [{"$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"}],
+            "type": "number",
+            "describes": "The upper numeric limit of the described quantitative property."
+        },
+        "model":{
+            "allOf": [{"$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"}],
+            "type": "string",
+            "describes": "Textual representation of the model of the product."
+        },
+        "brand":{
+            "allOf": [{"$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"}],
+            "type": "string",
+            "describes": "Brand name/organisation"
+        },
+        "deviceModelInfoSchema": {
             "type": "object",
             "properties": {
-                "type": {
-                    "type": "string",
-                    "const": "Property"
-                },
-                "value": {
-                    "type": "object",
-                    "properties": {
-                        "brand": {
-                            "type": "string",
-                            "describes": "Brand name/Organisation"
-                        },
-                        "model": {
-                            "type": "string",
-                            "describes": "Textual representation of the model of the product."
-                        },
-                        "url": {
-                            "$ref": "#/definitions/name",
-                            "describes": "Product home page."
-                        }
-                    }
-                }
+               "brand": {
+                   "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json#/definitions/brand",
+                   "describes": "Brand name/Organisation"
+               },
+               "model": {
+                   "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json#/definitions/model",
+                   "describes": "Textual representation of the model of the product."
+               },
+               "url": {
+                   "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json#/definitions/url",
+                   "describes": "Product home page."
+               }
             }
         }
     }
