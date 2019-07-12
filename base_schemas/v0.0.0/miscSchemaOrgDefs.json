@@ -2,7 +2,7 @@
     "@context": {
         "iudx": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/",
         "core": "iudx:core_defs.json#/definitions/",
-        "schemaorg": "schemaorg:",
+        "schemaorg": "https://schema.org/",
         "releaseDate": {
             "@id": "schemaorg:releaseDate",
             "@type": "core:Property"
