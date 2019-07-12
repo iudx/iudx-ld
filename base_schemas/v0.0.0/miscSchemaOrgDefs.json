@@ -135,19 +135,7 @@
                     "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/GeoProperty"
                 }
             ],
-            "oneOf": [
-                {
-                    "type": "object",
-                    "properties": {
-                        "value": {
-                            "type": ["string", "number"]
-                        }
-                    }
-                },
-                {
-                    "type": ["string", "number"]
-                }
-            ]
+            "type": ["string", "number"]
         },
         "longitude":{
             "describes": "Longitude of a location in WGS84 coordinate system",
@@ -156,19 +144,7 @@
                     "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/GeoProperty"
                 }
             ],
-            "oneOf": [
-                {
-                    "type": "object",
-                    "properties": {
-                        "value": {
-                            "type": ["string", "number"]
-                        }
-                    }
-                },
-                {
-                    "type": ["string", "number"]
-                }
-            ]
+            "type": ["string", "number"]
         },
         "deviceModelInfoSchema": {
             "type": "object",
