@@ -12,7 +12,7 @@
             "@type": "core:GeoProperty"
         },
         "deviceModelInfo":{
-            "@id": "iudx_common:deviceModelInfoSchema",
+            "@id": "iudx_common:deviceModelInfo",
             "@type": "core:Property"
         }
     }
