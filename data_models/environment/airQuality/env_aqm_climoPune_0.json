@@ -1,6 +1,7 @@
 {
     "@context": [
         "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_context.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_context.json",
         "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/env_aqm_context_0.json",
         "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json"
     ],
@@ -816,11 +817,7 @@
             ]
         },
         "location": {
-            "allOf": [
-                {
-                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/GeoProperty"
-                }
-            ]
+           "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/location"
         }
     },
     "type": "object"
