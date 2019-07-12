@@ -10,6 +10,10 @@
         "location": {
             "@id": "iudx_common:location",
             "@type": "core:GeoProperty"
+        },
+        "deviceModelInfoSchema":{
+            "@id": "iudx_common:deviceModelInfoSchema",
+            "@type": "core:Property"
         }
     }
 }

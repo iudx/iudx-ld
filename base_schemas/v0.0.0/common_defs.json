@@ -63,6 +63,32 @@
               }
            }
         },
+        "deviceModelInfo": {
+          "allOf": [
+           {
+              "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/GeoProperty"
+           }],
+           "type": "object",
+           "properties": {
+              "value": {
+                 "type": "object",
+                 "properties": {
+                     "brand": {
+                        "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json#/definitions/brand",
+                        "describes": "Brand name/Organisation"
+                    },
+                    "model": {
+                        "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json#/definitions/model",
+                        "describes": "Textual representation of the model of the product."
+                    },
+                    "url": {
+                        "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json#/definitions/url",
+                        "describes": "Product home page."
+                    }
+                 }
+              }
+           }
+        },
         "LdContext": {
             "anyOf": [
                 {
