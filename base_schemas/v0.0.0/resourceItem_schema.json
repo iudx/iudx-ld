@@ -12,12 +12,14 @@
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/id"
         },
         "tags": {
-            "describes": "Array of keywords describing this item",
+            "describes": "Array of keywords describing this item. It intends to provide discovery hints for this resource item.",
             "allOf": [{"$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"}],
             "type": "object",
             "properties": {
                 "value": {
                     "type": "array",
+                    "minItems": 0,
+                    "uniqueItems":true,
                     "items": {
                         "type": "string"
                     }
@@ -47,11 +49,11 @@
         },
         "resourceGroup": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
-            "describes": "iri to group node"
+            "describes": "Identifier for the resource group this resource item belongs to on the resource-server."
         },
         "resourceId": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
-            "describes": "id of this resource on the resource server"
+            "describes": "id of this resource on the resource-server."
         },
         "resourceType": {
             "allOf": [{"$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"}],
@@ -92,7 +94,7 @@
         },
         "accessObjectVariables": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
-            "describes": "item specific API variables"
+            "describes": "Item specific API object variables. The variables and their corresponding value for this resource item are listed as a key-value pairs in 'value' field of this property. The json-object in the 'value' should be treated as a simple json object and not a json-ld object."
         },
         "itemType": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
@@ -109,6 +111,8 @@
                     "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Relationship"
                 }
             ]
-        }
+        },
+        "required": ["id", "tags", "refBaseSchema", "resourceServer", "itemDescription", "refDataModel", "provider", "resourceGroup", "resourceId", "itemType"]
+        ]
     }
 }

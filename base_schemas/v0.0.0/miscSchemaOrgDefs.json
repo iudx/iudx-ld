@@ -35,6 +35,30 @@
             "@id":  "schemaorg:alternateName",
             "@type": "core:Property"
         },
+        "unitCode":{
+            "@id":"schemaorg:unitCode",
+            "@type": "http://purl.org/goodrelations/v1#hasUnitOfMeasurement",
+            "@type": "core:unitCode",
+            "@type": "core:Property"
+        },
+        "unitText":{
+            "@id":"schemaorg:unitText",
+            "@type":"schemaorg:unitText",
+            "@type": "core:unitText",
+            "@type": "core:Property"
+        },
+        "minValue":{
+            "@id":"schemaorg:minValue",
+            "@type": "http://purl.org/goodrelations/v1#hasMinValue",
+            "@type": "core:minValue",
+            "@type": "core:Property"
+        },
+        "maxValue":{
+            "@id":"schemaorg:maxValue",
+            "@type": "http://purl.org/goodrelations/v1#hasMaxValue",
+            "@type": "core:maxValue",
+            "@type": "core:Property"
+        },
         "name": {
             "@id":  "schemaorg:name",
             "@type": "core:Property"
