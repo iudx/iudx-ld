@@ -163,7 +163,7 @@
             ]
         },
         "loc": {
-           "allOf": [{"#/definitions/GeoProperty"}],
+           "allOf": [{"$ref": "#/definitions/GeoProperty"}],
            "type": "object",
            "properties": {
               "value": {
