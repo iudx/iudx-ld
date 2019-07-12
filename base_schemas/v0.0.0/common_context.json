@@ -11,7 +11,7 @@
             "@id": "iudx_common:location",
             "@type": "core:GeoProperty"
         },
-        "deviceModelInfoSchema":{
+        "deviceModelInfo":{
             "@id": "iudx_common:deviceModelInfoSchema",
             "@type": "core:Property"
         }
