@@ -1,7 +1,7 @@
 {
-    "@context": {
-        "iudx": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/",
-        "core": "iudx:core_defs.json#/definitions/",
+    "@context": [
+       "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_context.json",
+       {
         "schemaorg": "https://schema.org/",
         "releaseDate": {
             "@id": "schemaorg:releaseDate",
@@ -63,7 +63,8 @@
             "@id":  "schemaorg:name",
             "@type": "core:Property"
         }
-    },
+     }
+    ],
     "$schema": "http://json-schema.org/draft-07/schema#",
     "describes": "Base schema of catalog entries",
     "definitions": {

@@ -3,7 +3,6 @@
         "iudx": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/",
         "iudx_iri": "https://iri.iudx.org/",
         "core": "iudx:core_defs.json#/definitions/",
-        "schemaorg": "https://schema.org/",
         "id": "@id",
         "type": "@type",
         "value": "core:hasValue",
