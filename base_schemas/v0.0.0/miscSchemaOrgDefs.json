@@ -36,6 +36,18 @@
             "@id":  "schemaorg:alternateName",
             "@type": "core:Property"
         },
+        "latitude":{
+            "@id":"schemaorg:latitude",
+            "@type": "iudx:miscSchemaOrgDefs.json#/definitions/latitude",
+            "@type": "https://www.w3.org/2003/01/geo/wgs84_pos#lat",
+            "@type": "core:GeoProperty"
+        },
+        "longitude":{
+            "@id":"schemaorg:longitude",
+            "@type": "iudx:miscSchemaOrgDefs.json#/definitions/longitude",
+            "@type": "https://www.w3.org/2003/01/geo/wgs84_pos#long",
+            "@type": "core:GeoProperty"
+        },
         "unitCode":{
             "@id":"schemaorg:unitCode",
             "@type": "http://purl.org/goodrelations/v1#hasUnitOfMeasurement",
@@ -115,6 +127,48 @@
             "allOf": [{"$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"}],
             "type": "string",
             "describes": "Brand name/organisation"
+        },
+        "latitude":{
+            "describes": "Latitude of a location in WGS84 coordinate system",
+            "allOf": [
+                {
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/GeoProperty"
+                }
+            ],
+            "oneOf": [
+                {
+                    "type": "object",
+                    "properties": {
+                        "value": {
+                            "type": ["string", "number"]
+                        }
+                    }
+                },
+                {
+                    "type": ["string", "number"]
+                }
+            ]
+        },
+        "longitude":{
+            "describes": "Longitude of a location in WGS84 coordinate system",
+            "allOf": [
+                {
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/GeoProperty"
+                }
+            ],
+            "oneOf": [
+                {
+                    "type": "object",
+                    "properties": {
+                        "value": {
+                            "type": ["string", "number"]
+                        }
+                    }
+                },
+                {
+                    "type": ["string", "number"]
+                }
+            ]
         },
         "deviceModelInfoSchema": {
             "type": "object",
