@@ -161,6 +161,21 @@
                     "type": ["string","number"]
                 }
             ]
+        },
+        "loc": {
+           "allOf": [{"#/definitions/GeoProperty"}],
+           "type": "object",
+           "properties": {
+              "value": {
+                  "type": "object",
+                  "properties": {
+                      "type": {
+                         "type": "string",
+                         "enum": ["Point"]
+                      }
+                  }
+              }
+           }
         }
     }
 }
