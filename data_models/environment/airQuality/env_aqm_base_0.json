@@ -139,10 +139,25 @@
     "name": "env_aqm_climoPune_0",
     "properties": {
         "AIR_PRESSURE": {
-            "unitCode": "ATM",
-            "unitText": "standard atmosphere",
-             
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/env_aqm_base_0.json#/properties/AIR_PRESSURE"
+            "allOf": [
+                {
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                }
+            ],
+            "describes": "Measured Air pressure",
+            "oneOf": [
+                {
+                    "properties": {
+                        "value": {
+                            "type": "string"
+                        }
+                    },
+                    "type": "object"
+                },
+                {
+                    "type": "string"
+                }
+            ]
         },
         "AQI": {
             "allOf": [
@@ -165,7 +180,6 @@
                     "type": "number"
                 }
             ],
-            "units": "dimensionless",
             "valueSchema": {
                 "type": "number"
             }
@@ -258,7 +272,6 @@
                     "type": "number"
                 }
             ],
-            "units": "ppm",
             "valueSchema": {
                 "type": "number"
             }
@@ -284,7 +297,6 @@
                     "type": "number"
                 }
             ],
-            "units": "ppm",
             "valueSchema": {
                 "type": "number"
             }
@@ -310,7 +322,6 @@
                     "type": "number"
                 }
             ],
-            "units": "ppm",
             "valueSchema": {
                 "type": "number"
             }
@@ -336,7 +347,6 @@
                     "type": "number"
                 }
             ],
-            "units": "ppm",
             "valueSchema": {
                 "type": "number"
             }
@@ -387,7 +397,6 @@
                     "type": "number"
                 }
             ],
-            "units": "percentage",
             "valueSchema": {
                 "type": "number"
             }
@@ -420,7 +429,6 @@
                     "type": "number"
                 }
             ],
-            "units": "lux",
             "valueSchema": {
                 "type": "number"
             }
@@ -471,7 +479,6 @@
                     "type": "number"
                 }
             ],
-            "units": "ppb",
             "valueSchema": {
                 "type": "number"
             }
@@ -497,7 +504,6 @@
                     "type": "number"
                 }
             ],
-            "units": "ppb",
             "valueSchema": {
                 "type": "number"
             }
@@ -523,7 +529,6 @@
                     "type": "number"
                 }
             ],
-            "units": "ppb",
             "valueSchema": {
                 "type": "number"
             }
@@ -549,7 +554,6 @@
                     "type": "number"
                 }
             ],
-            "units": "ppb",
             "valueSchema": {
                 "type": "number"
             }
@@ -575,7 +579,6 @@
                     "type": "number"
                 }
             ],
-            "units": "ppb",
             "valueSchema": {
                 "type": "number"
             }
@@ -601,7 +604,6 @@
                     "type": "number"
                 }
             ],
-            "units": "ppb",
             "valueSchema": {
                 "type": "number"
             }
@@ -627,7 +629,6 @@
                     "type": "number"
                 }
             ],
-            "units": "ug/m3",
             "valueSchema": {
                 "type": "number"
             }
@@ -653,7 +654,6 @@
                     "type": "number"
                 }
             ],
-            "units": "ug/m3",
             "valueSchema": {
                 "type": "number"
             }
@@ -679,7 +679,6 @@
                     "type": "number"
                 }
             ],
-            "units": "ug/m3",
             "valueSchema": {
                 "type": "number"
             }
@@ -705,7 +704,6 @@
                     "type": "number"
                 }
             ],
-            "units": "ug/m3",
             "valueSchema": {
                 "type": "number"
             }
@@ -731,7 +729,6 @@
                     "type": "number"
                 }
             ],
-            "units": "ppb",
             "valueSchema": {
                 "type": "number"
             }
@@ -757,7 +754,6 @@
                     "type": "number"
                 }
             ],
-            "units": "ppb",
             "valueSchema": {
                 "type": "number"
             }
@@ -783,7 +779,6 @@
                     "type": "number"
                 }
             ],
-            "units": "dB",
             "valueSchema": {
                 "type": "number"
             }
@@ -838,7 +833,6 @@
                     "type": "number"
                 }
             ],
-            "units": "degreeCelsius",
             "valueSchema": {
                 "type": "number"
             }
@@ -864,7 +858,6 @@
                     "type": "number"
                 }
             ],
-            "units": "degreeCelsius",
             "valueSchema": {
                 "type": "number"
             }
@@ -890,7 +883,6 @@
                     "type": "number"
                 }
             ],
-            "units": "UVI",
             "valueSchema": {
                 "type": "number"
             }
@@ -916,7 +908,6 @@
                     "type": "number"
                 }
             ],
-            "units": "UVI",
             "valueSchema": {
                 "type": "number"
             }
