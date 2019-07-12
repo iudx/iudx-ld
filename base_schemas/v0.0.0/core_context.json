@@ -64,10 +64,6 @@
             "@id": "iudx_resourceItem:resourceGroup",
             "@type": "core:Relationship"
         },
-        "location": {
-            "@id": "iudx_resourceItem:location",
-            "@type": "core:GeoProperty"
-        },
         "itemStatus": {
             "@id": "iudx_resourceItem:itemStatus",
             "@type": "core:Property"
