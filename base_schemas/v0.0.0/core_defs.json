@@ -23,6 +23,9 @@
                                 "object"
                             ]
                         },
+                        "unitCode": {
+                           "$ref": "miscSchemaOrgDefs.json#/definitions/unitCode"
+                        },
                         "additionalProperties": {
                             "anyOf": [
                                 {
