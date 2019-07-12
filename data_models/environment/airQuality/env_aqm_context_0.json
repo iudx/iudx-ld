@@ -126,10 +126,6 @@
                 "@id": "iudx_envaqm_0:UV_MIN",
                 "@type": "Property"
             },
-            "location": {
-                "@id": "iudx_envaqm_0:location",
-                "@type": "GeoProperty"
-            },
             "xsd": "http://www.w3.org/2001/XMLSchema#",
             "properties": "@nest"
         }
