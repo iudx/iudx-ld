@@ -1,6 +1,5 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_context.json",
         {
             "AIR_PRESSURE": {
                 "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/AIR_PRESSURE",
