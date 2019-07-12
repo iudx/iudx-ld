@@ -23,8 +23,47 @@
                                 "object"
                             ]
                         },
+                        "additionalProperties": {
+                            "anyOf": [
+                                {
+                                    "$ref": "#/definitions/Relationship"
+                                },
+                                {
+                                    "$ref": "#/definitions/Property"
+                                }
+                            ]
+                        }
+                    },
+                    "required": [ "type", "value" ]
+                },
+                {
+                    "type": [ "string", "number", "boolean" ]
+                }
+            ]
+        },
+        "QuantitativeProperty": {
+            "oneOf": [
+                {
+                    "type": "object",
+                    "properties": {
+                        "type": {
+                            "type": "string",
+                            "enum": ["Property"]
+                        },
+                        "value": {
+                            "type": [ "string", "number", "boolean", "array", "object" ]
+                        },
                         "unitCode": {
                            "$ref": "miscSchemaOrgDefs.json#/definitions/unitCode"
+                        },
+                        "unitText": {
+                           "$ref": "miscSchemaOrgDefs.json#/definitions/unitText"
+                        },
+                        "minValue": {
+                           "$ref": "miscSchemaOrgDefs.json#/definitions/minValue"
+                        },
+                        "maxValue": {
+                           "$ref": "miscSchemaOrgDefs.json#/definitions/maxValue"
                         },
                         "additionalProperties": {
                             "anyOf": [
@@ -33,34 +72,14 @@
                                 },
                                 {
                                     "$ref": "#/definitions/Property"
-                                },
-                                {
-                                    "$ref": "miscSchemaOrgDefs.json#/definitions/unitCode"
-                                },
-                                {
-                                    "$ref": "miscSchemaOrgDefs.json#/definitions/unitText"
-                                },
-                                {
-                                    "$ref": "miscSchemaOrgDefs.json#/definitions/minValue"
-                                },
-                                {
-                                    "$ref": "miscSchemaOrgDefs.json#/definitions/maxValue"
                                 }
-
                             ]
                         }
                     },
-                    "required": [
-                        "type",
-                        "value"
-                    ]
+                    "required": [ "type", "value" ]
                 },
                 {
-                    "type": [
-                        "string",
-                        "number",
-                        "boolean"
-                    ]
+                    "type": [ "string", "number", "boolean" ]
                 }
             ]
         },
