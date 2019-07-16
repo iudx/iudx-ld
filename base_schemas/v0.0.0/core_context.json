@@ -92,16 +92,12 @@
             "@id": "iudx_resourceItem:accessObjectVariables",
             "@type": "core:Property"
         },
-        "serverUri": {
-            "@id": "iudx_resourceServer:serverUri",
+        "resourceServerURL": {
+            "@id": "iudx_resourceServer:resourceServerURL",
             "@type": "core:Property"
         },
-        "serverDescription": {
-            "@id": "iudx_resourceServer:serverDescription",
-            "@type": "core:Property"
-        },
-        "serverStatus": {
-            "@id": "iudx_resourceServer:serverStatus",
+        "resourceServerGroups": {
+            "@id": "iudx_resourceServer:resourceServerGroups",
             "@type": "core:Property"
         }
     }
