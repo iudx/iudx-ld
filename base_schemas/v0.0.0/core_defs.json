@@ -129,7 +129,7 @@
                 ]
             }
         },
-        "GeoProperty": {
+        "GoProperty": {
             "oneOf": [
                 {
 
