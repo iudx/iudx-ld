@@ -36,6 +36,10 @@
             "@id":  "schemaorg:alternateName",
             "@type": "core:Property"
         },
+        "address": {
+            "@id":  "schemaorg:address",
+            "@type": "core:Property"
+        },
         "latitude":{
             "@id":"schemaorg:latitude",
             "@type": "iudx:miscSchemaOrgDefs.json#/definitions/latitude",
@@ -91,18 +95,14 @@
             "format": "uri",
             "describes": "URL of the thing"
         },
-        "name": {
+        "address": {
             "allOf": [{"$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"}],
-            "value": {
-                "type": "string"
-            },
-            "describes": "Name for the thing"
+            "type": "string",
+            "describes": "Describes Physical address as a single string"
         },
         "alternateName": {
             "allOf": [{"$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"}],
-            "value": {
-                "type": "string"
-            },
+            "type": "string",
             "describes": "Alternate name for the thing"
         },
         "unitCode": {
