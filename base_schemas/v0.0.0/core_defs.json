@@ -148,7 +148,8 @@
                                 "address": {
                                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json#/definitions/address"
                                 }
-                            }
+                            },
+                            "additionalProperties": false
                         },
                         "observedAt": {
                             "$ref": "#/definitions/TimeProperty"
