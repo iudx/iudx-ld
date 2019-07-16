@@ -91,6 +91,13 @@
             "format": "uri",
             "describes": "URL of the thing"
         },
+        "name": {
+            "allOf": [{"$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"}],
+            "value": {
+                "type": "string"
+            },
+            "describes": "Name for the thing"
+        },
         "alternateName": {
             "allOf": [{"$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"}],
             "value": {

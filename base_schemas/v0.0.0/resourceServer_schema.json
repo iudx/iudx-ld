@@ -11,23 +11,41 @@
         "id": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/id"
         },
-        "serverUri": {
+        "name": {
+           "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json#/definitions/name",
+           "describes": "Name for the resource server"
+        },
+        "tags": {
+            "describes": "Array of keywords describing this resourceSever.",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/tagsSchema"
+        },
+        "resourceServerURL": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
             "format": "uri",
             "describes": "Ip address along with port"
         },
-        "serverDescription": {
+        "itemDescription": {
+            "allOf": [{"$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"}],
             "type": "string",
-            "describes": "Text description of this server."
+            "describes": "Text description of this item."
         },
-        "provider": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Relationship"
+        "resourceServerGroups":{
         },
-        "location": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/GeoProperty"
+        "itemType": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "iudx item type",
+            "type": "string",
+            "enum": ["resourceItem"]
         },
-        "serverStatus": {
-            "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/base_schemas/v0.0.0/v0.0.1/iudx_base_def.json#/definitions/statusSchema"
+        "itemStatus": {
+            "allOf": [{"$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"}],
+            "type": "object",
+            "properties": {
+                "value": {
+                    "type": "string",
+                    "enum": ["active", "deprecated"]
+                }
+            }
         },
         "createdAt" : {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/createdAt"

@@ -32,13 +32,18 @@
             "format": "date-time"
         },
         "tagsSchema": {
-            "type": "array",
-            "minItems": 0,
-            "uniqueItems":true,
-            "describes": "Any strings which annotate this resource. It intends to provide discovery hints.",
-            "items": {
-                "type": "string"
-            }
+           "allOf": [{"$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"}],
+           "type": "object",
+           "properties": {
+               "value": {
+                   "type": "array",
+                   "minItems": 0,
+                   "uniqueItems":true,
+                   "items": {
+                       "type": "string"
+                   }
+               }
+           }
         },
         "statusSchema": {
             "type": "string",
