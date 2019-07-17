@@ -1,167 +1,37 @@
 {
-    "$schema": "http://json-schema.org/draft-07/schema#",
     "@context": [
         "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_context.json",
-        {
-            "AIR_PRESSURE": {
-                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/AIR_PRESSURE",
-                "@type": "Property"
-            },
-            "AQI": {
-                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/AQI",
-                "@type": "Property"
-            },
-            "AQI_POLLUTANT": {
-                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/AQI_POLLUTANT",
-                "@type": "Property"
-            },
-            "CATEGORY": {
-                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/CATEGORY",
-                "@type": "Property"
-            },
-            "CO2_MAX": {
-                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/CO2_MAX",
-                "@type": "Property"
-            },
-            "CO2_MIN": {
-                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/CO2_MIN",
-                "@type": "Property"
-            },
-            "CO_MAX": {
-                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/CO_MAX",
-                "@type": "Property"
-            },
-            "CO_MIN": {
-                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/CO_MIN",
-                "@type": "Property"
-            },
-            "DEVICEID": {
-                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/DEVICEID",
-                "@type": "Property"
-            },
-            "HUMIDITY": {
-                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/HUMIDITY",
-                "@type": "Property"
-            },
-            "LASTUPDATEDATETIME": {
-                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/LASTUPDATEDATETIME",
-                "@type": "TimeProperty"
-            },
-            "LIGHT": {
-                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/LIGHT",
-                "@type": "Property"
-            },
-            "NAME": {
-                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/NAME",
-                "@type": "Property"
-            },
-            "NO2_MAX": {
-                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/NO2_MAX",
-                "@type": "Property"
-            },
-            "NO2_MIN": {
-                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/NO2_MIN",
-                "@type": "Property"
-            },
-            "NO_MAX": {
-                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/NO_MAX",
-                "@type": "Property"
-            },
-            "NO_MIN": {
-                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/NO_MIN",
-                "@type": "Property"
-            },
-            "OZONE_MAX": {
-                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/OZONE_MAX",
-                "@type": "Property"
-            },
-            "OZONE_MIN": {
-                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/OZONE_MIN",
-                "@type": "Property"
-            },
-            "PM10_MAX": {
-                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/PM10_MAX",
-                "@type": "Property"
-            },
-            "PM10_MIN": {
-                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/PM10_MIN",
-                "@type": "Property"
-            },
-            "PM2_MAX": {
-                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/PM2_MAX",
-                "@type": "Property"
-            },
-            "PM2_MIN": {
-                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/PM2_MIN",
-                "@type": "Property"
-            },
-            "SO2_MAX": {
-                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/SO2_MAX",
-                "@type": "Property"
-            },
-            "SO2_MIN": {
-                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/SO2_MIN",
-                "@type": "Property"
-            },
-            "SOUND": {
-                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/SOUND",
-                "@type": "Property"
-            },
-            "STATUS": {
-                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/STATUS",
-                "@type": "Property"
-            },
-            "TEMPRATURE_MAX": {
-                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/TEMPRATURE_MAX",
-                "@type": "Property"
-            },
-            "TEMPRATURE_MIN": {
-                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/TEMPRATURE_MIN",
-                "@type": "Property"
-            },
-            "UV_MAX": {
-                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/UV_MAX",
-                "@type": "Property"
-            },
-            "UV_MIN": {
-                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/UV_MIN",
-                "@type": "Property"
-            },
-            "location": {
-                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json#/properties/location",
-                "@type": "GeoProperty"
-            },
-            "uo": "http://units.open.org/",
-            "xsd": "http://www.w3.org/2001/XMLSchema#"
-        }
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_context.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/env_aqm_context_0.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/geometry-schema.json"
     ],
-    "describes": "Air Quality Base dataModel for AQM sensors deployed in Pune City.",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "describes": "Air Quality dataModel for AQM sensors deployed in Pune City.",
+    "name": "env_aqm_climoPune_0",
     "properties": {
         "AIR_PRESSURE": {
+            "describes": "Measured Air pressure",
+            "unitCode": "ATM",
+            "unitText": "standard atmosphere",
             "allOf": [
                 {
-                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty"
                 }
             ],
-            "describes": "Measured Air pressure",
             "oneOf": [
                 {
+                    "type": "object",
                     "properties": {
                         "value": {
-                            "$ref": "#/properties/AIR_PRESSURE/valueSchema"
+                            "type": "string"
                         }
-                    },
-                    "type": "object"
+                    }
                 },
                 {
-                    "$ref": "#/properties/AIR_PRESSURE/valueSchema",
                     "type": "string"
                 }
-            ],
-            "units": "atm",
-            "valueSchema": {
-                "type": "string"
-            }
+            ]
         },
         "AQI": {
             "allOf": [
@@ -941,18 +811,12 @@
             }
         },
         "deviceModelInfo": {
-            "allOf": [
-                {
-                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json#/definitions/product"
-                }
-            ]
+             "describes": "Information about AQM device model.",
+             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/deviceModelInfo"
         },
         "location": {
-            "allOf": [
-                {
-                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/GeoProperty"
-                }
-            ]
+           "describes": "Describes the coordinates (in GeoJSON Point type) for the installation location of the AQM device",
+           "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/location"
         }
     },
     "type": "object"

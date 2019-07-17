@@ -1,0 +1,23 @@
+{
+    "@context": {
+        "iudx": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/",
+        "iudx_iri": "https://iri.iudx.org/",
+        "core": "iudx:core_defs.json#/definitions/",
+        "iudx_common": "iudx:common_defs.json#/definitions/",
+        "id": "@id",
+        "type": "@type",
+        "value": "core:hasValue",
+        "location": {
+            "@id": "iudx_common:location",
+            "@type": "core:GeoProperty"
+        },
+        "coverageRegion": {
+            "@id": "iudx_common:coverageRegion",
+            "@type": "core:GeoProperty"
+        },
+        "deviceModelInfo":{
+            "@id": "iudx_common:deviceModelInfo",
+            "@type": "core:Property"
+        }
+    }
+}

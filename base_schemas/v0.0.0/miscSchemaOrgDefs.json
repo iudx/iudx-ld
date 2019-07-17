@@ -1,87 +1,157 @@
 {
     "@context": {
+        "iudx": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/",
+        "iudx_iri": "https://iri.iudx.org/",
+        "core": "iudx:core_defs.json#/definitions/",
+        "schemaorg": "https://schema.org/",
         "releaseDate": {
-            "@context": "https://schema.org/releaseDate",
-            "@type": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/iudx_resourceItem_schema.json#/definitions/Property"
+            "@id": "schemaorg:releaseDate",
+            "@type": "core:Property"
         },
         "url": {
-            "@context": "https://schema.org/url",
-            "@type": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/iudx_resourceItem_schema.json#/definitions/Property"
+            "@id": "schemaorg:url",
+            "@type": "core:Property"
         },
         "productID": {
-            "@context": "https://schema.org/productID",
-            "@type": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/iudx_resourceItem_schema.json#/definitions/Property"
+            "@id": "schemaorg:productID",
+            "@type": "core:Property"
         },
         "mpn": {
-            "@context": "https://schema.org/mpn",
-            "@type": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/iudx_resourceItem_schema.json#/definitions/Property"
+            "@id": "schemaorg:mpn",
+            "@type": "core:Property"
+        },
+        "brand": {
+            "@id": "schemaorg:brand",
+            "@type": "core:Property"
         },
         "model": {
-            "@context": "https://schema.org/model",
-            "@type": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/iudx_resourceItem_schema.json#/definitions/Property"
+            "@id": "schemaorg:model",
+            "@type": "core:Property"
         },
         "product": {
-            "@context":  "https://schema.org/Product",
-            "@type": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/iudx_resourceItem_schema.json#/definitions/Property"
+            "@id":  "schemaorg:Product",
+            "@type": "core:Property"
         },
         "alternateName": {
-            "@context":  "https://schema.org/alternateName",
-            "@type": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+            "@id":  "schemaorg:alternateName",
+            "@type": "core:Property"
+        },
+        "address": {
+            "@id":  "schemaorg:address",
+            "@type": "core:Property"
+        },
+        "latitude":{
+            "@id":"schemaorg:latitude",
+            "@type": "iudx:miscSchemaOrgDefs.json#/definitions/latitude",
+            "@type": "https://www.w3.org/2003/01/geo/wgs84_pos#lat",
+            "@type": "core:GeoProperty"
+        },
+        "longitude":{
+            "@id":"schemaorg:longitude",
+            "@type": "iudx:miscSchemaOrgDefs.json#/definitions/longitude",
+            "@type": "https://www.w3.org/2003/01/geo/wgs84_pos#long",
+            "@type": "core:GeoProperty"
+        },
+        "unitCode":{
+            "@id":"schemaorg:unitCode",
+            "@type": "http://purl.org/goodrelations/v1#hasUnitOfMeasurement",
+            "@type": "core:unitCode",
+            "@type": "core:Property"
+        },
+        "unitText":{
+            "@id":"schemaorg:unitText",
+            "@type":"schemaorg:unitText",
+            "@type": "core:unitText",
+            "@type": "core:Property"
+        },
+        "minValue":{
+            "@id":"schemaorg:minValue",
+            "@type": "http://purl.org/goodrelations/v1#hasMinValue",
+            "@type": "core:minValue",
+            "@type": "core:Property"
+        },
+        "maxValue":{
+            "@id":"schemaorg:maxValue",
+            "@type": "http://purl.org/goodrelations/v1#hasMaxValue",
+            "@type": "core:maxValue",
+            "@type": "core:Property"
         },
         "name": {
-            "@context":  "https://schema.org/name",
-            "@type": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+            "@id":  "schemaorg:name",
+            "@type": "core:Property"
         }
     },
     "$schema": "http://json-schema.org/draft-07/schema#",
     "describes": "Base schema of catalog entries",
     "definitions": {
         "name": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "allOf": [{"$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"}],
             "type": "string",
             "describes": "Name of the thing"
         },
         "url": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
-            "value": {
-                "type": "string",
-                "format": "uri"
-            },
+            "allOf": [{"$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"}],
+            "type": "string",
+            "format": "uri",
             "describes": "URL of the thing"
         },
+        "address": {
+            "allOf": [{"$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"}],
+            "type": "string",
+            "describes": "Describes Physical address as a single string"
+        },
         "alternateName": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
-            "value": {
-                "type": "string"
-            },
+            "allOf": [{"$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"}],
+            "type": "string",
             "describes": "Alternate name for the thing"
         },
-        "product": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
-            "type": "object",
-            "properties": {
-                "type": {
-                    "type": "string",
-                    "const": "Property"
-                },
-                "value": {
-                    "type": "object",
-                    "properties": {
-                        "brand": {
-                            "type": "string",
-                            "describes": "Brand name/Organisation"
-                        },
-                        "model": {
-                            "type": "string",
-                            "describes": "Textual representation of the model of the product."
-                        },
-                        "url": {
-                            "$ref": "#/definitions/name",
-                            "describes": "Product home page."
-                        }
-                    }
+        "unitCode": {
+            "allOf": [{"$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"}],
+            "type": "string",
+            "describes": "Identifier/Code for Unit of measurement as defined by the UN/CEFACT. A detailed list of codes is provided at http://www.unece.org/fileadmin/DAM/cefact/recommendations/rec20/rec20_Rev9e_2014.xls"
+        },
+        "unitText": {
+            "allOf": [{"$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"}],
+            "type": "string",
+            "describes": "A string to describe a unit of measurement. May be useful when a unit code for a unit is not available. Can also be used to describe the unit Code textually."
+        },
+        "minValue": {
+            "allOf": [{"$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"}],
+            "type": "number",
+            "describes": "The lower numeric limit of the described quantitative property."
+        },
+        "maxValue": {
+            "allOf": [{"$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"}],
+            "type": "number",
+            "describes": "The upper numeric limit of the described quantitative property."
+        },
+        "model":{
+            "allOf": [{"$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"}],
+            "type": "string",
+            "describes": "Textual representation of the model of the product."
+        },
+        "brand":{
+            "allOf": [{"$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"}],
+            "type": "string",
+            "describes": "Brand name/organisation"
+        },
+        "latitude":{
+            "describes": "Latitude of a location in WGS84 coordinate system",
+            "allOf": [
+                {
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/GeoProperty"
                 }
-            }
+            ],
+            "type": ["string", "number"]
+        },
+        "longitude":{
+            "describes": "Longitude of a location in WGS84 coordinate system",
+            "allOf": [
+                {
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/GeoProperty"
+                }
+            ],
+            "type": ["string", "number"]
         }
     }
 }
