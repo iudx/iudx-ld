@@ -93,6 +93,5 @@
             ]
         },
         "required": ["id", "tags", "refBaseSchema", "resourceServer", "itemDescription", "refDataModel", "provider", "resourceGroup", "resourceId", "itemType"]
-        ]
     }
 }
