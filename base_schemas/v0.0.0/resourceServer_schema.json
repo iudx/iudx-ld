@@ -49,7 +49,16 @@
                             },
                             "tags": {
                                "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/tagsSchema"
-                            } 
+                            },
+                            "resourceServerDataAttrList":{
+                               "describes": "Subset of data model attributes that are available in the resource server data.",
+                               "type": "array",
+                               "minItems": 0,
+                               "uniqueItems":true,
+                               "items": {
+                                   "type": "string"
+                               }
+                            }
                        }
                     }
                  }
