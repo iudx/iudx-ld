@@ -3,7 +3,6 @@
         "iudx": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/",
         "iudx_iri": "https://iri.iudx.org/",
         "core": "iudx:core_defs.json#/definitions/",
-        "schemaorg": "https://schema.org/",
         "id": "@id",
         "type": "@type",
         "value": "core:hasValue",
@@ -84,26 +83,6 @@
         "deprecatedAt": {
             "@id": "iudx_resourceItem:deprecatedAt",
             "@type": "core:TimeProperty"
-        },
-        "accessInformation": {
-            "@id": "iudx_resourceItem:accessInformation",
-            "@container": "@set"
-        },
-        "accessObject": {
-            "@id": "iudx_resourceItem:accessObject",
-            "@type": "core:Relationship"
-        },
-        "accessObjectURL": {
-            "@id": ""schemaorg:url",
-            "@type": "core:Property"
-        },
-        "accessObjectVariables": {
-            "@id": "iudx_resourceItem:accessObjectVariables",
-            "@type": "core:Property"
-        },
-        "accessObjectType": {
-            "@id": "iudx_resourceItem:accessObjectType",
-            "@type": "core:Property"
         },
         "resourceServerURL": {
             "@id": "iudx_resourceServer:resourceServerURL",

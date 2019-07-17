@@ -4,6 +4,7 @@
         "iudx_iri": "https://iri.iudx.org/",
         "core": "iudx:core_defs.json#/definitions/",
         "iudx_common": "iudx:common_defs.json#/definitions/",
+        "schemaorg": "https://schema.org/",
         "id": "@id",
         "type": "@type",
         "value": "core:hasValue",
@@ -14,6 +15,26 @@
         "coverageRegion": {
             "@id": "iudx_common:coverageRegion",
             "@type": "core:GeoProperty"
+        },
+        "accessInformation": {
+            "@id": "iudx_common:accessInformation",
+            "@container": "@set"
+        },
+        "accessObject": {
+            "@id": "iudx_common:accessObject",
+            "@type": "core:Relationship"
+        },
+        "accessObjectURL": {
+            "@id": "schemaorg:url",
+            "@type": "core:Property"
+        },
+        "accessObjectVariables": {
+            "@id": "iudx_common:accessObjectVariables",
+            "@type": "core:Property"
+        },
+        "accessObjectType": {
+            "@id": "iudx_common:accessObjectType",
+            "@type": "core:Property"
         },
         "deviceModelInfo":{
             "@id": "iudx_common:deviceModelInfo",

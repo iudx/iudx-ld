@@ -73,17 +73,8 @@
         "deprecatedAt" : {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/TimeProperty"
         },
-        "accessObject": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
-            "describes": "OpenAPI 3.0 object"
-        },
-        "accessObjectURL": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Relationship",
-            "describes": "OpenAPI 3.0 object url"
-        },
-        "accessObjectVariables": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
-            "describes": "Item specific API object variables. The variables and their corresponding value for this resource item are listed as a key-value pairs in 'value' field of this property. The json-object in the 'value' should be treated as a simple json object and not a json-ld object."
+        "accessInformation": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/accessInformation"
         },
         "itemType": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
