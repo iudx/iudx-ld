@@ -163,7 +163,8 @@
                           }
                       }
                   }
-               }
+               },
+               "additionalProperties": false
            }
         },
         "LdContext": {
