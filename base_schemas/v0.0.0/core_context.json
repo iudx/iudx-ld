@@ -14,6 +14,10 @@
             "@id":"core:Property",
             "@type": "core:Property"
         },
+        "QuantitativeProperty": {
+            "@id":"core:QuantitativeProperty",
+            "@type": "core:QuantitativeProperty"
+        },
         "Relationship": {
             "@id":"core:Relationship",
             "@type": "core:Relationship"

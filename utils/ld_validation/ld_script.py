@@ -17,6 +17,7 @@ def ctxtResolver(contextInput, contextOutput):
         contextOutput.update(contextInput)
 
 
+
 def main():
     itemFile = sys.argv[1]
     with open(itemFile, "r") as f:

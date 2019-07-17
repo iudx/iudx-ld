@@ -48,7 +48,7 @@
                     "properties": {
                         "type": {
                             "type": "string",
-                            "enum": ["Property"]
+                            "enum": ["QuantitativeProperty"]
                         },
                         "value": {
                             "type": [ "string", "number", "boolean", "array", "object" ]
