@@ -3,7 +3,7 @@
         "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/services/vms/screenly.json"
     ],
     "@id": "akdfi74938nid8kjfvko4",
-    "screen_name": "rbccps_screen1",
+    "screen_name": "sirpi.co.in/screen1",
     "location": {
         "type": "GeoProperty",
         "value": {
@@ -23,7 +23,7 @@
             "user_id": "user_abc_123",
             "ip": "https://services.iudx.org.in",
             "resourceClass": "vms",
-            "screen_name": "rbccps_screen1"
+            "screen_name": "sirpi.co.in/screen1"
         }
     },
     "createdAt": {
