@@ -5,7 +5,7 @@
         "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_context.json",
         "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json",
         "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/geometry-schema.json",
-        "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/crowdSourced/crowdSourced_context.json#/"
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/crowdSourced/crowdSourced_context.json"
     ],
     "describes": "Crowd Sourced dataset provided by ChangeBhai.org. Contains geotagged images along with public issue annotations.",
     "properties": {
@@ -27,8 +27,11 @@
             "describes": "Longitude of the geo-tagged image"
         },
         "Radius": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
-            "describes": "Radius of the area for which geo-tagged images are required"
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
+            "describes": "Radius of the area for which geo-tagged images are required",
+            "symbol": "m",
+            "unitCode": "MTR",
+            "unitText": "metre"
         },
         "Severity": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
@@ -39,7 +42,7 @@
             "describes": "id of the geo-tagged image"
         },
         "locationCoverage": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/GeoProperty"
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/location"
         }
     },
     "type": "object"

@@ -1,0 +1,50 @@
+Property,unitCode,unitText,Symbol
+Radius,MTR,metre,m
+Walkpath,C62,dimensionless,
+People,C62,dimensionless,
+Lighting,C62,dimensionless,
+Public_Transport,C62,dimensionless,
+Gender_Usage,C62,dimensionless,
+Openness,C62,dimensionless,
+Security,C62,dimensionless,
+Feeling,C62,dimensionless,
+Visibility,C62,dimensionless,
+SOUND,X2N,decibel,dB
+TEMPRATURE_MIN,CEL,degree Celsius,
+TEMPRATURE_MAX,CEL,degree Celsius,
+LIGHT,LUX,lux,
+SO2_MIN,X61,part per billion (US),ppb
+SO2_MAX,X61,part per billion (US),ppb
+CO_MAX,X59,part per million,ppm
+CO_MIN,X59,part per million,ppm
+CO2_MAX,X59,part per million,ppm
+CO2_MIN,X59,part per million,ppm
+AIR_PRESSURE,ATM,standard atmosphere,
+AQI,C62,dimensionless,
+NO_MIN,X61,part per billion (US),ppb
+NO_MAX,X61,part per billion (US),ppb
+NO2_MAX,X61,part per billion (US),ppb
+NO2_MIN,X61,part per billion (US),ppb
+OZONE_MAX,X61,part per billion (US),ppb
+OZONE_MIN,X61,part per billion (US),ppb
+HUMIDITY,XP1,percent,
+PM2_MAX,XGQ,micro gram per cubic metre,ug/m3
+PM2_MIN,XGQ,micro gram per cubic metre,ug/m3
+PM10_MAX,XGQ,microgrampercubicmetre,ug/m3
+PM10_MIN,XGQ,microgrampercubicmetre,ug/m3
+UV_MAX,C62,UVI,
+UV_MIN,C62,UVI,
+B_PHASE_CURRENT,AMP,ampere,
+Y_PHASE_CURRENT,AMP,ampere,
+R_PHASE_CURRENT,AMP,ampere,
+R_PHASE_POWER,WTT,watt,W
+Y_PHASE_POWER,WTT,watt,W
+B_PHASE_POWER,WTT,watt,W
+TOTAL_LIGHTS,C62,number,
+R_PHASE_VOLTAGE,VLT,volt,V
+Y_PHASE_VOLTAGE,VLT,volt,V
+B_PHASE_VOLTAGE,VLT,volt,V
+USER_COUNT,C62,number,
+ACCESS_POINT_COUNT,C62,number,
+DOWNLOAD_RATE,C74,kilobit per second,kbps
+UPLOAD_RATE,C74,kilobit per second,kbps

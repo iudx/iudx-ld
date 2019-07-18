@@ -5,28 +5,30 @@
         "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_context.json",
         "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json",
         "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/geometry-schema.json",
-        "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/power/feeder/feeder_context.json#/"
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/power/feeder/feeder_context.json"
     ],
     "describes": "Data model for electric power feeder providing power to a group of streetlights.",
     "name": "StreetLightingSreePanel",
     "properties": {
         "B_PHASE_CURRENT": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
             "describes": "Gives B Phase Current",
-            "unitCode": "Ampere",
-            "unitText": "Ampere"
+            "unitCode": "AMP",
+            "unitText": "ampere"
         },
         "B_PHASE_POWER": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
             "describes": "Gives B Phase Power",
-            "unitCode": "Watts",
-            "unitText": "Watts"
+            "symbol": "W",
+            "unitCode": "WTT",
+            "unitText": "watt"
         },
         "B_PHASE_VOLTAGE": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
             "describes": "Gives B Phase Voltage",
-            "unitCode": "Volts",
-            "unitText": "Volts"
+            "symbol": "V",
+            "unitCode": "VLT",
+            "unitText": "volt"
         },
         "LASTUPDATEDATETIME": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/TimeProperty"
@@ -48,48 +50,54 @@
             "describes": "Name of the Panel Mounted"
         },
         "R_PHASE_CURRENT": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
             "describes": "Gives R Phase Current",
-            "unitCode": "Ampere",
-            "unitText": "Ampere"
+            "unitCode": "AMP",
+            "unitText": "ampere"
         },
         "R_PHASE_POWER": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
             "describes": "Gives R Phase Power",
-            "unitCode": "Watts",
-            "unitText": "Watts"
+            "symbol": "W",
+            "unitCode": "WTT",
+            "unitText": "watt"
         },
         "R_PHASE_VOLTAGE": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
             "describes": "Gives R Phase Voltage",
-            "unitCode": "Volts",
-            "unitText": "Volts"
+            "symbol": "V",
+            "unitCode": "VLT",
+            "unitText": "volt"
         },
         "TOTAL_LIGHTS": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
-            "describes": "Indication of the number of Lights under the given feeder"
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
+            "describes": "Indication of the number of Lights under the given feeder",
+            "unitCode": "C62",
+            "unitText": "number"
         },
         "TOTAL_LOAD": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
             "describes": "Total expected load on the feeder."
         },
         "Y_PHASE_CURRENT": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
             "describes": "Gives Y Phase Current",
-            "unitCode": "Ampere",
-            "unitText": "Ampere"
+            "unitCode": "AMP",
+            "unitText": "ampere"
         },
         "Y_PHASE_POWER": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
             "describes": "Gives Y Phase Power",
-            "unitCode": "Watts",
-            "unitText": "Watts"
+            "symbol": "W",
+            "unitCode": "WTT",
+            "unitText": "watt"
         },
         "Y_PHASE_VOLTAGE": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
             "describes": "Gives Y Phase Voltage",
-            "unitCode": "Volts",
-            "unitText": "Volts"
+            "symbol": "V",
+            "unitCode": "VLT",
+            "unitText": "volt"
         },
         "deviceModelInfo": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json#/definitions/product"

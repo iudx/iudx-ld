@@ -1,75 +1,76 @@
 {
     "@context": {
         "B_PHASE_CURRENT": {
-            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/power/feeder/feeder_context.json#/B_PHASE_CURRENT",
-            "@type": "Property"
+            "@id": "feeder_context:B_PHASE_CURRENT",
+            "@type": "QuantitativeProperty"
         },
         "B_PHASE_POWER": {
-            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/power/feeder/feeder_context.json#/B_PHASE_POWER",
-            "@type": "Property"
+            "@id": "feeder_context:B_PHASE_POWER",
+            "@type": "QuantitativeProperty"
         },
         "B_PHASE_VOLTAGE": {
-            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/power/feeder/feeder_context.json#/B_PHASE_VOLTAGE",
-            "@type": "Property"
+            "@id": "feeder_context:B_PHASE_VOLTAGE",
+            "@type": "QuantitativeProperty"
         },
         "LASTUPDATEDATETIME": {
-            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/power/feeder/feeder_context.json#/LASTUPDATEDATETIME",
+            "@id": "feeder_context:LASTUPDATEDATETIME",
             "@type": "TimeProperty"
         },
         "LIGHT_STATUS": {
-            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/power/feeder/feeder_context.json#/LIGHT_STATUS",
+            "@id": "feeder_context:LIGHT_STATUS",
             "@type": "Property"
         },
         "NAME": {
-            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/power/feeder/feeder_context.json#/NAME",
+            "@id": "feeder_context:NAME",
             "@type": "Property"
         },
         "PANEL_ID": {
-            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/power/feeder/feeder_context.json#/PANEL_ID",
+            "@id": "feeder_context:PANEL_ID",
             "@type": "Property"
         },
         "PANEL_NAME": {
-            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/power/feeder/feeder_context.json#/PANEL_NAME",
+            "@id": "feeder_context:PANEL_NAME",
             "@type": "Property"
         },
         "R_PHASE_CURRENT": {
-            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/power/feeder/feeder_context.json#/R_PHASE_CURRENT",
-            "@type": "Property"
+            "@id": "feeder_context:R_PHASE_CURRENT",
+            "@type": "QuantitativeProperty"
         },
         "R_PHASE_POWER": {
-            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/power/feeder/feeder_context.json#/R_PHASE_POWER",
-            "@type": "Property"
+            "@id": "feeder_context:R_PHASE_POWER",
+            "@type": "QuantitativeProperty"
         },
         "R_PHASE_VOLTAGE": {
-            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/power/feeder/feeder_context.json#/R_PHASE_VOLTAGE",
-            "@type": "Property"
+            "@id": "feeder_context:R_PHASE_VOLTAGE",
+            "@type": "QuantitativeProperty"
         },
         "TOTAL_LIGHTS": {
-            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/power/feeder/feeder_context.json#/TOTAL_LIGHTS",
-            "@type": "Property"
+            "@id": "feeder_context:TOTAL_LIGHTS",
+            "@type": "QuantitativeProperty"
         },
         "TOTAL_LOAD": {
-            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/power/feeder/feeder_context.json#/TOTAL_LOAD",
-            "@type": "Property"
+            "@id": "feeder_context:TOTAL_LOAD",
+            "@type": "QuantitativeProperty"
         },
         "Y_PHASE_CURRENT": {
-            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/power/feeder/feeder_context.json#/Y_PHASE_CURRENT",
-            "@type": "Property"
+            "@id": "feeder_context:Y_PHASE_CURRENT",
+            "@type": "QuantitativeProperty"
         },
         "Y_PHASE_POWER": {
-            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/power/feeder/feeder_context.json#/Y_PHASE_POWER",
-            "@type": "Property"
+            "@id": "feeder_context:Y_PHASE_POWER",
+            "@type": "QuantitativeProperty"
         },
         "Y_PHASE_VOLTAGE": {
-            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/power/feeder/feeder_context.json#/Y_PHASE_VOLTAGE",
-            "@type": "Property"
+            "@id": "feeder_context:Y_PHASE_VOLTAGE",
+            "@type": "QuantitativeProperty"
         },
         "deviceModelInfo": {
-            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/power/feeder/feeder_context.json#/deviceModelInfo",
+            "@id": "feeder_context:deviceModelInfo",
             "@type": "Property"
         },
+        "feeder_context": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/power/feeder/feeder_context.json#/",
         "location": {
-            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/power/feeder/feeder_context.json#/location",
+            "@id": "feeder_context:location",
             "@type": "GeoProperty"
         }
     },
@@ -117,5 +118,6 @@
     },
     "Y_PHASE_VOLTAGE": {
         "describes": "Gives Y Phase Voltage"
-    }
+    },
+    "properties": "@nest"
 }

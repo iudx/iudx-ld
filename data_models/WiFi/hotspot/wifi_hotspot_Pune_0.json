@@ -5,19 +5,22 @@
         "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_context.json",
         "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json",
         "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/geometry-schema.json",
-        "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/WiFi/hotspot/hotspot_context.json#/"
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/WiFi/hotspot/hotspot_context.json"
     ],
     "describes": "Data model for WiFi Hotspots installed in Pune City",
     "properties": {
         "ACCESS_POINT_COUNT": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
-            "describes": "Number of WiFi Access points associated with the hotspot. It is an integer encoded as a string."
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
+            "describes": "Number of WiFi Access points associated with the hotspot. It is an integer encoded as a string.",
+            "unitCode": "C62",
+            "unitText": "number"
         },
         "DOWNLOAD_RATE": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
             "describes": "Aggregate Download Rate for the hotspot location. It is a number encoded as a string. The units should be interpreted after convert 'string' type to 'number' type",
-            "unitCode": "kbps",
-            "unitText": "kbps"
+            "symbol": "kbps",
+            "unitCode": "C74",
+            "unitText": "kilobit per second"
         },
         "HOTSPOT_ID": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
@@ -35,14 +38,17 @@
             "describes": "Name of the device."
         },
         "UPLOAD_RATE": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
             "describes": " Aggregate upload rate for the hotspot location. It is a number encoded as a string. The units should be interpreted after convert 'string' type to 'number' type",
-            "unitCode": "kbps",
-            "unitText": "kbps"
+            "symbol": "kbps",
+            "unitCode": "C74",
+            "unitText": "kilobit per second"
         },
         "USER_COUNT": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
-            "describes": "Number of users connected to the hotspot. It is an integer encoded as a string."
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
+            "describes": "Number of users connected to the hotspot. It is an integer encoded as a string.",
+            "unitCode": "C62",
+            "unitText": "number"
         },
         "location": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/location"

@@ -1,135 +1,136 @@
 {
     "@context": {
         "AIR_PRESSURE": {
-            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/airQuality_context.json#/AIR_PRESSURE",
-            "@type": "Property"
+            "@id": "airQuality_context:AIR_PRESSURE",
+            "@type": "QuantitativeProperty"
         },
         "AQI": {
-            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/airQuality_context.json#/AQI",
-            "@type": "Property"
+            "@id": "airQuality_context:AQI",
+            "@type": "QuantitativeProperty"
         },
         "AQI_POLLUTANT": {
-            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/airQuality_context.json#/AQI_POLLUTANT",
+            "@id": "airQuality_context:AQI_POLLUTANT",
             "@type": "Property"
         },
         "CATEGORY": {
-            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/airQuality_context.json#/CATEGORY",
+            "@id": "airQuality_context:CATEGORY",
             "@type": "Property"
         },
         "CO2_MAX": {
-            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/airQuality_context.json#/CO2_MAX",
-            "@type": "Property"
+            "@id": "airQuality_context:CO2_MAX",
+            "@type": "QuantitativeProperty"
         },
         "CO2_MIN": {
-            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/airQuality_context.json#/CO2_MIN",
-            "@type": "Property"
+            "@id": "airQuality_context:CO2_MIN",
+            "@type": "QuantitativeProperty"
         },
         "CO_MAX": {
-            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/airQuality_context.json#/CO_MAX",
-            "@type": "Property"
+            "@id": "airQuality_context:CO_MAX",
+            "@type": "QuantitativeProperty"
         },
         "CO_MIN": {
-            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/airQuality_context.json#/CO_MIN",
-            "@type": "Property"
+            "@id": "airQuality_context:CO_MIN",
+            "@type": "QuantitativeProperty"
         },
         "DEVICEID": {
-            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/airQuality_context.json#/DEVICEID",
+            "@id": "airQuality_context:DEVICEID",
             "@type": "Property"
         },
         "HUMIDITY": {
-            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/airQuality_context.json#/HUMIDITY",
-            "@type": "Property"
+            "@id": "airQuality_context:HUMIDITY",
+            "@type": "QuantitativeProperty"
         },
         "LASTUPDATEDATETIME": {
-            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/airQuality_context.json#/LASTUPDATEDATETIME",
+            "@id": "airQuality_context:LASTUPDATEDATETIME",
             "@type": "TimeProperty"
         },
         "LIGHT": {
-            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/airQuality_context.json#/LIGHT",
-            "@type": "Property"
+            "@id": "airQuality_context:LIGHT",
+            "@type": "QuantitativeProperty"
         },
         "NAME": {
-            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/airQuality_context.json#/NAME",
+            "@id": "airQuality_context:NAME",
             "@type": "Property"
         },
         "NO2_MAX": {
-            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/airQuality_context.json#/NO2_MAX",
-            "@type": "Property"
+            "@id": "airQuality_context:NO2_MAX",
+            "@type": "QuantitativeProperty"
         },
         "NO2_MIN": {
-            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/airQuality_context.json#/NO2_MIN",
-            "@type": "Property"
+            "@id": "airQuality_context:NO2_MIN",
+            "@type": "QuantitativeProperty"
         },
         "NO_MAX": {
-            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/airQuality_context.json#/NO_MAX",
-            "@type": "Property"
+            "@id": "airQuality_context:NO_MAX",
+            "@type": "QuantitativeProperty"
         },
         "NO_MIN": {
-            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/airQuality_context.json#/NO_MIN",
-            "@type": "Property"
+            "@id": "airQuality_context:NO_MIN",
+            "@type": "QuantitativeProperty"
         },
         "OZONE_MAX": {
-            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/airQuality_context.json#/OZONE_MAX",
-            "@type": "Property"
+            "@id": "airQuality_context:OZONE_MAX",
+            "@type": "QuantitativeProperty"
         },
         "OZONE_MIN": {
-            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/airQuality_context.json#/OZONE_MIN",
-            "@type": "Property"
+            "@id": "airQuality_context:OZONE_MIN",
+            "@type": "QuantitativeProperty"
         },
         "PM10_MAX": {
-            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/airQuality_context.json#/PM10_MAX",
-            "@type": "Property"
+            "@id": "airQuality_context:PM10_MAX",
+            "@type": "QuantitativeProperty"
         },
         "PM10_MIN": {
-            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/airQuality_context.json#/PM10_MIN",
-            "@type": "Property"
+            "@id": "airQuality_context:PM10_MIN",
+            "@type": "QuantitativeProperty"
         },
         "PM2_MAX": {
-            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/airQuality_context.json#/PM2_MAX",
-            "@type": "Property"
+            "@id": "airQuality_context:PM2_MAX",
+            "@type": "QuantitativeProperty"
         },
         "PM2_MIN": {
-            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/airQuality_context.json#/PM2_MIN",
-            "@type": "Property"
+            "@id": "airQuality_context:PM2_MIN",
+            "@type": "QuantitativeProperty"
         },
         "SO2_MAX": {
-            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/airQuality_context.json#/SO2_MAX",
-            "@type": "Property"
+            "@id": "airQuality_context:SO2_MAX",
+            "@type": "QuantitativeProperty"
         },
         "SO2_MIN": {
-            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/airQuality_context.json#/SO2_MIN",
-            "@type": "Property"
+            "@id": "airQuality_context:SO2_MIN",
+            "@type": "QuantitativeProperty"
         },
         "SOUND": {
-            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/airQuality_context.json#/SOUND",
+            "@id": "airQuality_context:SOUND",
             "@type": "Property"
         },
         "STATUS": {
-            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/airQuality_context.json#/STATUS",
+            "@id": "airQuality_context:STATUS",
             "@type": "Property"
         },
         "TEMPRATURE_MAX": {
-            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/airQuality_context.json#/TEMPRATURE_MAX",
-            "@type": "Property"
+            "@id": "airQuality_context:TEMPRATURE_MAX",
+            "@type": "QuantitativeProperty"
         },
         "TEMPRATURE_MIN": {
-            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/airQuality_context.json#/TEMPRATURE_MIN",
+            "@id": "airQuality_context:TEMPRATURE_MIN",
             "@type": "Property"
         },
         "UV_MAX": {
-            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/airQuality_context.json#/UV_MAX",
-            "@type": "Property"
+            "@id": "airQuality_context:UV_MAX",
+            "@type": "QuantitativeProperty"
         },
         "UV_MIN": {
-            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/airQuality_context.json#/UV_MIN",
-            "@type": "Property"
+            "@id": "airQuality_context:UV_MIN",
+            "@type": "QuantitativeProperty"
         },
+        "airQuality_context": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/airQuality_context.json#/",
         "deviceModelInfo": {
-            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/airQuality_context.json#/deviceModelInfo",
+            "@id": "airQuality_context:deviceModelInfo",
             "@type": "Property"
         },
         "location": {
-            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/airQuality_context.json#/location",
+            "@id": "airQuality_context:location",
             "@type": "GeoProperty"
         }
     },
@@ -225,5 +226,6 @@
     },
     "location": {
         "describes": "Describes the coordinates (in GeoJSON Point type) for the installation location of the AQM device"
-    }
+    },
+    "properties": "@nest"
 }

@@ -5,7 +5,7 @@
         "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_context.json",
         "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json",
         "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/geometry-schema.json",
-        "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/airQuality_context.json#/"
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/airQuality_context.json"
     ],
     "describes": "Air Quality dataModel for AQM sensors deployed in Pune City.",
     "name": "env_aqm_climoPune_0",
@@ -17,9 +17,9 @@
             "unitText": "standard atmosphere"
         },
         "AQI": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
             "describes": "Overall AQI ",
-            "unitCode": "dimensionless",
+            "unitCode": "C62",
             "unitText": "dimensionless"
         },
         "AQI_POLLUTANT": {
@@ -31,46 +31,50 @@
             "describes": "Quality indication"
         },
         "CO2_MAX": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
             "describes": "Maximum value of CO2 for the last 24 hours",
-            "unitCode": "ppm",
-            "unitText": "ppm"
+            "symbol": "ppm",
+            "unitCode": "X59",
+            "unitText": "part per million"
         },
         "CO2_MIN": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
             "describes": "Minimum value of CO2 for the last 24 hours",
-            "unitCode": "ppm",
-            "unitText": "ppm"
+            "symbol": "ppm",
+            "unitCode": "X59",
+            "unitText": "part per million"
         },
         "CO_MAX": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
             "describes": "Maximum value of CO for the last 24 hours",
-            "unitCode": "ppm",
-            "unitText": "ppm"
+            "symbol": "ppm",
+            "unitCode": "X59",
+            "unitText": "part per million"
         },
         "CO_MIN": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
             "describes": "Minimum value of CO for the last 24 hours",
-            "unitCode": "ppm",
-            "unitText": "ppm"
+            "symbol": "ppm",
+            "unitCode": "X59",
+            "unitText": "part per million"
         },
         "DEVICEID": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
             "describes": "Device ID's as per the device data model"
         },
         "HUMIDITY": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
             "describes": "Relative humidity",
-            "unitCode": "percentage",
-            "unitText": "percentage"
+            "unitCode": "XP1",
+            "unitText": "percent"
         },
         "LASTUPDATEDATETIME": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/TimeProperty"
         },
         "LIGHT": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
             "describes": "Light in lux",
-            "unitCode": "lux",
+            "unitCode": "LUX",
             "unitText": "lux"
         },
         "NAME": {
@@ -78,109 +82,122 @@
             "describes": "Name of the device."
         },
         "NO2_MAX": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
             "describes": "Maximum value of NO2 for the last 24 hours",
-            "unitCode": "ppb",
-            "unitText": "ppb"
+            "symbol": "ppb",
+            "unitCode": "X61",
+            "unitText": "part per billion (US)"
         },
         "NO2_MIN": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
             "describes": "Minimum value of NO2 for the last 24 hours",
-            "unitCode": "ppb",
-            "unitText": "ppb"
+            "symbol": "ppb",
+            "unitCode": "X61",
+            "unitText": "part per billion (US)"
         },
         "NO_MAX": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
             "describes": "Maximum value of NO for the last 24 hours",
-            "unitCode": "ppb",
-            "unitText": "ppb"
+            "symbol": "ppb",
+            "unitCode": "X61",
+            "unitText": "part per billion (US)"
         },
         "NO_MIN": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
             "describes": "Minimum value of NO for the last 24 hours",
-            "unitCode": "ppb",
-            "unitText": "ppb"
+            "symbol": "ppb",
+            "unitCode": "X61",
+            "unitText": "part per billion (US)"
         },
         "OZONE_MAX": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
             "describes": "Maximum value of Ozone for the last 24 hours",
-            "unitCode": "ppb",
-            "unitText": "ppb"
+            "symbol": "ppb",
+            "unitCode": "X61",
+            "unitText": "part per billion (US)"
         },
         "OZONE_MIN": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
             "describes": "Minimum value of Ozone for the last 24 hours",
-            "unitCode": "ppb",
-            "unitText": "ppb"
+            "symbol": "ppb",
+            "unitCode": "X61",
+            "unitText": "part per billion (US)"
         },
         "PM10_MAX": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
             "describes": "Maximum value of PM10 for the last 24 hours",
-            "unitCode": "ug/m3",
-            "unitText": "ug/m3"
+            "symbol": "ug/m3",
+            "unitCode": "XGQ",
+            "unitText": "microgrampercubicmetre"
         },
         "PM10_MIN": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
             "describes": "Minimum value of PM10 for the last 24 hours",
-            "unitCode": "ug/m3",
-            "unitText": "ug/m3"
+            "symbol": "ug/m3",
+            "unitCode": "XGQ",
+            "unitText": "microgrampercubicmetre"
         },
         "PM2_MAX": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
             "describes": "Maximum value of PM2.5 for the last 24 hours",
-            "unitCode": "ug/m3",
-            "unitText": "ug/m3"
+            "symbol": "ug/m3",
+            "unitCode": "XGQ",
+            "unitText": "micro gram per cubic metre"
         },
         "PM2_MIN": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
             "describes": "Minimum value of PM2.5 for the last 24 hours",
-            "unitCode": "ug/m3",
-            "unitText": "ug/m3"
+            "symbol": "ug/m3",
+            "unitCode": "XGQ",
+            "unitText": "micro gram per cubic metre"
         },
         "SO2_MAX": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
             "describes": "Maximum value of SO2 for the last 24 hours",
-            "unitCode": "ppb",
-            "unitText": "ppb"
+            "symbol": "ppb",
+            "unitCode": "X61",
+            "unitText": "part per billion (US)"
         },
         "SO2_MIN": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
             "describes": "Minimum value of SO2 for the last 24 hours",
-            "unitCode": "ppb",
-            "unitText": "ppb"
+            "symbol": "ppb",
+            "unitCode": "X61",
+            "unitText": "part per billion (US)"
         },
         "SOUND": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
             "description": "Instantaneous Noise level",
-            "unitCode": "dB",
-            "unitText": "dB"
+            "symbol": "dB",
+            "unitCode": "X2N",
+            "unitText": "decibel"
         },
         "STATUS": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
             "describes": "Indiates if the resource is on or off"
         },
         "TEMPRATURE_MAX": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
             "describes": "Maximum value of Temperature for the last 24 hours",
-            "unitCode": "degreeCelsius",
-            "unitText": "degreeCelsius"
+            "unitCode": "CEL",
+            "unitText": "degree Celsius"
         },
         "TEMPRATURE_MIN": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
             "describes": "Minimum value of Temperature for the last 24 hours",
-            "unitCode": "degreeCelsius",
-            "unitText": "degreeCelsius"
+            "unitCode": "CEL",
+            "unitText": "degree Celsius"
         },
         "UV_MAX": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
             "describes": "Maximum value of UV for the last 24 hours",
-            "unitCode": "UVI",
+            "unitCode": "C62",
             "unitText": "UVI"
         },
         "UV_MIN": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
             "describes": "Minimum value of UV for the last 24 hours",
-            "unitCode": "UVI",
+            "unitCode": "C62",
             "unitText": "UVI"
         },
         "deviceModelInfo": {

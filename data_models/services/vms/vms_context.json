@@ -1,43 +1,44 @@
 {
     "@context": {
         "address": {
-            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/services/vms/vms_context.json#/address",
+            "@id": "vms_context:address",
             "@type": "Property"
         },
         "duration": {
-            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/services/vms/vms_context.json#/duration",
+            "@id": "vms_context:duration",
             "@type": "Property"
         },
         "end_date": {
-            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/services/vms/vms_context.json#/end_date",
+            "@id": "vms_context:end_date",
             "@type": "Property"
         },
         "file_upload": {
-            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/services/vms/vms_context.json#/file_upload",
+            "@id": "vms_context:file_upload",
             "@type": "Property"
         },
         "location": {
-            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/services/vms/vms_context.json#/location",
+            "@id": "vms_context:location",
             "@type": "GeoProperty"
         },
         "screen_dimensions": {
-            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/services/vms/vms_context.json#/screen_dimensions",
+            "@id": "vms_context:screen_dimensions",
             "@type": "Property"
         },
         "screen_id": {
-            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/services/vms/vms_context.json#/screen_id",
+            "@id": "vms_context:screen_id",
             "@type": "Property"
         },
         "screen_name": {
-            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/services/vms/vms_context.json#/screen_name",
+            "@id": "vms_context:screen_name",
             "@type": "Property"
         },
         "start_date": {
-            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/services/vms/vms_context.json#/start_date",
+            "@id": "vms_context:start_date",
             "@type": "Property"
         },
+        "vms_context": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/services/vms/vms_context.json#/",
         "vms_enabler": {
-            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/services/vms/vms_context.json#/vms_enabler",
+            "@id": "vms_context:vms_enabler",
             "@type": "Property"
         }
     },
@@ -56,6 +57,7 @@
     "location": {
         "describes": "location where the screen is placed"
     },
+    "properties": "@nest",
     "screen_dimensions": {
         "describes": "Dimensions of the screen in lenght x breadth format"
     },

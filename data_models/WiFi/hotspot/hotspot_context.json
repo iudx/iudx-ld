@@ -1,39 +1,40 @@
 {
     "@context": {
         "ACCESS_POINT_COUNT": {
-            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/WiFi/hotspot/hotspot_context.json#/ACCESS_POINT_COUNT",
-            "@type": "Property"
+            "@id": "hotspot_context:ACCESS_POINT_COUNT",
+            "@type": "QuantitativeProperty"
         },
         "DOWNLOAD_RATE": {
-            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/WiFi/hotspot/hotspot_context.json#/DOWNLOAD_RATE",
-            "@type": "Property"
+            "@id": "hotspot_context:DOWNLOAD_RATE",
+            "@type": "QuantitativeProperty"
         },
         "HOTSPOT_ID": {
-            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/WiFi/hotspot/hotspot_context.json#/HOTSPOT_ID",
+            "@id": "hotspot_context:HOTSPOT_ID",
             "@type": "Property"
         },
         "LASTUPDATEDATETIME": {
-            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/WiFi/hotspot/hotspot_context.json#/LASTUPDATEDATETIME",
+            "@id": "hotspot_context:LASTUPDATEDATETIME",
             "@type": "TimeProperty"
         },
         "LOCATION_STATUS": {
-            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/WiFi/hotspot/hotspot_context.json#/LOCATION_STATUS",
+            "@id": "hotspot_context:LOCATION_STATUS",
             "@type": "GeoProperty"
         },
         "NAME": {
-            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/WiFi/hotspot/hotspot_context.json#/NAME",
+            "@id": "hotspot_context:NAME",
             "@type": "Property"
         },
         "UPLOAD_RATE": {
-            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/WiFi/hotspot/hotspot_context.json#/UPLOAD_RATE",
-            "@type": "Property"
+            "@id": "hotspot_context:UPLOAD_RATE",
+            "@type": "QuantitativeProperty"
         },
         "USER_COUNT": {
-            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/WiFi/hotspot/hotspot_context.json#/USER_COUNT",
-            "@type": "Property"
+            "@id": "hotspot_context:USER_COUNT",
+            "@type": "QuantitativeProperty"
         },
+        "hotspot_context": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/WiFi/hotspot/hotspot_context.json#/",
         "location": {
-            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/WiFi/hotspot/hotspot_context.json#/location",
+            "@id": "hotspot_context:location",
             "@type": "GeoProperty"
         }
     },
@@ -57,5 +58,6 @@
     },
     "USER_COUNT": {
         "describes": "Number of users connected to the hotspot. It is an integer encoded as a string."
-    }
+    },
+    "properties": "@nest"
 }

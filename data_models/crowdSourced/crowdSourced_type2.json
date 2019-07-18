@@ -5,26 +5,30 @@
         "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_context.json",
         "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json",
         "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/geometry-schema.json",
-        "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/crowdSourced/crowdSourced_context.json#/"
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/crowdSourced/crowdSourced_context.json"
     ],
     "describes": "Crowd Sourced type 2 data",
     "properties": {
         "Audit_Date": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
             "describes": "Date on which the image was cpatured"
         },
         "Audit_Time": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/TimeProperty"
         },
         "Feeling": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
             "describes": "Feel of safety in the locality, rated over a score of 0-3.",
-            "minimum": 0
+            "minimum": 0,
+            "unitCode": "C62",
+            "unitText": "dimensionless"
         },
         "Gender_Usage": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
             "describes": "Gender friendly atmosphere of the locality, rated over a score of 0-3.",
-            "minimum": 0
+            "minimum": 0,
+            "unitCode": "C62",
+            "unitText": "dimensionless"
         },
         "Images": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
@@ -39,47 +43,61 @@
             "describes": "Latitude of the geo-tagged image"
         },
         "Lighting": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
             "describes": "Indicates if the place is well-lighted, rated over a score of 0-3.",
-            "minimum": 0
+            "minimum": 0,
+            "unitCode": "C62",
+            "unitText": "dimensionless"
         },
         "Longitude": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
             "describes": "Longitude of the geo-tagged image"
         },
         "Openness": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
             "describes": "Gives a measure of the free area, rated over a score of 0-3.",
-            "minimum": 0
+            "minimum": 0,
+            "unitCode": "C62",
+            "unitText": "dimensionless"
         },
         "People": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
             "describes": "Number of people in the image, rated over a score of 0-3.",
-            "minimum": 0
+            "minimum": 0,
+            "unitCode": "C62",
+            "unitText": "dimensionless"
         },
         "Public_Transport": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
             "describes": "Availabity of public transport, rated over a score of 0-3.",
-            "minimum": 0
+            "minimum": 0,
+            "unitCode": "C62",
+            "unitText": "dimensionless"
         },
         "Safety_Score": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
             "describes": "Safetipin computed safety score for the locality"
         },
         "Security": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
             "describes": "Security in the place depending on the surroundings, rated over a score of 0-3.",
-            "minimum": 0
+            "minimum": 0,
+            "unitCode": "C62",
+            "unitText": "dimensionless"
         },
         "Visibility": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
             "describes": "Clear visibilty of the things in the image, rated over a score of 0-3.",
-            "minimum": 0
+            "minimum": 0,
+            "unitCode": "C62",
+            "unitText": "dimensionless"
         },
         "Walkpath": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
             "describes": "Presence and usability of a walkway, rated over a score of 0-3.",
-            "minimum": 0
+            "minimum": 0,
+            "unitCode": "C62",
+            "unitText": "dimensionless"
         },
         "id": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",

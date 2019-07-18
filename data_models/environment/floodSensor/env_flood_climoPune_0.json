@@ -5,7 +5,7 @@
         "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_context.json",
         "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json",
         "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/geometry-schema.json",
-        "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/floodSensor/floodSensor_context.json#/"
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/floodSensor/floodSensor_context.json"
     ],
     "describes": "Flood Sensor data model for flood sensors deployed in Pune City.",
     "properties": {

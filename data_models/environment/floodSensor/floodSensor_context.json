@@ -1,51 +1,52 @@
 {
     "@context": {
         "ALERT": {
-            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/floodSensor/floodSensor_context.json#/ALERT",
+            "@id": "floodSensor_context:ALERT",
             "@type": "Property"
         },
         "CUR_LEVEL": {
-            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/floodSensor/floodSensor_context.json#/CUR_LEVEL",
+            "@id": "floodSensor_context:CUR_LEVEL",
             "@type": "Property"
         },
         "DANGER": {
-            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/floodSensor/floodSensor_context.json#/DANGER",
+            "@id": "floodSensor_context:DANGER",
             "@type": "Property"
         },
         "LASTUPDATEDATETIME": {
-            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/floodSensor/floodSensor_context.json#/LASTUPDATEDATETIME",
+            "@id": "floodSensor_context:LASTUPDATEDATETIME",
             "@type": "TimeProperty"
         },
         "M_DISTANCE": {
-            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/floodSensor/floodSensor_context.json#/M_DISTANCE",
+            "@id": "floodSensor_context:M_DISTANCE",
             "@type": "Property"
         },
         "NAME": {
-            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/floodSensor/floodSensor_context.json#/NAME",
+            "@id": "floodSensor_context:NAME",
             "@type": "Property"
         },
         "REF_LEVEL": {
-            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/floodSensor/floodSensor_context.json#/REF_LEVEL",
+            "@id": "floodSensor_context:REF_LEVEL",
             "@type": "Property"
         },
         "SITE_STATUS": {
-            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/floodSensor/floodSensor_context.json#/SITE_STATUS",
+            "@id": "floodSensor_context:SITE_STATUS",
             "@type": "Property"
         },
         "STATION_ID": {
-            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/floodSensor/floodSensor_context.json#/STATION_ID",
+            "@id": "floodSensor_context:STATION_ID",
             "@type": "Property"
         },
         "STATUS": {
-            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/floodSensor/floodSensor_context.json#/STATUS",
+            "@id": "floodSensor_context:STATUS",
             "@type": "Property"
         },
         "deviceModelInfo": {
-            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/floodSensor/floodSensor_context.json#/deviceModelInfo",
+            "@id": "floodSensor_context:deviceModelInfo",
             "@type": "Property"
         },
+        "floodSensor_context": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/floodSensor/floodSensor_context.json#/",
         "location": {
-            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/floodSensor/floodSensor_context.json#/location",
+            "@id": "floodSensor_context:location",
             "@type": "GeoProperty"
         }
     },
@@ -78,5 +79,6 @@
     },
     "location": {
         "describes": "Describes the coordinates (in GeoJSON Point type) for the installation location of the AQM device"
-    }
+    },
+    "properties": "@nest"
 }
