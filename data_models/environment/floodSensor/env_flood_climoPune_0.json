@@ -2,54 +2,10 @@
     "$schema": "http://json-schema.org/draft-07/schema#",
     "@context": [
         "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_context.json",
-        {
-            "ALERT": {
-                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/floodSensor/env_flood_climoPune_0.json#/properties/ALERT",
-                "@type": "Property"
-            },
-            "CUR_LEVEL": {
-                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/floodSensor/env_flood_climoPune_0.json#/properties/CUR_LEVEL",
-                "@type": "Property"
-            },
-            "DANGER": {
-                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/floodSensor/env_flood_climoPune_0.json#/properties/DANGER",
-                "@type": "Property"
-            },
-            "LASTUPDATEDATETIME": {
-                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/floodSensor/env_flood_climoPune_0.json#/properties/LASTUPDATEDATETIME",
-                "@type": "TimeProperty"
-            },
-            "M_DISTANCE": {
-                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/floodSensor/env_flood_climoPune_0.json#/properties/M_DISTANCE",
-                "@type": "Property"
-            },
-            "NAME": {
-                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/floodSensor/env_flood_climoPune_0.json#/properties/NAME",
-                "@type": "Property"
-            },
-            "REF_LEVEL": {
-                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/floodSensor/env_flood_climoPune_0.json#/properties/REF_LEVEL",
-                "@type": "Property"
-            },
-            "SITE_STATUS": {
-                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/floodSensor/env_flood_climoPune_0.json#/properties/SITE_STATUS",
-                "@type": "Property"
-            },
-            "STATION_ID": {
-                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/floodSensor/env_flood_climoPune_0.json#/properties/STATION_ID",
-                "@type": "Property"
-            },
-            "STATUS": {
-                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/floodSensor/env_flood_climoPune_0.json#/properties/STATUS",
-                "@type": "Property"
-            },
-            "location": {
-                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/floodSensor/env_flood_climoPune_0.json#/properties/location",
-                "@type": "GeoProperty"
-            },
-            "uo": "http://units.open.org/",
-            "xsd": "http://www.w3.org/2001/XMLSchema#"
-        }
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_context.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/geometry-schema.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/floodSensor/_context.json#/properties/"
     ],
     "describes": "Flood Sensor data model for flood sensors deployed in Pune City.",
     "properties": {
@@ -59,24 +15,7 @@
                     "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
-            "describes": "Reference Alert Level setting for the given sensing station. If CUR_LEVEL is greater than ALERT then a flooding 'Alert' is generated",
-            "oneOf": [
-                {
-                    "properties": {
-                        "value": {
-                            "$ref": "#/properties/ALERT/valueSchema"
-                        }
-                    },
-                    "type": "object"
-                },
-                {
-                    "$ref": "#/properties/ALERT/valueSchema",
-                    "type": "string"
-                }
-            ],
-            "valueSchema": {
-                "type": "string"
-            }
+            "describes": "Reference Alert Level setting for the given sensing station. If CUR_LEVEL is greater than ALERT then a flooding 'Alert' is generated"
         },
         "CUR_LEVEL": {
             "allOf": [
@@ -84,24 +23,7 @@
                     "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
-            "describes": "Current flooding level  detected by a given sensing station. Sensing device uses 'REF_LEVEL' and 'M_DISTANCE' parameters to compute CUR_LEVEL",
-            "oneOf": [
-                {
-                    "properties": {
-                        "value": {
-                            "$ref": "#/properties/CUR_LEVEL/valueSchema"
-                        }
-                    },
-                    "type": "object"
-                },
-                {
-                    "$ref": "#/properties/CUR_LEVEL/valueSchema",
-                    "type": "string"
-                }
-            ],
-            "valueSchema": {
-                "type": "string"
-            }
+            "describes": "Current flooding level  detected by a given sensing station. Sensing device uses 'REF_LEVEL' and 'M_DISTANCE' parameters to compute CUR_LEVEL"
         },
         "DANGER": {
             "allOf": [
@@ -109,24 +31,7 @@
                     "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
-            "describes": "Reference Danger Level setting for the given sensing station. If CUR_LEVEL is greater than DANGER then the flooding status is flagged as 'Danger'",
-            "oneOf": [
-                {
-                    "properties": {
-                        "value": {
-                            "$ref": "#/properties/DANGER/valueSchema"
-                        }
-                    },
-                    "type": "object"
-                },
-                {
-                    "$ref": "#/properties/DANGER/valueSchema",
-                    "type": "string"
-                }
-            ],
-            "valueSchema": {
-                "type": "string"
-            }
+            "describes": "Reference Danger Level setting for the given sensing station. If CUR_LEVEL is greater than DANGER then the flooding status is flagged as 'Danger'"
         },
         "LASTUPDATEDATETIME": {
             "allOf": [
@@ -141,24 +46,7 @@
                     "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
-            "describes": "Parameter used to compute CUR_LEVEL. (Need further clarification)",
-            "oneOf": [
-                {
-                    "properties": {
-                        "value": {
-                            "$ref": "#/properties/M_DISTANCE/valueSchema"
-                        }
-                    },
-                    "type": "object"
-                },
-                {
-                    "$ref": "#/properties/M_DISTANCE/valueSchema",
-                    "type": "string"
-                }
-            ],
-            "valueSchema": {
-                "type": "string"
-            }
+            "describes": "Parameter used to compute CUR_LEVEL. (Need further clarification)"
         },
         "NAME": {
             "allOf": [
@@ -166,24 +54,7 @@
                     "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
-            "describes": "Name of the device.",
-            "oneOf": [
-                {
-                    "properties": {
-                        "value": {
-                            "$ref": "#/properties/NAME/valueSchema"
-                        }
-                    },
-                    "type": "object"
-                },
-                {
-                    "$ref": "#/properties/NAME/valueSchema",
-                    "type": "string"
-                }
-            ],
-            "valueSchema": {
-                "type": "string"
-            }
+            "describes": "Name of the device."
         },
         "REF_LEVEL": {
             "allOf": [
@@ -191,24 +62,7 @@
                     "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
-            "describes": "Parameter used to compute CUR_LEVEL. (Need further clarification)",
-            "oneOf": [
-                {
-                    "properties": {
-                        "value": {
-                            "$ref": "#/properties/REF_LEVEL/valueSchema"
-                        }
-                    },
-                    "type": "object"
-                },
-                {
-                    "$ref": "#/properties/REF_LEVEL/valueSchema",
-                    "type": "string"
-                }
-            ],
-            "valueSchema": {
-                "type": "string"
-            }
+            "describes": "Parameter used to compute CUR_LEVEL. (Need further clarification)"
         },
         "SITE_STATUS": {
             "allOf": [
@@ -216,28 +70,7 @@
                     "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
-            "describes": "Functional status of flood sensing site/station/device",
-            "oneOf": [
-                {
-                    "properties": {
-                        "value": {
-                            "$ref": "#/properties/SITE_STATUS/valueSchema"
-                        }
-                    },
-                    "type": "object"
-                },
-                {
-                    "$ref": "#/properties/SITE_STATUS/valueSchema",
-                    "type": "string"
-                }
-            ],
-            "valueSchema": {
-                "enum": [
-                    "Active",
-                    "Inactive"
-                ],
-                "type": "string"
-            }
+            "describes": "Functional status of flood sensing site/station/device"
         },
         "STATION_ID": {
             "allOf": [
@@ -245,24 +78,7 @@
                     "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
-            "describes": "Sensing station ID as per the device data model",
-            "oneOf": [
-                {
-                    "properties": {
-                        "value": {
-                            "$ref": "#/properties/STATION_ID/valueSchema"
-                        }
-                    },
-                    "type": "object"
-                },
-                {
-                    "$ref": "#/properties/STATION_ID/valueSchema",
-                    "type": "string"
-                }
-            ],
-            "valueSchema": {
-                "type": "string"
-            }
+            "describes": "Sensing station ID as per the device data model"
         },
         "STATUS": {
             "allOf": [
@@ -270,29 +86,7 @@
                     "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
                 }
             ],
-            "describes": "Flooding Level STATUS",
-            "oneOf": [
-                {
-                    "properties": {
-                        "value": {
-                            "$ref": "#/properties/STATUS/valueSchema"
-                        }
-                    },
-                    "type": "object"
-                },
-                {
-                    "$ref": "#/properties/STATUS/valueSchema",
-                    "type": "string"
-                }
-            ],
-            "valueSchema": {
-                "enum": [
-                    "Danger",
-                    "Alert",
-                    "Normal"
-                ],
-                "type": "string"
-            }
+            "describes": "Flooding Level STATUS"
         },
         "deviceModelInfo": {
             "allOf": [
