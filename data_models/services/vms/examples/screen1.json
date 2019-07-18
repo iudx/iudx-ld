@@ -1,0 +1,73 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/services/vms/screenly.json"
+    ],
+    "@id": "akdfi74938nid8kjfvko4",
+    "screen_name": "rbccps_screen1",
+    "location": {
+        "type": "GeoProperty",
+        "value": {
+            "type": "Point",
+            "value": [
+                13.013836, 77.570325
+            ]
+        }
+    },
+    "accessObjectURL": {
+        "object": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/services/vms/examples/screen1.json",
+        "type": "Relationship"
+    },
+    "accessObjectVariables": {
+        "type": "Property",
+        "value": {
+            "user_id": "user_abc_123",
+            "ip": "https://services.iudx.org.in",
+            "resourceClass": "vms",
+            "screen_name": "rbccps_screen1"
+        }
+    },
+    "createdAt": {
+        "type": "TimeProperty",
+        "value": "2019-02-20T10:30:06.093121"
+    },
+    "itemDescription": "Video management system service item",
+    "itemStatus": {
+        "type": "Property",
+        "value": "active"
+    },
+    "itemType": {
+        "type": "Property",
+        "value": "resourceItem"
+    },
+    "provider": {
+        "object": "iudx_iri:rbccps",
+        "type": "Relationship"
+    },
+    "refBaseSchema": {
+        "object": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/resourceItem_schema.json",
+        "type": "Relationship"
+    },
+    "refDataModel": {
+        "object":
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/services/vms/screenly.json",
+        "type": "Relationship"
+    },
+    "resourceId": {
+        "type": "Property",
+        "value": "rbccps_screen1"
+    },
+    "resourceServer": {
+        "object": "iudx_iri:rbccps_server",
+        "type": "Relationship"
+    },
+    "tags": {
+        "type": "Property",
+        "value": [
+            "variable messaging system",
+            "picture",
+            "video",
+            "screen",
+            "advertise"
+        ]
+    }
+}

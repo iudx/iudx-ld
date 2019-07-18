@@ -1,0 +1,143 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "@context": [
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_context.json",
+        {
+            "location": {
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/services/vms/screenly.json#/properties/location",
+                "@type": "GeoProperty"
+            },
+            "address": {
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/services/vms/screenly.json#/properties/address",
+                "@type": "GeoProperty"
+            },
+            "screen_name": {
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/services/vms/screenly.json#/properties/screen_name",
+                "@type": "Property"
+            },
+            "vms_enabler": {
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/services/vms/screenly.json#/properties/vms_enabler",
+                "@type": "Property"
+            },
+            "screen_dimensions": {
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/services/vms/screenly.json#/properties/screen_dimensions",
+                "@type": "Property"
+            },
+            "screen_id": {
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/services/vms/screenly.json#/properties/screen_id",
+                "@type": "Property"
+            },
+            "start_date": {
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/services/vms/screenly.json#/properties/start_date",
+                "@type": "TimeProperty"
+            },
+            "end_date": {
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/services/vms/screenly.json#/properties/end_date",
+                "@type": "TimeProperty"
+            },
+            "duration": {
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/services/vms/screenly.json#/properties/duration",
+                "@type": "TimeProperty"
+            },
+            "file_upload": {
+                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/services/vms/screenly.json#/properties/file_upload",
+                "@type": "Property"
+            }
+        }
+    ],
+    "describes": "Data model for WiFi Hotspots installed in Pune City",
+    "properties": {
+        "location": {
+            "allOf": [
+                {
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/GeoProperty"
+                }
+            ],
+            "describes": "location where the screen is placed"
+        },
+        "address": {
+            "allOf": [
+                {
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/GeoProperty"
+                }
+            ],
+            "describes": "address of the screen"
+        },
+        "screen_name": {
+            "allOf": [
+                {
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                }
+            ],
+            "type": "string",
+            "describes": "User identifiable name for the screen"
+        },
+        "file_upload": {
+            "allOf": [
+                {
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                }
+            ],
+            "type": "string",
+            "describes": "path of the file in the uploaders system"
+        },
+        "vms_enabler": {
+            "allOf": [
+                {
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                }
+            ],
+            "type": "string",
+            "describes": "Name of the service enabler"
+        },
+        "screen_dimensions": {
+            "allOf": [
+                {
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                }
+            ],
+            "type": "string",
+            "describes": "Dimensions of the screen in lenght x breadth format"
+        },
+        "screen_id": {
+            "allOf": [
+                {
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                }
+            ],
+            "type": "string",
+            "describes": "identifier of the screen in the services controller"
+        },
+        "start_date": {
+            "allOf": [
+                {
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/TimeProperty"
+                }
+            ],
+            "type": "string",
+            "format": "date-time",
+            "describes": "Start time of the message"
+        },
+        "end_date": {
+            "allOf": [
+                {
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/TimeProperty"
+                }
+            ],
+            "type": "string",
+            "format": "date",
+            "describes": "End time of the message"
+        },
+        "duration": {
+            "allOf": [
+                {
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/TimeProperty"
+                }
+            ],
+            "type": "string",
+            "format": "time",
+            "describes": "duration of the message"
+        },
+    },
+    "type": "object"
+}

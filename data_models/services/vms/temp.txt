@@ -1,0 +1,18 @@
+location
+address
+name - samsung
+enabler - screenly
+dimensions
+
+
+
+sirpi.co.in/screen1
+
+
+data-attributes
+
+
+api-params
+screen_id - string name
+start_data, end_date, duration
+file_upload - path to the file
