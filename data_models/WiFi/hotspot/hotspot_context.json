@@ -1,0 +1,61 @@
+{
+    "@context": {
+        "ACCESS_POINT_COUNT": {
+            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/WiFi/hotspot/hotspot_context.json#/ACCESS_POINT_COUNT",
+            "@type": "Property"
+        },
+        "DOWNLOAD_RATE": {
+            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/WiFi/hotspot/hotspot_context.json#/DOWNLOAD_RATE",
+            "@type": "Property"
+        },
+        "HOTSPOT_ID": {
+            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/WiFi/hotspot/hotspot_context.json#/HOTSPOT_ID",
+            "@type": "Property"
+        },
+        "LASTUPDATEDATETIME": {
+            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/WiFi/hotspot/hotspot_context.json#/LASTUPDATEDATETIME",
+            "@type": "TimeProperty"
+        },
+        "LOCATION_STATUS": {
+            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/WiFi/hotspot/hotspot_context.json#/LOCATION_STATUS",
+            "@type": "GeoProperty"
+        },
+        "NAME": {
+            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/WiFi/hotspot/hotspot_context.json#/NAME",
+            "@type": "Property"
+        },
+        "UPLOAD_RATE": {
+            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/WiFi/hotspot/hotspot_context.json#/UPLOAD_RATE",
+            "@type": "Property"
+        },
+        "USER_COUNT": {
+            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/WiFi/hotspot/hotspot_context.json#/USER_COUNT",
+            "@type": "Property"
+        },
+        "location": {
+            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/WiFi/hotspot/hotspot_context.json#/location",
+            "@type": "GeoProperty"
+        }
+    },
+    "ACCESS_POINT_COUNT": {
+        "describes": "Number of WiFi Access points associated with the hotspot. It is an integer encoded as a string."
+    },
+    "DOWNLOAD_RATE": {
+        "describes": "Aggregate Download Rate for the hotspot location. It is a number encoded as a string. The units should be interpreted after convert 'string' type to 'number' type"
+    },
+    "HOTSPOT_ID": {
+        "describes": "Hotspot ID as per the device data model"
+    },
+    "LOCATION_STATUS": {
+        "describes": "Hotspot functional or not"
+    },
+    "NAME": {
+        "describes": "Name of the device."
+    },
+    "UPLOAD_RATE": {
+        "describes": " Aggregate upload rate for the hotspot location. It is a number encoded as a string. The units should be interpreted after convert 'string' type to 'number' type"
+    },
+    "USER_COUNT": {
+        "describes": "Number of users connected to the hotspot. It is an integer encoded as a string."
+    }
+}

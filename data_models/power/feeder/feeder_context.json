@@ -1,0 +1,121 @@
+{
+    "@context": {
+        "B_PHASE_CURRENT": {
+            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/power/feeder/feeder_context.json#/B_PHASE_CURRENT",
+            "@type": "Property"
+        },
+        "B_PHASE_POWER": {
+            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/power/feeder/feeder_context.json#/B_PHASE_POWER",
+            "@type": "Property"
+        },
+        "B_PHASE_VOLTAGE": {
+            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/power/feeder/feeder_context.json#/B_PHASE_VOLTAGE",
+            "@type": "Property"
+        },
+        "LASTUPDATEDATETIME": {
+            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/power/feeder/feeder_context.json#/LASTUPDATEDATETIME",
+            "@type": "TimeProperty"
+        },
+        "LIGHT_STATUS": {
+            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/power/feeder/feeder_context.json#/LIGHT_STATUS",
+            "@type": "Property"
+        },
+        "NAME": {
+            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/power/feeder/feeder_context.json#/NAME",
+            "@type": "Property"
+        },
+        "PANEL_ID": {
+            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/power/feeder/feeder_context.json#/PANEL_ID",
+            "@type": "Property"
+        },
+        "PANEL_NAME": {
+            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/power/feeder/feeder_context.json#/PANEL_NAME",
+            "@type": "Property"
+        },
+        "R_PHASE_CURRENT": {
+            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/power/feeder/feeder_context.json#/R_PHASE_CURRENT",
+            "@type": "Property"
+        },
+        "R_PHASE_POWER": {
+            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/power/feeder/feeder_context.json#/R_PHASE_POWER",
+            "@type": "Property"
+        },
+        "R_PHASE_VOLTAGE": {
+            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/power/feeder/feeder_context.json#/R_PHASE_VOLTAGE",
+            "@type": "Property"
+        },
+        "TOTAL_LIGHTS": {
+            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/power/feeder/feeder_context.json#/TOTAL_LIGHTS",
+            "@type": "Property"
+        },
+        "TOTAL_LOAD": {
+            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/power/feeder/feeder_context.json#/TOTAL_LOAD",
+            "@type": "Property"
+        },
+        "Y_PHASE_CURRENT": {
+            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/power/feeder/feeder_context.json#/Y_PHASE_CURRENT",
+            "@type": "Property"
+        },
+        "Y_PHASE_POWER": {
+            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/power/feeder/feeder_context.json#/Y_PHASE_POWER",
+            "@type": "Property"
+        },
+        "Y_PHASE_VOLTAGE": {
+            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/power/feeder/feeder_context.json#/Y_PHASE_VOLTAGE",
+            "@type": "Property"
+        },
+        "deviceModelInfo": {
+            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/power/feeder/feeder_context.json#/deviceModelInfo",
+            "@type": "Property"
+        },
+        "location": {
+            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/power/feeder/feeder_context.json#/location",
+            "@type": "GeoProperty"
+        }
+    },
+    "B_PHASE_CURRENT": {
+        "describes": "Gives B Phase Current"
+    },
+    "B_PHASE_POWER": {
+        "describes": "Gives B Phase Power"
+    },
+    "B_PHASE_VOLTAGE": {
+        "describes": "Gives B Phase Voltage"
+    },
+    "LIGHT_STATUS": {
+        "describes": "Currents status of the feeder device"
+    },
+    "NAME": {
+        "describes": "Name of the locality"
+    },
+    "PANEL_ID": {
+        "describes": "Uniquie ID assigned to the mounted panel"
+    },
+    "PANEL_NAME": {
+        "describes": "Name of the Panel Mounted"
+    },
+    "R_PHASE_CURRENT": {
+        "describes": "Gives R Phase Current"
+    },
+    "R_PHASE_POWER": {
+        "describes": "Gives R Phase Power"
+    },
+    "R_PHASE_VOLTAGE": {
+        "describes": "Gives R Phase Voltage"
+    },
+    "TOTAL_LIGHTS": {
+        "describes": "Indication of the number of Lights under the given feeder"
+    },
+    "TOTAL_LOAD": {
+        "describes": "Total expected load on the feeder."
+    },
+    "Y_PHASE_CURRENT": {
+        "describes": "Gives Y Phase Current"
+    },
+    "Y_PHASE_POWER": {
+        "describes": "Gives Y Phase Power"
+    },
+    "Y_PHASE_VOLTAGE": {
+        "describes": "Gives Y Phase Voltage"
+    }
+}

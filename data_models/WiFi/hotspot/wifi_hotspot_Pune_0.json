@@ -2,243 +2,50 @@
     "$schema": "http://json-schema.org/draft-07/schema#",
     "@context": [
         "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_context.json",
-        {
-            "ACCESS_POINT_COUNT": {
-                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/WiFi/hotspot/wifi_hotspot_Pune_0.json#/properties/ACCESS_POINT_COUNT",
-                "@type": "Property"
-            },
-            "DOWNLOAD_RATE": {
-                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/WiFi/hotspot/wifi_hotspot_Pune_0.json#/properties/DOWNLOAD_RATE",
-                "@type": "Property"
-            },
-            "HOTSPOT_ID": {
-                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/WiFi/hotspot/wifi_hotspot_Pune_0.json#/properties/HOTSPOT_ID",
-                "@type": "Property"
-            },
-            "LASTUPDATEDATETIME": {
-                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/WiFi/hotspot/wifi_hotspot_Pune_0.json#/properties/LASTUPDATEDATETIME",
-                "@type": "TimeProperty"
-            },
-            "LOCATION_STATUS": {
-                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/WiFi/hotspot/wifi_hotspot_Pune_0.json#/properties/LOCATION_STATUS",
-                "@type": "Property"
-            },
-            "NAME": {
-                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/WiFi/hotspot/wifi_hotspot_Pune_0.json#/properties/NAME",
-                "@type": "Property"
-            },
-            "UPLOAD_RATE": {
-                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/WiFi/hotspot/wifi_hotspot_Pune_0.json#/properties/UPLOAD_RATE",
-                "@type": "Property"
-            },
-            "USER_COUNT": {
-                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/WiFi/hotspot/wifi_hotspot_Pune_0.json#/properties/USER_COUNT",
-                "@type": "Property"
-            },
-            "location": {
-                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/WiFi/hotspot/wifi_hotspot_Pune_0.json#/properties/location",
-                "@type": "GeoProperty"
-            },
-            "uo": "http://units.open.org/",
-            "xsd": "http://www.w3.org/2001/XMLSchema#"
-        }
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_context.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/geometry-schema.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/WiFi/hotspot/hotspot_context.json#/"
     ],
     "describes": "Data model for WiFi Hotspots installed in Pune City",
     "properties": {
         "ACCESS_POINT_COUNT": {
-            "allOf": [
-                {
-                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
-                }
-            ],
-            "describes": "Number of WiFi Access points associated with the hotspot. It is an integer encoded as a string.",
-            "oneOf": [
-                {
-                    "properties": {
-                        "value": {
-                            "$ref": "#/properties/ACCESS_POINT_COUNT/valueSchema"
-                        }
-                    },
-                    "type": "object"
-                },
-                {
-                    "$ref": "#/properties/ACCESS_POINT_COUNT/valueSchema",
-                    "type": "string"
-                }
-            ],
-            "valueSchema": {
-                "type": "string"
-            }
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Number of WiFi Access points associated with the hotspot. It is an integer encoded as a string."
         },
         "DOWNLOAD_RATE": {
-            "allOf": [
-                {
-                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
-                }
-            ],
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
             "describes": "Aggregate Download Rate for the hotspot location. It is a number encoded as a string. The units should be interpreted after convert 'string' type to 'number' type",
-            "oneOf": [
-                {
-                    "properties": {
-                        "value": {
-                            "$ref": "#/properties/DOWNLOAD_RATE/valueSchema"
-                        }
-                    },
-                    "type": "object"
-                },
-                {
-                    "$ref": "#/properties/DOWNLOAD_RATE/valueSchema",
-                    "type": "string"
-                }
-            ],
-            "units": "kbps",
-            "valueSchema": {
-                "type": "string"
-            }
+            "unitCode": "kbps",
+            "unitText": "kbps"
         },
         "HOTSPOT_ID": {
-            "allOf": [
-                {
-                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
-                }
-            ],
-            "describes": "Hotspot ID as per the device data model",
-            "oneOf": [
-                {
-                    "properties": {
-                        "value": {
-                            "$ref": "#/properties/HOTSPOT_ID/valueSchema"
-                        }
-                    },
-                    "type": "object"
-                },
-                {
-                    "$ref": "#/properties/HOTSPOT_ID/valueSchema",
-                    "type": "string"
-                }
-            ],
-            "valueSchema": {
-                "type": "string"
-            }
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Hotspot ID as per the device data model"
         },
         "LASTUPDATEDATETIME": {
-            "allOf": [
-                {
-                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/TimeProperty"
-                }
-            ]
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/TimeProperty"
         },
         "LOCATION_STATUS": {
-            "allOf": [
-                {
-                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
-                }
-            ],
-            "describes": "Hotspot functional or not",
-            "oneOf": [
-                {
-                    "properties": {
-                        "value": {
-                            "$ref": "#/properties/LOCATION_STATUS/valueSchema"
-                        }
-                    },
-                    "type": "object"
-                },
-                {
-                    "$ref": "#/properties/LOCATION_STATUS/valueSchema",
-                    "type": "string"
-                }
-            ],
-            "valueSchema": {
-                "enum": [
-                    "ON",
-                    "OFF"
-                ],
-                "type": "string"
-            }
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/location",
+            "describes": "Hotspot functional or not"
         },
         "NAME": {
-            "allOf": [
-                {
-                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
-                }
-            ],
-            "describes": "Name of the device.",
-            "oneOf": [
-                {
-                    "properties": {
-                        "value": {
-                            "$ref": "#/properties/NAME/valueSchema"
-                        }
-                    },
-                    "type": "object"
-                },
-                {
-                    "$ref": "#/properties/NAME/valueSchema",
-                    "type": "string"
-                }
-            ],
-            "valueSchema": {
-                "type": "string"
-            }
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Name of the device."
         },
         "UPLOAD_RATE": {
-            "allOf": [
-                {
-                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
-                }
-            ],
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
             "describes": " Aggregate upload rate for the hotspot location. It is a number encoded as a string. The units should be interpreted after convert 'string' type to 'number' type",
-            "oneOf": [
-                {
-                    "properties": {
-                        "value": {
-                            "$ref": "#/properties/UPLOAD_RATE/valueSchema"
-                        }
-                    },
-                    "type": "object"
-                },
-                {
-                    "$ref": "#/properties/UPLOAD_RATE/valueSchema",
-                    "type": "string"
-                }
-            ],
-            "units": "kbps",
-            "valueSchema": {
-                "type": "string"
-            }
+            "unitCode": "kbps",
+            "unitText": "kbps"
         },
         "USER_COUNT": {
-            "allOf": [
-                {
-                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
-                }
-            ],
-            "describes": "Number of users connected to the hotspot. It is an integer encoded as a string.",
-            "oneOf": [
-                {
-                    "properties": {
-                        "value": {
-                            "$ref": "#/properties/USER_COUNT/valueSchema"
-                        }
-                    },
-                    "type": "object"
-                },
-                {
-                    "$ref": "#/properties/USER_COUNT/valueSchema",
-                    "type": "string"
-                }
-            ],
-            "valueSchema": {
-                "type": "string"
-            }
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Number of users connected to the hotspot. It is an integer encoded as a string."
         },
         "location": {
-            "allOf": [
-                {
-                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/GeoProperty"
-                }
-            ]
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/location"
         }
     },
     "type": "object"

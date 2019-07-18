@@ -2,250 +2,44 @@
     "$schema": "http://json-schema.org/draft-07/schema#",
     "@context": [
         "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_context.json",
-        {
-            "Category": {
-                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/crowdSourced/crowdSourced_type1.json#/properties/Category",
-                "@type": "Property"
-            },
-            "Image": {
-                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/crowdSourced/crowdSourced_type1.json#/properties/Image",
-                "@type": "Property"
-            },
-            "Latitude": {
-                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/crowdSourced/crowdSourced_type1.json#/properties/Latitude",
-                "@type": "Property"
-            },
-            "Longitude": {
-                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/crowdSourced/crowdSourced_type1.json#/properties/Longitude",
-                "@type": "Property"
-            },
-            "Radius": {
-                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/crowdSourced/crowdSourced_type1.json#/properties/Radius",
-                "@type": "Property"
-            },
-            "Severity": {
-                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/crowdSourced/crowdSourced_type1.json#/properties/Severity",
-                "@type": "Property"
-            },
-            "id": {
-                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/crowdSourced/crowdSourced_type1.json#/properties/id",
-                "@type": "Property"
-            },
-            "locationCoverage": {
-                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/crowdSourced/crowdSourced_type1.json#/properties/location",
-                "@type": "GeoProperty"
-            },
-            "uo": "http://units.open.org/",
-            "xsd": "http://www.w3.org/2001/XMLSchema#"
-        }
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_context.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/geometry-schema.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/crowdSourced/crowdSourced_context.json#/"
     ],
     "describes": "Crowd Sourced dataset provided by ChangeBhai.org. Contains geotagged images along with public issue annotations.",
     "properties": {
         "Category": {
-            "allOf": [
-                {
-                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
-                }
-            ],
-            "describes": "Classification of the image",
-            "oneOf": [
-                {
-                    "properties": {
-                        "value": {
-                            "$ref": "#/properties/Category/valueSchema"
-                        }
-                    },
-                    "type": "object"
-                },
-                {
-                    "$ref": "#/properties/Category/valueSchema",
-                    "type": "string"
-                }
-            ],
-            "valueSchema": {
-                "enum": [
-                    "Garbage",
-                    "Footpaths",
-                    "Roads",
-                    "Encroachment",
-                    "Illegal Ads",
-                    "Wrong Parking",
-                    "Street Lights",
-                    "Signages",
-                    "Bus Stops",
-                    "Dividers",
-                    "Stray Menace",
-                    "Public Toilets",
-                    "Road Markings",
-                    "Traffic Signals",
-                    "Traffic Violations",
-                    "Road Markings"
-                ],
-                "type": "string"
-            }
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Classification of the image"
         },
         "Image": {
-            "allOf": [
-                {
-                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
-                }
-            ],
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
             "describes": "Link of the image",
-            "format": "uri",
-            "oneOf": [
-                {
-                    "properties": {
-                        "value": {
-                            "$ref": "#/properties/Image/valueSchema"
-                        }
-                    },
-                    "type": "object"
-                },
-                {
-                    "$ref": "#/properties/Image/valueSchema",
-                    "type": "string"
-                }
-            ],
-            "valueSchema": {
-                "type": "string"
-            }
+            "format": "uri"
         },
         "Latitude": {
-            "allOf": [
-                {
-                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
-                }
-            ],
-            "describes": "Latitude of the geo-tagged image",
-            "oneOf": [
-                {
-                    "properties": {
-                        "value": {
-                            "$ref": "#/properties/Latitude/valueSchema"
-                        }
-                    },
-                    "type": "object"
-                },
-                {
-                    "$ref": "#/properties/Latitude/valueSchema",
-                    "type": "string"
-                }
-            ],
-            "valueSchema": {
-                "type": "string"
-            }
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Latitude of the geo-tagged image"
         },
         "Longitude": {
-            "allOf": [
-                {
-                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
-                }
-            ],
-            "describes": "Longitude of the geo-tagged image",
-            "oneOf": [
-                {
-                    "properties": {
-                        "value": {
-                            "$ref": "#/properties/Longitude/valueSchema"
-                        }
-                    },
-                    "type": "object"
-                },
-                {
-                    "$ref": "#/properties/Longitude/valueSchema",
-                    "type": "string"
-                }
-            ],
-            "valueSchema": {
-                "type": "string"
-            }
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Longitude of the geo-tagged image"
         },
         "Radius": {
-            "allOf": [
-                {
-                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
-                }
-            ],
-            "describes": "Radius of the area for which geo-tagged images are required",
-            "oneOf": [
-                {
-                    "properties": {
-                        "value": {
-                            "$ref": "#/properties/Radius/valueSchema"
-                        }
-                    },
-                    "type": "object"
-                },
-                {
-                    "$ref": "#/properties/Radius/valueSchema",
-                    "type": "string"
-                }
-            ],
-            "valueSchema": {
-                "type": "string"
-            }
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Radius of the area for which geo-tagged images are required"
         },
         "Severity": {
-            "allOf": [
-                {
-                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
-                }
-            ],
-            "describes": "Severity of the category",
-            "oneOf": [
-                {
-                    "properties": {
-                        "value": {
-                            "$ref": "#/properties/Severity/valueSchema"
-                        }
-                    },
-                    "type": "object"
-                },
-                {
-                    "$ref": "#/properties/Severity/valueSchema",
-                    "type": "string"
-                }
-            ],
-            "valueSchema": {
-                "enum": [
-                    "low",
-                    "high",
-                    "medium"
-                ],
-                "type": "string"
-            }
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Severity of the category"
         },
         "id": {
-            "allOf": [
-                {
-                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
-                }
-            ],
-            "describes": "id of the geo-tagged image",
-            "oneOf": [
-                {
-                    "properties": {
-                        "value": {
-                            "$ref": "#/properties/id/valueSchema"
-                        }
-                    },
-                    "type": "object"
-                },
-                {
-                    "$ref": "#/properties/id/valueSchema",
-                    "type": "string"
-                }
-            ],
-            "valueSchema": {
-                "type": "string"
-            }
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "id of the geo-tagged image"
         },
         "locationCoverage": {
-            "allOf": [
-                {
-                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/GeoProperty"
-                }
-            ]
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/GeoProperty"
         }
     },
     "type": "object"

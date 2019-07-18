@@ -1,0 +1,74 @@
+{
+    "@context": {
+        "address": {
+            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/services/vms/vms_context.json#/address",
+            "@type": "Property"
+        },
+        "duration": {
+            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/services/vms/vms_context.json#/duration",
+            "@type": "Property"
+        },
+        "end_date": {
+            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/services/vms/vms_context.json#/end_date",
+            "@type": "Property"
+        },
+        "file_upload": {
+            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/services/vms/vms_context.json#/file_upload",
+            "@type": "Property"
+        },
+        "location": {
+            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/services/vms/vms_context.json#/location",
+            "@type": "GeoProperty"
+        },
+        "screen_dimensions": {
+            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/services/vms/vms_context.json#/screen_dimensions",
+            "@type": "Property"
+        },
+        "screen_id": {
+            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/services/vms/vms_context.json#/screen_id",
+            "@type": "Property"
+        },
+        "screen_name": {
+            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/services/vms/vms_context.json#/screen_name",
+            "@type": "Property"
+        },
+        "start_date": {
+            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/services/vms/vms_context.json#/start_date",
+            "@type": "Property"
+        },
+        "vms_enabler": {
+            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/services/vms/vms_context.json#/vms_enabler",
+            "@type": "Property"
+        }
+    },
+    "address": {
+        "describes": "address of the screen"
+    },
+    "duration": {
+        "describes": "duration of the message"
+    },
+    "end_date": {
+        "describes": "End time of the message"
+    },
+    "file_upload": {
+        "describes": "path of the file in the uploaders system"
+    },
+    "location": {
+        "describes": "location where the screen is placed"
+    },
+    "screen_dimensions": {
+        "describes": "Dimensions of the screen in lenght x breadth format"
+    },
+    "screen_id": {
+        "describes": "identifier of the screen in the services controller"
+    },
+    "screen_name": {
+        "describes": "User identifiable name for the screen"
+    },
+    "start_date": {
+        "describes": "Start time of the message"
+    },
+    "vms_enabler": {
+        "describes": "Name of the service enabler"
+    }
+}

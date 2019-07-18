@@ -5,7 +5,7 @@ from os.path import isfile, join
 import re
 
 
-data_model = "../../../data_models/environment/floodSensor/env_flood_climoPune_0.json"
+data_model = "../../../data_models/services/vms/screenly.json"
 
 dm_list = data_model.split("/")
 dm_name = dm_list[-1]
@@ -24,7 +24,7 @@ miscSchemaOrgDefs = "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_
 geometry_schema = "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/geometry-schema.json"
 
 dm_url = "https://raw.githubusercontent.com/iudx/iudx-ld/master/" + folder_path + dm_name + "#/properties/"
-dm_context_url = "https://raw.githubusercontent.com/iudx/iudx-ld/master/" + folder_path + folder_path.split("/")[-1] + "_context.json" + "#/properties/"
+dm_context_url = "https://raw.githubusercontent.com/iudx/iudx-ld/master/" + folder_path + dm_context_file_name + "#/"
 
 dm = {}
 with open(data_model, "r") as f:
@@ -43,19 +43,28 @@ dm_context = {}
 dm_context["@context"] = {}
 
 
+locRef = "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/location"
 
 for prop in props:
     if(re.search('time', prop, re.IGNORECASE)):
         dm_context["@context"][prop] = {"@id":dm_context_url + prop, "@type": "TimeProperty"}
     elif(re.search('location', prop, re.IGNORECASE)):
         dm_context["@context"][prop] = {"@id":dm_context_url + prop, "@type": "GeoProperty"}
+        props[prop]["$ref"] = locRef
+        if("allOf" in props[prop].keys()):
+            props[prop].pop("allOf")
     else:
         dm_context["@context"][prop] = {"@id":dm_context_url + prop, "@type": "Property"}
+    if("allOf" in props[prop].keys()):
+            props[prop]["$ref"] = props[prop]["allOf"][0]["$ref"]
+            props[prop].pop("allOf")
     if("describes" in props[prop].keys()):
         dm_context[prop] = {}
         dm_context[prop]["describes"] = props[prop]["describes"]
     if("units" in props[prop].keys()):
         props[prop]["unitText"] = props[prop]["units"]
+        props[prop]["unitCode"] = props[prop]["units"]
+        props[prop].pop("units")
     if("oneOf" in props[prop].keys()):
         props[prop].pop("oneOf")
     if("valueSchema" in props[prop].keys()):

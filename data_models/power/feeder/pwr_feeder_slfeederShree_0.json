@@ -2,490 +2,100 @@
     "$schema": "http://json-schema.org/draft-07/schema#",
     "@context": [
         "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_context.json",
-        {
-            "B_PHASE_CURRENT": {
-                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json#/properties/B_PHASE_CURRENT",
-                "@type": "Property"
-            },
-            "B_PHASE_POWER": {
-                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json#/properties/B_PHASE_POWER",
-                "@type": "Property"
-            },
-            "B_PHASE_VOLTAGE": {
-                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json#/properties/B_PHASE_VOLTAGE",
-                "@type": "Property"
-            },
-            "LASTUPDATEDATETIME": {
-                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json#/properties/LASTUPDATEDATETIME",
-                "@type": "TimeProperty"
-            },
-            "LIGHT_STATUS": {
-                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json#/properties/LIGHT_STATUS",
-                "@type": "Property"
-            },
-            "NAME": {
-                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json#/properties/NAME",
-                "@type": "Property"
-            },
-            "PANEL_ID": {
-                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json#/properties/PANEL_ID",
-                "@type": "Property"
-            },
-            "PANEL_NAME": {
-                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json#/properties/PANEL_NAME",
-                "@type": "Property"
-            },
-            "R_PHASE_CURRENT": {
-                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json#/properties/R_PHASE_CURRENT",
-                "@type": "Property"
-            },
-            "R_PHASE_POWER": {
-                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json#/properties/R_PHASE_POWER",
-                "@type": "Property"
-            },
-            "R_PHASE_VOLTAGE": {
-                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json#/properties/R_PHASE_VOLTAGE",
-                "@type": "Property"
-            },
-            "TOTAL_LIGHTS": {
-                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json#/properties/TOTAL_LIGHTS",
-                "@type": "Property"
-            },
-            "TOTAL_LOAD": {
-                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json#/properties/TOTAL_LOAD",
-                "@type": "Property"
-            },
-            "Y_PHASE_CURRENT": {
-                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json#/properties/Y_PHASE_CURRENT",
-                "@type": "Property"
-            },
-            "Y_PHASE_POWER": {
-                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json#/properties/Y_PHASE_POWER",
-                "@type": "Property"
-            },
-            "Y_PHASE_VOLTAGE": {
-                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json#/properties/Y_PHASE_VOLTAGE",
-                "@type": "Property"
-            },
-            "location": {
-                "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/power/feeder/pwr_feeder_slfeederShree_0.json#/properties/location",
-                "@type": "GeoProperty"
-            },
-            "uo": "http://units.open.org/",
-            "xsd": "http://www.w3.org/2001/XMLSchema#"
-        }
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_context.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/geometry-schema.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/power/feeder/feeder_context.json#/"
     ],
     "describes": "Data model for electric power feeder providing power to a group of streetlights.",
     "name": "StreetLightingSreePanel",
     "properties": {
         "B_PHASE_CURRENT": {
-            "allOf": [
-                {
-                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
-                }
-            ],
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
             "describes": "Gives B Phase Current",
-            "oneOf": [
-                {
-                    "properties": {
-                        "value": {
-                            "$ref": "#/properties/B_PHASE_CURRENT/valueSchema"
-                        }
-                    },
-                    "type": "object"
-                },
-                {
-                    "$ref": "#/properties/B_PHASE_CURRENT/valueSchema",
-                    "type": "string"
-                }
-            ],
-            "units": "Ampere",
-            "valueSchema": {
-                "type": "string"
-            }
+            "unitCode": "Ampere",
+            "unitText": "Ampere"
         },
         "B_PHASE_POWER": {
-            "allOf": [
-                {
-                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
-                }
-            ],
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
             "describes": "Gives B Phase Power",
-            "oneOf": [
-                {
-                    "properties": {
-                        "value": {
-                            "$ref": "#/properties/B_PHASE_POWER/valueSchema"
-                        }
-                    },
-                    "type": "object"
-                },
-                {
-                    "$ref": "#/properties/B_PHASE_POWER/valueSchema",
-                    "type": "string"
-                }
-            ],
-            "units": "Watts",
-            "valueSchema": {
-                "type": "string"
-            }
+            "unitCode": "Watts",
+            "unitText": "Watts"
         },
         "B_PHASE_VOLTAGE": {
-            "allOf": [
-                {
-                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
-                }
-            ],
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
             "describes": "Gives B Phase Voltage",
-            "oneOf": [
-                {
-                    "properties": {
-                        "value": {
-                            "$ref": "#/properties/B_PHASE_VOLTAGE/valueSchema"
-                        }
-                    },
-                    "type": "object"
-                },
-                {
-                    "$ref": "#/properties/B_PHASE_VOLTAGE/valueSchema",
-                    "type": "string"
-                }
-            ],
-            "units": "Volts",
-            "valueSchema": {
-                "type": "string"
-            }
+            "unitCode": "Volts",
+            "unitText": "Volts"
         },
         "LASTUPDATEDATETIME": {
-            "allOf": [
-                {
-                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/TimeProperty"
-                }
-            ]
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/TimeProperty"
         },
         "LIGHT_STATUS": {
-            "allOf": [
-                {
-                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
-                }
-            ],
-            "describes": "Currents status of the feeder device",
-            "oneOf": [
-                {
-                    "properties": {
-                        "value": {
-                            "$ref": "#/properties/LIGHT_STATUS/valueSchema"
-                        }
-                    },
-                    "type": "object"
-                },
-                {
-                    "$ref": "#/properties/LIGHT_STATUS/valueSchema",
-                    "type": "string"
-                }
-            ],
-            "valueSchema": {
-                "enum": [
-                    "On",
-                    "Off"
-                ],
-                "type": "string"
-            }
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Currents status of the feeder device"
         },
         "NAME": {
-            "allOf": [
-                {
-                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
-                }
-            ],
-            "describes": "Name of the locality",
-            "oneOf": [
-                {
-                    "properties": {
-                        "value": {
-                            "$ref": "#/properties/NAME/valueSchema"
-                        }
-                    },
-                    "type": "object"
-                },
-                {
-                    "$ref": "#/properties/NAME/valueSchema",
-                    "type": "string"
-                }
-            ],
-            "valueSchema": {
-                "type": "string"
-            }
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Name of the locality"
         },
         "PANEL_ID": {
-            "allOf": [
-                {
-                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
-                }
-            ],
-            "describes": "Uniquie ID assigned to the mounted panel",
-            "oneOf": [
-                {
-                    "properties": {
-                        "value": {
-                            "$ref": "#/properties/PANEL_ID/valueSchema"
-                        }
-                    },
-                    "type": "object"
-                },
-                {
-                    "$ref": "#/properties/PANEL_ID/valueSchema",
-                    "type": "string"
-                }
-            ],
-            "valueSchema": {
-                "type": "string"
-            }
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Uniquie ID assigned to the mounted panel"
         },
         "PANEL_NAME": {
-            "allOf": [
-                {
-                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
-                }
-            ],
-            "describes": "Name of the Panel Mounted",
-            "oneOf": [
-                {
-                    "properties": {
-                        "value": {
-                            "$ref": "#/properties/PANEL_NAME/valueSchema"
-                        }
-                    },
-                    "type": "object"
-                },
-                {
-                    "$ref": "#/properties/PANEL_NAME/valueSchema",
-                    "type": "string"
-                }
-            ],
-            "valueSchema": {
-                "type": "string"
-            }
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Name of the Panel Mounted"
         },
         "R_PHASE_CURRENT": {
-            "allOf": [
-                {
-                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
-                }
-            ],
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
             "describes": "Gives R Phase Current",
-            "oneOf": [
-                {
-                    "properties": {
-                        "value": {
-                            "$ref": "#/properties/R_PHASE_CURRENT/valueSchema"
-                        }
-                    },
-                    "type": "object"
-                },
-                {
-                    "$ref": "#/properties/R_PHASE_CURRENT/valueSchema",
-                    "type": "string"
-                }
-            ],
-            "units": "Ampere",
-            "valueSchema": {
-                "type": "string"
-            }
+            "unitCode": "Ampere",
+            "unitText": "Ampere"
         },
         "R_PHASE_POWER": {
-            "allOf": [
-                {
-                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
-                }
-            ],
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
             "describes": "Gives R Phase Power",
-            "oneOf": [
-                {
-                    "properties": {
-                        "value": {
-                            "$ref": "#/properties/R_PHASE_POWER/valueSchema"
-                        }
-                    },
-                    "type": "object"
-                },
-                {
-                    "$ref": "#/properties/R_PHASE_POWER/valueSchema",
-                    "type": "string"
-                }
-            ],
-            "units": "Watts",
-            "valueSchema": {
-                "type": "string"
-            }
+            "unitCode": "Watts",
+            "unitText": "Watts"
         },
         "R_PHASE_VOLTAGE": {
-            "allOf": [
-                {
-                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
-                }
-            ],
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
             "describes": "Gives R Phase Voltage",
-            "oneOf": [
-                {
-                    "properties": {
-                        "value": {
-                            "$ref": "#/properties/R_PHASE_VOLTAGE/valueSchema"
-                        }
-                    },
-                    "type": "object"
-                },
-                {
-                    "$ref": "#/properties/R_PHASE_VOLTAGE/valueSchema",
-                    "type": "string"
-                }
-            ],
-            "units": "Volts",
-            "valueSchema": {
-                "type": "string"
-            }
+            "unitCode": "Volts",
+            "unitText": "Volts"
         },
         "TOTAL_LIGHTS": {
-            "allOf": [
-                {
-                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
-                }
-            ],
-            "describes": "Indication of the number of Lights under the given feeder",
-            "oneOf": [
-                {
-                    "properties": {
-                        "value": {
-                            "$ref": "#/properties/TOTAL_LIGHTS/valueSchema"
-                        }
-                    },
-                    "type": "object"
-                },
-                {
-                    "$ref": "#/properties/TOTAL_LIGHTS/valueSchema",
-                    "type": "string"
-                }
-            ],
-            "valueSchema": {
-                "type": "string"
-            }
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Indication of the number of Lights under the given feeder"
         },
         "TOTAL_LOAD": {
-            "allOf": [
-                {
-                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
-                }
-            ],
-            "describes": "Total expected load on the feeder.",
-            "oneOf": [
-                {
-                    "properties": {
-                        "value": {
-                            "$ref": "#/properties/TOTAL_LOAD/valueSchema"
-                        }
-                    },
-                    "type": "object"
-                },
-                {
-                    "$ref": "#/properties/TOTAL_LOAD/valueSchema",
-                    "type": "string"
-                }
-            ],
-            "valueSchema": {
-                "type": "string"
-            }
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Total expected load on the feeder."
         },
         "Y_PHASE_CURRENT": {
-            "allOf": [
-                {
-                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
-                }
-            ],
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
             "describes": "Gives Y Phase Current",
-            "oneOf": [
-                {
-                    "properties": {
-                        "value": {
-                            "$ref": "#/properties/Y_PHASE_CURRENT/valueSchema"
-                        }
-                    },
-                    "type": "object"
-                },
-                {
-                    "$ref": "#/properties/Y_PHASE_CURRENT/valueSchema",
-                    "type": "string"
-                }
-            ],
-            "units": "Ampere",
-            "valueSchema": {
-                "type": "string"
-            }
+            "unitCode": "Ampere",
+            "unitText": "Ampere"
         },
         "Y_PHASE_POWER": {
-            "allOf": [
-                {
-                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
-                }
-            ],
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
             "describes": "Gives Y Phase Power",
-            "oneOf": [
-                {
-                    "properties": {
-                        "value": {
-                            "$ref": "#/properties/Y_PHASE_POWER/valueSchema"
-                        }
-                    },
-                    "type": "object"
-                },
-                {
-                    "$ref": "#/properties/Y_PHASE_POWER/valueSchema",
-                    "type": "string"
-                }
-            ],
-            "units": "Watts",
-            "valueSchema": {
-                "type": "string"
-            }
+            "unitCode": "Watts",
+            "unitText": "Watts"
         },
         "Y_PHASE_VOLTAGE": {
-            "allOf": [
-                {
-                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
-                }
-            ],
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
             "describes": "Gives Y Phase Voltage",
-            "oneOf": [
-                {
-                    "properties": {
-                        "value": {
-                            "$ref": "#/properties/Y_PHASE_VOLTAGE/valueSchema"
-                        }
-                    },
-                    "type": "object"
-                },
-                {
-                    "$ref": "#/properties/Y_PHASE_VOLTAGE/valueSchema",
-                    "type": "string"
-                }
-            ],
-            "units": "Volts",
-            "valueSchema": {
-                "type": "string"
-            }
+            "unitCode": "Volts",
+            "unitText": "Volts"
         },
         "deviceModelInfo": {
-            "allOf": [
-                {
-                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json#/definitions/product"
-                }
-            ]
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json#/definitions/product"
         },
         "location": {
-            "allOf": [
-                {
-                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/GeoProperty"
-                }
-            ]
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/location"
         }
     }
 }

@@ -1,822 +1,195 @@
 {
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "@context": [
         "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_context.json",
         "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_context.json",
-        "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/env_aqm_context_0.json",
         "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json",
-        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/geometry-schema.json"
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/geometry-schema.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/airQuality_context.json#/"
     ],
-    "$schema": "http://json-schema.org/draft-07/schema#",
     "describes": "Air Quality dataModel for AQM sensors deployed in Pune City.",
     "name": "env_aqm_climoPune_0",
     "properties": {
         "AIR_PRESSURE": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
             "describes": "Measured Air pressure",
             "unitCode": "ATM",
-            "unitText": "standard atmosphere",
-            "allOf": [
-                {
-                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty"
-                }
-            ],
-            "oneOf": [
-                {
-                    "type": "object",
-                    "properties": {
-                        "value": {
-                            "type": "string"
-                        }
-                    }
-                },
-                {
-                    "type": "string"
-                }
-            ]
+            "unitText": "standard atmosphere"
         },
         "AQI": {
-            "allOf": [
-                {
-                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
-                }
-            ],
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
             "describes": "Overall AQI ",
-            "oneOf": [
-                {
-                    "properties": {
-                        "value": {
-                            "$ref": "#/properties/AQI/valueSchema"
-                        }
-                    },
-                    "type": "object"
-                },
-                {
-                    "$ref": "#/properties/AQI/valueSchema",
-                    "type": "number"
-                }
-            ],
-            "units": "dimensionless",
-            "valueSchema": {
-                "type": "number"
-            }
+            "unitCode": "dimensionless",
+            "unitText": "dimensionless"
         },
         "AQI_POLLUTANT": {
-            "allOf": [
-                {
-                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
-                }
-            ],
-            "describes": "Major pollutant in the AQI index.",
-            "oneOf": [
-                {
-                    "properties": {
-                        "value": {
-                            "$ref": "#/properties/AQI_POLLUTANT/valueSchema"
-                        }
-                    },
-                    "type": "object"
-                },
-                {
-                    "$ref": "#/properties/AQI_POLLUTANT/valueSchema",
-                    "type": "string"
-                }
-            ],
-            "valueSchema": {
-                "enum": [
-                    "CO",
-                    "SO2",
-                    "NO",
-                    "NO2",
-                    "PM_10",
-                    "PM2_5",
-                    "OZONE"
-                ],
-                "type": "string"
-            }
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Major pollutant in the AQI index."
         },
         "CATEGORY": {
-            "allOf": [
-                {
-                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
-                }
-            ],
-            "describes": "Quality indication",
-            "oneOf": [
-                {
-                    "properties": {
-                        "value": {
-                            "$ref": "#/properties/CATEGORY/valueSchema"
-                        }
-                    },
-                    "type": "object"
-                },
-                {
-                    "$ref": "#/properties/CATEGORY/valueSchema",
-                    "type": "string"
-                }
-            ],
-            "valueSchema": {
-                "enum": [
-                    "GOOD",
-                    "MODERATE",
-                    "UNHEALTHY",
-                    "VERY UNHEALTHY",
-                    "HAZARDOUS",
-                    "POOR"
-                ],
-                "type": "string"
-            }
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Quality indication"
         },
         "CO2_MAX": {
-            "allOf": [
-                {
-                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
-                }
-            ],
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
             "describes": "Maximum value of CO2 for the last 24 hours",
-            "oneOf": [
-                {
-                    "properties": {
-                        "value": {
-                            "$ref": "#/properties/CO2_MAX/valueSchema"
-                        }
-                    },
-                    "type": "object"
-                },
-                {
-                    "$ref": "#/properties/CO2_MAX/valueSchema",
-                    "type": "number"
-                }
-            ],
-            "units": "ppm",
-            "valueSchema": {
-                "type": "number"
-            }
+            "unitCode": "ppm",
+            "unitText": "ppm"
         },
         "CO2_MIN": {
-            "allOf": [
-                {
-                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
-                }
-            ],
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
             "describes": "Minimum value of CO2 for the last 24 hours",
-            "oneOf": [
-                {
-                    "properties": {
-                        "value": {
-                            "$ref": "#/properties/CO2_MIN/valueSchema"
-                        }
-                    },
-                    "type": "object"
-                },
-                {
-                    "$ref": "#/properties/CO2_MIN/valueSchema",
-                    "type": "number"
-                }
-            ],
-            "units": "ppm",
-            "valueSchema": {
-                "type": "number"
-            }
+            "unitCode": "ppm",
+            "unitText": "ppm"
         },
         "CO_MAX": {
-            "allOf": [
-                {
-                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
-                }
-            ],
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
             "describes": "Maximum value of CO for the last 24 hours",
-            "oneOf": [
-                {
-                    "properties": {
-                        "value": {
-                            "$ref": "#/properties/CO_MAX/valueSchema"
-                        }
-                    },
-                    "type": "object"
-                },
-                {
-                    "$ref": "#/properties/CO_MAX/valueSchema",
-                    "type": "number"
-                }
-            ],
-            "units": "ppm",
-            "valueSchema": {
-                "type": "number"
-            }
+            "unitCode": "ppm",
+            "unitText": "ppm"
         },
         "CO_MIN": {
-            "allOf": [
-                {
-                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
-                }
-            ],
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
             "describes": "Minimum value of CO for the last 24 hours",
-            "oneOf": [
-                {
-                    "properties": {
-                        "value": {
-                            "$ref": "#/properties/CO_MIN/valueSchema"
-                        }
-                    },
-                    "type": "object"
-                },
-                {
-                    "$ref": "#/properties/CO_MIN/valueSchema",
-                    "type": "number"
-                }
-            ],
-            "units": "ppm",
-            "valueSchema": {
-                "type": "number"
-            }
+            "unitCode": "ppm",
+            "unitText": "ppm"
         },
         "DEVICEID": {
-            "allOf": [
-                {
-                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
-                }
-            ],
-            "describes": "Device ID's as per the device data model",
-            "oneOf": [
-                {
-                    "properties": {
-                        "value": {
-                            "$ref": "#/properties/DEVICEID/valueSchema"
-                        }
-                    },
-                    "type": "object"
-                },
-                {
-                    "$ref": "#/properties/DEVICEID/valueSchema",
-                    "type": "string"
-                }
-            ],
-            "valueSchema": {
-                "type": "string"
-            }
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Device ID's as per the device data model"
         },
         "HUMIDITY": {
-            "allOf": [
-                {
-                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
-                }
-            ],
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
             "describes": "Relative humidity",
-            "oneOf": [
-                {
-                    "properties": {
-                        "value": {
-                            "$ref": "#/properties/HUMIDITY/valueSchema"
-                        }
-                    },
-                    "type": "object"
-                },
-                {
-                    "$ref": "#/properties/HUMIDITY/valueSchema",
-                    "type": "number"
-                }
-            ],
-            "units": "percentage",
-            "valueSchema": {
-                "type": "number"
-            }
+            "unitCode": "percentage",
+            "unitText": "percentage"
         },
         "LASTUPDATEDATETIME": {
-            "allOf": [
-                {
-                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/TimeProperty"
-                }
-            ]
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/TimeProperty"
         },
         "LIGHT": {
-            "allOf": [
-                {
-                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
-                }
-            ],
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
             "describes": "Light in lux",
-            "oneOf": [
-                {
-                    "properties": {
-                        "value": {
-                            "$ref": "#/properties/LIGHT/valueSchema"
-                        }
-                    },
-                    "type": "object"
-                },
-                {
-                    "$ref": "#/properties/LIGHT/valueSchema",
-                    "type": "number"
-                }
-            ],
-            "units": "lux",
-            "valueSchema": {
-                "type": "number"
-            }
+            "unitCode": "lux",
+            "unitText": "lux"
         },
         "NAME": {
-            "allOf": [
-                {
-                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
-                }
-            ],
-            "describes": "Name of the device.",
-            "oneOf": [
-                {
-                    "properties": {
-                        "value": {
-                            "$ref": "#/properties/NAME/valueSchema"
-                        }
-                    },
-                    "type": "object"
-                },
-                {
-                    "$ref": "#/properties/NAME/valueSchema",
-                    "type": "string"
-                }
-            ],
-            "valueSchema": {
-                "type": "string"
-            }
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Name of the device."
         },
         "NO2_MAX": {
-            "allOf": [
-                {
-                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
-                }
-            ],
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
             "describes": "Maximum value of NO2 for the last 24 hours",
-            "oneOf": [
-                {
-                    "properties": {
-                        "value": {
-                            "$ref": "#/properties/NO2_MAX/valueSchema"
-                        }
-                    },
-                    "type": "object"
-                },
-                {
-                    "$ref": "#/properties/NO2_MAX/valueSchema",
-                    "type": "number"
-                }
-            ],
-            "units": "ppb",
-            "valueSchema": {
-                "type": "number"
-            }
+            "unitCode": "ppb",
+            "unitText": "ppb"
         },
         "NO2_MIN": {
-            "allOf": [
-                {
-                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
-                }
-            ],
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
             "describes": "Minimum value of NO2 for the last 24 hours",
-            "oneOf": [
-                {
-                    "properties": {
-                        "value": {
-                            "$ref": "#/properties/NO2_MIN/valueSchema"
-                        }
-                    },
-                    "type": "object"
-                },
-                {
-                    "$ref": "#/properties/NO2_MIN/valueSchema",
-                    "type": "number"
-                }
-            ],
-            "units": "ppb",
-            "valueSchema": {
-                "type": "number"
-            }
+            "unitCode": "ppb",
+            "unitText": "ppb"
         },
         "NO_MAX": {
-            "allOf": [
-                {
-                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
-                }
-            ],
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
             "describes": "Maximum value of NO for the last 24 hours",
-            "oneOf": [
-                {
-                    "properties": {
-                        "value": {
-                            "$ref": "#/properties/NO_MAX/valueSchema"
-                        }
-                    },
-                    "type": "object"
-                },
-                {
-                    "$ref": "#/properties/NO_MAX/valueSchema",
-                    "type": "number"
-                }
-            ],
-            "units": "ppb",
-            "valueSchema": {
-                "type": "number"
-            }
+            "unitCode": "ppb",
+            "unitText": "ppb"
         },
         "NO_MIN": {
-            "allOf": [
-                {
-                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
-                }
-            ],
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
             "describes": "Minimum value of NO for the last 24 hours",
-            "oneOf": [
-                {
-                    "properties": {
-                        "value": {
-                            "$ref": "#/properties/NO_MIN/valueSchema"
-                        }
-                    },
-                    "type": "object"
-                },
-                {
-                    "$ref": "#/properties/NO_MIN/valueSchema",
-                    "type": "number"
-                }
-            ],
-            "units": "ppb",
-            "valueSchema": {
-                "type": "number"
-            }
+            "unitCode": "ppb",
+            "unitText": "ppb"
         },
         "OZONE_MAX": {
-            "allOf": [
-                {
-                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
-                }
-            ],
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
             "describes": "Maximum value of Ozone for the last 24 hours",
-            "oneOf": [
-                {
-                    "properties": {
-                        "value": {
-                            "$ref": "#/properties/OZONE_MAX/valueSchema"
-                        }
-                    },
-                    "type": "object"
-                },
-                {
-                    "$ref": "#/properties/OZONE_MAX/valueSchema",
-                    "type": "number"
-                }
-            ],
-            "units": "ppb",
-            "valueSchema": {
-                "type": "number"
-            }
+            "unitCode": "ppb",
+            "unitText": "ppb"
         },
         "OZONE_MIN": {
-            "allOf": [
-                {
-                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
-                }
-            ],
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
             "describes": "Minimum value of Ozone for the last 24 hours",
-            "oneOf": [
-                {
-                    "properties": {
-                        "value": {
-                            "$ref": "#/properties/OZONE_MIN/valueSchema"
-                        }
-                    },
-                    "type": "object"
-                },
-                {
-                    "$ref": "#/properties/OZONE_MIN/valueSchema",
-                    "type": "number"
-                }
-            ],
-            "units": "ppb",
-            "valueSchema": {
-                "type": "number"
-            }
+            "unitCode": "ppb",
+            "unitText": "ppb"
         },
         "PM10_MAX": {
-            "allOf": [
-                {
-                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
-                }
-            ],
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
             "describes": "Maximum value of PM10 for the last 24 hours",
-            "oneOf": [
-                {
-                    "properties": {
-                        "value": {
-                            "$ref": "#/properties/PM10_MAX/valueSchema"
-                        }
-                    },
-                    "type": "object"
-                },
-                {
-                    "$ref": "#/properties/PM10_MAX/valueSchema",
-                    "type": "number"
-                }
-            ],
-            "units": "ug/m3",
-            "valueSchema": {
-                "type": "number"
-            }
+            "unitCode": "ug/m3",
+            "unitText": "ug/m3"
         },
         "PM10_MIN": {
-            "allOf": [
-                {
-                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
-                }
-            ],
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
             "describes": "Minimum value of PM10 for the last 24 hours",
-            "oneOf": [
-                {
-                    "properties": {
-                        "value": {
-                            "$ref": "#/properties/PM10_MIN/valueSchema"
-                        }
-                    },
-                    "type": "object"
-                },
-                {
-                    "$ref": "#/properties/PM10_MIN/valueSchema",
-                    "type": "number"
-                }
-            ],
-            "units": "ug/m3",
-            "valueSchema": {
-                "type": "number"
-            }
+            "unitCode": "ug/m3",
+            "unitText": "ug/m3"
         },
         "PM2_MAX": {
-            "allOf": [
-                {
-                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
-                }
-            ],
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
             "describes": "Maximum value of PM2.5 for the last 24 hours",
-            "oneOf": [
-                {
-                    "properties": {
-                        "value": {
-                            "$ref": "#/properties/PM2_MAX/valueSchema"
-                        }
-                    },
-                    "type": "object"
-                },
-                {
-                    "$ref": "#/properties/PM2_MAX/valueSchema",
-                    "type": "number"
-                }
-            ],
-            "units": "ug/m3",
-            "valueSchema": {
-                "type": "number"
-            }
+            "unitCode": "ug/m3",
+            "unitText": "ug/m3"
         },
         "PM2_MIN": {
-            "allOf": [
-                {
-                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
-                }
-            ],
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
             "describes": "Minimum value of PM2.5 for the last 24 hours",
-            "oneOf": [
-                {
-                    "properties": {
-                        "value": {
-                            "$ref": "#/properties/PM2_MIN/valueSchema"
-                        }
-                    },
-                    "type": "object"
-                },
-                {
-                    "$ref": "#/properties/PM2_MIN/valueSchema",
-                    "type": "number"
-                }
-            ],
-            "units": "ug/m3",
-            "valueSchema": {
-                "type": "number"
-            }
+            "unitCode": "ug/m3",
+            "unitText": "ug/m3"
         },
         "SO2_MAX": {
-            "allOf": [
-                {
-                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
-                }
-            ],
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
             "describes": "Maximum value of SO2 for the last 24 hours",
-            "oneOf": [
-                {
-                    "properties": {
-                        "value": {
-                            "$ref": "#/properties/SO2_MAX/valueSchema"
-                        }
-                    },
-                    "type": "object"
-                },
-                {
-                    "$ref": "#/properties/SO2_MAX/valueSchema",
-                    "type": "number"
-                }
-            ],
-            "units": "ppb",
-            "valueSchema": {
-                "type": "number"
-            }
+            "unitCode": "ppb",
+            "unitText": "ppb"
         },
         "SO2_MIN": {
-            "allOf": [
-                {
-                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
-                }
-            ],
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
             "describes": "Minimum value of SO2 for the last 24 hours",
-            "oneOf": [
-                {
-                    "properties": {
-                        "value": {
-                            "$ref": "#/properties/SO2_MIN/valueSchema"
-                        }
-                    },
-                    "type": "object"
-                },
-                {
-                    "$ref": "#/properties/SO2_MIN/valueSchema",
-                    "type": "number"
-                }
-            ],
-            "units": "ppb",
-            "valueSchema": {
-                "type": "number"
-            }
+            "unitCode": "ppb",
+            "unitText": "ppb"
         },
         "SOUND": {
-            "allOf": [
-                {
-                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
-                }
-            ],
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
             "description": "Instantaneous Noise level",
-            "oneOf": [
-                {
-                    "properties": {
-                        "value": {
-                            "$ref": "#/properties/SOUND/valueSchema"
-                        }
-                    },
-                    "type": "object"
-                },
-                {
-                    "$ref": "#/properties/SOUND/valueSchema",
-                    "type": "number"
-                }
-            ],
-            "units": "dB",
-            "valueSchema": {
-                "type": "number"
-            }
+            "unitCode": "dB",
+            "unitText": "dB"
         },
         "STATUS": {
-            "allOf": [
-                {
-                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
-                }
-            ],
-            "describes": "Indiates if the resource is on or off",
-            "oneOf": [
-                {
-                    "properties": {
-                        "value": {
-                            "$ref": "#/properties/STATUS/valueSchema"
-                        }
-                    },
-                    "type": "object"
-                },
-                {
-                    "$ref": "#/properties/STATUS/valueSchema",
-                    "type": "string"
-                }
-            ],
-            "valueSchema": {
-                "enum": [
-                    "ON",
-                    "OFF"
-                ],
-                "type": "string"
-            }
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Indiates if the resource is on or off"
         },
         "TEMPRATURE_MAX": {
-            "allOf": [
-                {
-                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
-                }
-            ],
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
             "describes": "Maximum value of Temperature for the last 24 hours",
-            "oneOf": [
-                {
-                    "properties": {
-                        "value": {
-                            "$ref": "#/properties/TEMPRATURE_MAX/valueSchema"
-                        }
-                    },
-                    "type": "object"
-                },
-                {
-                    "$ref": "#/properties/TEMPRATURE_MAX/valueSchema",
-                    "type": "number"
-                }
-            ],
-            "units": "degreeCelsius",
-            "valueSchema": {
-                "type": "number"
-            }
+            "unitCode": "degreeCelsius",
+            "unitText": "degreeCelsius"
         },
         "TEMPRATURE_MIN": {
-            "allOf": [
-                {
-                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
-                }
-            ],
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
             "describes": "Minimum value of Temperature for the last 24 hours",
-            "oneOf": [
-                {
-                    "properties": {
-                        "value": {
-                            "$ref": "#/properties/TEMPRATURE_MIN/valueSchema"
-                        }
-                    },
-                    "type": "object"
-                },
-                {
-                    "$ref": "#/properties/TEMPRATURE_MIN/valueSchema",
-                    "type": "number"
-                }
-            ],
-            "units": "degreeCelsius",
-            "valueSchema": {
-                "type": "number"
-            }
+            "unitCode": "degreeCelsius",
+            "unitText": "degreeCelsius"
         },
         "UV_MAX": {
-            "allOf": [
-                {
-                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
-                }
-            ],
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
             "describes": "Maximum value of UV for the last 24 hours",
-            "oneOf": [
-                {
-                    "properties": {
-                        "value": {
-                            "$ref": "#/properties/UV_MAX/valueSchema"
-                        }
-                    },
-                    "type": "object"
-                },
-                {
-                    "$ref": "#/properties/UV_MAX/valueSchema",
-                    "type": "number"
-                }
-            ],
-            "units": "UVI",
-            "valueSchema": {
-                "type": "number"
-            }
+            "unitCode": "UVI",
+            "unitText": "UVI"
         },
         "UV_MIN": {
-            "allOf": [
-                {
-                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
-                }
-            ],
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
             "describes": "Minimum value of UV for the last 24 hours",
-            "oneOf": [
-                {
-                    "properties": {
-                        "value": {
-                            "$ref": "#/properties/UV_MIN/valueSchema"
-                        }
-                    },
-                    "type": "object"
-                },
-                {
-                    "$ref": "#/properties/UV_MIN/valueSchema",
-                    "type": "number"
-                }
-            ],
-            "units": "UVI",
-            "valueSchema": {
-                "type": "number"
-            }
+            "unitCode": "UVI",
+            "unitText": "UVI"
         },
         "deviceModelInfo": {
-             "describes": "Information about AQM device model.",
-             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/deviceModelInfo"
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/deviceModelInfo",
+            "describes": "Information about AQM device model."
         },
         "location": {
-           "describes": "Describes the coordinates (in GeoJSON Point type) for the installation location of the AQM device",
-           "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/location"
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/location",
+            "describes": "Describes the coordinates (in GeoJSON Point type) for the installation location of the AQM device"
         }
     },
     "type": "object"

@@ -1,0 +1,141 @@
+{
+    "@context": {
+        "Category": {
+            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/crowdSourced/crowdSourced_context.json#/Category",
+            "@type": "Property"
+        },
+        "Image": {
+            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/crowdSourced/crowdSourced_context.json#/Image",
+            "@type": "Property"
+        },
+        "Severity": {
+            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/crowdSourced/crowdSourced_context.json#/Severity",
+            "@type": "Property"
+        },
+        "id": {
+            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/crowdSourced/crowdSourced_context.json#/id",
+            "@type": "Property"
+        },
+        "locationCoverage": {
+            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/crowdSourced/crowdSourced_context.json#/locationCoverage",
+            "@type": "GeoProperty"
+        },
+        "Audit_Date": {
+            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/crowdSourced/crowdSourced_context.json#/Audit_Date",
+            "@type": "Property"
+        },
+        "Audit_Time": {
+            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/crowdSourced/crowdSourced_context.json#/Audit_Time",
+            "@type": "TimeProperty"
+        },
+        "Feeling": {
+            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/crowdSourced/crowdSourced_context.json#/Feeling",
+            "@type": "Property"
+        },
+        "Gender_Usage": {
+            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/crowdSourced/crowdSourced_context.json#/Gender_Usage",
+            "@type": "Property"
+        },
+        "Images": {
+            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/crowdSourced/crowdSourced_context.json#/Images",
+            "@type": "Property"
+        },
+        "Latitude": {
+            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/crowdSourced/crowdSourced_context.json#/Latitude",
+            "@type": "Property"
+        },
+        "Lighting": {
+            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/crowdSourced/crowdSourced_context.json#/Lighting",
+            "@type": "Property"
+        },
+        "Longitude": {
+            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/crowdSourced/crowdSourced_context.json#/Longitude",
+            "@type": "Property"
+        },
+        "Openness": {
+            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/crowdSourced/crowdSourced_context.json#/Openness",
+            "@type": "Property"
+        },
+        "People": {
+            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/crowdSourced/crowdSourced_context.json#/People",
+            "@type": "Property"
+        },
+        "Public_Transport": {
+            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/crowdSourced/crowdSourced_context.json#/Public_Transport",
+            "@type": "Property"
+        },
+        "Safety_Score": {
+            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/crowdSourced/crowdSourced_context.json#/Safety_Score",
+            "@type": "Property"
+        },
+        "Security": {
+            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/crowdSourced/crowdSourced_context.json#/Security",
+            "@type": "Property"
+        },
+        "Visibility": {
+            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/crowdSourced/crowdSourced_context.json#/Visibility",
+            "@type": "Property"
+        },
+        "Walkpath": {
+            "@id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/crowdSourced/crowdSourced_context.json#/Walkpath",
+            "@type": "Property"
+        }
+    },
+    "Audit_Date": {
+        "describes": "Date on which the image was cpatured"
+    },
+    "Feeling": {
+        "describes": "Feel of safety in the locality, rated over a score of 0-3."
+    },
+    "Gender_Usage": {
+        "describes": "Gender friendly atmosphere of the locality, rated over a score of 0-3."
+    },
+    "Images": {
+        "describes": "Link of the image"
+    },
+    "Latitude": {
+        "describes": "Latitude of the geo-tagged image"
+    },
+    "Lighting": {
+        "describes": "Indicates if the place is well-lighted, rated over a score of 0-3."
+    },
+    "Longitude": {
+        "describes": "Longitude of the geo-tagged image"
+    },
+    "Openness": {
+        "describes": "Gives a measure of the free area, rated over a score of 0-3."
+    },
+    "People": {
+        "describes": "Number of people in the image, rated over a score of 0-3."
+    },
+    "Public_Transport": {
+        "describes": "Availabity of public transport, rated over a score of 0-3."
+    },
+    "Safety_Score": {
+        "describes": "Safetipin computed safety score for the locality"
+    },
+    "Security": {
+        "describes": "Security in the place depending on the surroundings, rated over a score of 0-3."
+    },
+    "Visibility": {
+        "describes": "Clear visibilty of the things in the image, rated over a score of 0-3."
+    },
+    "Walkpath": {
+        "describes": "Presence and usability of a walkway, rated over a score of 0-3."
+    },
+    "id": {
+        "describes": "id of the geo-tagged image"
+    },
+    "locationCoverage": {
+        "describes": "Coverage location of this dataset"
+    },
+    "Category": {
+        "describes": "Classification of the image"
+    },
+    "Image": {
+        "describes": "Link of the image"
+    },
+    "Severity": {
+        "describes": "Severity of the category"
+    }
+}
