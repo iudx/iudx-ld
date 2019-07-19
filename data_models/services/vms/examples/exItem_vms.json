@@ -14,7 +14,7 @@
         }
     },
     "accessObjectURL": {
-        "object": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/services/vms/examples/screen1.json",
+        "object": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/services/vms/examples/exApi_vms.json",
         "type": "Relationship"
     },
     "accessObjectVariables": {
