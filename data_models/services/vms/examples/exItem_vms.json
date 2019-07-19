@@ -30,7 +30,11 @@
         "type": "TimeProperty",
         "value": "2019-02-20T10:30:06.093121"
     },
-    "itemDescription": "VMS system on RBCCPS conference room TV",
+    "itemDescription": "RBCCPS meeting room TV. Protected VMS system. To get advertise visit http://sirpi.co.in",
+    "vms_enabler": {
+        "type": "Property",
+        "value": "http://sirpi.co.in"
+    },
     "itemStatus": {
         "type": "Property",
         "value": "active"
