@@ -36,7 +36,8 @@
         "location": {
             "@id": "hotspot_context:location",
             "@type": "GeoProperty"
-        }
+        },
+        "properties": "@nest"
     },
     "ACCESS_POINT_COUNT": {
         "describes": "Number of WiFi Access points associated with the hotspot. It is an integer encoded as a string."
@@ -58,6 +59,5 @@
     },
     "USER_COUNT": {
         "describes": "Number of users connected to the hotspot. It is an integer encoded as a string."
-    },
-    "properties": "@nest"
+    }
 }

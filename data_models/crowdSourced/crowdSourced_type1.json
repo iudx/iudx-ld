@@ -29,9 +29,8 @@
         "Radius": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
             "describes": "Radius of the area for which geo-tagged images are required",
-            "symbol": "m",
             "unitCode": "MTR",
-            "unitText": "metre"
+            "unitText": "metre (m)"
         },
         "Severity": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",

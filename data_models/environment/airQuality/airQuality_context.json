@@ -132,7 +132,8 @@
         "location": {
             "@id": "airQuality_context:location",
             "@type": "GeoProperty"
-        }
+        },
+        "properties": "@nest"
     },
     "AIR_PRESSURE": {
         "describes": "Measured Air pressure"
@@ -226,6 +227,5 @@
     },
     "location": {
         "describes": "Describes the coordinates (in GeoJSON Point type) for the installation location of the AQM device"
-    },
-    "properties": "@nest"
+    }
 }

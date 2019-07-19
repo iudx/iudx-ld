@@ -5,7 +5,7 @@ from os.path import isfile, join
 import re
 
 
-data_model = "../../../data_models/WiFi/hotspot/wifi_hotspot_Pune_0.json"
+data_model = "../../../data_models/services/vms/screenly.json"
 
 dm_list = data_model.split("/")
 dm_name = dm_list[-1]
@@ -71,7 +71,7 @@ dm["@context"].append(dm_context_url[:-2])
 
 dm_context = {}
 dm_context["@context"] = {}
-dm_context["properties"] = "@nest"
+dm_context["@context"]["properties"] = "@nest"
 dm_context["@context"][dm_context_file_name[:-5]] = dm_context_url
 
 
@@ -101,7 +101,7 @@ for prop in props:
         props[prop]["unitText"] = unitsDict[prop]["unitText"]
         props[prop]["unitCode"] = unitsDict[prop]["unitCode"]
         if(unitsDict[prop]["symbol"] != ''):
-            props[prop]["symbol"] = unitsDict[prop]["symbol"]
+            props[prop]["unitText"] += " ("+ unitsDict[prop]["symbol"] + ")"
     if("oneOf" in props[prop].keys()):
         props[prop].pop("oneOf")
     if("valueSchema" in props[prop].keys()):

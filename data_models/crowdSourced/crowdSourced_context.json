@@ -80,7 +80,8 @@
         "locationCoverage": {
             "@id": "crowdSourced_context:locationCoverage",
             "@type": "GeoProperty"
-        }
+        },
+        "properties": "@nest"
     },
     "Category": {
         "describes": "Classification of the image"
@@ -144,6 +145,5 @@
     },
     "Walkpath": {
         "describes": "Presence and usability of a walkway, rated over a score of 0-3."
-    },
-    "properties": "@nest"
+    }
 }

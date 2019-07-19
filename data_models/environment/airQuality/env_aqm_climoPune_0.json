@@ -35,28 +35,28 @@
             "describes": "Maximum value of CO2 for the last 24 hours",
             "symbol": "ppm",
             "unitCode": "X59",
-            "unitText": "part per million"
+            "unitText": "part per million (ppm)"
         },
         "CO2_MIN": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
             "describes": "Minimum value of CO2 for the last 24 hours",
             "symbol": "ppm",
             "unitCode": "X59",
-            "unitText": "part per million"
+            "unitText": "part per million (ppm)"
         },
         "CO_MAX": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
             "describes": "Maximum value of CO for the last 24 hours",
             "symbol": "ppm",
             "unitCode": "X59",
-            "unitText": "part per million"
+            "unitText": "part per million (ppm)"
         },
         "CO_MIN": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
             "describes": "Minimum value of CO for the last 24 hours",
             "symbol": "ppm",
             "unitCode": "X59",
-            "unitText": "part per million"
+            "unitText": "part per million (ppm)"
         },
         "DEVICEID": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
@@ -86,91 +86,91 @@
             "describes": "Maximum value of NO2 for the last 24 hours",
             "symbol": "ppb",
             "unitCode": "X61",
-            "unitText": "part per billion (US)"
+            "unitText": "part per billion (US) (ppb)"
         },
         "NO2_MIN": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
             "describes": "Minimum value of NO2 for the last 24 hours",
             "symbol": "ppb",
             "unitCode": "X61",
-            "unitText": "part per billion (US)"
+            "unitText": "part per billion (US) (ppb)"
         },
         "NO_MAX": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
             "describes": "Maximum value of NO for the last 24 hours",
             "symbol": "ppb",
             "unitCode": "X61",
-            "unitText": "part per billion (US)"
+            "unitText": "part per billion (US) (ppb)"
         },
         "NO_MIN": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
             "describes": "Minimum value of NO for the last 24 hours",
             "symbol": "ppb",
             "unitCode": "X61",
-            "unitText": "part per billion (US)"
+            "unitText": "part per billion (US) (ppb)"
         },
         "OZONE_MAX": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
             "describes": "Maximum value of Ozone for the last 24 hours",
             "symbol": "ppb",
             "unitCode": "X61",
-            "unitText": "part per billion (US)"
+            "unitText": "part per billion (US) (ppb)"
         },
         "OZONE_MIN": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
             "describes": "Minimum value of Ozone for the last 24 hours",
             "symbol": "ppb",
             "unitCode": "X61",
-            "unitText": "part per billion (US)"
+            "unitText": "part per billion (US) (ppb)"
         },
         "PM10_MAX": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
             "describes": "Maximum value of PM10 for the last 24 hours",
             "symbol": "ug/m3",
             "unitCode": "XGQ",
-            "unitText": "microgrampercubicmetre"
+            "unitText": "microgrampercubicmetre (ug/m3)"
         },
         "PM10_MIN": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
             "describes": "Minimum value of PM10 for the last 24 hours",
             "symbol": "ug/m3",
             "unitCode": "XGQ",
-            "unitText": "microgrampercubicmetre"
+            "unitText": "microgrampercubicmetre (ug/m3)"
         },
         "PM2_MAX": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
             "describes": "Maximum value of PM2.5 for the last 24 hours",
             "symbol": "ug/m3",
             "unitCode": "XGQ",
-            "unitText": "micro gram per cubic metre"
+            "unitText": "micro gram per cubic metre (ug/m3)"
         },
         "PM2_MIN": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
             "describes": "Minimum value of PM2.5 for the last 24 hours",
             "symbol": "ug/m3",
             "unitCode": "XGQ",
-            "unitText": "micro gram per cubic metre"
+            "unitText": "micro gram per cubic metre (ug/m3)"
         },
         "SO2_MAX": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
             "describes": "Maximum value of SO2 for the last 24 hours",
             "symbol": "ppb",
             "unitCode": "X61",
-            "unitText": "part per billion (US)"
+            "unitText": "part per billion (US) (ppb)"
         },
         "SO2_MIN": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
             "describes": "Minimum value of SO2 for the last 24 hours",
             "symbol": "ppb",
             "unitCode": "X61",
-            "unitText": "part per billion (US)"
+            "unitText": "part per billion (US) (ppb)"
         },
         "SOUND": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
             "description": "Instantaneous Noise level",
             "symbol": "dB",
             "unitCode": "X2N",
-            "unitText": "decibel"
+            "unitText": "decibel (dB)"
         },
         "STATUS": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",

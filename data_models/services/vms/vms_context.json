@@ -20,6 +20,7 @@
             "@id": "vms_context:location",
             "@type": "GeoProperty"
         },
+        "properties": "@nest",
         "screen_dimensions": {
             "@id": "vms_context:screen_dimensions",
             "@type": "Property"
@@ -57,7 +58,6 @@
     "location": {
         "describes": "location where the screen is placed"
     },
-    "properties": "@nest",
     "screen_dimensions": {
         "describes": "Dimensions of the screen in lenght x breadth format"
     },

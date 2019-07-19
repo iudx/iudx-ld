@@ -20,7 +20,7 @@
             "describes": "Aggregate Download Rate for the hotspot location. It is a number encoded as a string. The units should be interpreted after convert 'string' type to 'number' type",
             "symbol": "kbps",
             "unitCode": "C74",
-            "unitText": "kilobit per second"
+            "unitText": "kilobit per second (kbps)"
         },
         "HOTSPOT_ID": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
@@ -42,7 +42,7 @@
             "describes": " Aggregate upload rate for the hotspot location. It is a number encoded as a string. The units should be interpreted after convert 'string' type to 'number' type",
             "symbol": "kbps",
             "unitCode": "C74",
-            "unitText": "kilobit per second"
+            "unitText": "kilobit per second (kbps)"
         },
         "USER_COUNT": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",

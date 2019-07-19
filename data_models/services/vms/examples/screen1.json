@@ -30,7 +30,7 @@
         "type": "TimeProperty",
         "value": "2019-02-20T10:30:06.093121"
     },
-    "itemDescription": "Video management system service item",
+    "itemDescription": "VMS system on RBCCPS conference room TV",
     "itemStatus": {
         "type": "Property",
         "value": "active"
@@ -60,10 +60,11 @@
         "object": "iudx_iri:rbccps_server",
         "type": "Relationship"
     },
-    "tags": {
-        "type": "Property",
-        "value": [
+    "tags": [
             "variable messaging system",
+            "sirpi advertisement",
+            "vms",
+            "service",
             "picture",
             "video",
             "screen",

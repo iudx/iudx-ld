@@ -72,7 +72,8 @@
         "location": {
             "@id": "feeder_context:location",
             "@type": "GeoProperty"
-        }
+        },
+        "properties": "@nest"
     },
     "B_PHASE_CURRENT": {
         "describes": "Gives B Phase Current"
@@ -118,6 +119,5 @@
     },
     "Y_PHASE_VOLTAGE": {
         "describes": "Gives Y Phase Voltage"
-    },
-    "properties": "@nest"
+    }
 }

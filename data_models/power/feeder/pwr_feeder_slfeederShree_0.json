@@ -21,14 +21,14 @@
             "describes": "Gives B Phase Power",
             "symbol": "W",
             "unitCode": "WTT",
-            "unitText": "watt"
+            "unitText": "watt (W)"
         },
         "B_PHASE_VOLTAGE": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
             "describes": "Gives B Phase Voltage",
             "symbol": "V",
             "unitCode": "VLT",
-            "unitText": "volt"
+            "unitText": "volt (V)"
         },
         "LASTUPDATEDATETIME": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/TimeProperty"
@@ -60,14 +60,14 @@
             "describes": "Gives R Phase Power",
             "symbol": "W",
             "unitCode": "WTT",
-            "unitText": "watt"
+            "unitText": "watt (W)"
         },
         "R_PHASE_VOLTAGE": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
             "describes": "Gives R Phase Voltage",
             "symbol": "V",
             "unitCode": "VLT",
-            "unitText": "volt"
+            "unitText": "volt (V)"
         },
         "TOTAL_LIGHTS": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
@@ -90,14 +90,14 @@
             "describes": "Gives Y Phase Power",
             "symbol": "W",
             "unitCode": "WTT",
-            "unitText": "watt"
+            "unitText": "watt (W)"
         },
         "Y_PHASE_VOLTAGE": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
             "describes": "Gives Y Phase Voltage",
             "symbol": "V",
             "unitCode": "VLT",
-            "unitText": "volt"
+            "unitText": "volt (V)"
         },
         "deviceModelInfo": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json#/definitions/product"

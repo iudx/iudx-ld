@@ -48,7 +48,8 @@
         "location": {
             "@id": "floodSensor_context:location",
             "@type": "GeoProperty"
-        }
+        },
+        "properties": "@nest"
     },
     "ALERT": {
         "describes": "Reference Alert Level setting for the given sensing station. If CUR_LEVEL is greater than ALERT then a flooding 'Alert' is generated"
@@ -79,6 +80,5 @@
     },
     "location": {
         "describes": "Describes the coordinates (in GeoJSON Point type) for the installation location of the AQM device"
-    },
-    "properties": "@nest"
+    }
 }
