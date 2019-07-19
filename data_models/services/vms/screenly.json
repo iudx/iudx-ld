@@ -59,6 +59,10 @@
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
             "describes": "Name of the service enabler",
             "type": "string"
+        },
+        "content_id":{
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "ID of the uploaded content"
         }
     },
     "type": "object"
