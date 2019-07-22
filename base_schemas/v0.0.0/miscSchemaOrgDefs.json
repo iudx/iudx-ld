@@ -12,6 +12,14 @@
             "@id": "schemaorg:url",
             "@type": "core:Property"
         },
+        "email": {
+            "@id": "schemaorg:email",
+            "@type": "core:Property"
+        },
+        "telephone": {
+            "@id": "schemaorg:telephone",
+            "@type": "core:Property"
+        },
         "productID": {
             "@id": "schemaorg:productID",
             "@type": "core:Property"
@@ -94,6 +102,16 @@
             "type": "string",
             "format": "uri",
             "describes": "URL of the thing"
+        },
+        "email": {
+            "allOf": [{"$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"}],
+            "type": "string",
+            "describes": "Email address."
+        },
+        "telephone": {
+            "allOf": [{"$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"}],
+            "type": "string",
+            "describes": "Telephone number."
         },
         "address": {
             "allOf": [{"$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"}],

@@ -19,6 +19,10 @@
             "describes": "Array of keywords describing this resourceSever.",
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/tagsSchema"
         },
+        "resourceServerOrg":{
+            "describes": "Describes the organization that is maintaining/hosting this resource Server.",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/organizationInfo"
+        },
         "resourceServerURL": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
             "format": "uri",

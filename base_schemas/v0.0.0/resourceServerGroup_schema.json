@@ -1,0 +1,70 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/iudx_resourceServer_schema.json",
+    "title": "IUDX-LD ResourceServerGroup",
+    "description": "Describes a set of resources (referred to as resourceSeverGroup) within ia  ResourceServer",
+    "type": "object",
+    "properties": {
+        "@context": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/LdContext"
+        },
+        "id": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/id"
+        },
+        "name": {
+           "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json#/definitions/name",
+           "describes": "Name for the resource server group."
+        },
+        "tags": {
+            "describes": "Array of keywords describing this resourceSeverGroup.",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/tagsSchema"
+        },
+        "refBaseSchema": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Relationship",
+            "describes": "Base schema for this item"
+        },
+        "provider": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Relationship",
+            "describes": "Link to the provider of this resource group. It is assumed that group of resources belonging to a given resource group share the same 'provider' who can provide authorisation to the 'group APIs' related to this group of resources. "
+        },
+        "resourceServer": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Relationship",
+            "format": "uri",
+            "describes": "Link to the ResourceServer catalog entity to which this group of resources belong"
+        },
+        "refDataModel": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Relationship",
+            "describes": "Reference to the data model for this resource item."
+        },
+        "itemDescription": {
+            "allOf": [{"$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"}],
+            "type": "string",
+            "describes": "Text description of this resource group."
+        },
+        "itemType": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "iudx item type",
+            "type": "string",
+            "enum": ["resourceServerGroupItem"]
+        },
+        "createdAt" : {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/createdAt"
+        },
+        "modifiedAt" : {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/modifiedAt"
+        },
+        "deprecatedAt" : {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/deprecatedAt"
+        },
+        "additionalProperties": {
+            "anyOf": [
+                {
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                },
+                {
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Relationship"
+                }
+            ]
+        }
+    }
+}

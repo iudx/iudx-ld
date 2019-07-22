@@ -98,6 +98,42 @@
               }
            }
         },
+        "organizationInfo": {
+          "describes": "Information about a given organization (contact info, email, urls etc.)",
+          "allOf": [
+           {
+              "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+           }],
+           "type": "object",
+           "properties": {
+              "value": {
+                 "type": "object",
+                 "properties": {
+                     "name": {
+                        "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json#/definitions/name",
+                        "describes": "Name of the Organisation"
+                    },
+                    "address": {
+                        "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json#/definitions/address",
+                        "describes": "Address of the Organisation"
+                    },
+                    "email": {
+                        "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json#/definitions/email",
+                        "describes": "Email of the contact person in the organization."
+                    },
+                    "telephone": {
+                        "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json#/definitions/telephone",
+                        "describes": "Phone number of the contact person in the organization."
+                    },
+                    "url": {
+                        "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json#/definitions/url",
+                        "describes": "Organization URL."
+                    }
+                 },
+                 "additionalProperties": false
+              }
+           }
+        },
         "deviceModelInfo": {
           "allOf": [
            {
