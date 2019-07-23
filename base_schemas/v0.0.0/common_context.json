@@ -36,6 +36,18 @@
             "@id": "iudx_common:accessObjectType",
             "@type": "core:Property"
         },
+        "dataAttributeList":{
+            "@id": "iudx_common:dataAttributeList",
+            "@type": "core:Property"
+        },
+        "resourceServerGroups": {
+            "@id": "iudx_common:resourceServerGroups",
+            "@type": "core:Relationship"
+        },
+        "resourceServerOrg": {
+            "@id": "iudx_common:resourceServerOrg",
+            "@type": "core:Property"
+        },
         "deviceModelInfo":{
             "@id": "iudx_common:deviceModelInfo",
             "@type": "core:Property"

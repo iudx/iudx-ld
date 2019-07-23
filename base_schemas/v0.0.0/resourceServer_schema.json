@@ -2,7 +2,7 @@
     "$schema": "http://json-schema.org/draft-07/schema#",
     "id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/iudx_resourceServer_schema.json",
     "title": "IUDX-LD ResourceServer",
-    "description": "IUDX-LD ResourceItem",
+    "description": "IUDX-LD Resource Server Item. Provides details of a given resource Server.",
     "type": "object",
     "properties": {
         "@context": {
@@ -34,40 +34,12 @@
             "describes": "Text description of this item."
         },
         "resourceServerGroups":{
-            "allOf": [{"$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"}],
            "describes": "All the resource groups associated with this resource server",
-           "type": "object",
-           "properties": {
-             "value": {
-                 "type": "object",
-                 "patternProperties": {
-                   "[a-zA-Z0-9]+$": {
-                       "type": "object",
-                       "properties": {
-                            "@type": {
-                                "type": "string"
-                            },
-                            "refDataModel": {
-                               "type": "string",
-                               "format": "uri"
-                            },
-                            "tags": {
-                               "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/tagsSchema"
-                            },
-                            "resourceServerDataAttrList":{
-                               "describes": "Subset of data model attributes that are available in the resource server data.",
-                               "type": "array",
-                               "minItems": 0,
-                               "uniqueItems":true,
-                               "items": {
-                                   "type": "string"
-                               }
-                            }
-                       }
-                    }
-                 }
-             }
-           }
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/resourceServerGroups"
+        },
+        "coverageRegion":{
+           "describes": "Coverage Area for this resource Server",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/coverageRegion"
         },
         "itemType": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",

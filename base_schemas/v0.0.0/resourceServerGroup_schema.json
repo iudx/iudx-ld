@@ -2,7 +2,7 @@
     "$schema": "http://json-schema.org/draft-07/schema#",
     "id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/iudx_resourceServer_schema.json",
     "title": "IUDX-LD ResourceServerGroup",
-    "description": "Describes a set of resources (referred to as resourceSeverGroup) within ia  ResourceServer",
+    "description": "Describes a set of resources (referred to as resourceSeverGroup) within a  ResourceServer. It is assumed that the resources withing a resourceSever Group share same dataModel, API objects, resource Server and provider.",
     "type": "object",
     "properties": {
         "@context": {
@@ -46,6 +46,13 @@
             "describes": "iudx item type",
             "type": "string",
             "enum": ["resourceServerGroupItem"]
+        },
+        "accessInformation": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/accessInformation"
+        },
+        "dtaAttributeList":{
+           "describes": "Subset of data model attributes that are available in the resource server data.",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/dataAttributeList"
         },
         "createdAt" : {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/createdAt"
