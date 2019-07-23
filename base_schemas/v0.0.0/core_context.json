@@ -3,6 +3,8 @@
         "iudx": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/",
         "iudx_iri": "https://iri.iudx.org/",
         "core": "iudx:core_defs.json#/definitions/",
+        "iudx_resourceItem": "iudx:resourceItem_schema.json#/properties/",
+        "iudx_resourceServer": "iudx:resourceServer_schema.json#/properties/",
         "id": "@id",
         "type": "@type",
         "value": "core:hasValue",
@@ -29,64 +31,6 @@
         "TimeProperty": {
             "@id":"core:TimeProperty",
             "@type": "core:TimeProperty"
-        },
-        "iudx_resourceItem": "iudx:resourceItem_schema.json#/properties/",
-        "iudx_resourceServer": "iudx:resourceServer_schema.json#/properties/",
-        "resourceServer": {
-            "@id": "iudx_resourceItem:resourceServer",
-            "@type": "core:Relationship"
-        },
-        "tags": {
-            "@id": "iudx_resourceItem:tags",
-            "@type": "core:Property"
-        },
-        "itemType": {
-            "@id": "iudx_resourceItem:itemType",
-            "@type": "core:Property"
-        },
-        "itemDescription": {
-            "@id": "iudx_resourceItem:itemDescription",
-            "@type": "core:Property"
-        },
-        "refBaseSchema": {
-            "@id": "iudx_resourceItem:refBaseSchema",
-            "@type": "core:Relationship"
-        },
-        "refDataModel": {
-            "@id": "iudx_resourceItem:refDataModel",
-            "@type": "core:Relationship"
-        },
-        "provider": {
-            "@id": "iudx_resourceItem:provider",
-            "@type": "core:Relationship"
-        },
-        "resourceId": {
-            "@id": "iudx_resourceItem:resourceId",
-            "@type": "core:Property"
-        },
-        "resourceGroup": {
-            "@id": "iudx_resourceItem:resourceGroup",
-            "@type": "core:Relationship"
-        },
-        "itemStatus": {
-            "@id": "iudx_resourceItem:itemStatus",
-            "@type": "core:Property"
-        },
-        "createdAt": {
-            "@id": "iudx_resourceItem:createdAt",
-            "@type": "core:TimeProperty"
-        },
-        "modifiedAt": {
-            "@id": "iudx_resourceItem:modifiedAt",
-            "@type": "core:TimeProperty"
-        },
-        "deprecatedAt": {
-            "@id": "iudx_resourceItem:deprecatedAt",
-            "@type": "core:TimeProperty"
-        },
-        "resourceServerURL": {
-            "@id": "iudx_resourceServer:resourceServerURL",
-            "@type": "core:Property"
         }
     }
 }

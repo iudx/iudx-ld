@@ -13,65 +13,51 @@
         },
         "tags": {
             "describes": "Array of keywords describing this item. It intends to provide discovery hints for this resource item.",
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/tagsSchema"
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/tags"
         },
         "refBaseSchema": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Relationship",
-            "describes": "Base schema for this item"
+            "describes": "Base schema for this item",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/refBaseSchema"
         },
         "resourceServer": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Relationship",
-            "describes": "The resource server which hosts this resource item"
+            "describes": "The resource server which hosts this resource item",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/resourceServer"
         },
         "itemDescription": {
-            "allOf": [{"$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"}],
-            "type": "string",
-            "describes": "Text description of this item."
+            "describes": "Text description of this item.",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/itemDescription"
         },
         "refDataModel": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Relationship",
-            "describes": "Reference to the data model for this resource item."
+            "describes": "Reference to the data model for this resource item.",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/refDataModel"
         },
         "provider": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Relationship",
-            "describes": "Link to the provider of this resource"
+            "describes": "Link to the provider of this resource",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/provider"
         },
-        "resourceGroup": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
-            "describes": "Identifier for the resource group this resource item belongs to on the resource-server."
+        "resourceServerGroup": {
+            "describes": "IRI for the resource group this resource item belongs to on the resource-server.",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/resourceServerGroup"
         },
         "resourceId": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
             "describes": "id of this resource on the resource-server."
         },
         "resourceType": {
-            "allOf": [{"$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"}],
-            "type": "object",
-            "properties": {
-                "value": {
-                    "type": "string",
-                    "enum": ["table", "file", "message", "messageStream", "gis", "media", "service", "other"]
-                }
-            }
+            "describes": "Type of the resource",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/resourceType"
         },
         "itemStatus": {
-            "allOf": [{"$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"}],
-            "type": "object",
-            "properties": {
-                "value": {
-                    "type": "string",
-                    "enum": ["active", "deprecated"]
-                }
-            }
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/itemStatus"
         },
         "createdAt" : {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/TimeProperty"
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/createdAt"
         },
         "modifiedAt" : {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/TimeProperty"
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/modifiedAt"
         },
         "deprecatedAt" : {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/TimeProperty"
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/deprecatedAt"
         },
         "accessInformation": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/accessInformation"

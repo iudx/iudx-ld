@@ -4,10 +4,68 @@
         "iudx_iri": "https://iri.iudx.org/",
         "core": "iudx:core_defs.json#/definitions/",
         "iudx_common": "iudx:common_defs.json#/definitions/",
+        "iudx_resourceItem": "iudx:resourceItem_schema.json#/properties/",
         "schemaorg": "https://schema.org/",
-        "id": "@id",
-        "type": "@type",
-        "value": "core:hasValue",
+        "tags": {
+            "@id": "iudx_common:tags",
+            "@type": "core:Property"
+        },
+        "itemType": {
+            "@id": "iudx_common:itemType",
+            "@type": "core:Property"
+        },
+        "itemDescription": {
+            "@id": "iudx_common:itemDescription",
+            "@type": "core:Property"
+        },
+        "refBaseSchema": {
+            "@id": "iudx_common:refBaseSchema",
+            "@type": "core:Relationship"
+        },
+        "refDataModel": {
+            "@id": "iudx_common:refDataModel",
+            "@type": "core:Relationship"
+        },
+        "provider": {
+            "@id": "iudx_common:provider",
+            "@type": "core:Relationship"
+        },
+        "resourceId": {
+            "@id": "iudx_resourceItem:resourceId",
+            "@type": "core:Property"
+        },
+        "itemStatus": {
+            "@id": "iudx_common:itemStatus",
+            "@type": "core:Property"
+        },
+        "createdAt": {
+            "@id": "iudx_common:createdAt",
+            "@type": "core:TimeProperty"
+        },
+        "modifiedAt": {
+            "@id": "iudx_common:modifiedAt",
+            "@type": "core:TimeProperty"
+        },
+        "deprecatedAt": {
+            "@id": "iudx_common:deprecatedAt",
+            "@type": "core:TimeProperty"
+        },
+        "resourceServerGroup":{
+            "@id": "iudx_common:resourceServerGroup",
+            "@type": "core:Relationship"
+        },
+        "resourceServer": {
+            "@id": "iudx_common:resourceServer",
+            "@type": "core:Relationship"
+        },
+        "resourceServerURL": {
+            "@id": "iudx_resourceServer:resourceServerURL",
+            "@type": "core:Property"
+        },
+        "resourceType": {
+            "@id": "iudx_common:resourceType",
+            "@type": "core:Property"
+        },
         "location": {
             "@id": "iudx_common:location",
             "@type": "core:GeoProperty"
@@ -45,7 +103,7 @@
             "@type": "core:Relationship"
         },
         "resourceServerOrg": {
-            "@id": "iudx_common:resourceServerOrg",
+            "@id": "iudx_resourceServer:resourceServerOrg",
             "@type": "core:Property"
         },
         "deviceModelInfo":{

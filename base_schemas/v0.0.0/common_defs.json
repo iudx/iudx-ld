@@ -18,19 +18,16 @@
             "type": "string",
             "format": "date-time"
         },
-        "createdAt": {
-            "type": "string",
-            "format": "date-time"
+        "createdAt" : {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/TimeProperty"
         },
-        "modifiedAt": {
-            "type": "string",
-            "format": "date-time"
+        "modifiedAt" : {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/TimeProperty"
         },
-        "deprecatedAt": {
-            "type": "string",
-            "format": "date-time"
+        "deprecatedAt" : {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/TimeProperty"
         },
-        "tagsSchema": {
+        "tags": {
            "allOf": [{"$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"}],
            "type": "object",
            "properties": {
@@ -43,6 +40,48 @@
                    }
                }
            }
+        },
+        "resourceType": {
+            "allOf": [{"$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"}],
+            "type": "object",
+            "properties": {
+                "value": {
+                    "type": "string",
+                    "enum": ["table", "file", "message", "messageStream", "gis", "media", "service", "other"]
+                }
+            }
+        },
+        "itemStatus": {
+            "allOf": [{"$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"}],
+            "type": "object",
+            "properties": {
+                "value": {
+                    "type": "string",
+                    "enum": ["active", "deprecated"]
+                }
+            }
+        },
+        "refBaseSchema": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Relationship",
+        ,
+        "resourceServer": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Relationship"
+        },
+        "resourceServerGroup":{
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Relationship"
+        },
+        "itemDescription": {
+            "allOf": [{"$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"}],
+            "type": "string",
+            "describes": "Text description of this item."
+        },
+        "refDataModel": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Relationship",
+            "describes": "Reference to the data model for this resource item."
+        },
+        "provider": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Relationship",
+            "describes": "Link to the provider of this resource"
         },
         "statusSchema": {
             "type": "string",
