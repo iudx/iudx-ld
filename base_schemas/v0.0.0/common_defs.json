@@ -64,8 +64,8 @@
             }
         },
         "refBaseSchema": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Relationship",
-        ,
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Relationship"
+        },
         "resourceServer": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Relationship"
         },
@@ -222,7 +222,7 @@
                       "describes": "Link to an object (OpenAPI 3.0 api JSON object, or a json-schema) to describe access mechanism for this data resource."
                   },
                   "accessObjectVariables": {
-                      "describes": "Item specific API object variables. The variables and their corresponding value for this resource item are listed as a key-value pairs in 'value' field of this property. The json-object in the 'value' should be treated as a simple json object and not a json-ld object.",
+                      "describes": "Item specific API object variables. The variables and their corresponding value for this resource item are listed as a key-value pairs in value field of this property. The json-object in the value should be treated as a simple json object and not a json-ld object.",
                       "allOf": [
                       {
                         "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
