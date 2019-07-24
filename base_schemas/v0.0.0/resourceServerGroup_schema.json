@@ -17,37 +17,35 @@
         },
         "tags": {
             "describes": "Array of keywords describing this resourceSeverGroup.",
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/tagsSchema"
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/tags"
         },
         "refBaseSchema": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Relationship",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/refBaseSchema",
             "describes": "Base schema for this item"
         },
         "provider": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Relationship",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/provider",
             "describes": "Link to the provider of this resource group. It is assumed that group of resources belonging to a given resource group share the same 'provider' who can provide authorisation to the 'group APIs' related to this group of resources. "
         },
         "resourceServer": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Relationship",
-            "format": "uri",
-            "describes": "Link to the ResourceServer catalog entity to which this group of resources belong"
+            "describes": "Link to the ResourceServer catalog entity to which this group of resources belong",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/resourceServer"
         },
         "refDataModel": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Relationship",
-            "describes": "Reference to the data model for this resource item."
+            "describes": "Reference to the data model for this resource item.",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/refDataModel"
         },
         "resourceType": {
             "describes": "Type of the resource",
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/resourceType"
         },
         "itemDescription": {
-            "allOf": [{"$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"}],
-            "type": "string",
-            "describes": "Text description of this resource group."
+            "describes": "Text description of this resource group.",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/itemDescription"
         },
         "itemType": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
             "describes": "iudx item type",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
             "type": "string",
             "enum": ["resourceServerGroup"]
         },

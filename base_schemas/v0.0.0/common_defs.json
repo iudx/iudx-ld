@@ -1,11 +1,12 @@
 {
     "$schema": "http://json-schema.org/schema#",
-    "id": "https://raw.githubusercontent.org/iudx/iudx-ld/base_schemas/v0.0.0/common.json",
+    "id": "https://raw.githubusercontent.org/iudx/iudx-ld/base_schemas/v0.0.0/common_defs.json",
     "title": "IUDX-LD Common Definitions",
     "description": "IUDX-LD Common",
     "definitions": {
         "id": {
-            "type": "string", "format": "uri",
+            "type": "string", 
+            "format": "uri",
             "description": "id for rdfs:Resource objects"
         },
         "name": {
