@@ -3,6 +3,7 @@
     "id": "https://raw.githubusercontent.org/iudx/iudx-ld/base_schemas/v0.0.0/common_defs.json",
     "title": "IUDX-LD Common Definitions",
     "description": "IUDX-LD Common",
+    "type": "object",
     "definitions": {
         "id": {
             "type": "string", 
