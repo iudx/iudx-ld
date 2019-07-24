@@ -66,16 +66,17 @@
         },
         "deprecatedAt" : {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/deprecatedAt"
-        },
-        "additionalProperties": {
-            "anyOf": [
-                {
-                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
-                },
-                {
-                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Relationship"
-                }
-            ]
         }
-    }
+    },
+    "additionalProperties": {
+        "anyOf": [
+            {
+                "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+            },
+            {
+                "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Relationship"
+            }
+        ]
+    },
+    "required": ["id", "name", "tags", "refBaseSchema", "resourceServer", "itemDescription", "refDataModel", "provider", "itemType"]
 }

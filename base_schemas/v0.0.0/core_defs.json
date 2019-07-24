@@ -22,17 +22,17 @@
                                 "array",
                                 "object"
                             ]
-                        },
-                        "additionalProperties": {
-                            "anyOf": [
-                                {
-                                    "$ref": "#/definitions/Relationship"
-                                },
-                                {
-                                    "$ref": "#/definitions/Property"
-                                }
-                            ]
                         }
+                    },
+                    "additionalProperties": {
+                        "anyOf": [
+                            {
+                                "$ref": "#/definitions/Relationship"
+                            },
+                            {
+                                "$ref": "#/definitions/Property"
+                            }
+                        ]
                     },
                     "required": [ "type", "value" ]
                 },
@@ -64,17 +64,17 @@
                         },
                         "maxValue": {
                            "$ref": "miscSchemaOrgDefs.json#/definitions/maxValue"
-                        },
-                        "additionalProperties": {
-                            "anyOf": [
-                                {
-                                    "$ref": "#/definitions/Relationship"
-                                },
-                                {
-                                    "$ref": "#/definitions/Property"
-                                }
-                            ]
                         }
+                    },
+                    "additionalProperties": {
+                        "anyOf": [
+                            {
+                                "$ref": "#/definitions/Relationship"
+                            },
+                            {
+                                "$ref": "#/definitions/Property"
+                            }
+                        ]
                     },
                     "required": [ "type", "value" ]
                 },
@@ -114,10 +114,7 @@
                     "format": "uri"
                 }
             },
-            "required": [
-                "type",
-                "object"
-            ],
+            "required": [ "type", "object" ],
             "additionalProperties": {
                 "anyOf": [
                     {
@@ -152,10 +149,7 @@
                    "additionalProperties": false
                  }
                },
-               "required": [
-                   "type",
-                   "value"
-               ]
+               "required": [ "type", "value" ]
              },
              {
                  "type": ["string","number"]

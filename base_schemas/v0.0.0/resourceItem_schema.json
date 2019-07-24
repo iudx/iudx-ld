@@ -67,17 +67,17 @@
             "describes": "iudx item type",
             "type": "string",
             "enum": ["resourceItem"]
-        },
-        "additionalProperties": {
-            "anyOf": [
-                {
-                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
-                },
-                {
-                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Relationship"
-                }
-            ]
-        },
-        "required": ["id", "tags", "refBaseSchema", "resourceServer", "itemDescription", "refDataModel", "provider", "resourceGroup", "resourceId", "itemType"]
-    }
+        }
+    },
+    "additionalProperties": {
+        "anyOf": [
+            {
+                "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+            },
+            {
+                "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Relationship"
+            }
+        ]
+    },
+    "required": ["id", "tags", "refBaseSchema", "resourceServer", "itemDescription", "refDataModel", "provider","resourceServerGroup", "resourceId", "itemType"]
 }
