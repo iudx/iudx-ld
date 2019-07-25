@@ -1,0 +1,31 @@
+{
+    "@context": {
+        "iudx": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/",
+        "iudx_iri": "https://iri.iudx.org/",
+        "core": "iudx:core_defs.json#/definitions/",
+        "wotsec": "https://www.w3.org/2019/wot/security#",
+        "authServer":{
+            "@id": "wotsec:authorization",
+            "@type": "core:Property"
+        },
+        "authType":{
+            "@id": "wotsec:scheme",
+            "@type": "core:Property"
+        }
+    },
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "describes": "Base schema of catalog entries",
+    "definitions": {
+        "authServer": {
+            "allOf": [{"$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"}],
+            "type": "string",
+            "format": "uri",
+            "describes": "URI of the authorization server"
+        },
+        "authType": {
+            "allOf": [{"$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"}],
+            "type": "string",
+            "describes": "Identification of Authorization Type. Some typical values can be wotsec:OAuth2SecurityScheme, or a custom type for IUDX or UMA2p0"
+        }
+    }
+}
