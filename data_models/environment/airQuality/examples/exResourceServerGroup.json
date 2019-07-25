@@ -33,6 +33,13 @@
         "type": "Property",
         "value": "resourceServerGroup"
     },
+    "authorizationServerInfo": {
+        "type": "Property",
+        "value": {
+            "authServer": "http://auth.example.org",
+            "authType": "iudx-auth"
+        }
+    },
     "provider": {
         "object": "urn:iudx-cat:ae48f2-5c01e8-3feda9",
         "type": "Relationship"
