@@ -185,11 +185,9 @@
                  "type": "object",
                  "properties": {
                     "authServer":{
-                        "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscWOTSecurityDefs.json#/definitions/authServer",
                         "describes": "URI of the IUDX authorization server used for this item."
                     },
                     "authType": {
-                        "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscWOTSecurityDefs.json#/definitions/authType",
                         "describes": "Identification of the auth scheme used for this item."
                     }
                  },
