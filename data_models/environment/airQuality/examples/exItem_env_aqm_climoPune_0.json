@@ -2,7 +2,7 @@
     "@context": [
         "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json"
     ],
-    "@id": "8898kwiorit9490494",
+    "id": "8898kwiorit9490494",
     "DEVICEID": {
         "type": "Property",
         "value": "169af06f-bfee-3513-56e5-847957490-sensoragent"
@@ -11,33 +11,36 @@
         "type": "Property",
         "value": "A_Bt_Square_30"
     },
-    "accessObjectURL": {
-        "object": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/examples/exApiObject_env_aqm_climoPune_0.json",
-        "type": "Relationship"
-    },
-    "accessObjectVariables": {
-        "type": "Property",
-        "value": {
-            "NAME": "A_Bt_Square_30",
-            "ip": "https://pune.iudx.org.in",
-            "port": "443",
-            "resourceClass": "aqm-bosch-climo"
+    "accessInformation": [
+      {
+        "accessObjectType": "OpenAPI",
+        "accessObjectURL": "https://bosch.climo.org/APIs",
+        "accessObject": {
+            "object": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/examples/exApiObject_env_aqm_climoPune_0.json",
+            "type": "Relationship"
+        },
+        "accessObjectVariables": {
+            "type": "Property",
+            "value": {
+                "NAME": "A_Bt_Square_30",
+                "ip": "https://pune.iudx.org.in",
+                "port": "443",
+                "resourceClass": "aqm-bosch-climo"
+            }
         }
-    },
+      }
+    ],
     "createdAt": {
         "type": "TimeProperty",
         "value": "2019-02-20T10:30:06.093121"
     },
-    "deviceModelInfo": {
-        "type": "Property",
-        "value": {
-            "type": "Property",
-            "value": {
-                "brand": "Bosch-Climo",
-                "name": "Bosch-Climo",
-                "url": "http://www.boschclimo.com/"
-            }
-        }
+    "deviceModelInfo":{
+     "type": "Property",
+     "value": {
+       "brand": "Climo",
+       "model": "Bosch-Climo",
+       "url": "http://bosch.climo.org/info"
+     }
     },
     "itemDescription": "Description for Bosch-Climo AQM resource",
     "itemStatus": {
@@ -53,15 +56,15 @@
         "value": "https://pune.iudx.org.in/api/1.0.0/resource/latest/aqm-bosch-climo/XYZ"
     },
     "location": {
-        "type": "GeoProperty",
-        "value": {
+      "type": "GeoProperty",
+      "value": {
+          "geometry": {
             "type": "Point",
-            "value": [
-                18.516644,
-                73.854009
-            ]
-        }
-    },
+            "coordinates": [12.273737, 78.37475]
+          },
+          "address": "ABD area, Pune"
+      }
+     },
     "provider": {
         "object": "iudx_iri:pscdcl",
         "type": "Relationship"
@@ -80,6 +83,10 @@
     },
     "resourceServer": {
         "object": "iudx_iri:pscdcl_server",
+        "type": "Relationship"
+    },
+    "resourceServerGroup": {
+        "object": "iudx_iri:bosch",
         "type": "Relationship"
     },
     "tags": {
