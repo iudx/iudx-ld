@@ -1,0 +1,52 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_context.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_context.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/geometry-schema.json"
+    ],
+    "id": "7493458asdgdbe099540",
+    "name": "aqm-bosch-climo",
+    "tags": { "type": "Property",
+        "value": [ "environment", "air-quality", "climate", "air", "pollution", "SO2", "CO2", "CO", "NO", "NO2", "PM2.5", "PM10", "Humidity", "Temperature", "Ozone", "O", "Noise", "Light", "UV" ]
+    },
+    "accessInformation": [
+      {
+        "accessObjectType": "OpenAPI",
+        "accessObjectURL": "https://abc.climo.org/APIs",
+        "accessObject": {
+            "object": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/examples/exApiObject_env_aqm_climoPune_0.json",
+            "type": "Relationship"
+        }
+      }
+    ],
+    "createdAt": {
+        "type": "TimeProperty",
+        "value": "2019-06-20T15:30:06.093121"
+    },
+    "itemDescription": "Describes the resource group for bosch climo air quality monitor devices in Pune IBM-IOC resource server.",
+    "itemStatus": {
+        "type": "Property",
+        "value": "active"
+    },
+    "itemType": {
+        "type": "Property",
+        "value": "resourceServerGroup"
+    },
+    "provider": {
+        "object": "urn:iudx-cat:ae48f2-5c01e8-3feda9",
+        "type": "Relationship"
+    },
+    "refBaseSchema": {
+        "object": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/resourceServerGroup_schema.json",
+        "type": "Relationship"
+    },
+    "refDataModel": {
+        "object": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json",
+        "type": "Relationship"
+    },
+    "resourceServer": {
+        "object": "urn:iudx-cat:636485-9454054-29459495",
+        "type": "Relationship"
+    }
+}

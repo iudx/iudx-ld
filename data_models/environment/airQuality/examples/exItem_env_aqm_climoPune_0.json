@@ -51,10 +51,6 @@
         "type": "Property",
         "value": "resourceItem"
     },
-    "latestResourceData": {
-        "type": "Property",
-        "value": "https://pune.iudx.org.in/api/1.0.0/resource/latest/aqm-bosch-climo/XYZ"
-    },
     "location": {
       "type": "GeoProperty",
       "value": {
@@ -66,7 +62,7 @@
       }
      },
     "provider": {
-        "object": "iudx_iri:pscdcl",
+        "object": "urn:iudx-cat:ae48f2-5c01e8-3feda9",
         "type": "Relationship"
     },
     "refBaseSchema": {
@@ -82,32 +78,15 @@
         "value": "A_Bt_Square_30"
     },
     "resourceServer": {
-        "object": "iudx_iri:pscdcl_server",
+        "object": "urn:iudx-cat:636485-945454-2a9495",
         "type": "Relationship"
     },
     "resourceServerGroup": {
-        "object": "iudx_iri:bosch",
+        "object": "urn:iudx-cat:abc357-gw2554-452abc",
         "type": "Relationship"
     },
     "tags": {
         "type": "Property",
-        "value": [
-            "air",
-            "pollution",
-            "SO2",
-            "CO2",
-            "CO",
-            "NO",
-            "NO2",
-            "PM2.5",
-            "PM10",
-            "Humidity",
-            "Temperature",
-            "Ozone",
-            "O",
-            "Noise",
-            "Light",
-            "UV"
-        ]
+        "value": [ "environment", "air-quality", "climate", "air", "pollution", "SO2", "CO2", "CO", "NO", "NO2", "PM2.5", "PM10", "Humidity", "Temperature", "Ozone", "O", "Noise", "Light", "UV" ]
     }
 }
