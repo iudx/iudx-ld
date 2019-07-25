@@ -109,6 +109,10 @@
         "deviceModelInfo":{
             "@id": "iudx_common:deviceModelInfo",
             "@type": "core:Property"
+        },
+        "authorizationServerInfo":{
+            "@id": "iudx_common:authorizationServerInfo",
+            "@type": "core:Property"
         }
     }
 }

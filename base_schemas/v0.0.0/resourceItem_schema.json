@@ -23,6 +23,10 @@
             "describes": "The resource server which hosts this resource item",
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/resourceServer"
         },
+        "authorizationServerInfo": {
+            "describes": "Information associated with obtaining authorization for accessing data from this resource item. It includes URI for the authorization server and authorization Type applicable for this item.",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/authorizationServerInfo"
+        },
         "itemDescription": {
             "describes": "Text description of this item.",
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/itemDescription"
