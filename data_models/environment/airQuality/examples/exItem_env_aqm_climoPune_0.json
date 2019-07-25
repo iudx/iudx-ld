@@ -30,6 +30,13 @@
         }
       }
     ],
+    "authorizationServerInfo": {
+        "type": "Property",
+        "value": {
+            "authServer": "http://auth.example.org",
+            "authType": "iudx-auth"
+        }
+    },
     "createdAt": {
         "type": "TimeProperty",
         "value": "2019-02-20T10:30:06.093121"
