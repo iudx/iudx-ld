@@ -17,7 +17,11 @@
         },
         "tags": {
             "describes": "Array of keywords describing this resourceSever.",
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/tagsSchema"
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/tags"
+        },
+        "refBaseSchema": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/refBaseSchema",
+            "describes": "Base schema for this item"
         },
         "resourceServerOrg":{
             "describes": "Describes the organization that is maintaining/hosting this resource Server.",
@@ -26,12 +30,22 @@
         "resourceServerURL": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
             "format": "uri",
-            "describes": "Ip address along with port"
+            "describes": "Resource Server Hostname and port."
         },
         "itemDescription": {
-            "allOf": [{"$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"}],
+            "describes": "Text description of this resource Server.",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/itemDescription"
+        },
+        "itemType": {
+            "describes": "iudx item type",
+            "allOf": [{
+               "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/itemType"
+            }],
             "type": "string",
-            "describes": "Text description of this item."
+            "enum": ["resourceServer"]
+        },
+        "itemStatus": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/itemStatus"
         },
         "resourceServerGroups":{
            "describes": "All the resource groups associated with this resource server",
@@ -41,22 +55,6 @@
            "describes": "Coverage Area for this resource Server",
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/coverageRegion"
         },
-        "itemType": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
-            "describes": "iudx item type",
-            "type": "string",
-            "enum": ["resourceServer"]
-        },
-        "itemStatus": {
-            "allOf": [{"$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"}],
-            "type": "object",
-            "properties": {
-                "value": {
-                    "type": "string",
-                    "enum": ["active", "deprecated"]
-                }
-            }
-        },
         "createdAt" : {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/createdAt"
         },
@@ -65,16 +63,26 @@
         },
         "deprecatedAt" : {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/deprecatedAt"
-        },
-        "additionalProperties": {
-            "anyOf": [
-                {
-                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
-                },
-                {
-                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Relationship"
-                }
-            ]
         }
-    }
+    },
+    "additionalProperties": {
+        "anyOf": [
+            {
+                "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+            },
+            {
+                "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/GeoProperty"
+            },
+            {
+                "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/TimeProperty"
+            },
+            {
+                "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty"
+            },
+            {
+                "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Relationship"
+            }
+        ]
+    },
+    "required": ["id", "name", "tags", "refBaseSchema", "itemDescription", "resourceServerGroups", "coverageRegion","itemType"]
 }
