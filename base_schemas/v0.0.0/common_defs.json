@@ -82,7 +82,12 @@
             "allOf": [{
                "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
             }],
-            "type": "string"
+            "type": "object",
+            "properties": {
+               "value": {
+                  "type": "string"
+               }
+            }
         },
         "refDataModel": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Relationship",
