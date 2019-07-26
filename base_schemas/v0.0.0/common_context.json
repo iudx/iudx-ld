@@ -58,10 +58,6 @@
             "@id": "iudx_common:resourceServer",
             "@type": "core:Relationship"
         },
-        "resourceServerURL": {
-            "@id": "iudx_resourceServer:resourceServerURL",
-            "@type": "core:Property"
-        },
         "resourceType": {
             "@id": "iudx_common:resourceType",
             "@type": "core:Property"
@@ -99,8 +95,12 @@
             "@type": "core:Property"
         },
         "resourceServerGroups": {
-            "@id": "iudx_common:resourceServerGroups",
+            "@id": "iudx_resourceServer:resourceServerGroups",
             "@type": "core:Relationship"
+        },
+        "resourceServerURL": {
+            "@id": "iudx_resourceServer:resourceServerURL",
+            "@type": "core:Property"
         },
         "resourceServerOrg": {
             "@id": "iudx_resourceServer:resourceServerOrg",
