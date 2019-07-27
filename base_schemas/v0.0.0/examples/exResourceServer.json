@@ -1,0 +1,61 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_context.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_context.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscWOTSecurityDefs.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/geometry-schema.json"
+    ],
+    "id": "abc@xyz.com/pscdcl/resourceServer/749aef-bce372-cnw393",
+    "name": "pscdcl-ibmioc-1",
+    "tags": { "type": "Property",
+        "value": [ "environment", "water", "itms", "flood", "pollution", "live-data", "archived-data"]
+    },
+    "createdAt": {
+        "type": "TimeProperty",
+        "value": "2019-06-20T15:30:06.093121"
+    },
+    "itemDescription": "Describes the XYZ city ABC resource server.",
+    "itemStatus": {
+        "type": "Property",
+        "value": "active"
+    },
+    "itemType": {
+        "type": "Property",
+        "value": "resourceServer"
+    },
+    "provider": {
+        "object": "urn:iudx-cat:ae48f2-5c01e8-3feda9",
+        "type": "Relationship"
+    },
+    "refBaseSchema": {
+        "object": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/resourceServer_schema.json",
+        "type": "Relationship"
+    },
+    "resourceServerURL": {
+        "type": "Property",
+        "value": "https://abc.iudx.org.in:8080"
+    },
+    "resourceServerOrg": {
+        "type": "Property",
+        "value": {
+            "name": "Org_ABC",
+            "address": "20, XYZ street, Pune",
+            "email": "contact@orgABC.com"
+        }
+    },
+    "resourceServerGroups":{
+      "type": "Relationship",
+      "object": [
+        "urn:iudx-cat:abc357-gw2554-452abc",
+        "urn:iudx-cat:24dsq5-wd2dsf-847def",
+        "urn:iudx-cat:def894-esq241-833cqx"
+      ]
+    },
+    "coverageRegion": {
+      "type": "GeoProperty",
+      "value": {
+          "address": "Pune, Maharastra, India"
+      }
+    }
+}
