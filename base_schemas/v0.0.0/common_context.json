@@ -5,6 +5,7 @@
         "core": "iudx:core_defs.json#/definitions/",
         "iudx_common": "iudx:common_defs.json#/definitions/",
         "iudx_resourceItem": "iudx:resourceItem_schema.json#/properties/",
+        "iudx_resourceServer": "iudx:resourceServer_schema.json#/definitions/",
         "schemaorg": "https://schema.org/",
         "tags": {
             "@id": "iudx_common:tags",

@@ -27,19 +27,6 @@
             "describes": "Describes the organization that is maintaining/hosting this resource Server.",
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/organizationInfo"
         },
-        "resourceServerURL": {
-            "describes": "Resource Server Hostname and port.",
-            "allOf": [{
-              "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
-            }],
-            "type": "object",
-            "properties": {
-                "value": {
-                   "type": "string",
-                   "format": "uri"
-                }
-            }
-        },
         "itemDescription": {
             "describes": "Text description of this resource Server.",
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/itemDescription"
@@ -58,21 +45,34 @@
         "itemStatus": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/itemStatus"
         },
-        "resourceServerGroups":{
-            "describes": "All the resource groups associated with this resource server",
-            "allOf": [{"$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Relationship"}],
-           "type": "object",
-           "properties": {
-             "object": {
-               "type": "array",
-               "minItems": 1,
-               "uniqueItems":true,
-               "items": {
+        "resourceServerURL": {
+            "describes": "Resource Server Hostname and port.",
+            "allOf": [{
+              "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+            }],
+            "type": "object",
+            "properties": {
+                "value": {
                    "type": "string",
                    "format": "uri"
-               }
-             }
-           }
+                }
+            }
+        },
+        "resourceServerGroups":{
+           "describes": "All the resource groups associated with this resource server",
+           "allOf": [{"$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Relationship"}],
+          "type": "object",
+          "properties": {
+            "object": {
+              "type": "array",
+              "minItems": 1,
+              "uniqueItems":true,
+              "items": {
+                  "type": "string",
+                  "format": "uri"
+              }
+            }
+          }
         },
         "coverageRegion":{
            "describes": "Coverage Area for this resource Server",
@@ -107,5 +107,5 @@
             }
         ]
     },
-    "required": ["id", "name", "tags", "refBaseSchema", "itemDescription", "resourceServerGroups", "coverageRegion","itemType"]
+    "required": ["id", "name", "tags", "refBaseSchema", "itemDescription", "resourceServerURL", "resourceServerOrg", "resourceServerGroups", "coverageRegion","itemType"]
 }
