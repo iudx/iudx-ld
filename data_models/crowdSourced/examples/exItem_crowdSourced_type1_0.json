@@ -3,18 +3,24 @@
         "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/crowdSourced/crowdSourced_type1.json"
     ],
     "@id": "akdfi74938nid8kjfvko4",
-    "accessObjectURL": {
-        "object": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/crowdSourced/examples/exApiObject_crowdSourced_type1.json",
-        "type": "Relationship"
-    },
-    "accessObjectVariables": {
-        "type": "Property",
-        "value": {
-            "ip": "https://pune.iudx.org.in",
-            "port": "443",
-            "resourceClass": "crowdSourced"
+    "accessInformation": [
+      {
+        "accessObjectType": "OpenAPI",
+        "accessObjectURL": "https://changebhai.in",
+        "accessObject": {
+            "object": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/crowdSourced/examples/exApiObject_crowdSourced_type1.json",
+            "type": "Relationship"
+        },
+        "accessObjectVariables": {
+            "type": "Property",
+            "value": {
+                "ip": "https://pune.iudx.org.in",
+                "port": "443",
+                "resourceClass": "crowdSourced"
+            }
         }
-    },
+      }
+    ],
     "createdAt": {
         "type": "TimeProperty",
         "value": "2019-02-20T10:30:06.093121"
@@ -32,42 +38,18 @@
         "type": "Property",
         "value": "https://pune.iudx.org.in/api/1.0.0/resource/search/changebhai/18.530257/73.847793/1000"
     },
-    "locationCoverage": {
+    "coverageRegion": {
         "type": "GeoProperty",
         "value": {
-            "type": "Polygon",
-            "value": [
-                [
-                [
-                    18.41375,
-                    73.864222
-                ],
-                [
-                    18.471242,
-                    73.971131
-                ],
-                [
-                    18.588876,
-                    73.983472
-                ],
-                [
-                    18.635243,
-                    73.886433
-                ],
-                [
-                    18.582381,
-                    73.753722
-                ],
-                [
-                    18.49367,
-                    73.742467
-                ]
-            ]
-            ]
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [ [ [ 18.41375, 73.864222 ], [ 18.471242, 73.971131 ], [ 18.588876, 73.983472 ], [ 18.635243, 73.886433 ], [ 18.582381, 73.753722 ], [ 18.49367, 73.742467 ] ] ]
+            },
+            "address": "Pune"
         }
     },
     "provider": {
-        "object": "iudx_iri:pscdcl",
+        "object": "urn:iudx-cat:ae48f2-5c01e8-3feda9",
         "type": "Relationship"
     },
     "refBaseSchema": {
@@ -83,32 +65,15 @@
         "value": "changebhai"
     },
     "resourceServer": {
-        "object": "iudx_iri:pscdcl_server",
+        "object": "urn:iudx-cat:636485-945454-2a9495",
+        "type": "Relationship"
+    },
+    "resourceServerGroup": {
+        "object": "urn:iudx-cat:abc357-gw2554-1234",
         "type": "Relationship"
     },
     "tags": {
         "type": "Property",
-        "value": [
-            "crowd",
-            "sourced",
-            "Garbage",
-            "Footpaths",
-            "Roads",
-            "Encroachment",
-            "Illegal Ads",
-            "Wrong Parking",
-            "Street Lights",
-            "Signages",
-            "Bus Stops",
-            "Dividers",
-            "Stray Menace",
-            "Public Toilets",
-            "Traffic Signals",
-            "Traffic Violations",
-            "Road Markings",
-            "Images",
-            "geo",
-            "tagged"
-        ]
+        "value": [ "crowd", "sourced", "Garbage", "Footpaths", "Roads", "Encroachment", "Illegal Ads", "Wrong Parking", "Street Lights", "Signages", "Bus Stops", "Dividers", "Stray Menace", "Public Toilets", "Traffic Signals", "Traffic Violations", "Road Markings", "Images", "geo", "tagged" ]
     }
 }

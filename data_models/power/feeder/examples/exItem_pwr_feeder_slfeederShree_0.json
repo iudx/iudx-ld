@@ -15,19 +15,24 @@
         "type": "Property",
         "value": "KN-13"
     },
-    "accessObjectURL": {
+    "accessInformation": [
+        {
+            "accessObjectType": "OpenAPI",
+            "accessObjectURL": "https://slfeeder.com/APIs",
+            "accessObject": {
         "object": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/power/feeder/examples/exApiObject_pwr_feeder_slfeederShree_0.json",
-        "type": "Relationship"
-    },
-    "accessObjectVariables": {
-        "type": "Property",
-        "value": {
-            "NAME": "XYZ",
-            "ip": "https://pune.iudx.org.in",
-            "port": "443",
-            "resourceClass": "streetlight-feeder-sree"
-        }
-    },
+                "type": "Relationship"
+            },
+            "accessObjectVariables": {
+                "type": "Property",
+                "value": {
+                    "NAME": "XYZ",
+                    "ip": "https://pune.iudx.org.in",
+                    "port": "443",
+                    "resourceClass": "streetlight-feeder-sree"
+                }
+            }
+    ],
     "createdAt": {
         "type": "TimeProperty",
         "value": "2019-02-20T17:30:06.093121"
@@ -48,15 +53,14 @@
     "location": {
         "type": "GeoProperty",
         "value": {
-            "type": "Point",
-            "value": [
-                18.4813499,
-                73.89856
-            ]
+            "geometry": {
+                "type": "Point",
+                "coordinates": [ 18.4813499, 73.89856 ]
+            }
         }
     },
     "provider": {
-        "object": "iudx_iri:pscdcl",
+        "object": "urn:iudx-cat:ae48f2-5c01e8-3feda9",
         "type": "Relationship"
     },
     "refBaseSchema": {
@@ -72,16 +76,15 @@
         "value": "XYZ"
     },
     "resourceServer": {
-        "object": "iudx_iri:pscdcl_server",
+        "object": "urn:iudx-cat:636485-945454-2a9495",
+        "type": "Relationship"
+    },
+    "resourceServerGroup": {
+        "object": "urn:iudx-cat:abc357-gw2554-12ec83",
         "type": "Relationship"
     },
     "tags": {
         "type": "Property",
-        "value": [
-            "streetlighting",
-            "streetlight",
-            "feeder",
-            "power"
-        ]
+        "value": [ "streetlighting", "streetlight", "feeder", "power" ]
     }
 }

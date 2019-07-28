@@ -1,0 +1,77 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "id": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/iudx_resourceItem_schema.json",
+    "title": "IUDX-LD ProviderItem",
+    "description": "IUDX-LD ProviderItem",
+    "type": "object",
+    "properties": {
+        "@context": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/LdContext"
+        },
+        "id": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/id"
+        },
+        "tags": {
+            "describes": "Array of keywords describing this provider. It intends to provide discovery hints for this provider item.",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/tags"
+        },
+        "refBaseSchema": {
+            "describes": "Base schema for this item",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/refBaseSchema"
+        },
+        "authorizationServerInfo": {
+            "describes": "The authorization server and mechanisms that this provider uses",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/authorizationServerInfo"
+        },
+        "itemDescription": {
+            "describes": "Text description of this item.",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/itemDescription"
+        },
+        "itemStatus": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/itemStatus"
+        },
+        "createdAt" : {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/createdAt"
+        },
+        "modifiedAt" : {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/modifiedAt"
+        },
+        "deprecatedAt" : {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/deprecatedAt"
+        },
+        "accessInformation": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/accessInformation"
+        },
+        "itemType": {
+            "describes": "iudx item type",
+            "allOf": [{
+               "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/itemType"
+            }],
+            "properties": { 
+               "value": {
+                 "enum": ["providerItem"]
+               }
+            }
+        }
+    },
+    "additionalProperties": {
+        "anyOf": [
+            {
+                "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+            },
+            {
+                "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/GeoProperty"
+            },
+            {
+                "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/TimeProperty"
+            },
+            {
+                "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty"
+            },
+            {
+                "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Relationship"
+            }
+        ]
+    },
+    "required": ["id", "tags", "refBaseSchema",  "itemDescription", "itemType"]
+}

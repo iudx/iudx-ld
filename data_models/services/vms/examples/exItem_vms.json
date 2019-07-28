@@ -7,24 +7,33 @@
     "location": {
         "type": "GeoProperty",
         "value": {
-            "type": "Point",
-            "value": [
-                13.013836, 77.570325
-            ]
+            "geometry": {
+                "type": "Point",
+                "coordinates": [ 13.013836, 77.570325 ]
+            }
         }
     },
+    "accessInformation": [
+        {
+            "accessObjectType": "OpenAPI",
+            "accessObjectURL": "https://slfeeder.com/APIs",
+            "accessObject": {
+                "object": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/services/vms/examples/exApi_vms.json",
+                "type": "Relationship"
+            },
+            "accessObjectVariables": {
+                "type": "Property",
+                "value": {
+                    "user_id": "user_abc_123",
+                    "ip": "https://services.iudx.org.in",
+                    "resourceClass": "vms",
+                    "screen_name": "sirpi.co.in/screen1"
+                }
+        }
+    ],
     "accessObjectURL": {
         "object": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/services/vms/examples/exApi_vms.json",
         "type": "Relationship"
-    },
-    "accessObjectVariables": {
-        "type": "Property",
-        "value": {
-            "user_id": "user_abc_123",
-            "ip": "https://services.iudx.org.in",
-            "resourceClass": "vms",
-            "screen_name": "sirpi.co.in/screen1"
-        }
     },
     "createdAt": {
         "type": "TimeProperty",
@@ -44,7 +53,7 @@
         "value": "resourceItem"
     },
     "provider": {
-        "object": "iudx_iri:rbccps",
+        "object": "urn:iudx-cat:ae48f2-5c01e8-3feda9",
         "type": "Relationship"
     },
     "refBaseSchema": {
@@ -61,17 +70,12 @@
         "value": "rbccps_screen1"
     },
     "resourceServer": {
-        "object": "iudx_iri:rbccps_server",
+        "object": "urn:iudx-cat:636485-945454-2a9495",
         "type": "Relationship"
     },
-    "tags": [
-            "variable messaging system",
-            "sirpi advertisement",
-            "vms",
-            "service",
-            "picture",
-            "video",
-            "screen",
-            "advertise"
-        ]
+    "resourceServerGroup": {
+        "object": "urn:iudx-cat:abc357-gw2554-adva8",
+        "type": "Relationship"
+    },
+    "tags": [ "variable messaging system", "sirpi advertisement", "vms", "service", "picture", "video", "screen", "advertise" ]
 }

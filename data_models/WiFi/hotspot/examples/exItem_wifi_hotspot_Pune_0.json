@@ -11,19 +11,24 @@
         "type": "Property",
         "value": "XYZ"
     },
-    "accessObjectURL": {
-        "object": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/WiFi/hotspot/examples/exApiObject_wifi_hotspot_Pune_0.json",
-        "type": "Relationship"
-    },
-    "accessObjectVariables": {
-        "type": "Property",
-        "value": {
-            "NAME": "XYZ",
-            "ip": "https://pune.iudx.org.in",
-            "port": "443",
-            "resourceClass": "wifi-hotspot"
-        }
-    },
+    "accessInformation": [
+        {
+            "accessObjectType": "OpenAPI",
+            "accessObjectURL": "https://slfeeder.com/APIs",
+            "accessObject": {
+                "object": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/WiFi/hotspot/examples/exApiObject_wifi_hotspot_Pune_0.json",
+                "type": "Relationship"
+            },
+            "accessObjectVariables": {
+                "type": "Property",
+                "value": {
+                    "NAME": "XYZ",
+                    "ip": "https://pune.iudx.org.in",
+                    "port": "443",
+                    "resourceClass": "wifi-hotspot"
+                }
+            }
+    ],
     "createdAt": {
         "type": "TimeProperty",
         "value": "2019-02-20T10:30:06.093121"
@@ -44,15 +49,14 @@
     "location": {
         "type": "GeoProperty",
         "value": {
-            "type": "Point",
-            "value": [
-                18.52019,
-                73.8468899
-            ]
+            "geometry": {
+                "type": "Point",
+                "coordinates": [ 18.52019, 73.8468899 ]
+            }
         }
     },
     "provider": {
-        "object": "iudx_iri:pscdcl",
+        "object": "urn:iudx-cat:ae48f2-5c01e8-3feda9",
         "type": "Relationship"
     },
     "refBaseSchema": {
@@ -68,17 +72,15 @@
         "value": "XYZ"
     },
     "resourceServer": {
-        "object": "iudx_iri:pscdcl_server",
+        "object": "urn:iudx-cat:636485-945454-2a9495",
+        "type": "Relationship"
+    },
+    "resourceServerGroup": {
+        "object": "urn:iudx-cat:abc357-gw2554-12wevh",
         "type": "Relationship"
     },
     "tags": {
         "type": "Property",
-        "value": [
-            "wifi",
-            "hotspot",
-            "download",
-            "upload",
-            "user counts"
-        ]
+        "value": [ "wifi", "hotspot", "download", "upload", "user counts" ]
     }
 }

@@ -15,15 +15,25 @@
         "object": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/floodSensor/examples/exApiObject_env_flood_climoPune_0.json",
         "type": "Relationship"
     },
-    "accessObjectVariables": {
-        "type": "Property",
-        "value": {
-            "NAME": "XYZ",
-            "ip": "https://pune.iudx.org.in",
-            "port": "443",
-            "resourceClass": "flood-sensor"
+    "accessInformation": [
+        {
+            "accessObjectType": "OpenAPI",
+            "accessObjectURL": "https://bosch.climo.org/APIs",
+            "accessObject": {
+                "object": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/floodSensor/examples/exApiObject_env_flood_climoPune_0.json",
+                "type": "Relationship"
+            },
+            "accessObjectVariables": {
+                "type": "Property",
+                "value": {
+                    "NAME": "XYZ",
+                    "ip": "https://pune.iudx.org.in",
+                    "port": "443",
+                    "resourceClass": "flood-sensor"
+                }
+            }
         }
-    },
+    ],
     "createdAt": {
         "type": "TimeProperty",
         "value": "2019-02-20T10:30:06.093121"
@@ -44,15 +54,14 @@
     "location": {
         "type": "GeoProperty",
         "value": {
-            "type": "Point",
-            "value": [
-                18.581797,
-                73.8727111
-            ]
+            "geometry": {
+                "type": "Point",
+                "coordinates": [ 18.581797, 73.8727111 ]
+            }
         }
     },
     "provider": {
-        "object": "iudx_iri:pscdcl",
+        "object": "urn:iudx-cat:ae48f2-5c01e8-3feda9",
         "type": "Relationship"
     },
     "refBaseSchema": {
@@ -71,13 +80,12 @@
         "object": "iudx_iri:pscdcl_server",
         "type": "Relationship"
     },
+    "resourceServerGroup": {
+        "object": "urn:iudx-cat:abc357-gw2554-asc11",
+        "type": "Relationship"
+    },
     "tags": {
         "type": "Property",
-        "value": [
-            "flooding",
-            "flood",
-            "flood alert",
-            "flood danger"
-        ]
+        "value": [ "flooding", "flood", "flood alert", "flood danger" ]
     }
 }

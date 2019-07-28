@@ -30,18 +30,18 @@
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/TimeProperty"
         },
         "tags": {
-           "allOf": [{"$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"}],
-           "type": "object",
-           "properties": {
-               "value": {
-                   "type": "array",
-                   "minItems": 0,
-                   "uniqueItems":true,
-                   "items": {
-                       "type": "string"
-                   }
-               }
-           }
+            "allOf": [{"$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"}],
+            "type": "object",
+            "properties": {
+                "value": {
+                    "type": "array",
+                    "minItems": 0,
+                    "uniqueItems":true,
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            }
         },
         "resourceType": {
             "allOf": [{"$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"}],
@@ -80,13 +80,13 @@
         "itemType": {
             "describes": "iudx item type",
             "allOf": [{
-               "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
             }],
             "type": "object",
             "properties": {
-               "value": {
-                  "type": "string"
-               }
+                "value": {
+                    "type": "string"
+                }
             }
         },
         "refDataModel": {
@@ -103,208 +103,208 @@
             "describes": "Status of an item. In production version of catalogue, for purposes of provenance, one can choose to not delete an item but set its status to 'deprecated'. All the older versions of an updated item may be persisted by setting their status as 'deprecated'. Only the current item containing latest updates should have status set to 'active'."
         },
         "location": {
-          "describes": "Describes a geo-spatial location as a geoJSON point",
-          "allOf": [
-           {
-              "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/GeoProperty"
-           }],
-           "type": "object",
-           "properties": {
-              "value": {
-                  "type": "object",
-                  "properties": {
-                      "geometry": { 
-                         "type": "object",
-                         "properties": {
-                           "type": {
-                              "type": "string",
-                              "enum": ["Point"]
-                           }
-                         }
-                      }
-                  }
-              }
-           }
+            "describes": "Describes a geo-spatial location as a geoJSON point",
+            "allOf": [
+                {
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/GeoProperty"
+                }],
+                "type": "object",
+                "properties": {
+                    "value": {
+                        "type": "object",
+                        "properties": {
+                            "geometry": { 
+                                "type": "object",
+                                "properties": {
+                                    "type": {
+                                        "type": "string",
+                                        "enum": ["Point"]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
         },
         "coverageRegion": {
-          "describes": "Describes a geo-spatial region as a geoJSON polygon",
-          "allOf": [
-           {
-              "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/GeoProperty"
-           }],
-           "type": "object",
-           "properties": {
-              "value": {
-                  "type": "object",
-                  "properties": {
-                      "geometry": { 
-                         "type": "object",
-                         "properties": {
-                           "type": {
-                              "type": "string",
-                              "enum": ["Polygon"]
-                           }
-                         }
-                      }
-                  }
-              }
-           }
+            "describes": "Describes a geo-spatial region as a geoJSON polygon",
+            "allOf": [
+                {
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/GeoProperty"
+                }],
+                "type": "object",
+                "properties": {
+                    "value": {
+                        "type": "object",
+                        "properties": {
+                            "geometry": { 
+                                "type": "object",
+                                "properties": {
+                                    "type": {
+                                        "type": "string",
+                                        "enum": ["Polygon"]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
         },
         "organizationInfo": {
-          "describes": "Information about a given organization (contact info, email, urls etc.)",
-          "allOf": [
-           {
-              "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
-           }],
-           "type": "object",
-           "properties": {
-              "value": {
-                 "type": "object",
-                 "properties": {
-                     "name": {
-                        "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json#/definitions/name",
-                        "describes": "Name of the Organisation"
-                    },
-                    "address": {
-                        "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json#/definitions/address",
-                        "describes": "Address of the Organisation"
-                    },
-                    "email": {
-                        "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json#/definitions/email",
-                        "describes": "Email of the contact person in the organization."
-                    },
-                    "telephone": {
-                        "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json#/definitions/telephone",
-                        "describes": "Phone number of the contact person in the organization."
-                    },
-                    "url": {
-                        "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json#/definitions/url",
-                        "describes": "Organization URL."
+            "describes": "Information about a given organization (contact info, email, urls etc.)",
+            "allOf": [
+                {
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                }],
+                "type": "object",
+                "properties": {
+                    "value": {
+                        "type": "object",
+                        "properties": {
+                            "name": {
+                                "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json#/definitions/name",
+                                "describes": "Name of the Organisation"
+                            },
+                            "address": {
+                                "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json#/definitions/address",
+                                "describes": "Address of the Organisation"
+                            },
+                            "email": {
+                                "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json#/definitions/email",
+                                "describes": "Email of the contact person in the organization."
+                            },
+                            "telephone": {
+                                "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json#/definitions/telephone",
+                                "describes": "Phone number of the contact person in the organization."
+                            },
+                            "url": {
+                                "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json#/definitions/url",
+                                "describes": "Organization URL."
+                            }
+                        },
+                        "additionalProperties": false
                     }
-                 },
-                 "additionalProperties": false
-              }
-           }
+                }
         },
         "authorizationServerInfo": {
-          "allOf": [
-           {
-              "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
-           }],
-           "type": "object",
-           "properties": {
-              "value": {
-                 "type": "object",
-                 "properties": {
-                    "authServer":{
-                        "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscWOTSecurityDefs.json#/definitions/authServer",
-                        "describes": "URI of the IUDX authorization server used for this item."
-                    },
-                    "authType": {
-                        "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscWOTSecurityDefs.json#/definitions/authType",
-                        "describes": "Identification of the auth scheme used for this item."
+            "allOf": [
+                {
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                }],
+                "type": "object",
+                "properties": {
+                    "value": {
+                        "type": "object",
+                        "properties": {
+                            "authServer":{
+                                "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscWOTSecurityDefs.json#/definitions/authServer",
+                                "describes": "URI of the IUDX authorization server used for this item."
+                            },
+                            "authType": {
+                                "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscWOTSecurityDefs.json#/definitions/authType",
+                                "describes": "Identification of the auth scheme used for this item."
+                            }
+                        },
+                        "additionalProperties": false,
+                        "required": ["authServer", "authType"]
                     }
-                 },
-                 "additionalProperties": false,
-                 "required": ["authServer", "authType"]
-              }
-           }
+                }
         },
         "deviceModelInfo": {
-          "allOf": [
-           {
-              "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
-           }],
-           "type": "object",
-           "properties": {
-              "value": {
-                 "type": "object",
-                 "properties": {
-                     "brand": {
-                        "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json#/definitions/brand",
-                        "describes": "Brand name/Organisation"
-                    },
-                    "model": {
-                        "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json#/definitions/model",
-                        "describes": "Textual representation of the model of the product."
-                    },
-                    "url": {
-                        "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json#/definitions/url",
-                        "describes": "Product home page."
+            "allOf": [
+                {
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                }],
+                "type": "object",
+                "properties": {
+                    "value": {
+                        "type": "object",
+                        "properties": {
+                            "brand": {
+                                "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json#/definitions/brand",
+                                "describes": "Brand name/Organisation"
+                            },
+                            "model": {
+                                "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json#/definitions/model",
+                                "describes": "Textual representation of the model of the product."
+                            },
+                            "url": {
+                                "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json#/definitions/url",
+                                "describes": "Product home page."
+                            }
+                        },
+                        "additionalProperties": false
                     }
-                 },
-                 "additionalProperties": false
-              }
-           }
+                }
         },
         "accessInformation": {
-           "type": "array",
-           "describes": "List of access mechanisms available for data associated with this catalog item",
-           "items": {
-               "type": "object",
-               "properties": {
-                  "accessObjectType": {
-                    "allOf": [{"$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"}],
-                    "type": "string",
-                     "describes": "Type of access mechanism. For example, 'openAPI', 'asyncAPI', 'custom'. Can be changed to ENUM later."
-                  },
-                  "accessObjectURL": {
-                     "type": "string",
-                     "format": "uri",
-                     "describes": "URL that has more information about meta-data of this resource"
-                  },
-                  "accessObject": {
-                      "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Relationship",
-                      "describes": "Link to an object (OpenAPI 3.0 api JSON object, or a json-schema) to describe access mechanism for this data resource."
-                  },
-                  "accessObjectVariables": {
-                      "describes": "Item specific API object variables. The variables and their corresponding value for this resource item are listed as a key-value pairs in value field of this property. The json-object in the value should be treated as a simple json object and not a json-ld object.",
-                      "allOf": [
-                      {
-                        "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
-                      }],
-                      "type": "object",
-                      "properties": {
-                         "value": {
-                           "type": "object",
-                           "patternProperties": {
-                             "[a-zA-Z0-9]+$": {
-                                 "type": "string"
-                              }
-                           }
-                          }
-                      }
-                  }
-               },
-               "additionalProperties": false
-           }
+            "type": "array",
+            "describes": "List of access mechanisms available for data associated with this catalog item",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "accessObjectType": {
+                        "allOf": [{"$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"}],
+                        "type": "string",
+                        "describes": "Type of access mechanism. For example, 'openAPI', 'asyncAPI', 'custom'. Can be changed to ENUM later."
+                    },
+                    "accessObjectURL": {
+                        "type": "string",
+                        "format": "uri",
+                        "describes": "URL that has more information about meta-data of this resource"
+                    },
+                    "accessObject": {
+                        "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Relationship",
+                        "describes": "Link to an object (OpenAPI 3.0 api JSON object, or a json-schema) to describe access mechanism for this data resource."
+                    },
+                    "accessObjectVariables": {
+                        "describes": "Item specific API object variables. The variables and their corresponding value for this resource item are listed as a key-value pairs in value field of this property. The json-object in the value should be treated as a simple json object and not a json-ld object.",
+                        "allOf": [
+                            {
+                                "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+                            }],
+                            "type": "object",
+                            "properties": {
+                                "value": {
+                                    "type": "object",
+                                    "patternProperties": {
+                                        "[a-zA-Z0-9]+$": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            }
+                    }
+                },
+                "additionalProperties": false
+            }
         },
         "dataAttributeList":{
             "allOf": [{"$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"}],
             "type": "object",
             "properties": {
-               "value": {
-                 "type": "object", 
-                 "properties": {
-                    "open": {
-                       "type": "array",
-                       "minItems": 0,
-                       "uniqueItems":true,
-                       "items": {
-                           "type": "string"
-                       }
+                "value": {
+                    "type": "object", 
+                    "properties": {
+                        "open": {
+                            "type": "array",
+                            "minItems": 0,
+                            "uniqueItems":true,
+                            "items": {
+                                "type": "string"
+                            }
+                        },
+                        "secure": {
+                            "type": "array",
+                            "minItems": 0,
+                            "uniqueItems":true,
+                            "items": {
+                                "type": "string"
+                            }
+                        }
                     },
-                    "secure": {
-                       "type": "array",
-                       "minItems": 0,
-                       "uniqueItems":true,
-                       "items": {
-                           "type": "string"
-                       }
-                    }
-                  },
-                  "additionalProperties": false
-               }
+                    "additionalProperties": false
+                }
             }
         },
         "LdContext": {

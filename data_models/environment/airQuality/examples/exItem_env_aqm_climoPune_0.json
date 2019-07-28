@@ -12,22 +12,23 @@
         "value": "A_Bt_Square_30"
     },
     "accessInformation": [
-      {
-        "accessObjectType": "OpenAPI",
-        "accessObjectURL": "https://bosch.climo.org/APIs",
-        "accessObject": {
-            "object": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/examples/exApiObject_env_aqm_climoPune_0.json", "type": "Relationship"
-        },
-        "accessObjectVariables": {
-            "type": "Property",
-            "value": {
-                "NAME": "A_Bt_Square_30",
-                "ip": "https://pune.iudx.org.in",
-                "port": "443",
-                "resourceClass": "aqm-bosch-climo"
+        {
+            "accessObjectType": "OpenAPI",
+            "accessObjectURL": "https://bosch.climo.org/APIs",
+            "accessObject": {
+                "object": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/examples/exApiObject_env_aqm_climoPune_0.json", 
+                "type": "Relationship"
+            },
+            "accessObjectVariables": {
+                "type": "Property",
+                "value": {
+                    "NAME": "A_Bt_Square_30",
+                    "ip": "https://pune.iudx.org.in",
+                    "port": "443",
+                    "resourceClass": "aqm-bosch-climo"
+                }
             }
         }
-      }
     ],
     "authorizationServerInfo": {
         "type": "Property",
