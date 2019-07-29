@@ -32,7 +32,7 @@
         "object": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/resourceServer_schema.json",
         "type": "Relationship"
     },
-    "resourceServerURL": {
+    "resourceServerHTTPAccessURL": {
         "type": "Property",
         "value": "https://abc.iudx.org.in:8080"
     },
