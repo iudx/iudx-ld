@@ -51,7 +51,7 @@
         "value": {
             "geometry": {
                 "type": "Point",
-                "coordinates": [ 18.52019, 73.8468899 ]
+                "coordinates": [  73.8468899 , 18.52019]
             }
         }
     },

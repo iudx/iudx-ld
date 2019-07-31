@@ -63,7 +63,7 @@
       "value": {
           "geometry": {
             "type": "Point",
-            "coordinates": [12.273737, 78.37475]
+            "coordinates": [ 78.37475, 12.273737]
           },
           "address": "ABD area, Pune"
       }
