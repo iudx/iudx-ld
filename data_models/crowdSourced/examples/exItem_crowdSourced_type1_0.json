@@ -2,13 +2,13 @@
     "@context": [
         "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/crowdSourced/crowdSourced_type1.json"
     ],
-    "@id": "akdfi74938nid8kjfvko4",
+    "id": "akdfi74938nid8kjfvko4",
     "accessInformation": [
       {
         "accessObjectType": "OpenAPI",
         "accessObjectURL": "https://changebhai.in",
         "accessObject": {
-            "object": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/crowdSourced/examples/exApiObject_crowdSourced_type1.json",
+            "value": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/crowdSourced/examples/exApiObject_crowdSourced_type1.json",
             "type": "Relationship"
         },
         "accessObjectVariables": {
@@ -49,15 +49,15 @@
         }
     },
     "provider": {
-        "object": "urn:iudx-cat:ae48f2-5c01e8-3feda9",
+        "value": "urn:iudx-cat:ae48f2-5c01e8-3feda9",
         "type": "Relationship"
     },
     "refBaseSchema": {
-        "object": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/resourceItem_schema.json",
+        "value": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/resourceItem_schema.json",
         "type": "Relationship"
     },
     "refDataModel": {
-        "object": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/crowdSourced/crowdSourced_type1.json",
+        "value": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/crowdSourced/crowdSourced_type1.json",
         "type": "Relationship"
     },
     "resourceId": {
@@ -65,11 +65,11 @@
         "value": "changebhai"
     },
     "resourceServer": {
-        "object": "urn:iudx-cat:636485-945454-2a9495",
+        "value": "urn:iudx-cat:636485-945454-2a9495",
         "type": "Relationship"
     },
     "resourceServerGroup": {
-        "object": "urn:iudx-cat:abc357-gw2554-1234",
+        "value": "urn:iudx-cat:abc357-gw2554-1234",
         "type": "Relationship"
     },
     "tags": {

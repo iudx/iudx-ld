@@ -20,18 +20,30 @@ with open(itemFile, "r") as f:
 
 base_schema = {}
 bs_fl = item["refBaseSchema"]["object"]
-dm_fl = item["refDataModel"]["object"]
+
+if "refDataModel" in item.keys():
+    dm_fl = item["refDataModel"]["object"]
+else :
+    dm_fl = ""
 
 
-
-schema = {
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "type": "object",
-  "allOf": [
-   {"$ref": bs_fl},
-   {"$ref": dm_fl}
-  ]
-}
+if dm_fl is not "":
+    schema = {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "type": "object",
+      "allOf": [
+       {"$ref": bs_fl},
+       {"$ref": dm_fl}
+      ]
+    }
+else:
+    schema = {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "type": "object",
+      "allOf": [
+       {"$ref": bs_fl}
+      ]
+    }
 
 # This will find the correct validator and instantiate it using the resolver.
 # Requires that your schema a line like this: "$schema": "http://json-schema.org/draft-04/schema#"

@@ -103,7 +103,7 @@
                     "type": "string",
                     "enum": ["Relationship"]
                 },
-                "object": {
+                "value": {
                    "oneOf": [
                       {
                         "type": "string",

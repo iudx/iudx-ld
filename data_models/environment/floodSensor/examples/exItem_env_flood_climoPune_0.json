@@ -2,7 +2,7 @@
     "@context": [
         "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/floodSensor/env_flood_climoPune_0.json"
     ],
-    "@id": "akdfi74938nid8kjfvko4",
+    "id": "akdfi74938nid8kjfvko4",
     "NAME": {
         "type": "Property",
         "value": "XYZ"
@@ -12,7 +12,7 @@
         "value": "FWR015"
     },
     "accessObjectURL": {
-        "object": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/floodSensor/examples/exApiObject_env_flood_climoPune_0.json",
+        "value": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/floodSensor/examples/exApiObject_env_flood_climoPune_0.json",
         "type": "Relationship"
     },
     "accessInformation": [
@@ -20,7 +20,7 @@
             "accessObjectType": "OpenAPI",
             "accessObjectURL": "https://bosch.climo.org/APIs",
             "accessObject": {
-                "object": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/floodSensor/examples/exApiObject_env_flood_climoPune_0.json",
+                "value": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/floodSensor/examples/exApiObject_env_flood_climoPune_0.json",
                 "type": "Relationship"
             },
             "accessObjectVariables": {
@@ -61,15 +61,15 @@
         }
     },
     "provider": {
-        "object": "urn:iudx-cat:ae48f2-5c01e8-3feda9",
+        "value": "urn:iudx-cat:ae48f2-5c01e8-3feda9",
         "type": "Relationship"
     },
     "refBaseSchema": {
-        "object": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/resourceItem_schema.json",
+        "value": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/resourceItem_schema.json",
         "type": "Relationship"
     },
     "refDataModel": {
-        "object": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/floodSensor/env_flood_climoPune_0.json",
+        "value": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/floodSensor/env_flood_climoPune_0.json",
         "type": "Relationship"
     },
     "resourceId": {
@@ -77,11 +77,11 @@
         "value": "XYZ"
     },
     "resourceServer": {
-        "object": "iudx_iri:pscdcl_server",
+        "value": "iudx_iri:pscdcl_server",
         "type": "Relationship"
     },
     "resourceServerGroup": {
-        "object": "urn:iudx-cat:abc357-gw2554-asc11",
+        "value": "urn:iudx-cat:abc357-gw2554-asc11",
         "type": "Relationship"
     },
     "tags": {

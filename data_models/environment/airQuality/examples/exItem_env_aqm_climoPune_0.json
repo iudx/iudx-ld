@@ -16,7 +16,7 @@
             "accessObjectType": "OpenAPI",
             "accessObjectURL": "https://bosch.climo.org/APIs",
             "accessObject": {
-                "object": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/examples/exApiObject_env_aqm_climoPune_0.json", 
+                "value": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/examples/exApiObject_env_aqm_climoPune_0.json", 
                 "type": "Relationship"
             },
             "accessObjectVariables": {
@@ -30,6 +30,10 @@
             }
         }
     ],
+    "latestResourceData": {
+        "type": "Property",
+        "value": "xcd"
+    },
     "authorizationServerInfo": {
         "type": "Property",
         "value": {
@@ -69,15 +73,15 @@
       }
      },
     "provider": {
-        "object": "urn:iudx-cat:ae48f2-5c01e8-3feda9",
+        "value": "urn:iudx-cat:ae48f2-5c01e8-3feda9",
         "type": "Relationship"
     },
     "refBaseSchema": {
-        "object": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/resourceItem_schema.json",
+        "value": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/resourceItem_schema.json",
         "type": "Relationship"
     },
     "refDataModel": {
-        "object": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json",
+        "value": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json",
         "type": "Relationship"
     },
     "resourceId": {
@@ -85,11 +89,11 @@
         "value": "A_Bt_Square_30"
     },
     "resourceServer": {
-        "object": "urn:iudx-cat:636485-945454-2a9495",
+        "value": "urn:iudx-cat:636485-945454-2a9495",
         "type": "Relationship"
     },
     "resourceServerGroup": {
-        "object": "urn:iudx-cat:abc357-gw2554-452abc",
+        "value": "urn:iudx-cat:abc357-gw2554-452abc",
         "type": "Relationship"
     },
     "tags": {
