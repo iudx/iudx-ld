@@ -1,0 +1,146 @@
+https://pune.iudx.org.in/resource-server/pscdcl-media/v1/media?type=live
+
+{
+   "openapi": "3.0.2",
+   "info": {
+      "title": "vms",
+      "version": "1.0.0",
+      "description": "APIs for the VMS controller"
+   },
+   "paths": {
+      "/archive": {
+         "description": "Archive video file",
+         "post": {
+            "requestBody": {
+               "content": {
+                  "multipart/form-data": {
+                     "schema": {
+                        "type": "object",
+                        "properties": {
+                           "fileName": {
+                              "format": "binary",
+                              "type": "string"
+                           }
+                        }
+                     }
+                  }
+               },
+               "required": true
+            },
+            "responses": {
+               "200": {
+                  "description": "Response body of contents",
+                  "content": {
+                     "application/json": {
+                        "schema": {
+                           "$ref": "#/components/schemas/urlResponse"
+                        }
+                     }
+                  }
+               }
+            }
+         },
+         "parameters": [
+            {
+               "name": "user_id",
+               "description": "user's id",
+               "schema": {
+                  "type": "string"
+               },
+               "in": "header",
+               "required": true
+            },
+            {
+               "name": "apikey",
+               "description": "API Key",
+               "schema": {
+                  "type": "string"
+               },
+               "in": "header",
+               "required": true
+            }
+         ]
+      },
+      "/write": {
+         "description": "Upload media assets to the vms controller",
+         "post": {
+            "requestBody": {
+               "content": {
+                  "application/json": {
+                     "schema": {
+                        "$ref": "#/components/schemas/writeRequestBody"
+                     }
+                  }
+               },
+               "required": true
+            },
+            "responses": {
+               "200": {
+                  "description": "Response body of the write request"
+               }
+            }
+         },
+         "parameters": [
+            {
+               "name": "user_id",
+               "description": "user's id",
+               "schema": {
+                  "type": "string"
+               },
+               "in": "header",
+               "required": true
+            },
+            {
+               "name": "apikey",
+               "description": "API Key",
+               "schema": {
+                  "type": "string"
+               },
+               "in": "header",
+               "required": true
+            }
+         ]
+      }
+   },
+   "components": {
+      "schemas": {
+         "writeRequestBody": {
+            "title": "Root Type for writeRequestBody",
+            "description": "Request body for the write API",
+            "type": "object",
+            "properties": {
+               "start_date": {
+                  "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/services/vms/screenly.json#/properties/start_date",
+                  "format": "date-time"
+               },
+               "end_date": {
+                  "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/services/vms/screenly.json#/properties/end_date",
+                  "format": "date-time"
+               },
+               "duration": {
+                  "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/services/vms/screenly.json#/properties/duration"
+               }
+            },
+            "example": {
+               "start_date": "2019-07-17T00:00:00+00:00",
+               "end_date": "2019-08-16T00:00:00+00:00",
+               "duration": "167"
+            }
+         },
+         "playback-url": {
+            "title": "Root Type for urlResponse",
+            "description": "Response of contents request",
+            "type": "object",
+            "properties": {
+               "playback-url": {
+                  "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/services/video/ip_camera.json#/properties/playback-url",
+                  "type": "string"
+               }
+            },
+            "example": {
+               "playback-url": "https://video.iudx.org.in/camera1/1-08-2019.mp4"
+            }
+         }
+      }
+   }
+}

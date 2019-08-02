@@ -1,15 +1,15 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/services/vms/screenly.json"
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/services/video/ip_camera.json"
     ],
-    "id": "akdfi74938nid8kjfvko4",
-    "screen_name": "sirpi.co.in/screen1",
+    "id": "12cj3k1jsdqeu",
+    "cameraId": "boschKormanglaJunction",
     "location": {
         "type": "GeoProperty",
         "value": {
             "geometry": {
                 "type": "Point",
-                "coordinates": [  77.570325 , 13.013836]
+                "coordinates": [77.612400,12.934470]
             }
         }
     },
@@ -23,35 +23,26 @@
     "accessInformation": [
         {
             "accessObjectType": "OpenAPI",
-            "accessObjectURL": "https://slfeeder.com/APIs",
+            "accessObjectURL": "https://services.iudx.org.in",
             "accessObject": {
-                "value": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/services/vms/examples/exApi_vms.json",
+                "value": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/services/video/examples/exApi_video.json",
                 "type": "Relationship"
             },
             "accessObjectVariables": {
                 "type": "Property",
                 "value": {
-                    "user_id": "user_abc_123",
+                    "cameraId": "boschKormanglaJunction",
                     "ip": "https://services.iudx.org.in",
-                    "resourceClass": "vms",
-                    "screen_name": "sirpi.co.in/screen1"
+                    "resourceClass": "video"
                 }
             }
         }
     ],
-    "accessObjectURL": {
-        "value": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/services/vms/examples/exApi_vms.json",
-        "type": "Relationship"
-    },
     "createdAt": {
         "type": "TimeProperty",
         "value": "2019-02-20T10:30:06.093121"
     },
-    "itemDescription": "RBCCPS meeting room TV. Protected VMS system. To advertise visit http://sirpi.co.in",
-    "vms_enabler": {
-        "type": "Property",
-        "value": "http://sirpi.co.in"
-    },
+    "itemDescription": "Video camera installed at bosch kormangala junction",
     "itemStatus": {
         "type": "Property",
         "value": "active"
@@ -61,7 +52,7 @@
         "value": "resourceItem"
     },
     "provider": {
-        "value": "urn:iudx-cat:ae48f2-5c01e8-3feda9",
+        "value": "bosch",
         "type": "Relationship"
     },
     "refBaseSchema": {
@@ -70,23 +61,23 @@
     },
     "refDataModel": {
         "value":
-        "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/services/vms/screenly.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/services/video/ip_camera.json",
         "type": "Relationship"
     },
     "resourceId": {
         "type": "Property",
-        "value": "rbccps_screen1"
+        "value": "boschKormanglaJunction"
     },
     "resourceServer": {
-        "value": "urn:iudx-cat:636485-945454-2a9495",
+        "value": "video.iudx.org.in",
         "type": "Relationship"
     },
     "resourceServerGroup": {
-        "value": "urn:iudx-cat:abc357-gw2554-adva8",
+        "value": "bosch",
         "type": "Relationship"
     },
     "tags": {
         "type": "Property",
-        "value": [ "variable messaging system", "sirpi advertisement", "vms", "service", "picture", "video", "screen", "advertise" ]
+        "value": ["ip","camera","traffic","junction"]
     }
 }

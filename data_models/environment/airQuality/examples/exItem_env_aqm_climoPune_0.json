@@ -37,7 +37,7 @@
     "authorizationServerInfo": {
         "type": "Property",
         "value": {
-            "authServer": "http://auth.example.org",
+            "authServer": "http://auth.iudx.org.in",
             "authType": "iudx-auth"
         }
     },

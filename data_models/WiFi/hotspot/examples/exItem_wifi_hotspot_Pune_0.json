@@ -11,6 +11,13 @@
         "type": "Property",
         "value": "XYZ"
     },
+    "authorizationServerInfo": {
+        "type": "Property",
+        "value": {
+            "authServer": "http://auth.iudx.org.in",
+            "authType": "iudx-auth"
+        }
+    },
     "accessInformation": [
         {
             "accessObjectType": "OpenAPI",
