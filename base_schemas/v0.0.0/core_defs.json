@@ -121,7 +121,7 @@
                     ]
                  }
             },
-            "required": [ "type", "object" ],
+            "required": [ "type", "value" ],
             "additionalProperties": {
                 "anyOf": [
                     {

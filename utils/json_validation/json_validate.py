@@ -19,10 +19,10 @@ with open(itemFile, "r") as f:
 
 
 base_schema = {}
-bs_fl = item["refBaseSchema"]["object"]
+bs_fl = item["refBaseSchema"]["value"]
 
 if "refDataModel" in item.keys():
-    dm_fl = item["refDataModel"]["object"]
+    dm_fl = item["refDataModel"]["value"]
 else :
     dm_fl = ""
 

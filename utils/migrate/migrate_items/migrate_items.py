@@ -21,6 +21,8 @@ new_items = []
 # Flood
 #def makeItem(old_item):
 #    new_item = exItem.copy()
+#    new_item["provider"] = "pscdcl"
+#    new_item["resourceServer"] = "pscdcl"
 #    new_item["id"] = old_item["id"]
 #    new_item["latestResourceData"]["value"] = old_item["latestResourceData"]
 #    new_item["NAME"]["value"] = old_item["NAME"]
@@ -32,6 +34,8 @@ new_items = []
 #air
 #def makeItem(old_item):
 #    new_item = exItem.copy()
+#    new_item["provider"] = "pscdcl"
+#    new_item["resourceServer"] = "pscdcl"
 #    new_item["id"] = old_item["id"]
 #    new_item["latestResourceData"]["value"] = old_item["latestResourceData"]
 #    new_item["DEVICEID"]["value"] = old_item["DEVICEID"]
@@ -44,6 +48,8 @@ new_items = []
 #sl
 #def makeItem(old_item):
 #    new_item = exItem.copy()
+#    new_item["provider"] = "pscdcl"
+#    new_item["resourceServer"] = "pscdcl"
 #    new_item["id"] = old_item["id"]
 #    new_item["latestResourceData"]["value"] = old_item["latestResourceData"]
 #    new_item["PANEL_NAME"]["value"] = old_item["PANEL_NAME"]
@@ -54,8 +60,11 @@ new_items = []
 #    new_item["resourceId"]["value"] = old_item["accessInformation"][0]["accessVariables"]["resourceId"]
 #    return new_item
 
+#WiFi
 def makeItem(old_item):
     new_item = exItem.copy()
+    new_item["provider"] = "pscdcl"
+    new_item["resourceServer"] = "pscdcl"
     new_item["id"] = old_item["id"]
     new_item["latestResourceData"]["value"] = old_item["latestResourceData"]
     new_item["HOTSPOT_ID"]["value"] = old_item["HOTSPOT_ID"]
