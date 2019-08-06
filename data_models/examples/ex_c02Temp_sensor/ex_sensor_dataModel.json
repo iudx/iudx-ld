@@ -29,7 +29,9 @@
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
             "describes": "Maximum value of Temperature for the last 24 hours",
             "unitCode": "CEL",
-            "unitText": "degree Celsius"
+            "unitText": "degree Celsius",
+            "minValue": -20,
+            "maxValue": 50
         },
         "location": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/location",
