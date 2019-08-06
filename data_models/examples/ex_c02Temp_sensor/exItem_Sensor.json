@@ -17,7 +17,7 @@
         "type": "Relationship"
     },
     "refDataModel": {
-        "value": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/example_sensor/ex_sensor_dataModel.json",
+        "value": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/examples/ex_c02Temp_sensor/ex_sensor_dataModel.json",
         "type": "Relationship"
     },
     "resourceId": {
