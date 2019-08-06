@@ -1,0 +1,82 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/examples/ex_c02Temp_sensor/ex_sensor_dataModel.json"
+    ],
+    "itemDescription": "An example catalogue resource item",
+    "id": "urn:iudx-cat:abc/xyz/848f-4848-dxbe",
+    "itemType": {
+        "type": "Property",
+        "value": "resourceItem"
+    },
+    "tags": {
+        "type": "Property",
+        "value": [ "environment", "air-quality", "climate", "air", "pollution", "CO2", "Temperature"]
+    },
+    "refBaseSchema": {
+        "value": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/resourceItem_schema.json",
+        "type": "Relationship"
+    },
+    "refDataModel": {
+        "value": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/example_sensor/ex_sensor_dataModel.json",
+        "type": "Relationship"
+    },
+    "resourceId": {
+        "type": "Property",
+        "value": "CO2_Temp_Sensor"
+    },
+    "resourceServer": {
+        "value": "urn:iudx-cat:636485-945454-2a9495",
+        "type": "Relationship"
+    },
+    "resourceServerGroup": {
+        "value": "urn:iudx-cat:abc357-gw2554-452abc",
+        "type": "Relationship"
+    },
+    "provider": {
+        "value": "urn:iudx-cat:ae48f2-5c01e8-3feda9",
+        "type": "Relationship"
+    },
+    "NAME": {
+        "type": "Property",
+        "value": "CO2_Temp_Sensor"
+    },
+    "location": {
+      "type": "GeoProperty",
+      "value": {
+          "geometry": {
+            "type": "Point",
+            "coordinates": [77.5703, 13.0138]
+          }
+      }
+    },
+    "accessInformation": [
+        {
+            "accessObjectType": "OpenAPI",
+            "accessObject": {
+                "value": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/examples/ex_c02Temp_sensor/exApiObject_c02Temp_sensor.json", 
+                "type": "Relationship"
+            },
+            "accessObjectVariables": {
+                "type": "Property",
+                "value": {
+                    "resourceId": "CO2_Temp_Sensor"
+                }
+            }
+        }
+    ],
+    "authorizationServerInfo": {
+        "type": "Property",
+        "value": {
+            "authServer": "http://auth.iudx.org.in",
+            "authType": "iudx-auth"
+        }
+    },
+    "createdAt": {
+        "type": "TimeProperty",
+        "value": "2019-02-20T10:30:06.093121"
+    },
+    "itemStatus": {
+        "type": "Property",
+        "value": "active"
+    }
+}
