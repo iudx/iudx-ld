@@ -25,7 +25,7 @@
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
             "describes": "Name of the device."
         },
-        "TEMPRATURE_MAX": {
+        "TEMPERATURE_MAX": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
             "describes": "Maximum value of Temperature for the last 24 hours",
             "unitCode": "CEL",
