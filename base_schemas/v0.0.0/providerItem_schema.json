@@ -11,6 +11,9 @@
         "id": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/id"
         },
+        "providerName": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/name"
+        },
         "tags": {
             "describes": "Array of keywords describing this provider. It intends to provide discovery hints for this provider item.",
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/tags"
@@ -70,5 +73,5 @@
             }
         ]
     },
-    "required": ["id", "tags", "refBaseSchema",  "itemDescription", "itemType"]
+    "required": ["id", "providerName", "tags", "refBaseSchema",  "itemDescription", "itemType"]
 }

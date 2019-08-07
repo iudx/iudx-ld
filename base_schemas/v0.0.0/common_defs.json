@@ -8,8 +8,12 @@
         "id": {
             "allOf": [{"$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"}],
             "type": "string", 
-            "format": "uri",
             "describes": "id of a catalogue item"
+        },
+        "resourceId": {
+            "allOf": [{"$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"}],
+            "type": "string", 
+            "describes": "id of the resource in the resource server"
         },
         "name": {
             "allOf": [{"$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"}],
@@ -98,9 +102,7 @@
         },
         "itemType": {
             "describes": "iudx item type",
-            "allOf": [{
-                "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
-            }],
+            "allOf": [{ "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property" }],
             "type": "object",
             "properties": {
                 "value": {
@@ -172,10 +174,7 @@
         },
         "organizationInfo": {
             "describes": "Information about a given organization (contact info, email, urls etc.)",
-            "allOf": [
-                {
-                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
-                }],
+            "allOf": [{"$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property" }],
                 "type": "object",
                 "properties": {
                     "value": {

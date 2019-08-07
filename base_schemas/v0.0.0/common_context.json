@@ -27,6 +27,10 @@
             "@id": "iudx_common:refDataModel",
             "@type": "core:Relationship"
         },
+        "providerName": {
+            "@id": "iudx_common:providerName",
+            "@type": "core:Property"
+        },
         "provider": {
             "@id": "iudx_common:provider",
             "@type": "core:Relationship"
