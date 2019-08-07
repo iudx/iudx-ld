@@ -12,7 +12,6 @@
         },
         "resourceId": {
             "allOf": [{"$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"}],
-            "type": "string", 
             "describes": "id of the resource in the resource server"
         },
         "name": {
@@ -276,7 +275,7 @@
         },
         "accessObjectVariables": {
             "describes": "Item specific API object variables. The variables and their corresponding value for this resource item are listed as a key-value pairs in value field of this property. The json-object in the value should be treated as a simple json object and not a json-ld object.",
-            "allOf": [ { "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property" }],
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
             "type": "object",
             "properties": {
                 "value": {
