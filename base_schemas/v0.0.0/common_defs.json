@@ -6,31 +6,45 @@
     "type": "object",
     "definitions": {
         "id": {
+            "allOf": [{"$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"}],
             "type": "string", 
             "format": "uri",
-            "description": "id for rdfs:Resource objects"
+            "describes": "id of a catalogue item"
         },
         "name": {
+            "allOf": [{"$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"}],
             "type": "string",
             "pattern": "^(\\d|[a-zA-Z]|_)+$",
             "minLength": 1,
-            "description": "Name"
+            "describes": "name of a catalogue item"
         },
         "observedAt": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/TimeProperty",
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "describes": "Time when an attribute was observed"
         },
         "createdAt" : {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/TimeProperty"
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/TimeProperty",
+            "type": "string",
+            "format": "date-time",
+            "describes": "Time when a resource/item/attribute was created"
         },
         "modifiedAt" : {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/TimeProperty"
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/TimeProperty",
+            "type": "string",
+            "format": "date-time",
+            "describes": "Time when a resource/item/attribute was modified"
         },
         "deprecatedAt" : {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/TimeProperty"
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/TimeProperty",
+            "type": "string",
+            "format": "date-time",
+            "describes": "Time when a resource/item/attribute was deprecated"
         },
         "tags": {
             "allOf": [{"$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"}],
+            "describes": "Array of keywords describing this item facilitating item discovery.",
             "type": "object",
             "properties": {
                 "value": {
@@ -45,6 +59,7 @@
         },
         "resourceType": {
             "allOf": [{"$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"}],
+            "describes": "Type of the resource",
             "type": "object",
             "properties": {
                 "value": {
@@ -55,6 +70,7 @@
         },
         "itemStatus": {
             "allOf": [{"$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"}],
+            "describes": "Status of this catalogue item",
             "type": "object",
             "properties": {
                 "value": {
@@ -64,13 +80,16 @@
             }
         },
         "refBaseSchema": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Relationship"
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Relationship",
+            "describes": "Link to the base schema for this itemType"
         },
         "resourceServer": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Relationship"
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Relationship",
+            "describes": "Link to a resourceServer item"
         },
         "resourceServerGroup":{
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Relationship"
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Relationship",
+            "describes": "Link to a resourceServerGroup item"
         },
         "itemDescription": {
             "allOf": [{"$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"}],
@@ -98,6 +117,7 @@
             "describes": "Link to the provider of this resource"
         },
         "statusSchema": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
             "type": "string",
             "enum": ["active", "deprecated"],
             "describes": "Status of an item. In production version of catalogue, for purposes of provenance, one can choose to not delete an item but set its status to 'deprecated'. All the older versions of an updated item may be persisted by setting their status as 'deprecated'. Only the current item containing latest updates should have status set to 'active'."
@@ -187,10 +207,8 @@
                 }
         },
         "authorizationServerInfo": {
-            "allOf": [
-                {
-                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
-                }],
+            "allOf": [ { "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property" }],
+            "describes": "Information regarding the authorization server that this item uses",
                 "type": "object",
                 "properties": {
                     "value": {
@@ -211,10 +229,8 @@
                 }
         },
         "deviceModelInfo": {
-            "allOf": [
-                {
-                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
-                }],
+            "allOf": [ { "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property" }],
+            "describes": "Device model information, it's make, brand, model, url, etc",
                 "type": "object",
                 "properties": {
                     "value": {
@@ -237,43 +253,54 @@
                     }
                 }
         },
+        "accessObjectType": {
+            "allOf": [{"$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"}],
+            "type": "string",
+            "describes": "Type of access mechanism. For example, 'openAPI', 'asyncAPI', 'custom'. Can be changed to ENUM later."
+        },
+        "accessObjectURL": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Relationship",
+            "type": "string",
+            "format": "uri",
+            "describes": "URL that points to more information about data access of this resource"
+        },
+        "accessObject": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Relationship",
+            "describes": "Link to an object (OpenAPI 3.0 api JSON object, or a json-schema) to describe access mechanism for this data resource."
+        },
+        "accessObjectVariables": {
+            "describes": "Item specific API object variables. The variables and their corresponding value for this resource item are listed as a key-value pairs in value field of this property. The json-object in the value should be treated as a simple json object and not a json-ld object.",
+            "allOf": [ { "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property" }],
+            "type": "object",
+            "properties": {
+                "value": {
+                    "type": "object",
+                    "patternProperties": {
+                        "[a-zA-Z0-9]+$": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
         "accessInformation": {
+            "allOf": [ { "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property" }],
             "type": "array",
             "describes": "List of access mechanisms available for data associated with this catalog item",
             "items": {
                 "type": "object",
                 "properties": {
                     "accessObjectType": {
-                        "allOf": [{"$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"}],
-                        "type": "string",
-                        "describes": "Type of access mechanism. For example, 'openAPI', 'asyncAPI', 'custom'. Can be changed to ENUM later."
+                        "$ref": "#/definitions/accessObjectType"
                     },
                     "accessObjectURL": {
-                        "type": "string",
-                        "format": "uri",
-                        "describes": "URL that has more information about meta-data of this resource"
+                        "$ref": "#/definitions/accessObjectURL"
                     },
                     "accessObject": {
-                        "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Relationship",
-                        "describes": "Link to an object (OpenAPI 3.0 api JSON object, or a json-schema) to describe access mechanism for this data resource."
+                        "$ref": "#/definitions/accessObject"
                     },
                     "accessObjectVariables": {
-                        "describes": "Item specific API object variables. The variables and their corresponding value for this resource item are listed as a key-value pairs in value field of this property. The json-object in the value should be treated as a simple json object and not a json-ld object.",
-                        "allOf": [
-                            {
-                                "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
-                            }],
-                            "type": "object",
-                            "properties": {
-                                "value": {
-                                    "type": "object",
-                                    "patternProperties": {
-                                        "[a-zA-Z0-9]+$": {
-                                            "type": "string"
-                                        }
-                                    }
-                                }
-                            }
+                        "$ref": "#/definitions/accessObjectVariables"
                     }
                 },
                 "additionalProperties": false
@@ -281,6 +308,7 @@
         },
         "dataAttributeList":{
             "allOf": [{"$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"}],
+            "describes": "Array of fields from the data-model which appear in the data packet. These fields are not necessarily instantiated in the resourceItem",
             "type": "object",
             "properties": {
                 "value": {

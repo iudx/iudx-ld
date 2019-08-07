@@ -25,7 +25,6 @@ subheading_format.set_font_color("blue")
 schema = {}
 with open(schm_path,"r") as f:
     schema = json.load(f)["definitions"]
-    #schema.pop("@context")
     #schema.pop("id")
 
 def writeType(tp, row):
@@ -41,6 +40,9 @@ def writeDescribes(dscr, row):
     worksheet.write(xl_range(row,2,row,2), dscr)
 
 def findType(attrObj):
+    if "allOf" in attrObj.keys():
+        if(attrObj["allOf"][0]["$ref"].split("/")[-1] in ["Relationship", "Property", "GeoProperty", "TimeProperty", "QuantitativeProperty"]):
+            return attrObj["allOf"][0]["$ref"].split("/")[-1]
     if "$ref" in attrObj.keys():
         if(attrObj["$ref"].split("/")[-1] in ["Relationship", "Property", "GeoProperty", "TimeProperty", "QuantitativeProperty"]):
             return attrObj["$ref"].split("/")[-1]
