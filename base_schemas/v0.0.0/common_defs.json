@@ -22,12 +22,6 @@
             "minLength": 1,
             "describes": "name of a catalogue item"
         },
-        "observedAt": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/TimeProperty",
-            "type": "string",
-            "format": "date-time",
-            "describes": "Time when an attribute was observed"
-        },
         "createdAt" : {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/TimeProperty",
             "type": "string",
@@ -72,6 +66,19 @@
                 }
             }
         },
+        "uriLink": {
+            "describes": "Attribute whose value  is a URI",
+            "allOf": [{
+              "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+            }],
+            "type": "object",
+            "properties": {
+                "value": {
+                   "type": "string",
+                   "format": "uri"
+                }
+            }
+        },
         "itemStatus": {
             "allOf": [{"$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"}],
             "describes": "Status of this catalogue item",
@@ -93,7 +100,7 @@
         },
         "resourceServerGroup":{
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Relationship",
-            "describes": "Link to a resourceServerGroup item"
+            "describes": "Link or an array of links to resourceServerGroup items"
         },
         "itemDescription": {
             "allOf": [{"$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"}],

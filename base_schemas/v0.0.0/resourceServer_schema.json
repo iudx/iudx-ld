@@ -47,20 +47,11 @@
         },
         "resourceServerHTTPAccessURL": {
             "describes": "Resource Server Hostname and port for data access based on HTTP/REST APIs.",
-            "allOf": [{
-              "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
-            }],
-            "type": "object",
-            "properties": {
-                "value": {
-                   "type": "string",
-                   "format": "uri"
-                }
-            }
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/uriLink"
         },
-        "resourceServerGroups":{
-           "describes": "All the resource groups associated with this resource server",
-           "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Relationship"
+        "resourceServerGroup": {
+            "describes": "IRIs for all the resource groups associated with this resource server",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/resourceServerGroup"
         },
         "coverageRegion":{
            "describes": "Coverage Area for this resource Server",
@@ -95,5 +86,5 @@
             }
         ]
     },
-    "required": ["id", "name", "tags", "refBaseSchema", "itemDescription", "resourceServerHTTPAccessURL", "resourceServerOrg", "resourceServerGroups", "coverageRegion","itemType"]
+    "required": ["id", "name", "tags", "refBaseSchema", "itemDescription", "resourceServerHTTPAccessURL", "resourceServerOrg", "coverageRegion","itemType"]
 }

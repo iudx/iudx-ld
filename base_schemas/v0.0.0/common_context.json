@@ -99,16 +99,12 @@
             "@id": "iudx_common:dataAttributeList",
             "@type": "core:Property"
         },
-        "resourceServerGroups": {
-            "@id": "iudx_resourceServer:resourceServerGroups",
-            "@type": "core:Relationship"
-        },
         "resourceServerHTTPAccessURL": {
-            "@id": "iudx_resourceServer:resourceServerHTTPAccessURL",
+            "@id": "iudx_common:uriLink",
             "@type": "core:Property"
         },
         "resourceServerOrg": {
-            "@id": "iudx_resourceServer:resourceServerOrg",
+            "@id": "iudx_common:organizationInfo",
             "@type": "core:Property"
         },
         "deviceModelInfo":{
