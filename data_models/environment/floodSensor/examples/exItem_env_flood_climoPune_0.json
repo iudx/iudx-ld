@@ -21,6 +21,7 @@
     "accessInformation": [
         {
             "accessObjectType": "OpenAPI",
+            "accessObjectURL": "https://bosch.climo.org/APIs",
             "accessObject": {
                 "value": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/floodSensor/examples/exApiObject_env_flood_climoPune_0.json",
                 "type": "Relationship"

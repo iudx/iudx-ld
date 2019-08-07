@@ -290,22 +290,27 @@
         },
         "accessInformation": {
             "allOf": [ { "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property" }],
-            "type": "array",
+            "type": "object",
             "describes": "List of access mechanisms available for data associated with this catalog item",
-            "items": {
-                "type": "object",
-                "properties": {
-                    "accessObjectType": {
-                        "$ref": "#/definitions/accessObjectType"
-                    },
-                    "accessObjectURL": {
-                        "$ref": "#/definitions/accessObjectURL"
-                    },
-                    "accessObject": {
-                        "$ref": "#/definitions/accessObject"
-                    },
-                    "accessObjectVariables": {
-                        "$ref": "#/definitions/accessObjectVariables"
+            "properties": {
+                "value": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "accessObjectType": {
+                                "$ref": "#/definitions/accessObjectType"
+                            },
+                            "accessObjectURL": {
+                                "$ref": "#/definitions/accessObjectURL"
+                            },
+                            "accessObject": {
+                                "$ref": "#/definitions/accessObject"
+                            },
+                            "accessObjectVariables": {
+                                "$ref": "#/definitions/accessObjectVariables"
+                            }
+                        }
                     }
                 },
                 "additionalProperties": false
