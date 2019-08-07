@@ -11,8 +11,9 @@
         "type": "Property",
         "value": "A_Bt_Square_30"
     },
-    "accessInformation": [
-        {
+    "accessInformation": {
+        "type": "Property",
+        "value": [{
             "accessObjectType": "OpenAPI",
             "accessObjectURL": "https://bosch.climo.org/APIs",
             "accessObject": {
@@ -28,8 +29,8 @@
                     "resourceClass": "aqm-bosch-climo"
                 }
             }
-        }
-    ],
+        }]
+    },
     "latestResourceData": {
         "type": "Property",
         "value": "xcd"

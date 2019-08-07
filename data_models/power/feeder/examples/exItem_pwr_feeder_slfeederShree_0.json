@@ -22,8 +22,9 @@
             "authType": "iudx-auth"
         }
     },
-    "accessInformation": [
-        {
+    "accessInformation": {
+        "type": "Property",
+        "value": [{
             "accessObjectType": "OpenAPI",
             "accessObjectURL": "https://slfeeder.com/APIs",
             "accessObject": {
@@ -39,8 +40,8 @@
                     "resourceClass": "streetlight-feeder-sree"
                 }
             }
-        }
-    ],
+        }]
+    },
     "createdAt": {
         "type": "TimeProperty",
         "value": "2019-02-20T17:30:06.093121"

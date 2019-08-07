@@ -10,8 +10,9 @@
             "authType": "iudx-auth"
         }
     },
-    "accessInformation": [
-      {
+    "accessInformation": {
+        "type": "Property",
+        "value": [{
         "accessObjectType": "OpenAPI",
         "accessObjectURL": "https://changebhai.in",
         "accessObject": {
@@ -26,8 +27,8 @@
                 "resourceClass": "crowdSourced"
             }
         }
-      }
-    ],
+      }]
+    },
     "createdAt": {
         "type": "TimeProperty",
         "value": "2019-02-20T10:30:06.093121"

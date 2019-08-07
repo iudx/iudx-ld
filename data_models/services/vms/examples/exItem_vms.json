@@ -20,8 +20,9 @@
             "authType": "iudx-auth"
         }
     },
-    "accessInformation": [
-        {
+    "accessInformation": {
+        "type": "Property",
+        "value": [{
             "accessObjectType": "OpenAPI",
             "accessObjectURL": "https://slfeeder.com/APIs",
             "accessObject": {
@@ -37,8 +38,8 @@
                     "screen_name": "sirpi.co.in/screen1"
                 }
             }
-        }
-    ],
+        }]
+    },
     "accessObjectURL": {
         "value": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/services/vms/examples/exApi_vms.json",
         "type": "Relationship"
