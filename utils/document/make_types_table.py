@@ -51,7 +51,7 @@ for tp in types:
                 reqString += req+"("+derName+"), "
             else:
                 reqString += req+", "
-    worksheet.write(xl_range(row,1,row,1), reqString)
+    worksheet.write(xl_range(row,1,row,1), reqString[:-2])
     row += 1
     col = 0
 

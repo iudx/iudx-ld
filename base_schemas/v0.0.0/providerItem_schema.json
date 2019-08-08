@@ -73,5 +73,5 @@
             }
         ]
     },
-    "required": ["id", "providerName", "tags", "refBaseSchema",  "itemDescription", "itemType"]
+    "required": ["id", "name", "tags", "refBaseSchema",  "itemDescription", "itemType"]
 }
