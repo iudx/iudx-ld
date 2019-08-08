@@ -16,6 +16,7 @@ heading_format = workbook.add_format()       # Set properties later.
 heading_format.set_bold()
 
 subheading_format = workbook.add_format()       # Set properties later.
+subheading_format.set_bold()
 subheading_format.set_font_color("blue")
 
 
@@ -36,7 +37,21 @@ for tp in types:
     with open(tp,"r") as f:
         schm = json.load(f)
     worksheet.write(xl_range(row,0,row,0), tp.split("/")[-1].replace("_schema.json",""), subheading_format)
-    worksheet.write(xl_range(row,1,row,1), "".join( req+", " for req in schm["required"])[:-2])
+    reqString = ""
+    for req in schm["required"]:
+        if "$ref" in schm["properties"][req].keys():
+            derName = schm["properties"][req]["$ref"].split("/")[-1]
+            if req == derName:
+                reqString += req+", "
+            else:
+                reqString += req+"("+derName+"), "
+        elif "allOf" in schm["properties"][req].keys():
+            derName = schm["properties"][req]["allOf"][0]["$ref"].split("/")[-1]
+            if req != derName:
+                reqString += req+"("+derName+"), "
+            else:
+                reqString += req+", "
+    worksheet.write(xl_range(row,1,row,1), reqString)
     row += 1
     col = 0
 
