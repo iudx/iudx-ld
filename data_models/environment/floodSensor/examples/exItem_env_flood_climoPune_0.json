@@ -31,8 +31,6 @@
 				"type": "Property",
 				"value": {
 					"NAME": "XYZ",
-					"ip": "https://pune.iudx.org.in",
-					"port": "443",
 					"resourceClass": "flood-sensor"
 				}
 			}
@@ -90,6 +88,6 @@
 	},
 	"tags": {
 		"type": "Property",
-		"value": ["flooding", "flood", "flood alert", "flood danger"]
+		"value": ["flooding", "water flooding", "flood", "flood alert", "flood danger", "level", "danger threshold"]
 	}
 }
