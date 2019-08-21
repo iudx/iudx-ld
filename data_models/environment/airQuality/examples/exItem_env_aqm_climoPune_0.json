@@ -24,8 +24,6 @@
                 "type": "Property",
                 "value": {
                     "NAME": "A_Bt_Square_30",
-                    "ip": "https://pune.iudx.org.in",
-                    "port": "443",
                     "resourceClass": "aqm-bosch-climo"
                 }
             }
@@ -97,8 +95,8 @@
         "value": "urn:iudx-cat:abc357-gw2554-452abc",
         "type": "Relationship"
     },
-    "tags": {
+    "tags": { 
         "type": "Property",
-        "value": [ "environment", "air-quality", "climate", "air", "pollution", "SO2", "CO2", "CO", "NO", "NO2", "PM2.5", "PM10", "Humidity", "Temperature", "Ozone", "O", "Noise", "Light", "UV" ]
+        "value": [ "environment", "air quality", "climate", "air", "aqi", "aqm", "climo", "pollution", "so2", "co2", "co", "no", "no2", "pm2.5", "pm10", "humidity", "temperature", "ozone", "o3", "noise", "light", "uv" ]
     }
 }
