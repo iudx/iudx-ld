@@ -1,0 +1,34 @@
+{
+  "@type": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/hasObject",
+  "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/airQuality_context.json#/CO2_MAX": {
+    "https://schema.org/unitCode": {
+      "@type": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+      "@value": "X59"
+    },
+    "https://schema.org/unitText": {
+      "@type": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+      "@value": "part per million (ppm)"
+    }
+  },
+  "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/airQuality_context.json#/LASTUPDATEDATETIME": {},
+  "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/airQuality_context.json#/NAME": {},
+  "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/airQuality_context.json#/TEMPRATURE_MAX": {
+    "https://schema.org/maxValue": {
+      "@type": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+      "@value": 50
+    },
+    "https://schema.org/minValue": {
+      "@type": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+      "@value": -20
+    },
+    "https://schema.org/unitCode": {
+      "@type": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+      "@value": "CEL"
+    },
+    "https://schema.org/unitText": {
+      "@type": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+      "@value": "degree Celsius"
+    }
+  },
+  "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/airQuality_context.json#/location": {}
+}

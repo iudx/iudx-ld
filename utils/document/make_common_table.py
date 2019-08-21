@@ -69,7 +69,7 @@ def findValueType(attrObj):
         if(attrObj["$ref"].split("/")[-1] in ["Relationship", "Property", "GeoProperty", "TimeProperty", "QuantitativeProperty"]):
             tp = attrObj["$ref"].split("/")[-1]
             if tp == "Relationship":
-                return "iri"
+                return "IRI"
             if tp == "Property":
                 return "string / object / number / array "
             if tp == "GeoProperty":

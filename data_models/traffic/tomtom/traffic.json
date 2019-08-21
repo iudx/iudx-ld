@@ -1,0 +1,75 @@
+{
+    "@context": {
+        "traffic": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/traffictomtomtraffic.json",
+        "coverageRegion": {
+            "@type": "GeoProperty",
+            "@id": "traffic:coverageRegion"
+        },
+        "projection": {
+            "@type": "Property",
+            "@id": "traffic:projection"
+        },
+        "id": {
+            "@type": "Property",
+            "@id": "traffic:id"
+        },
+        "incidentLocation": {
+            "@type": "GeoProperty",
+            "@id": "traffic:incidentLocation"
+        },
+        "incident": {
+            "@type": "Property",
+            "@id": "traffic:incident"
+        },
+        "incidentDescription": {
+            "@type": "Property",
+            "@id": "traffic:incidentDescription"
+        },
+        "incidentStart": {
+            "@type": "Property",
+            "@id": "traffic:incidentStart"
+        },
+        "incidentEnd": {
+            "@type": "Property",
+            "@id": "traffic:incidentEnd"
+        },
+        "incidentRoadName": {
+            "@type": "Property",
+            "@id": "traffic:incidentRoadName"
+        },
+        "incidentVector": {
+            "@type": "Property",
+            "@id": "traffic:incidentVector"
+        }
+    },
+    "coverageRegion": {
+        "describes": "Region of coverage of this datasource"
+    },
+    "projection": {
+        "describes": "Geometric projection used in describing the coordinates"
+    },
+    "id": {
+        "describes": "id of the cluster in the resouce server"
+    },
+    "incidentLocation": {
+        "describes": "location where the incident has occured"
+    },
+    "incident": {
+        "describes": "Description of the incident that has occured"
+    },
+    "incidentDescription": {
+        "describes": "Description of the incident that has occured"
+    },
+    "incidentStart": {
+        "describes": "Name of the road from where the incident has started"
+    },
+    "incidentEnd": {
+        "describes": "Name of the road from where the incident has ended"
+    },
+    "incidentRoadName": {
+        "describes": "Name of the road where the incident has occured"
+    },
+    "incidentVector": {
+        "describes": "Google Polyline encoded vector of the incident"
+    }
+}

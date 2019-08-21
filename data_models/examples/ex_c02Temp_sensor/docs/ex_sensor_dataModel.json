@@ -1,0 +1,41 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "@context": [
+        "<catalogue-link>/core_context.json",
+        "<catalogue-link>/common_context.json",
+        "<catalogue-link>/miscSchemaOrgDefs.json",
+        "<catalogue-link>/miscWOTSecurityDefs.json",
+        "<catalogue-link>/geometry-schema.json",
+        "<catalogue-link>/airQuality/airQuality_context.json"
+    ],
+    "describes": "Environmental Sensor measuring CO2 and Temperature",
+    "type": "object",
+    "properties": {
+        "CO2_MAX": {
+            "$ref": "<catalogue-link>/core_defs.json#/definitions/QuantitativeProperty",
+            "describes": "Maximum value of CO2 for the last 24 hours",
+            "symbol": "ppm",
+            "unitCode": "X59",
+            "unitText": "part per million (ppm)"
+        },
+        "LASTUPDATEDATETIME": {
+            "$ref": "<catalogue-link>/core_defs.json#/definitions/TimeProperty"
+        },
+        "NAME": {
+            "$ref": "<catalogue-link>/core_defs.json#/definitions/Property",
+            "describes": "Name of the device."
+        },
+        "TEMPRATURE_MAX": {
+            "$ref": "<catalogue-link>/core_defs.json#/definitions/QuantitativeProperty",
+            "describes": "Maximum value of Temperature for the last 24 hours",
+            "unitCode": "CEL",
+            "unitText": "degree Celsius",
+            "minValue": -20,
+            "maxValue": 50
+        },
+        "location": {
+            "$ref": "<catalogue-link>/common_defs.json#/definitions/location",
+            "describes": "Describes the coordinates (in GeoJSON Point type) for the installation location of the AQM device"
+        }
+    }
+}

@@ -1,0 +1,55 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "@context": [
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_context.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_context.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/geometry-schema.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/crowdSourced/crowdSourced_context.json"
+    ],
+    "describes": "TomTom incidents feed",
+    "properties": {
+        "coverageRegion": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/coverageRegion",
+            "describes": "Region of coverage of this datasource"
+        },
+        "projection": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Geometric projection used in describing the coordinates"
+        },
+        "id": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "id of the cluster in the resouce server"
+        },
+        "incidentLocation": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/GeoProperty",
+            "describes": "location where the incident has occured"
+        },
+        "incident": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Description of the incident that has occured"
+        },
+        "incidentDescription": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Description of the incident that has occured"
+        },
+        "incidentStart": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Name of the road from where the incident has started"
+        },
+        "incidentEnd": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Name of the road from where the incident has ended"
+        },
+        "incidentRoadName": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Name of the road where the incident has occured"
+        },
+        "incidentVector": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+
+            "describes": "Google Polyline encoded vector of the incident"
+        }
+    },
+    "type": "object"
+}

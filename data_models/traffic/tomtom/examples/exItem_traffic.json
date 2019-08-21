@@ -1,0 +1,85 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/traffic/traffic_tomtom.json"
+    ],
+    "id": "akdfi74938nid8kjfvko4",
+    "authorizationServerInfo": {
+        "type": "Property",
+        "value": {
+            "authServer": "http://auth.iudx.org.in",
+            "authType": "iudx-auth"
+        }
+    },
+    "accessInformation": {
+        "type": "Property",
+        "value": [{
+        "accessObjectType": "OpenAPI",
+        "accessObjectURL": "https://developer.tomtom.com/traffic-api/traffic-api-documentation-traffic-incidents/traffic-incident-details",
+        "accessObject": {
+            "value": "-",
+            "type": "Relationship"
+        },
+        "accessObjectVariables": {
+            "type": "Property",
+            "value": {
+                "resourceClass": "traffic"
+            }
+        }
+      }]
+    },
+    "createdAt": {
+        "type": "TimeProperty",
+        "value": "2019-02-20T10:30:06.093121"
+    },
+    "itemDescription": "Tomtom incidents dataset for Pune ABD area",
+    "itemStatus": {
+        "type": "Property",
+        "value": "active"
+    },
+    "itemType": {
+        "type": "Property",
+        "value": "resourceItem"
+    },
+    "coverageRegion": {
+        "type": "GeoProperty",
+        "value": {
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [ [ [  73.864222 , 18.41375], [  73.971131 , 18.471242], [  73.983472 , 18.588876], [  73.886433 , 18.635243], [  73.753722 , 18.582381], [  73.742467 , 18.49367] ] ]
+            },
+            "address": "Pune"
+        }
+    },
+    "projection": {
+        "type": "Property",
+        "value": "EPSG4326"
+    },
+    "provider": {
+        "value": "urn:iudx-cat:ae48f2-5c01e8-3feda9",
+        "type": "Relationship"
+    },
+    "refBaseSchema": {
+        "value": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/resourceItem_schema.json",
+        "type": "Relationship"
+    },
+    "refDataModel": {
+        "value": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/crowdSourced/crowdSourced_type1.json",
+        "type": "Relationship"
+    },
+    "resourceId": {
+        "type": "Property",
+        "value": "tomtom_incidents"
+    },
+    "resourceServer": {
+        "value": "urn:iudx-cat:636485-945454-2a9495",
+        "type": "Relationship"
+    },
+    "resourceServerGroup": {
+        "value": "urn:iudx-cat:abc357-gw2554-1234",
+        "type": "Relationship"
+    },
+    "tags": {
+        "type": "Property",
+        "value": ["traffic", "incidents", "geoJson"]
+    }
+}

@@ -1,0 +1,105 @@
+{
+  "@id": "urn:iudx-cat:abc/xyz/848f-4848-dxbe",
+  "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/accessInformation": {
+    "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/accessObject": {
+      "@type": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Relationship",
+      "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/hasValue": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/examples/ex_c02Temp_sensor/exApiObject_c02Temp_sensor.json"
+    },
+    "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/accessObjectType": {
+      "@type": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+      "@value": "OpenAPI"
+    },
+    "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/accessObjectVariables": {
+      "@type": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+      "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/hasValue": {
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/resourceItem_schema.json#/properties/resourceId": {
+          "@type": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+          "@value": "CO2_Temp_Sensor"
+        }
+      }
+    }
+  },
+  "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/authorizationServerInfo": {
+    "@type": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+    "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/hasValue": {
+      "https://www.w3.org/2019/wot/security#authorization": {
+        "@type": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+        "@value": "http://auth.iudx.org.in"
+      },
+      "https://www.w3.org/2019/wot/security#scheme": {
+        "@type": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+        "@value": "iudx-auth"
+      }
+    }
+  },
+  "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/createdAt": {
+    "@type": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/TimeProperty",
+    "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/hasValue": "2019-02-20T10:30:06.093121"
+  },
+  "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/itemDescription": {
+    "@type": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+    "@value": "An example catalogue resource item"
+  },
+  "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/itemStatus": {
+    "@type": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+    "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/hasValue": "active"
+  },
+  "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/itemType": {
+    "@type": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+    "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/hasValue": "resourceItem"
+  },
+  "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/provider": {
+    "@type": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Relationship",
+    "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/hasValue": "urn:iudx-cat:ae48f2-5c01e8-3feda9"
+  },
+  "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/refBaseSchema": {
+    "@type": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Relationship",
+    "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/hasValue": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/resourceItem_schema.json"
+  },
+  "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/refDataModel": {
+    "@type": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Relationship",
+    "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/hasValue": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/examples/ex_c02Temp_sensor/ex_sensor_dataModel.json"
+  },
+  "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/resourceServer": {
+    "@type": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Relationship",
+    "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/hasValue": "urn:iudx-cat:636485-945454-2a9495"
+  },
+  "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/resourceServerGroup": {
+    "@type": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Relationship",
+    "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/hasValue": "urn:iudx-cat:abc357-gw2554-452abc"
+  },
+  "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/tags": {
+    "@type": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+    "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/hasValue": [
+      "environment",
+      "air-quality",
+      "climate",
+      "air",
+      "pollution",
+      "CO2",
+      "Temperature"
+    ]
+  },
+  "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/resourceItem_schema.json#/properties/resourceId": {
+    "@type": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+    "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/hasValue": "CO2_Temp_Sensor"
+  },
+  "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/airQuality_context.json#/NAME": {
+    "@type": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+    "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/hasValue": "CO2_Temp_Sensor"
+  },
+  "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/airQuality_context.json#/location": {
+    "@type": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/GeoProperty",
+    "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/hasValue": {
+      "https://purl.org/geojson/vocab#geometry": {
+        "@type": "https://purl.org/geojson/vocab#Point",
+        "https://purl.org/geojson/vocab#coordinates": {
+          "@list": [
+            77.5703,
+            13.0138
+          ]
+        }
+      }
+    }
+  }
+}
