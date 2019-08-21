@@ -35,8 +35,6 @@
                 "type": "Property",
                 "value": {
                     "NAME": "XYZ",
-                    "ip": "https://pune.iudx.org.in",
-                    "port": "443",
                     "resourceClass": "streetlight-feeder-sree"
                 }
             }
@@ -94,6 +92,6 @@
     },
     "tags": {
         "type": "Property",
-        "value": [ "streetlighting", "streetlight", "feeder", "power" ]
+        "value": [ "streetlighting", "streetlight", "feeder", "power", "control cabinet", "cabinet", "streetlight box" ]
     }
 }
