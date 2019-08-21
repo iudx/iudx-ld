@@ -22,8 +22,6 @@
         "accessObjectVariables": {
             "type": "Property",
             "value": {
-                "ip": "https://pune.iudx.org.in",
-                "port": "443",
                 "resourceClass": "crowdSourced"
             }
         }
@@ -80,6 +78,6 @@
     },
     "tags": {
         "type": "Property",
-        "value": [ "crowd", "sourced", "Garbage", "Footpaths", "Roads", "Encroachment", "Illegal Ads", "Wrong Parking", "Street Lights", "Signages", "Bus Stops", "Dividers", "Stray Menace", "Public Toilets", "Traffic Signals", "Traffic Violations", "Road Markings", "Images", "geo", "tagged" ]
+        "value": [ "crowd", "sourced","images", "women safety","openness", "safety score", "people on the road","security", "visibility", "walkpath", "safety perception", "gender usage"]
     }
 }
