@@ -31,8 +31,6 @@
                 "type": "Property",
                 "value": {
                     "NAME": "XYZ",
-                    "ip": "https://pune.iudx.org.in",
-                    "port": "443",
                     "resourceClass": "wifi-hotspot"
                 }
             }
@@ -90,6 +88,6 @@
     },
     "tags": {
         "type": "Property",
-        "value": [ "wifi", "hotspot", "download", "upload", "user counts" ]
+        "value": [ "wifi", "hotspot", "download", "telemetry", "upload", "user counts" ]
     }
 }
