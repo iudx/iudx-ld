@@ -107,22 +107,22 @@
                 "type": "object",
                 "properties": {
                     "id": {
-                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/crowdSourced/examples/exdataModel_crowdSourced_type1.json#/dataModelSchema/properties/id"
+                        "$ref": "https://raw.githubusercontent.com/iudx/iudx-schemas/master/data_models/crowdSourced/crowdSourced_type1.json#/properties/id"
                     },
                     "Latitude": {
-                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/crowdSourced/examples/exdataModel_crowdSourced_type1.json#/dataModelSchema/properties/Latitude"
+                        "$ref": "https://raw.githubusercontent.com/iudx/iudx-schemas/master/data_models/crowdSourced/crowdSourced_type1.json#/properties/Latitude"
                     },
                     "Longitude": {
-                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/crowdSourced/examples/exdataModel_crowdSourced_type1.json#/dataModelSchema/properties/Longitude"
+                        "$ref": "https://raw.githubusercontent.com/iudx/iudx-schemas/master/data_models/crowdSourced/crowdSourced_type1.json#/properties/Longitude"
                     },
                     "Image": {
-                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/crowdSourced/examples/exdataModel_crowdSourced_type1.json#/dataModelSchema/properties/Image"
+                        "$ref": "https://raw.githubusercontent.com/iudx/iudx-schemas/master/data_models/crowdSourced/crowdSourced_type1.json#/properties/Image"
                     },
                     "Category": {
-                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/crowdSourced/examples/exdataModel_crowdSourced_type1.json#/dataModelSchema/properties/Category"
+                        "$ref": "https://raw.githubusercontent.com/iudx/iudx-schemas/master/data_models/crowdSourced/crowdSourced_type1.json#/properties/Category"
                     },
                     "Severity": {
-                        "$ref": "https://raw.githubusercontent.com/rbccps-iisc/iudx-schemas/master/data_models/crowdSourced/examples/exdataModel_crowdSourced_type1.json#/dataModelSchema/properties/Severity"
+                        "$ref": "https://raw.githubusercontent.com/iudx/iudx-schemas/master/data_models/crowdSourced/crowdSourced_type1.json#/properties/Severity"
                     }
                 },
                 "example": "{\"id\":\"19822022\",\"Latitude\":\"18.5189\",\"Longitude\":\"73.8779\",\"Image\":\"http:\/\/trackmyapcc.com\/service\/complaint-images\/2016-09-30-11-51-15.png\",\"Category\":\"Garbage\",\"Severity\":\"low\"}"
