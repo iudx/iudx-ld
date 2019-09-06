@@ -9,11 +9,7 @@
     ],
     "describes": "Crowd Sourced dataset provided by ChangeBhai.org. Contains geotagged images along with public issue annotations.",
     "properties": {
-        "Category": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
-            "describes": "Classification of the image"
-        },
-        "Image": {
+        "image_path": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
             "describes": "Link of the image",
             "format": "uri"
@@ -32,13 +28,10 @@
             "unitCode": "MTR",
             "unitText": "metre (m)"
         },
-        "Severity": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
-            "describes": "Severity of the category"
-        },
-        "id": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
-            "describes": "id of the geo-tagged image"
+        "reported_date": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/TimeProperty",
+            "describes": "Date and time at which the image was captured",
+	    "format": "date-time"
         },
         "coverageRegion": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/coverageRegion"
