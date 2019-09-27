@@ -48,16 +48,16 @@
                             "type": [ "string", "number", "boolean", "array", "object" ]
                         },
                         "unitCode": {
-                           "$ref": "miscSchemaOrgDefs.json#/definitions/unitCode"
+                           "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json#/definitions/unitCode"
                         },
                         "unitText": {
-                           "$ref": "miscSchemaOrgDefs.json#/definitions/unitText"
+                           "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json#/definitions/unitText"
                         },
                         "minValue": {
-                           "$ref": "miscSchemaOrgDefs.json#/definitions/minValue"
+                           "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json#/definitions/minValue"
                         },
                         "maxValue": {
-                           "$ref": "miscSchemaOrgDefs.json#/definitions/maxValue"
+                           "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json#/definitions/maxValue"
                         }
                     },
                     "additionalProperties": {
