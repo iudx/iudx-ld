@@ -7,7 +7,8 @@
     ],
     "id": "7493458asdgdbe099540",
     "name": "aqm-bosch-climo",
-    "tags": { "type": "Property",
+    "tags": { 
+        "type": "Property",
         "value": [ "environment", "air quality", "climate", "air", "aqi", "aqm", "climo", "pollution", "so2", "co2", "co", "no", "no2", "pm2.5", "pm10", "humidity", "temperature", "ozone", "o3", "noise", "light", "uv" ]
     },
     "accessInformation" : {
@@ -33,13 +34,6 @@
     "itemType": {
         "type": "Property",
         "value": "resourceServerGroup"
-    },
-    "authorizationServerInfo": {
-        "type": "Property",
-        "value": {
-            "authServer": "http://auth.example.org",
-            "authType": "iudx-auth"
-        }
     },
     "provider": {
         "value": "urn:iudx-cat:ae48f2-5c01e8-3feda9",

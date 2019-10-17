@@ -19,7 +19,7 @@ with open(itemFile, "r") as f:
 
 
 base_schema = {}
-bs_fl = item["refBaseSchema"]["object"]
+bs_fl = item["refBaseSchema"]["value"]
 
 
 
