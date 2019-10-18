@@ -86,5 +86,5 @@
             }
         ]
     },
-    "required": ["id", "name", "tags", "refBaseSchema", "itemDescription", "resourceServerHTTPAccessURL", "resourceServerOrg", "coverageRegion","itemType"]
+    "required": ["id", "name", "tags", "refBaseSchema", "itemDescription", "resourceServerOrg", "coverageRegion","itemType"]
 }
