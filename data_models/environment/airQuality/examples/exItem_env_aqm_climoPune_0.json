@@ -84,8 +84,8 @@
         "type": "Relationship"
     },
     "resourceId": {
-        "type": "Property",
-        "value": "A_Bt_Square_30"
+      "type": "Property",
+      "value": "A_Bt_Square_30"
     },
     "resourceServer": {
         "value": "urn:iudx-cat:636485-945454-2a9495",

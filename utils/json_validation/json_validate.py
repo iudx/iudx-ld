@@ -26,7 +26,6 @@ if "refDataModel" in item.keys():
 else :
     dm_fl = ""
 
-
 if dm_fl is not "":
     schema = {
       "$schema": "http://json-schema.org/draft-07/schema#",

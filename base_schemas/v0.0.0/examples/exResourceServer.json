@@ -24,12 +24,8 @@
         "type": "Property",
         "value": "resourceServer"
     },
-    "provider": {
-        "object": "urn:iudx-cat:ae48f2-5c01e8-3feda9",
-        "type": "Relationship"
-    },
     "refBaseSchema": {
-        "object": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/resourceServer_schema.json",
+        "value": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/resourceServer_schema.json",
         "type": "Relationship"
     },
     "resourceServerHTTPAccessURL": {
@@ -46,7 +42,7 @@
     },
     "resourceServerGroups":{
       "type": "Relationship",
-      "object": [
+      "value": [
         "urn:iudx-cat:abc357-gw2554-452abc",
         "urn:iudx-cat:24dsq5-wd2dsf-847def",
         "urn:iudx-cat:def894-esq241-833cqx"

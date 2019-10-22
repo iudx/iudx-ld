@@ -47,6 +47,13 @@
         "value": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json",
         "type": "Relationship"
     },
+    "dataAttributeList":{
+        "type": "Property",
+        "value": {
+            "open": ["x", "y"],
+            "secure": ["a", "b"]
+        }
+    },
     "resourceServer": {
         "value": "urn:iudx-cat:636485-9454054-29459495",
         "type": "Relationship"
