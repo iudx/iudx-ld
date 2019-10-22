@@ -91,6 +91,5 @@
             "describes": "Current location of the vehicle in geopoint format"
         }
     },
-    "required": ["NAME"],
     "type": "object"
 }
