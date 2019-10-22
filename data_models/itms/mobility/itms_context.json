@@ -20,7 +20,7 @@
             "@id": "iudx_common:modifiedAt",
             "@type": "TimeProperty"
         },
-        "gtfsFileProviderOrg": {
+        "gtfsFeedProviderOrg": {
             "@id": "iudx_common:organizationInfo",
             "@type": "Property"
         },
