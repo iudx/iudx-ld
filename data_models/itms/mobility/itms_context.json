@@ -1,5 +1,17 @@
 {
     "@context": {
+        "gtfsStaticFeedInfo": {
+            "@id": "itms_context:gtfsStaticFeedInfo",
+            "@type": "Property"
+        },
+        "gtfsFeedFile": {
+            "@id": "schemaorg:url",
+            "@type": "Property"
+        },
+        "gtfsStaticFeedReference": {
+            "@id": "schemaorg:url",
+            "@type": "Property"
+        },
         "CURRENT_STATUS": {
             "@id": "itms_context:CURRENT_STATUS",
             "@type": "Property"
@@ -50,6 +62,9 @@
         },
         "itms_context":"https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/itms/mobility/itms_context.json",
         "properties": "@nest"
+    },
+    "gtfsStaticFeedInfo": {
+      "describes": "GTFS Static Feed available to supplement the live location information for PMPML buses. It contains the reference to GTFS static feed file and also information about when it was last updated. "
     },
     "CURRENT_STATUS": {
         "describes": "Status of the transport vehicle"
