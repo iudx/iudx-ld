@@ -39,6 +39,7 @@
                            "format": "uri"
                         }
                    },
+                   "required": ["gtfsFeedFile"],
                    "additionalProperties": false
                 }
             }
