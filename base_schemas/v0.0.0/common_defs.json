@@ -12,7 +12,6 @@
         },
         "resourceId": {
             "allOf": [{"$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"}],
-            "type": "string", 
             "describes": "id of the resource in the resource server"
         },
         "name": {
