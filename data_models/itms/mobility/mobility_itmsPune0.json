@@ -24,10 +24,14 @@
                            "type": "string",
                            "format": "uri"
                         },
-                        "modifiedAt": {
+                        "gtfsFileUpdateAt": {
                            "describes": "Date of upload of the static feed file.",
                            "type": "string",
                            "format": "date-time"
+                        },
+                        "gtfsFileProviderOrg": {
+                           "describes": "Organization providing GTFS static Feed.",
+                           "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/organizationInfo"
                         },
                         "gtfsStaticFeedReference": {
                            "describes": "URL reference for  descrbing GTFS static feed file format",

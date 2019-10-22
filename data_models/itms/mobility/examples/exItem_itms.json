@@ -9,7 +9,7 @@
   },
   "NAME" : {
     "type" : "Property",
-    "value" : "CNG466"
+    "value" : "xyz"
   },
   "latestResourceData" : {
     "type" : "Property",
@@ -82,10 +82,7 @@
     "type" : "Property",
     "value" : "active"
   },
-  "resourceId" : {
-    "type" : "Property",
-    "value" : "CNG466"
-  },
+  "resourceId" : "CNG466",
   "createdAt" : {
     "type" : "TimeProperty",
     "value" : "Mon Sep 30 06:28:47 UTC 2019"

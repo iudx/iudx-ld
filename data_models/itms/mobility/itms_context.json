@@ -1,11 +1,27 @@
 {
     "@context": {
+        "itms_context":"https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/itms/mobility/itms_context.json",
+        "iudx": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/",
+        "iudx_iri": "https://iri.iudx.org/",
+        "core": "iudx:core_defs.json#/definitions/",
+        "iudx_common": "iudx:common_defs.json#/definitions/",
+        "iudx_resourceItem": "iudx:resourceItem_schema.json#/properties/",
+        "iudx_resourceServer": "iudx:resourceServer_schema.json#/definitions/",
+        "schemaorg": "https://schema.org/",
         "gtfsStaticFeedInfo": {
             "@id": "itms_context:gtfsStaticFeedInfo",
             "@type": "Property"
         },
         "gtfsFeedFile": {
             "@id": "schemaorg:url",
+            "@type": "Property"
+        },
+        "gtfsFileUpdateAt": {
+            "@id": "iudx_common:modifiedAt",
+            "@type": "TimeProperty"
+        },
+        "gtfsFileProviderOrg": {
+            "@id": "iudx_common:organizationInfo",
             "@type": "Property"
         },
         "gtfsStaticFeedReference": {
@@ -60,7 +76,6 @@
             "@id": "itms_context:LOCATION",
             "@type": "GeoProperty"
         },
-        "itms_context":"https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/itms/mobility/itms_context.json",
         "properties": "@nest"
     },
     "gtfsStaticFeedInfo": {
