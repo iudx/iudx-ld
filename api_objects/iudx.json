@@ -1,0 +1,171 @@
+{
+    "openapi": "3.0.1",
+    "info": {
+        "title": "India Urban Data Exchange",
+        "version": "v1",
+        "description": "This document explains the APIs to discover and access resources and services through India Urban Data Exchange (IUDX)."
+    },
+    "servers": [
+        {
+            "url": "https://city.iudx.org.in",
+            "description": "IUDX server URL"
+        }
+    ],
+    "paths": {
+        "/resource-server/{resource-server-id}/v1/search": {
+            "post": {
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/api-body"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "tags": [
+                    "Resource Server - List, Search and Count Entries"
+                ],
+                "parameters": [
+                    {
+                        "name": "resource-server-id",
+                        "description": "Name of the resource-server",
+                        "schema": {
+                            "type": "string"
+                        },
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "List of items"
+                    }
+                },
+                "description": "A search operation allows querying of archive data of a resource or a group of resources in a resource-group based on temporal, spatial and quantitative parameters."
+            }
+        },
+        "/resource-server/{resource-server-id}/v1/count": {
+            "post": {
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/api-body"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "tags": [
+                    "Resource Server - List, Search and Count Entries"
+                ],
+                "parameters": [
+                    {
+                        "name": "resource-server-id",
+                        "description": "Name of the resource-server",
+                        "schema": {
+                            "type": "string"
+                        },
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Count of items"
+                    }
+                },
+                "description": "A count operation allows querying of archive data of a resource or a group of resources in a resource-group based on temporal, spatial and quantitative parameters."
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "api-body": {
+                "title": "Root Type for api-body",
+                "description": "General post body of all apis",
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "id of the resource-item",
+                        "type": "string"
+                    },
+                    "time": {
+                        "description": "date-time (iso8601) string. In case of duration, the two time instances are seperated by a forward slash (\"/\")",
+                        "type": "string"
+                    },
+                    "TRelation": {
+                        "description": "Time relationship between slash \"/\" seperated date-time string",
+                        "enum": [
+                            "during",
+                            "before",
+                            "after",
+                            "TEquals"
+                        ],
+                        "type": "string"
+                    },
+                    "options": {
+                        "description": "Option specifying the type of query. Can be any of\n[latest, status, stream, download]",
+                        "enum": [
+                            "latest",
+                            "status",
+                            "stream",
+                            "download"
+                        ],
+                        "type": "string"
+                    },
+                    "lat": {
+                        "description": "Latitude in case of geo-query",
+                        "type": "number"
+                    },
+                    "lon": {
+                        "description": "Longitude in case of geo-query",
+                        "type": "number"
+                    },
+                    "radius": {
+                        "description": "Radius in meters in case of a point-circle based geo-query",
+                        "type": "number"
+                    },
+                    "attribute-filter": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "attribute-name": {
+                        "description": "\tName of the attribute on which the operation should be applied",
+                        "type": "string"
+                    },
+                    "attribute-value": {
+                        "description": "Value for the attribute with which the operation should be applied",
+                        "type": "string"
+                    },
+                    "comparison-operator": {
+                        "description": "comparision type in case of attribute based query. can be one of\n[propertyisequalto, propertyisnotequalto, propertyislessthan, propertyisgreaterthan, propertyislessthanorequalto, propertyisgreaterthanorequalto, propertyislike, propertyisbetween]",
+                        "enum": [
+                            "propertyisequalto",
+                            "propertyisnotequalto",
+                            "propertyislessthan",
+                            "propertyisgreaterthan",
+                            "propertyislessthanorequalto",
+                            "propertyisgreaterthanorequalto",
+                            "propertyislike",
+                            "propertyisbetween"
+                        ],
+                        "type": "string"
+                    },
+                    "api": {
+                        "enum": [
+                            "search",
+                            "count",
+                            "metrics"
+                        ],
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    }
+}
