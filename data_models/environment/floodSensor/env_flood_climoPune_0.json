@@ -14,7 +14,7 @@
             "describes": "Reference Alert Level setting for the given sensing station. If CUR_LEVEL is greater than ALERT then a flooding 'Alert' is generated"
         },
         "CUR_LEVEL": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
             "describes": "Current flooding level  detected by a given sensing station. Sensing device uses 'REF_LEVEL' and 'M_DISTANCE' parameters to compute CUR_LEVEL"
         },
         "DANGER": {
@@ -25,15 +25,15 @@
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/TimeProperty"
         },
         "M_DISTANCE": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
             "describes": "Parameter used to compute CUR_LEVEL. (Need further clarification)"
         },
         "NAME": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
             "describes": "Name of the device."
         },
         "REF_LEVEL": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
             "describes": "Parameter used to compute CUR_LEVEL. (Need further clarification)"
         },
         "SITE_STATUS": {
