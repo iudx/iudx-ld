@@ -1,20 +1,36 @@
 {
     "@context": {
-        "AIR_PRESSURE": {
-            "@id": "airQuality_context:AIR_PRESSURE",
-            "@type": "QuantitativeProperty"
+        "LEAD_POLLUTANT": {
+            "@id": "airQuality_context:AQI_POLLUTANT",
+            "@type": "Property"
         },
-        "AQI": {
-            "@id": "airQuality_context:AQI",
+        "UVI": {
+            "@id": "airQuality_context:UV",
             "@type": "QuantitativeProperty"
         },
         "AQI_POLLUTANT": {
             "@id": "airQuality_context:AQI_POLLUTANT",
             "@type": "Property"
         },
-        "CATEGORY": {
-            "@id": "airQuality_context:CATEGORY",
+        "TEMPERATURE": {
+            "@id": "airQuality_context:TEMPRATURE",
+            "@type": "QuantitativeProperty"
+        },
+        "AQI_CATEGORY": {
+            "@id": "airQuality_context:AQI_CATEGORY",
             "@type": "Property"
+        },
+        "AQI": {
+            "@id": "airQuality_context:AQI",
+            "@type": "QuantitativeProperty"
+        },
+        "CATEGORY": {
+            "@id": "airQuality_context:AQI_CATEGORY",
+            "@type": "Property"
+        },
+        "AIR_PRESSURE": {
+            "@id": "airQuality_context:AIR_PRESSURE",
+            "@type": "QuantitativeProperty"
         },
         "CO2_MAX": {
             "@id": "airQuality_context:CO2_MAX",
@@ -144,7 +160,7 @@
     "AQI_POLLUTANT": {
         "describes": "Major pollutant in the AQI index."
     },
-    "CATEGORY": {
+    "AQI_CATEGORY": {
         "describes": "Quality indication"
     },
     "CO2_MAX": {
@@ -215,6 +231,12 @@
     },
     "TEMPRATURE_MIN": {
         "describes": "Minimum value of Temperature for the last 24 hours"
+    },
+    "TEMPRATURE": {
+        "describes": "Temperature (Average)"
+    },
+    "UV": {
+        "describes": "Average UV"
     },
     "UV_MAX": {
         "describes": "Maximum value of UV for the last 24 hours"
