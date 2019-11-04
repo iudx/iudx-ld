@@ -90,9 +90,13 @@
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
             "describes": "Sequence ID/sequence number for the current stop along the designated route"
         },
-        "LOCATION": {
+        "LATITUDE_STR": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/GeoProperty",
-            "describes": "Current location of the vehicle in geopoint format"
+            "describes": "Current latitude of the vehicle"
+        },
+        "LONGITUDE_STR": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/GeoProperty",
+            "describes": "Current longitude of the vehicle"
         }
     },
     "type": "object"
