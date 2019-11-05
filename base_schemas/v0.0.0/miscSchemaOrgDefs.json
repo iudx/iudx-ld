@@ -153,6 +153,10 @@
             "type": "string",
             "describes": "Brand name/organisation"
         },
+        "locationString": {
+            "describes": "Latitude or Longitude of a location in WGS84 coordinate system",
+            "type": "string"
+        },
         "latitude":{
             "describes": "Latitude of a location in WGS84 coordinate system",
             "allOf": [

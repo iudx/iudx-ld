@@ -40,6 +40,10 @@
         "incidentVector": {
             "@type": "Property",
             "@id": "traffic:incidentVector"
+        },
+        "reportedTime": {
+            "@type": "TimeProperty",
+            "@id": "traffic:reportedTime"
         }
     },
     "coverageRegion": {
@@ -71,5 +75,9 @@
     },
     "incidentVector": {
         "describes": "Google Polyline encoded vector of the incident"
+    },
+    "reportedTime": {
+        "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/TimeProperty",
+        "describes": "Time when the incident was reported"
     }
 }

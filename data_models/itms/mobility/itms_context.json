@@ -72,8 +72,12 @@
             "@id": "itms_context:CURRENT_STOP_SEQUENCE",
             "@type": "Property"
         },
-        "LOCATION": {
-            "@id": "itms_context:LOCATION",
+        "LATITUDE_STR": {
+            "@id": "itms_context:LATITUDE_STR",
+            "@type": "GeoProperty"
+        },
+        "LONGITUDE_STR": {
+            "@id": "itms_context:LONGITUDE_STR",
             "@type": "GeoProperty"
         },
         "properties": "@nest"
@@ -114,7 +118,10 @@
     "CURRENT_STOP_SEQUENCE": {
         "describes": "Sequence ID/sequence number for the current stop along the designated route"
     },
-    "LOCATION": {
-        "describes": "Current location of the vehicle in geopoint format"
+    "LATITUDE_STR": {
+        "describes": "Current latitude of the vehicle"
+    },
+    "LONGITUDE_STR": {
+        "describes": "Current longitude of the vehicle"
     }
 }
