@@ -104,7 +104,7 @@
             "describes": "id of the geo-tagged image"
         },
         "coverageRegion": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/coverageRegion"
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/GeoProperty"
         }
     },
     "type": "object"
