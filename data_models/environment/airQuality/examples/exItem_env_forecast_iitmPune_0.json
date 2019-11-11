@@ -1,0 +1,86 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/env_aqm_climoPune_0.json"
+    ], 
+    "id": "8898kwiorit9490494", 
+    "itemDescription": "Description for IITM weather station resource providing one day FORECAST data for RAINFALL and AQI",
+    "tags": {
+        "type": "Property", 
+        "value": [
+            "environment", 
+            "air quality", 
+            "forecast",
+            "rainfall forecast",
+            "weather",
+            "climate", 
+            "air", 
+            "aqi", 
+            "iitm", 
+            "safar", 
+            "pollution", 
+            "rainfall", 
+            "temperature", 
+            "uv"
+        ]
+    }, 
+    "itemStatus": {
+        "type": "Property", 
+        "value": "active"
+    }, 
+    "itemType": {
+        "type": "Property", 
+        "value": "resourceItem"
+    }, 
+    "NAME": {
+        "type": "Property", 
+        "value": "Hadapsar"
+    }, 
+    "authorizationServerInfo": {
+        "type": "Property", 
+        "value": {
+            "authServer": "http://auth.iudx.org.in", 
+            "authType": "iudx-auth"
+        }
+    }, 
+    "refBaseSchema": {
+        "type": "Relationship", 
+        "value": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/resourceItem_schema.json"
+    }, 
+    "refDataModel": {
+        "type": "Relationship", 
+        "value": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/env_forecast_iitmPune_0.json"
+    }, 
+    "location": {
+        "type": "GeoProperty", 
+        "value": {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    73.927456, 
+                    18.502167
+                ]
+            }, 
+            "address": "Hadapsar Area, Pune"
+        }
+    }, 
+    "resourceServerGroup": {
+        "type": "Relationship", 
+        "value": "urn:iudx-catalogue-pune:pudx-resource-server/pune-iitm-forecast"
+    }, 
+    "resourceId": {
+        "type": "Property", 
+        "value": "Hadapsar"
+    }, 
+    "provider": {
+        "type": "Relationship", 
+        "value": "urn:iudx-catalogue-pune:pscdcl"
+    }, 
+    "resourceServer": {
+        "type": "Relationship", 
+        "value": "urn:iudx-catalogue-pune:pudx-resource-server"
+    }, 
+    "createdAt": {
+        "type": "TimeProperty", 
+        "value": "2019-02-20T10:30:06.093121"
+    }
+}
