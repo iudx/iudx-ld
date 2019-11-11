@@ -8,29 +8,29 @@
         "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/geometry-schema.json",
         "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/airQuality_context.json"
     ],
-    "describes": "Air Quality dataModel for AQM sensors deployed in Pune City.",
-    "name": "env_aqi_iitmPune_0",
+    "describes": "Weather forecast DataModel for IITM sensors for Pune City. More information at (http://safar.tropmet.res.in/FORECASTING-46-4-Details)",
+    "name": "env_forecast_iitmPune_0",
     "properties": {
         "AQI": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
-            "describes": "Overall AQI ",
+            "describes": "One day forecast for AQI",
             "unitCode": "C62",
             "unitText": "dimensionless"
         },
         "LEAD_POLLUTANT": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
-            "describes": "Major pollutant in the AQI index."
+            "describes": "One day forecast for Major pollutant in the AQI index."
         },
         "AQI_CATEGORY": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
-            "describes": "Quality indication"
+            "describes": "One day forecast for Air Quality indication"
         },
         "LASTUPDATEDATETIME": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/TimeProperty"
         },
         "RAINFALL": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
-            "describes": "Rainfall measurement",
+            "describes": "One day forecase for Rainfall at the location of the given sensor.",
             "unitCode": "MMT",
             "unitText": "Millimeter per square meter per hour"
         },
@@ -40,19 +40,9 @@
         },
         "TEMPERATURE": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
-            "describes": "Temperature (hourly average)",
+            "describes": "One day forecast for Temperature at the given sensor location.",
             "unitCode": "CEL",
             "unitText": "degree Celsius"
-        },
-        "UVI": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
-            "describes": "UV (hourly average)",
-            "unitCode": "C62",
-            "unitText": "UVI"
-        },
-        "UVI_CATEGORY": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
-            "describes": "UVI indication"
         },
         "deviceModelInfo": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/deviceModelInfo",
