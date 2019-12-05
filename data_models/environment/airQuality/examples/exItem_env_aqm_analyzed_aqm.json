@@ -1,0 +1,54 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/env_aqm_analyzed.json"
+    ],
+    "id": "8898kwiorit9490494",
+    "itemDescription": "Air Quality analyzed feed z-score",
+    "itemStatus": {
+        "type": "Property",
+        "value": "active"
+    },
+    "itemType": {
+        "type": "Property",
+        "value": "resourceItem"
+    },
+    "coverageRegion": {
+        "type": "GeoProperty",
+        "value": {
+            "geometry": {
+                "type": "Polygon",
+                "coordinates" : [ [ [ 73.75950336456299, 18.58650107127092 ], [ 73.77405166625977, 18.54610399422132 ], [ 73.78066062927246, 18.534385832609143 ], [ 73.78400802612305, 18.531700307384043 ], [ 73.82825374603271, 18.541709777810087 ], [ 73.8127613067627, 18.567381794228844 ], [ 73.8003158569336, 18.568805644063083 ], [ 73.79508018493652, 18.56331358635542 ], [ 73.78950119018555, 18.563435634003167 ], [ 73.7879991531372, 18.56542906655731 ], [ 73.78902912139893, 18.56998539634975 ], [ 73.77615451812744, 18.587273933114766 ], [ 73.75950336456299, 18.58650107127092 ] ] ]
+            },
+            "address": "Pune"
+        }
+    },
+    "provider" : {
+        "type" : "Relationship",
+        "value": "urn:iudx-catalogue-pune:sirpi"
+    },
+    "refBaseSchema": {
+        "value": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/resourceItem_schema.json",
+        "type": "Relationship"
+    },
+    "refDataModel": {
+        "value": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/env_aqm_analyzed.json",
+        "type": "Relationship"
+    },
+    "resourceId": {
+        "type": "Property",
+        "value": "aqi-zscore"
+    },
+    "resourceServer" : {
+        "type" : "Relationship",
+        "value": "urn:iudx-catalogue-pune:sirpi.co.in"
+    },
+    "resourceServerGroup" : {
+        "type" : "Relationship",
+        "value": "urn:iudx-catalogue-pune:sirpi.co.in/sirpi"
+    },
+    "tags": { 
+        "type": "Property",
+        "value": [ "environment", "air quality", "climate", "air", "aqi", "aqm", "climo", "pollution" ]
+    },
+    "secure" : ["avg_value", "z_score", "rank"]
+}
