@@ -1,0 +1,85 @@
+{
+    "@context": {
+        "vehicleType": {
+            "@id": "garbage_context:vehicleType",
+            "@type": "Property",
+            "describes": "The type of vehicle, for e.g, hopper, compactor, tipper, dumper"
+        },
+        "vehicleNo": {
+            "@id": "garbage_context:vehicleNo",
+            "@type": "Property",
+            "describes": "Vehicle Registration number"
+        },
+        "status": {
+            "@id": "garbage_context:status",
+            "@type": "Property",
+            "describes": "Status of the vehicle, whether it's Active or InActive"
+        },
+        "dateTime": {
+            "@id": "garbage_context:dateTime",
+            "@type": "TimeProperty",
+            "describes": "location updated dateTime string in yyyy-mm-dd hh:mm:ss"
+        },
+        "battteryStatus": {
+            "@id": "garbage_context:battteryStatus",
+            "@type": "Property",
+            "describes": "Battery status of the reporting device, Connected or Disconnected"
+        },
+        "angle": {
+            "@id": "garbage:angle",
+            "@type": "QuantitativeProperty",
+            "describes": "angle, needs clarification"
+        },
+        "location": {
+            "@id": "garbage:location",
+            "@type": "GeoProperty",
+            "describes": "Location area (string)"
+        },
+        "latitude": {
+            "@id": "garbage:latitude",
+            "@type": "GeoProperty",
+            "describes": "Latitude where the vehicle is at"
+        },
+        "longitude": {
+            "@id": "garbage:longitude",
+            "@type": "GeoProperty",
+            "describes": "Longitude where the vehicle is at"
+        },
+        "coverageRegion": {
+            "@id": "garbage:coverageRegion",
+            "@type": "GeoProperty",
+            "describes": "Region of operation of the garbage collection service"
+        },
+        "properties": "@nest"
+    },
+        "vehicleType": {
+            "describes": "The type of vehicle, for e.g, hopper, compactor, tipper, dumper"
+        },
+        "vehicleNo": {
+            "describes": "Vehicle Registration number"
+        },
+        "status": {
+            "describes": "Status of the vehicle, whether it's Active or InActive"
+        },
+        "dateTime": {
+            "describes": "location updated dateTime string in yyyy-mm-dd hh:mm:ss"
+        },
+        "battteryStatus": {
+            "describes": "Battery status of the reporting device, Connected or Disconnected"
+        },
+        "angle": {
+            "describes": "angle, needs clarification"
+        },
+        "location": {
+            "describes": "Location area (string)"
+        },
+        "latitude": {
+            "describes": "Latitude where the vehicle is at"
+        },
+        "longitude": {
+            "describes": "Longitude where the vehicle is at"
+        },
+        "coverageRegion": {
+            "describes": "Region of operation of the garbage collection service"
+        }
+}
