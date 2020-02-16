@@ -7,41 +7,61 @@
         "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/geometry-schema.json",
         "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/civic/garbage/garbage_context.json"
     ],
-    "describes": "Vehicles dealing with garbage collection/compaction",
+    "describes": "Garbage collecting bins",
     "properties": {
-        "vehicleType": {
+        "BinType": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
-            "describes": "The type of vehicle, for e.g, hopper, compactor, tipper, dumper"
+            "describes": "Type of bin"
         },
-        "vehicleNo": {
+        "BinColor": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
-            "describes": "Vehicle Registration number"
+            "describes": "Color of the bin"
         },
-        "status": {
+        "RFID": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
-            "describes": "Status of the vehicle, whether it's Active or InActive"
+            "describes": "ID of the RFID reader"
         },
-        "dateTime": {
+        "SensorID": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "ID of the sensor"
+        },
+        "Capacity": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Capacity that the bin can carry"
+        },
+        "ThresholdLimit": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Capacity that the bin can carry"
+        },
+        "FilledLevel": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
+            "describes": "Level up to which bin is filled"
+        },
+        "CleanedTime": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/TimeProperty",
-            "describes": "location updated dateTime string in yyyy-mm-dd hh:mm:ss"
+            "describes": "Time when bin was last cleaned"
         },
-        "battteryStatus": {
+        "LoggedTime": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/TimeProperty",
+            "describes": "Time when last bin level was logged"
+        },
+        "WardNo": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
-            "describes": "Battery status of the reporting device, Connected or Disconnected"
+            "describes": "Ward number"
         },
-        "wardNo": {
+        "VehicleNo": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
-            "describes": "Ward number where the vehicle operates at"
+            "describes": "Vehicle Number which last picked up from the bin"
         },
-        "location": {
+        "Address": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/GeoProperty",
-            "describes": "Location area (string)"
+            "describes": "Area address where the bin is kept"
         },
-        "latitude": {
+        "Latitude": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/GeoProperty",
             "describes": "Latitude where the vehicle is at"
         },
-        "longitude": {
+        "Longitude": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/GeoProperty",
             "describes": "Longitude where the vehicle is at"
         },

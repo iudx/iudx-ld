@@ -2,53 +2,95 @@
     "@context": {
         "vehicleType": {
             "@id": "garbage_context:vehicleType",
-            "@type": "Property",
-            "describes": "The type of vehicle, for e.g, hopper, compactor, tipper, dumper"
+            "@type": "Property"
         },
         "vehicleNo": {
             "@id": "garbage_context:vehicleNo",
-            "@type": "Property",
-            "describes": "Vehicle Registration number"
+            "@type": "Property"
         },
         "status": {
             "@id": "garbage_context:status",
-            "@type": "Property",
-            "describes": "Status of the vehicle, whether it's Active or InActive"
+            "@type": "Property"
         },
         "dateTime": {
             "@id": "garbage_context:dateTime",
-            "@type": "TimeProperty",
-            "describes": "location updated dateTime string in yyyy-mm-dd hh:mm:ss"
+            "@type": "TimeProperty"
         },
         "battteryStatus": {
             "@id": "garbage_context:battteryStatus",
-            "@type": "Property",
-            "describes": "Battery status of the reporting device, Connected or Disconnected"
+            "@type": "Property"
         },
         "angle": {
             "@id": "garbage:angle",
-            "@type": "QuantitativeProperty",
-            "describes": "angle, needs clarification"
+            "@type": "QuantitativeProperty"
         },
         "location": {
             "@id": "garbage:location",
-            "@type": "GeoProperty",
-            "describes": "Location area (string)"
+            "@type": "GeoProperty"
         },
         "latitude": {
             "@id": "garbage:latitude",
-            "@type": "GeoProperty",
-            "describes": "Latitude where the vehicle is at"
+            "@type": "GeoProperty"
         },
         "longitude": {
             "@id": "garbage:longitude",
-            "@type": "GeoProperty",
-            "describes": "Longitude where the vehicle is at"
+            "@type": "GeoProperty"
         },
         "coverageRegion": {
             "@id": "garbage:coverageRegion",
-            "@type": "GeoProperty",
-            "describes": "Region of operation of the garbage collection service"
+            "@type": "GeoProperty"
+        },
+        "BinColor": {
+            "@id": "garbage:BinColor",
+            "@type": "Property"
+        },
+        "BinType": {
+            "@id": "garbage:BinType",
+            "@type": "Property"
+        },
+        "RFID": {
+            "@id": "garbage:RFID",
+            "@type": "Property"
+        },
+        "SensorID": {
+            "@id": "garbage:SensorID",
+            "@type": "Property"
+        },
+        "Capacity": {
+            "@id": "garbage:Capacity",
+            "@type": "Property"
+        },
+        "ThresholdLimit": {
+            "@id": "garbage:ThresholdLimit",
+            "@type": "Property"
+        },
+        "FilledLevel": {
+            "@id": "garbage:FilledLevel",
+            "@type": "QuantitativeProperty"
+        },
+        "CleanedTime": {
+            "@id": "garbage:CleanedTime",
+            "@type": "TimeProperty"
+        },
+        "LoggedTime": {
+            "@id": "garbage:LoggedTime",
+            "@type": "TimeProperty"
+        },
+        "WardNo": {
+            "@id": "garbage:WardNo",
+            "@type": "Property"
+        },
+        "TotalPresent": {
+            "@id": "garbage:TotalPresent",
+            "@type": "QuantitativeProperty"
+        },
+        "TotalAbsent": {
+            "@id": "garbage:TotalAbsent",
+            "@type": "QuantitativeProperty"
+        },
+        "TotalEmployee": {
+            "@id": "garbage:TotalEmployee",
+            "@type": "QuantitativeProperty"
         },
         "properties": "@nest"
     },
@@ -81,5 +123,44 @@
         },
         "coverageRegion": {
             "describes": "Region of operation of the garbage collection service"
+        },
+        "BinColor": {
+            "describes": "Color of bin"
+        },
+        "BinType": {
+            "describes": "Type of bin"
+        },
+        "RFID": {
+            "describes": "ID of the RFID reader"
+        },
+        "SensorID": {
+            "describes": "ID of the sensor"
+        },
+        "Capacity": {
+            "describes": "Capacity that the bin can carry"
+        },
+        "ThresholdLimit": {
+            "describes": "Capacity that the bin can carry"
+        },
+        "FilledLevel": {
+            "describes": "Level up to which bin is filled"
+        },
+        "CleanedTime": {
+            "describes": "Time when bin was last cleaned"
+        },
+        "LoggedTime": {
+            "describes": "Time when last bin level was logged"
+        },
+        "WardNo": {
+            "describes": "Ward number"
+        },
+        "TotalPresent": {
+            "describes": "Number of employees present in the ward"
+        },
+        "TotalAbsent": {
+            "describes": "Number of employees absent in the ward"
+        },
+        "TotalEmployee": {
+            "describes": "Total Number of employees employed in the ward"
         }
 }
