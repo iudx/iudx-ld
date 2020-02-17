@@ -21,75 +21,75 @@
             "@type": "Property"
         },
         "angle": {
-            "@id": "garbage:angle",
+            "@id": "garbage_context:angle",
             "@type": "QuantitativeProperty"
         },
         "location": {
-            "@id": "garbage:location",
+            "@id": "garbage_context:location",
             "@type": "GeoProperty"
         },
         "latitude": {
-            "@id": "garbage:latitude",
+            "@id": "garbage_context:latitude",
             "@type": "GeoProperty"
         },
         "longitude": {
-            "@id": "garbage:longitude",
+            "@id": "garbage_context:longitude",
             "@type": "GeoProperty"
         },
         "coverageRegion": {
-            "@id": "garbage:coverageRegion",
+            "@id": "garbage_context:coverageRegion",
             "@type": "GeoProperty"
         },
         "BinColor": {
-            "@id": "garbage:BinColor",
+            "@id": "garbage_context:BinColor",
             "@type": "Property"
         },
         "BinType": {
-            "@id": "garbage:BinType",
+            "@id": "garbage_context:BinType",
             "@type": "Property"
         },
         "RFID": {
-            "@id": "garbage:RFID",
+            "@id": "garbage_context:RFID",
             "@type": "Property"
         },
         "SensorID": {
-            "@id": "garbage:SensorID",
+            "@id": "garbage_context:SensorID",
             "@type": "Property"
         },
         "Capacity": {
-            "@id": "garbage:Capacity",
+            "@id": "garbage_context:Capacity",
             "@type": "Property"
         },
         "ThresholdLimit": {
-            "@id": "garbage:ThresholdLimit",
+            "@id": "garbage_context:ThresholdLimit",
             "@type": "Property"
         },
         "FilledLevel": {
-            "@id": "garbage:FilledLevel",
+            "@id": "garbage_context:FilledLevel",
             "@type": "QuantitativeProperty"
         },
         "CleanedTime": {
-            "@id": "garbage:CleanedTime",
+            "@id": "garbage_context:CleanedTime",
             "@type": "TimeProperty"
         },
         "LoggedTime": {
-            "@id": "garbage:LoggedTime",
+            "@id": "garbage_context:LoggedTime",
             "@type": "TimeProperty"
         },
         "WardNo": {
-            "@id": "garbage:WardNo",
+            "@id": "garbage_context:WardNo",
             "@type": "Property"
         },
         "TotalPresent": {
-            "@id": "garbage:TotalPresent",
+            "@id": "garbage_context:TotalPresent",
             "@type": "QuantitativeProperty"
         },
         "TotalAbsent": {
-            "@id": "garbage:TotalAbsent",
+            "@id": "garbage_context:TotalAbsent",
             "@type": "QuantitativeProperty"
         },
         "TotalEmployee": {
-            "@id": "garbage:TotalEmployee",
+            "@id": "garbage_context:TotalEmployee",
             "@type": "QuantitativeProperty"
         },
         "properties": "@nest"
