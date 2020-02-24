@@ -1,4 +1,4 @@
-{
+
     "$schema": "http://json-schema.org/draft-07/schema#",
     "@context": [
         "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_context.json",
@@ -19,7 +19,8 @@
         },
         "speed": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
-            "describes": "speed of the vehicle"
+            "describes": "speed of the vehicle",
+            "unitCode": "KMH"
         },
         "status": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
@@ -31,8 +32,23 @@
         },
         "battteryStatus": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
-            "describes": "Battery status of the reporting device, Connected or Disconnected"
+            "describes": "Battery status of the reporting device",
+            "type": "string",
+            "enum": ["Connected", "Disconnected"]
         },
+        "ignition": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "ignition status of the vehicle",
+            "type": "string",
+            "enum": ["Y", "N"]
+        },
+        "VehicleStatus": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Moving status of the vehicle",
+            "type": "string",
+            "enum": ["Running", "Idle", "Stopped", "Unreachable"]
+        },
+
         "wardNo": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
             "describes": "Ward number where the vehicle operates at"
