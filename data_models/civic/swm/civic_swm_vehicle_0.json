@@ -5,69 +5,53 @@
         "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_context.json",
         "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json",
         "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/geometry-schema.json",
-        "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/civic/garbage/garbage_context.json"
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/civic/swm/swm_context.json"
     ],
-    "describes": "Garbage collecting bins",
+    "describes": "Vehicles dealing with solid waste collection/compaction",
     "properties": {
-        "BinType": {
+        "vehicleType": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
-            "describes": "Type of bin"
+            "describes": "The type of vehicle, for e.g, hopper, compactor, tipper, dumper"
         },
-        "BinColor": {
+        "vehicleNo": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
-            "describes": "Color of the bin"
+            "describes": "Vehicle Registration number"
         },
-        "RFID": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
-            "describes": "ID of the RFID reader"
-        },
-        "SensorID": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
-            "describes": "ID of the sensor"
-        },
-        "Capacity": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
-            "describes": "Capacity that the bin can carry"
-        },
-        "ThresholdLimit": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
-            "describes": "Capacity that the bin can carry"
-        },
-        "FilledLevel": {
+        "speed": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
-            "describes": "Level up to which bin is filled"
+            "describes": "speed of the vehicle"
         },
-        "CleanedTime": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/TimeProperty",
-            "describes": "Time when bin was last cleaned"
-        },
-        "LoggedTime": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/TimeProperty",
-            "describes": "Time when last bin level was logged"
-        },
-        "WardNo": {
+        "status": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
-            "describes": "Ward number"
+            "describes": "Status of the vehicle, whether it's Active or InActive"
         },
-        "VehicleNo": {
+        "dateTime": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/TimeProperty",
+            "describes": "location updated dateTime string in yyyy-mm-dd hh:mm:ss"
+        },
+        "battteryStatus": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
-            "describes": "Vehicle Number which last picked up from the bin"
+            "describes": "Battery status of the reporting device, Connected or Disconnected"
         },
-        "Address": {
+        "wardNo": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Ward number where the vehicle operates at"
+        },
+        "location": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/GeoProperty",
-            "describes": "Area address where the bin is kept"
+            "describes": "Location area (string)"
         },
-        "Latitude": {
+        "latitude": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/GeoProperty",
             "describes": "Latitude where the vehicle is at"
         },
-        "Longitude": {
+        "longitude": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/GeoProperty",
             "describes": "Longitude where the vehicle is at"
         },
         "coverageRegion": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/GeoProperty",
-            "describes": "Region of operation of the garbage collection service"
+            "describes": "Region of operation of the solid waste collection service"
         }
     },
     "type": "object"

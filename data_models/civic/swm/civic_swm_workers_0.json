@@ -5,9 +5,9 @@
         "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_context.json",
         "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json",
         "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/geometry-schema.json",
-        "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/civic/garbage/garbage_context.json"
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/civic/swm/swm_context.json"
     ],
-    "describes": "Attendance details of workers dealing with garbage collection/compaction",
+    "describes": "Attendance details of workers dealing with swm collection/compaction",
     "properties": {
         "Date": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/TimeProperty",
@@ -31,7 +31,7 @@
         },
         "coverageRegion": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/GeoProperty",
-            "describes": "Region of operation of the garbage collection service"
+            "describes": "Region of operation of the solid waste collection service"
         }
     },
     "type": "object"
