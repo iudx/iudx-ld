@@ -1,6 +1,6 @@
 {
     "@context": {
-        "swm_context": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/WiFi/hotspot/hotspot_context.json#/",
+        "swm_context": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/civic/swm/swm_context.json#/",
         "vehicleType": {
             "@id": "swm_context:vehicleType",
             "@type": "Property"
