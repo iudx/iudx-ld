@@ -1,0 +1,155 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "@context": [
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_context.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_context.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscWOTSecurityDefs.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/geometry-schema.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/airQuality_context.json",
+        {
+
+        }
+    ],
+    "describes": "Air Quality dataModel for AQM sensors deployed in Varanasi City.",
+    "name": "env_aqm_varanasi_0",
+    "properties": {
+        "AQI": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
+            "describes": "Overall AQI ",
+            "unitCode": "C62",
+            "unitText": "dimensionless"
+        },
+        "CO2": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
+            "describes": "Average value of CO2 for the last 15 minutes",
+            "symbol": "ppm",
+            "unitCode": "X59",
+            "unitText": "part per million (ppm)"
+        },
+        "CO": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
+            "describes": "Average value of CO for the last 15 minutes",
+            "symbol": "mg/m3",
+            "unitText": "milligrampercubicmetre (mg/m3)"
+        },
+        "NO2": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
+            "describes": "Average value of NO2 for the last 15 minutes",
+            "symbol": "ug/m3",
+            "unitCode": "XGQ",
+            "unitText": "micro gram per cubic metre (ug/m3)"
+        },
+        "O3": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
+            "describes": "Average value of O3 for the last 15 minutes",
+            "symbol": "ug/m3",
+            "unitCode": "XGQ",
+            "unitText": "micro gram per cubic metre (ug/m3)"
+        },
+        "SO2": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
+            "describes": "Average value of O3 for the last 15 minutes",
+            "symbol": "ug/m3",
+            "unitCode": "XGQ",
+            "unitText": "micro gram per cubic metre (ug/m3)"
+        },
+        "O2": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
+            "describes": "Average Oxygen content (percent) in last 15 minutes",
+            "unitCode": "XP1",
+            "unitText": "percent"
+        },
+        "SOUND": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "description": "Instantaneous Noise level",
+            "symbol": "dB",
+            "unitCode": "X2N",
+            "unitText": "decibel (dB)"
+        },
+        "SoundMax": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "description": "Average Noise level in the last 15 minutes",
+            "symbol": "dB",
+            "unitCode": "X2N",
+            "unitText": "decibel (dB)"
+        },
+        "SoundMin": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "description": "Minimum Noise level in the last 15 minutes",
+            "symbol": "dB",
+            "unitCode": "X2N",
+            "unitText": "decibel (dB)"
+        },
+        "AmbientLight": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
+            "describes": "Light in lux",
+            "unitCode": "LUX",
+            "unitText": "lux"
+        },
+        "PM2_5": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
+            "describes": "Average value of PM2.5 for the last 15 minutes",
+            "symbol": "ug/m3",
+            "unitCode": "XGQ",
+            "unitText": "micro gram per cubic metre (ug/m3)"
+        },
+        "PM10": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
+            "describes": "Average value of PM10 for the last 15 minutes",
+            "symbol": "ug/m3",
+            "unitCode": "XGQ",
+            "unitText": "micro gram per cubic metre (ug/m3)"
+        },
+        "Pressure": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
+            "describes": "Average Measured Air pressure in the last 15 minutes",
+            "symbol": "hPa",
+            "unitCode": "hPa",
+            "unitText": "hPa"
+        },
+        "Rainfall": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
+            "describes": "Average Measured Rainfall in the last 15 minutes",
+            "symbol": "mm",
+            "unitCode": "mm",
+            "unitText": "mm"
+        },
+        "Avg_Temp": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
+            "describes": "Average value of Temperature for the last 15 minutes",
+            "unitCode": "CEL",
+            "unitText": "degree Celsius"
+        },
+        "ULTRA_VIOLET": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
+            "describes": "Average value of UV for the last 15 minutes",
+            "unitCode": "C62",
+            "unitText": "UVI"
+        },
+        "Avg_Humidity": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
+            "describes": "Average Relative humidity",
+            "unitCode": "XP1",
+            "unitText": "percent"
+        },
+        "Status": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Indiates if the resource is Working or Not Working",
+            "type": "string",
+            "enum": ["Working", "Not Working"]
+        },
+        "location": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/GeoProperty",
+            "describes": "Describes the coordinates (in GeoJSON Point type) for the installation location of the AQM device"
+        },
+        "deviceModelInfo": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_defs.json#/definitions/deviceModelInfo",
+            "describes": "Information about AQM device model."
+        },
+        "Date": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/TimeProperty"
+        }
+    },
+    "type": "object"
+}
