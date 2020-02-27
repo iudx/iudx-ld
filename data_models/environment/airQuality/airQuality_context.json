@@ -225,6 +225,10 @@
             "@id": "airQuality_context:Date",
             "@type": "TimeProperty"
         },
+        "EqpName": {
+            "@id": "airQuality_context:EqpName",
+            "@type": "Property"
+        },
         "properties": "@nest"
     },
     "AIR_PRESSURE": {
@@ -379,6 +383,9 @@
     },
     "Status": {
         "describes": "Indiates if the resource is Working or Not Working"
+    },
+    "EqpName": {
+        "describes": "Equipment Name/Number"
     },
     "Date": {
         "describes": "location updated dateTime string in yyyy-mm-dd hh:mm:ss"
