@@ -148,7 +148,8 @@
             "describes": "Information about AQM device model."
         },
         "Date": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/TimeProperty"
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/TimeProperty",
+            "describes": "location updated dateTime string in yyyy-mm-dd hh:mm:ss"
         }
     },
     "type": "object"

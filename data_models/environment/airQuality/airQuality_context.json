@@ -149,6 +149,82 @@
             "@id": "airQuality_context:location",
             "@type": "GeoProperty"
         },
+        "CO2": {
+            "@id": "airQuality_context:CO2",
+            "@type": "QuantitativeProperty"
+        },
+        "CO": {
+            "@id": "airQuality_context:CO",
+            "@type": "QuantitativeProperty"
+        },
+        "NO2": {
+            "@id": "airQuality_context:NO2",
+            "@type": "QuantitativeProperty"
+        },
+        "O3": {
+            "@id": "airQuality_context:O2",
+            "@type": "QuantitativeProperty"
+        },
+        "SO2": {
+            "@id": "airQuality_context:SO2",
+            "@type": "QuantitativeProperty"
+        },
+        "O2": {
+            "@id": "airQuality_context:O2",
+            "@type": "QuantitativeProperty"
+        },
+        "SOUND": {
+            "@id": "airQuality_context:SOUND",
+            "@type": "QuantitativeProperty"
+        },
+        "SoundMax": {
+            "@id": "airQuality_context:SoundMax",
+            "@type": "QuantitativeProperty"
+        },
+        "SoundMin": {
+            "@id": "airQuality_context:SoundMin",
+            "@type": "QuantitativeProperty"
+        },
+        "AmbientLight": {
+            "@id": "airQuality_context:AmbientLight",
+            "@type": "QuantitativeProperty"
+        },
+        "PM2_5": {
+            "@id": "airQuality_context:PM2_5",
+            "@type": "QuantitativeProperty"
+        },
+        "PM10": {
+            "@id": "airQuality_context:PM10",
+            "@type": "QuantitativeProperty"
+        },
+        "Pressure": {
+            "@id": "airQuality_context:Pressure",
+            "@type": "QuantitativeProperty"
+        },
+        "Rainfall": {
+            "@id": "airQuality_context:Rainfall",
+            "@type": "QuantitativeProperty"
+        },
+        "Avg_Temp": {
+            "@id": "airQuality_context:Avg_Temp",
+            "@type": "QuantitativeProperty"
+        },
+        "ULTRA_VIOLET": {
+            "@id": "airQuality_context:ULTRA_VIOLET",
+            "@type": "QuantitativeProperty"
+        },
+        "Avg_Humidity": {
+            "@id": "airQuality_context:Avg_Humidity",
+            "@type": "QuantitativeProperty"
+        },
+        "Status": {
+            "@id": "airQuality_context:Status",
+            "@type": "Property"
+        },
+        "Date": {
+            "@id": "airQuality_context:Date",
+            "@type": "TimeProperty"
+        },
         "properties": "@nest"
     },
     "AIR_PRESSURE": {
@@ -249,5 +325,62 @@
     },
     "location": {
         "describes": "Describes the coordinates (in GeoJSON Point type) for the installation location of the AQM device"
+    },
+    "CO2": {
+        "describes": "Average value of CO2 for the last 15 minutes"
+    },
+    "CO": {
+        "describes": "Average value of CO for the last 15 minutes"
+    },
+    "NO2": {
+        "describes": "Average value of NO2 for the last 15 minutes"
+    },
+    "O3": {
+        "describes": "Average value of O3 for the last 15 minutes"
+    },
+    "SO2": {
+        "describes": "Average value of O3 for the last 15 minutes"
+    },
+    "O2": {
+        "describes": "Average Oxygen content (percent) in last 15 minutes"
+    },
+    "SOUND": {
+        "description": "Instantaneous Noise level"
+    },
+    "SoundMax": {
+        "description": "Average Noise level in the last 15 minutes"
+    },
+    "SoundMin": {
+        "description": "Minimum Noise level in the last 15 minutes"
+    },
+    "AmbientLight": {
+        "describes": "Light in lux"
+    },
+    "PM2_5": {
+        "describes": "Average value of PM2.5 for the last 15 minutes"
+    },
+    "PM10": {
+        "describes": "Average value of PM10 for the last 15 minutes"
+    },
+    "Pressure": {
+        "describes": "Average Measured Air pressure in the last 15 minutes"
+    },
+    "Rainfall": {
+        "describes": "Average Measured Rainfall in the last 15 minutes"
+    },
+    "Avg_Temp": {
+        "describes": "Average value of Temperature for the last 15 minutes"
+    },
+    "ULTRA_VIOLET": {
+        "describes": "Average value of UV for the last 15 minutes"
+    },
+    "Avg_Humidity": {
+        "describes": "Average Relative humidity"
+    },
+    "Status": {
+        "describes": "Indiates if the resource is Working or Not Working"
+    },
+    "Date": {
+        "describes": "location updated dateTime string in yyyy-mm-dd hh:mm:ss"
     }
 }
