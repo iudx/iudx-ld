@@ -93,6 +93,18 @@
             "@id": "swm_context:TotalEmployee",
             "@type": "QuantitativeProperty"
         },
+        "Value": {
+            "@id": "swm_context:Value",
+            "@type": "QuantitativeProperty"
+        },
+        "Value": {
+            "@id": "swm_context:Value",
+            "@type": "QuantitativeProperty"
+        },
+        "Status": {
+            "@id": "swm_context:Status",
+            "@type": "Property"
+        },
         "properties": "@nest"
     },
     "vehicleType": {
