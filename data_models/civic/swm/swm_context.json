@@ -105,6 +105,18 @@
             "@id": "swm_context:Status",
             "@type": "Property"
         },
+        "angle": {
+            "@id": "swm_context:angle",
+            "@type": "Property"
+        },
+        "altitude": {
+            "@id": "swm_context:altitude",
+            "@type": "Property"
+        },
+        "driverName": {
+            "@id": "swm_context:driverName",
+            "@type": "Property"
+        },
         "properties": "@nest"
     },
     "vehicleType": {
@@ -175,5 +187,14 @@
     },
     "TotalEmployee": {
         "describes": "Total Number of employees employed in the ward"
+    },
+    "angle": {
+        "describes": "GPS angle where the vehicle is at"
+    },
+    "altitude": {
+        "describes": "GPS altitude where the vehicle is at"
+    },
+    "driverName": {
+        "describes": "Name of driver driving the vehicle"
     }
 }
