@@ -76,6 +76,10 @@
         "coverageRegion": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/GeoProperty",
             "describes": "Region of operation of the solid waste collection service"
+        },
+        "location": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/GeoProperty",
+            "describes": "Describes the coordinates (in GeoJSON Point type) for the installation location of the AQM device"
         }
     },
     "type": "object"

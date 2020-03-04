@@ -48,14 +48,9 @@
             "type": "string",
             "enum": ["Running", "Idle", "Stopped", "Unreachable"]
         },
-
         "wardNo": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
             "describes": "Ward number where the vehicle operates at"
-        },
-        "location": {
-            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/GeoProperty",
-            "describes": "Location area (string)"
         },
         "latitude": {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/GeoProperty",
