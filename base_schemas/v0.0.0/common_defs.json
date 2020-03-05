@@ -31,7 +31,13 @@
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/TimeProperty",
             "type": "string",
             "format": "date-time",
-            "describes": "Time when a resource/item/attribute was modified"
+            "describes": "Time when a resource/item/attribute was modified. Applies for static properties"
+        },
+        "updatedAt" : {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/TimeProperty",
+            "type": "string",
+            "format": "date-time",
+            "describes": "Time when a resource/item/attribute was updated. Applies for time series properties"
         },
         "deprecatedAt" : {
             "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/TimeProperty",

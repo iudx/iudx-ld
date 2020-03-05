@@ -47,6 +47,10 @@
             "@id": "iudx_common:modifiedAt",
             "@type": "core:TimeProperty"
         },
+        "updatedAt": {
+            "@id": "iudx_common:updatedAt",
+            "@type": "core:TimeProperty"
+        },
         "deprecatedAt": {
             "@id": "iudx_common:deprecatedAt",
             "@type": "core:TimeProperty"
