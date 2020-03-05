@@ -74,7 +74,7 @@
             "@type": "TimeProperty"
         },
         "LoggedTime": {
-            "@id": "swm_context:LoggedTime",
+            "@id": "common_context:updatedAt",
             "@type": "TimeProperty"
         },
         "WardNo": {
