@@ -1,0 +1,78 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "@context": [
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_context.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_context.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/geometry-schema.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/gis/gis_context.json"
+    ],
+    "describes": "ROAD (SINGLE LINE) \u2013 All the roads will be represented through one line. In case of a road with median, two lines will be taken/marked to show both sides of the road.",
+    "properties": {
+        "CLASS": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Class Code and Sub Class Code will be updated"
+        },
+        "CW_WD": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
+            "describes": "Carriage way width in meter (Collected during field survey)"
+        },
+        "DRAIN_STAT": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Like NOT AVAILABLE, ONE SIDE, BOTH SIDES (Collected during field survey)"
+        },
+        "FPAT_STAT": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "\u201cYES\u201d OR \u201cNO\u201d (Collected during field survey)"
+        },
+        "FPAT_WD": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
+            "describes": "Footpath Width in meter as per field data"
+        },
+        "FPA_C_MAT": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Footpath Construction Material Shabad/Tiles/Concrete/Other Stone"
+        },
+        "MDN_STAT": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "\u201cYES\u201d OR \u201cNO\u201d (Collected during field survey)"
+        },
+        "MTD_BY": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Road maintained by VNN (Varanasi Nagar Nigam), RCD (Road Construction Department), NHAI (National Highway Authority for India). This info will be also collected in the field as well as updated with available data."
+        },
+        "RD_ID": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "It will start with 3 followed by next two digits for road type, followed by next four digit in  incremental from 0001."
+        },
+        "RD_LEN": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
+            "describes": "Road  length in meter as per GIS-based calculation at the time of processing of data"
+        },
+        "RD_NAME": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Road name will be taken and updated during field survey. If any road name is not found  during survey, it will be mentioned \u201cNA\u201d."
+        },
+        "RD_TYPE": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Road type will be classified on the basis of RoW width as:  01 - RoW more than 24 m  02 - RoW 12 to 24 m  03 - RoW less than 12 m  RoW for each road will be measured and  updated."
+        },
+        "ROW_WD": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
+            "describes": "Right of Way width in meter (Collected during field survey)"
+        },
+        "SUB_CLASS": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "as per AMRUT guidelines given in Annexure XI, Volume II of the Inception Report"
+        },
+        "SUR_TYPE": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Surface Type of Road as per field survey like \"Concrete\" Or \"Asphalt\" Or \"WBM\" Or \"Any  Other\" (Collected during field survey)"
+        },
+        "TIME_ST": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/TimeProperty",
+            "describes": "Date of Survey"
+        }
+    },
+    "type": "object"
+}
