@@ -1,7 +1,7 @@
 {
     "@context": {
         "iudx": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/",
-        "iudx_iri": "https://iri.iudx.org/",
+        "iudx_iri": "https://iri.iudx.org.in/",
         "core": "iudx:core_defs.json#/definitions/",
         "iudx_resourceItem": "iudx:resourceItem_schema.json#/properties/",
         "iudx_resourceServer": "iudx:resourceServer_schema.json#/properties/",
