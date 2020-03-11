@@ -81,6 +81,70 @@
             "@id": "crowdSourced_context:locationCoverage",
             "@type": "GeoProperty"
         },
+        "complaintId": {
+            "@id": "crowdSourced_context: complaintId",
+            "@type": "QuantitativeProperty"
+        },
+        "complaintGenericId": {
+            "@id": "crowdSourced_context: complaintGenericId",
+            "@type": "QuantitativeProperty"
+        },
+        "complaintLocation": {
+            "@id": "crowdSourced_context: complaintLocation",
+            "@type": "Property"
+        },
+        "landmark": {
+            "@id": "crowdSourced_context: landmark",
+            "@type": "Property"
+        },
+        "title": {
+            "@id": "crowdSourced_context: title",
+            "@type": "QuantitativeProperty"
+        },
+        "mobile_number": {
+            "@id": "crowdSourced_context: mobile_number",
+            "@type": "Property"
+        },
+        "full_name": {
+            "@id": "crowdSourced_context: full_name",
+            "@type": "Property"
+        },
+        "district": {
+            "@id": "crowdSourced_context: district",
+            "@type": "Property"
+        },
+        "ulb": {
+            "@id": "crowdSourced_context: ulb",
+            "@type": "Property"
+        },
+        "cityId": {
+            "@id": "crowdSourced_context: cityId",
+            "@type": "Property"
+        },
+        "wardId": {
+            "@id": "crowdSourced_context: wardId",
+            "@type": "Property"
+        },
+        "wardNo": {
+            "@id": "crowdSourced_context: wardNo",
+            "@type": "Property"
+        },
+        "city": {
+            "@id": "crowdSourced_context: city",
+            "@type": "Property"
+        },
+        "status": {
+            "@id": "crowdSourced_context: status",
+            "@type": "QuantitativeProperty"
+        },
+        "created_at": {
+            "@id": "crowdSourced_context: created_at",
+            "@type": "TimeProperty"
+        },
+        "wardName": {
+            "@id": "crowdSourced_context: wardName",
+            "@type": "Property"
+        },
         "properties": "@nest"
     },
     "Category": {
@@ -116,14 +180,8 @@
     "Images": {
         "describes": "Link of the image"
     },
-    "Latitude": {
-        "describes": "Latitude of the geo-tagged image"
-    },
     "Lighting": {
         "describes": "Indicates if the place is well-lighted, rated over a score of 0-3."
-    },
-    "Longitude": {
-        "describes": "Longitude of the geo-tagged image"
     },
     "Openness": {
         "describes": "Gives a measure of the free area, rated over a score of 0-3."
@@ -145,5 +203,53 @@
     },
     "Walkpath": {
         "describes": "Presence and usability of a walkway, rated over a score of 0-3."
+    },
+    "complaintId": {
+        "describes": "complaint id of the complaint"
+    },
+    "complaintGenericId": {
+        "describes": "Generic id assigned to the complaint"
+    },
+    "complaintLocation": {
+        "describes": "Address of the complaint received"
+    },
+    "landmark": {
+        "describes": "Closest landmark of the complaint"
+    },
+    "title": {
+        "describes": "Nature of the complaint"
+    },
+    "mobile_number": {
+        "describes": "Phone number of the complainant"
+    },
+    "full_name": {
+        "describes": "Name of the complainant"
+    },
+    "district": {
+        "describes": "District under which the complaint has been registered"
+    },
+    "ulb": {
+        "describes": "ulb under which the complaint has been registered"
+    },
+    "cityId": {
+        "describes": "City ID of the complaint registered"
+    },
+    "wardId": {
+        "describes": "Ward ID of the complaint registered"
+    },
+    "wardNo": {
+        "describes": "Ward Number of the complaint registered"
+    },
+    "city": {
+        "describes": "City of the complaint registered"
+    },
+    "status": {
+        "describes": "Status of the received complaint"
+    },
+    "created_at": {
+        "describes": "Time at which the complaint was initiated"
+    },
+    "wardName": {
+        "describes": "Ward Name of the complaint registered"
     }
 }

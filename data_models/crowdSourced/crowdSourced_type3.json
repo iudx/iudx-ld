@@ -1,0 +1,87 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "@context": [
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_context.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_context.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/geometry-schema.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/crowdSourced/crowdSourced_context.json",
+        {
+            "latitude": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/crowdSourced/crowdSourced_context.json#/Latitude",
+            "longitude": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/crowdSourced/crowdSourced_context.json#/Longitude",
+            "complaint_image": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/crowdSourced/crowdSourced_context.json#/Image" 
+        }
+    ],
+    "describes": "Crowd Sourced type 3 data",
+    "properties": {
+        "complaintId": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
+            "describes": "complaint id of the complaint"
+        },
+        "complaint_image": "complaint_image",
+        "latitude": "latitude",
+        "longitude": "longitude",
+        "complaintGenericId": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
+            "describes": "Generic id assigned to the complaint" 
+        },
+        "complaintLocation": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Address of the complaint received"
+        },
+        "landmark": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Closest landmark of the complaint"
+        },
+        "title": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
+            "describes": "Nature of the complaint"
+        },
+        "mobile_number": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Phone number of the complainant"
+        },
+        "full_name": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Name of the complainant"
+        },
+        "district": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "District under which the complaint has been registered"
+        },
+        "ulb": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "ulb under which the complaint has been registered"
+        },
+        "cityId": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "City ID of the complaint registered"
+        },
+        "wardId": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Ward ID of the complaint registered"
+        },
+        "wardNo": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Ward Number of the complaint registered"
+        },
+        "city": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "City of the complaint registered"
+        },
+        "status": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
+            "describes": "Status of the received complaint"
+        },
+        "created_at": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/TimeProperty",
+            "describes": "Time at which the complaint was initiated"
+        },
+        "wardName": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Ward Name of the complaint registered"
+        }
+
+    },
+    "type": "object"
+}
