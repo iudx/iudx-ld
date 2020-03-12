@@ -1,0 +1,47 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "@context": [
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_context.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_context.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/geometry-schema.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/gis/gis_context.json",
+        {
+            "WARD_ID" : "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/gis/gis_context.json#/W_ID",
+            "Latitude": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/gis/gis_context.json#/GCP_LAT",
+            "Longitude": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/gis/gis_context.json#/GCP_LON"
+        }
+    ],
+    "describes": "Kooda Ghar",
+    "properties": {
+        "Address": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Address of the kooda ghar in Varanasi city"
+        },
+        "K_ID": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "It will start with K followed by 1 for Kooda Ghar 1, 2 for Kooda Ghar 2 and so on"
+        },
+        "LOCALITY": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Locality of the kooda ghar in Varanasi city"
+        },
+        "Unique_Id": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Unique ID assigned to the kooda ghar"
+        },
+        "WARD_ID": "WARD_ID", 
+        "Zone_Name": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Zonal division of the kooda ghar"
+        },
+        "Latitude": "Latitude",
+        "Longitude": "Longitude",
+        "location": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/GeoProperty",
+            "describes": "Describes the coordinates (in GeoJSON Point type) for location of the Kooda Ghar"
+        }
+    },
+    "type": "object"
+
+}
