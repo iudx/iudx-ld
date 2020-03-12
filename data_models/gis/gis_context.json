@@ -1,139 +1,307 @@
 {
-	"@context": {
-		"W_NAME": {
-			"@type": "Property",
-			"@id": "gis_context:W_NAME"
-		},
-		"W_HH": {
-			"@type": "QuantitativeProperty",
-			"@id": "gis_context:W_HH"
-		},
-		"W_HH_WC": {
-			"@type": "QuantitativeProperty",
-			"@id": "gis_context:W_HH_WC"
-		},
-		"W_AREA": {
-			"@type": "QuantitativeProperty",
-			"@id": "gis_context:W_AREA"
-		},
-		"W_HH_SC": {
-			"@type": "QuantitativeProperty",
-			"@id": "gis_context:W_HH_SC"
-		},
-		"Z_ID": {
-			"@type": "Property",
-			"@id": "gis_context:Z_ID"
-		},
-		"TIME_ST": {
-			"@type": "TimeProperty",
-			"@id": "gis_context:TIME_ST"
-		},
-		"W_PROP": {
-			"@type": "QuantitativeProperty",
-			"@id": "gis_context:W_PROP"
-		},
-		"GCP_LAT": {
-			"@type": "GeoProperty",
-			"@id": "gis_context:GCP_LAT"
-		},
-		"W_ID": {
-			"@type": "Property",
-			"@id": "gis_context:W_ID"
-		},
-		"CLASS": {
-			"@type": "Property",
-			"@id": "gis_context:CLASS"
-		},
-		"W_NUM": {
-			"@type": "Property",
-			"@id": "gis_context:W_NUM"
-		},
-		"W_POP": {
-			"@type": "QuantitativeProperty",
-			"@id": "gis_context:W_POP"
-		},
-		"GCP_PHID": {
-			"@type": "Property",
-			"@id": "gis_context:GCP_PHID"
-		},
-		"GCP_LON": {
-			"@type": "GeoProperty",
-			"@id": "gis_context:GCP_LON"
-		},
-		"SURROUND": {
-			"@type": "Property",
-			"@id": "gis_context:SURROUND"
-		},
-		"SUB_CLASS": {
-			"@type": "Property",
-			"@id": "gis_context:SUB_CLASS"
-		},
-		"GCP_HT": {
-			"@type": "QuantitativeProperty",
-			"@id": "gis_context:GCP_HT"
-		},
-		"W_SL_AR": {
-			"@type": "QuantitativeProperty",
-			"@id": "gis_context:W_SL_AR"
-		},
-		"properties": "@nest",
-		"gis_context": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/gis/gis_context.json#/"
-	},
-	"GCP_HT": {
-		"describes": "As per DGPS value in meter"
-	},
-	"W_POP": {
-		"describes": "Population of Ward as per 2011 census data"
-	},
-	"W_ID": {
-		"describes": "It will start with W followed by 001 for ward 1, 002 for ward 2 and so on"
-	},
-	"W_PROP": {
-		"describes": "Total number of properties based on property survey; will be updated after survey"
-	},
-	"GCP_LAT": {
-		"describes": "Geographical coordinates (Latitude) as per DGPS for the location in decimal degree like  25\u00b019'40.52\"N"
-	},
-	"Z_ID": {
-		"describes": "As per zone table"
-	},
-	"W_AREA": {
-		"describes": "Ward area for each ward in sq. km as per GIS- based calculation"
-	},
-	"W_NUM": {
-		"describes": "Ward Number like 001, 002"
-	},
-	"GCP_LON": {
-		"describes": "Geographical coordinates (longitude) as per DGPS for the location in Degree Minutes  Seconds like 83\u00b0 0'31.03\"E"
-	},
-	"SURROUND": {
-		"describes": "Brief description about surroundings in all the directions East, West, North and South"
-	},
-	"CLASS": {
-		"describes": "Class Code and Sub Class Code will be"
-	},
-	"SUB_CLASS": {
-		"describes": "updated as per AMRUT guidelines given in Annexure XI, Volume II of the Inception  Report"
-	},
-	"GCP_PHID": {
-		"describes": "Unique ID for Photo will start with GCP ID followed by 4 digits of Year (like 2018) then  month (like for June it will be 06) then date  (01) and then 2 digits in incremental order  (like 01 to 99)"
-	},
-	"W_HH": {
-		"describes": "Total number of households as per census data"
-	},
-	"W_HH_SC": {
-		"describes": "Total number of household having Sewer connection  based  on  consumer  database  survey; will be updated after survey"
-	},
-	"W_HH_WC": {
-		"describes": "Total number of household having water connection based on consumer survey; will be  updated after survey"
-	},
-	"TIME_ST": {
-		"describes": "Date of DGPS survey (DD-Month-YYYY) like 30 June 2018"
-	},
-	"W_NAME": {
-		"describes": "Like Naria, Cantonmenent etc."
-	},
-	"W_SL_AR": {
-		"describes": "Total area of slum based on slum survey for GIS base map preparation (in Ha)"
-	}
+    "@context": {
+        "W_NAME": {
+            "@type": "Property",
+            "@id": "gis_context:W_NAME"
+        },
+        "W_HH": {
+            "@type": "QuantitativeProperty",
+            "@id": "gis_context:W_HH"
+        },
+        "W_HH_WC": {
+            "@type": "QuantitativeProperty",
+            "@id": "gis_context:W_HH_WC"
+        },
+        "W_AREA": {
+            "@type": "QuantitativeProperty",
+            "@id": "gis_context:W_AREA"
+        },
+        "W_HH_SC": {
+            "@type": "QuantitativeProperty",
+            "@id": "gis_context:W_HH_SC"
+        },
+        "Z_ID": {
+            "@type": "Property",
+            "@id": "gis_context:Z_ID"
+        },
+        "TIME_ST": {
+            "@type": "TimeProperty",
+            "@id": "gis_context:TIME_ST"
+        },
+        "W_PROP": {
+            "@type": "QuantitativeProperty",
+            "@id": "gis_context:W_PROP"
+        },
+        "GCP_LAT": {
+            "@type": "GeoProperty",
+            "@id": "gis_context:GCP_LAT"
+        },
+        "W_ID": {
+            "@type": "Property",
+            "@id": "gis_context:W_ID"
+        },
+        "CLASS": {
+            "@type": "Property",
+            "@id": "gis_context:CLASS"
+        },
+        "W_NUM": {
+            "@type": "Property",
+            "@id": "gis_context:W_NUM"
+        },
+        "W_POP": {
+            "@type": "QuantitativeProperty",
+            "@id": "gis_context:W_POP"
+        },
+        "GCP_PHID": {
+            "@type": "Property",
+            "@id": "gis_context:GCP_PHID"
+        },
+        "GCP_LON": {
+            "@type": "GeoProperty",
+            "@id": "gis_context:GCP_LON"
+        },
+        "SURROUND": {
+            "@type": "Property",
+            "@id": "gis_context:SURROUND"
+        },
+        "SUB_CLASS": {
+            "@type": "Property",
+            "@id": "gis_context:SUB_CLASS"
+        },
+        "GCP_HT": {
+            "@type": "QuantitativeProperty",
+            "@id": "gis_context:GCP_HT"
+        },
+        "W_SL_AR": {
+            "@type": "QuantitativeProperty",
+            "@id": "gis_context:W_SL_AR"
+        },
+        "T_WARDS": {
+            "@type": "QuantitativeProperty",
+            "@id": "gis_context:T_WARDS"
+        },
+        "T_HH_WC": {
+            "@type": "QuantitativeProperty",
+            "@id": "gis_context:T_HH_WC"
+        },
+        "T_POP": {
+            "@type": "QuantitativeProperty",
+            "@id": "gis_context:T_POP"
+        },
+        "T_PROP": {
+            "@type": "QuantitativeProperty",
+            "@id": "gis_context:T_PROP"
+        },
+        "T_SL_AR": {
+            "@type": "QuantitativeProperty",
+            "@id": "gis_context:T_SL_AR"
+        },
+        "MUN_ID": {
+            "@type": "Property",
+            "@id": "gis_context:MUN_ID"
+        },
+        "MUN_NAM": {
+            "@type": "Property",
+            "@id": "gis_context:MUN_NAM"
+        },
+        "T_HH_SC": {
+            "@type": "QuantitativeProperty",
+            "@id": "gis_context:T_HH_SC"
+        },
+        "T_HH": {
+            "@type": "QuantitativeProperty",
+            "@id": "gis_context:T_HH"
+        },
+        "T_AR": {
+            "@type": "QuantitativeProperty",
+            "@id": "gis_context:T_AR"
+        },
+        "MUN_CODE": {
+            "@type": "Property",
+            "@id": "gis_context:MUN_CODE"
+        },
+        "CW_WD": {
+            "@type": "QuantitativeProperty",
+            "@id": "gis_context:CW_WD"
+        },
+        "DRAIN_STAT": {
+            "@type": "Property",
+            "@id": "gis_context:DRAIN_STAT"
+        },
+        "FPAT_STAT": {
+            "@type": "Property",
+            "@id": "gis_context:FPAT_STAT"
+        },
+        "FPAT_WD": {
+            "@type": "QuantitativeProperty",
+            "@id": "gis_context:FPAT_WD"
+        },
+        "FPA_C_MAT": {
+            "@type": "Property",
+            "@id": "gis_context:FPA_C_MAT"
+        },
+        "MDN_STAT": {
+            "@type": "Property",
+            "@id": "gis_context:MDN_STAT"
+        },
+        "MTD_BY": {
+            "@type": "Property",
+            "@id": "gis_context:MTD_BY"
+        },
+        "RD_ID": {
+            "@type": "Property",
+            "@id": "gis_context:RD_ID"
+        },
+        "RD_LEN": {
+            "@type": "QuantitativeProperty",
+            "@id": "gis_context:RD_LEN"
+        },
+        "RD_NAME": {
+            "@type": "Property",
+            "@id": "gis_context:RD_NAME"
+        },
+        "RD_TYPE": {
+            "@type": "Property",
+            "@id": "gis_context:RD_TYPE"
+        },
+        "ROW_WD": {
+            "@type": "QuantitativeProperty",
+            "@id": "gis_context:ROW_WD"
+        },
+        "SUR_TYPE": {
+            "@type": "Property",
+            "@id": "gis_context:"
+        },
+        "properties": "@nest",
+        "gis_context": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/gis/gis_context.json#/"
+    },
+    "GCP_HT": {
+        "describes": "As per DGPS value in meter"
+    },
+    "W_POP": {
+        "describes": "Population of Ward as per 2011 census data"
+    },
+    "W_ID": {
+        "describes": "It will start with W followed by 001 for ward 1, 002 for ward 2 and so on"
+    },
+    "W_PROP": {
+        "describes": "Total number of properties based on property survey; will be updated after survey"
+    },
+    "GCP_LAT": {
+        "describes": "Geographical coordinates (Latitude) as per DGPS for the location in decimal degree like  25\u00b019'40.52\"N"
+    },
+    "Z_ID": {
+        "describes": "As per zone table"
+    },
+    "W_AREA": {
+        "describes": "Ward area for each ward in sq. km as per GIS- based calculation"
+    },
+    "W_NUM": {
+        "describes": "Ward Number like 001, 002"
+    },
+    "GCP_LON": {
+        "describes": "Geographical coordinates (longitude) as per DGPS for the location in Degree Minutes  Seconds like 83\u00b0 0'31.03\"E"
+    },
+    "SURROUND": {
+        "describes": "Brief description about surroundings in all the directions East, West, North and South"
+    },
+    "CLASS": {
+        "describes": "Class Code and Sub Class Code will be"
+    },
+    "SUB_CLASS": {
+        "describes": "updated as per AMRUT guidelines given in Annexure XI, Volume II of the Inception  Report"
+    },
+    "GCP_PHID": {
+        "describes": "Unique ID for Photo will start with GCP ID followed by 4 digits of Year (like 2018) then  month (like for June it will be 06) then date  (01) and then 2 digits in incremental order  (like 01 to 99)"
+    },
+    "W_HH": {
+        "describes": "Total number of households as per census data"
+    },
+    "W_HH_SC": {
+        "describes": "Total number of household having Sewer connection  based  on  consumer  database  survey; will be updated after survey"
+    },
+    "W_HH_WC": {
+        "describes": "Total number of household having water connection based on consumer survey; will be  updated after survey"
+    },
+    "TIME_ST": {
+        "describes": "Date of DGPS survey (DD-Month-YYYY) like 30 June 2018"
+    },
+    "W_NAME": {
+        "describes": "Like Naria, Cantonmenent etc."
+    },
+    "W_SL_AR": {
+        "describes": "Total area of slum based on slum survey for GIS base map preparation (in Ha)"
+    },
+    "T_WARDS": {
+        "describes": "Total no. of wards as on date"
+    },
+    "T_HH_WC": {
+        "describes": "Based on consumer survey; will be updated after survey"
+    },
+    "T_POP": {
+        "describes": "Total population of the city as per 2011 Census"
+    },
+    "T_PROP": {
+        "describes": "Based on property survey; will be updated after survey"
+    },
+    "T_SL_AR": {
+        "describes": "On the basis of slum survey for GIS base map preparation (in Ha)"
+    },
+    "MUN_ID": {
+        "describes": "It will be as VNS"
+    },
+    "MUN_NAM": {
+        "describes": "Varanasi"
+    },
+    "T_HH_SC": {
+        "describes": "Based on consumer database survey; will be updated after survey"
+    },
+    "T_HH": {
+        "describes": "Total number of households as per census data 2011"
+    },
+    "T_AR": {
+        "describes": "Total Area in sq. km as per GIS-based calculation"
+    },
+    "MUN_CODE": {
+        "describes": "VNN"
+    },
+    "CW_WD": {
+        "describes": "Carriage way width in meter (Collected during field survey)"
+    },
+    "DRAIN_STAT": {
+        "describes": "Like NOT AVAILABLE, ONE SIDE, BOTH SIDES (Collected during field survey)"
+    },
+    "FPAT_STAT": {
+        "describes": "\u201cYES\u201d OR \u201cNO\u201d (Collected during field survey)"
+    },
+    "FPAT_WD": {
+        "describes": "Footpath Width in meter as per field data"
+    },
+    "FPA_C_MAT": {
+        "describes": "Footpath Construction Material Shabad/Tiles/Concrete/Other Stone"
+    },
+    "MDN_STAT": {
+        "describes": "\u201cYES\u201d OR \u201cNO\u201d (Collected during field survey)"
+    },
+    "MTD_BY": {
+        "describes": "Road maintained by VNN (Varanasi Nagar Nigam), RCD (Road Construction Department), NHAI (National Highway Authority for India). This info will be also collected in the field as well as updated with available data."
+    },
+    "RD_ID": {
+        "describes": "It will start with 3 followed by next two digits for road type, followed by next four digit in  incremental from 0001."
+    },
+    "RD_LEN": {
+        "describes": "Road  length in meter as per GIS-based calculation at the time of processing of data"
+    },
+    "RD_NAME": {
+        "describes": "Road name will be taken and updated during field survey. If any road name is not found  during survey, it will be mentioned \u201cNA\u201d."
+    },
+    "RD_TYPE": {
+        "describes": "Road type will be classified on the basis of RoW width as:  01 - RoW more than 24 m  02 - RoW 12 to 24 m  03 - RoW less than 12 m  RoW for each road will be measured and  updated."
+    },
+    "ROW_WD": {
+        "describes": "Right of Way width in meter (Collected during field survey)"
+    },
+    "SUR_TYPE": {
+        "describes": "Surface Type of Road as per field survey like \"Concrete\" Or \"Asphalt\" Or \"WBM\" Or \"Any  Other\" (Collected during field survey)"
+    }
 }
