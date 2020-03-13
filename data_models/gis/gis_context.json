@@ -36,6 +36,26 @@
             "@type": "Property",
             "@id": "gis_context:AQMS_ID"
         },
+        "CIV_A_DET": {
+            "@type": "Property",
+            "@id": "gis_context:CIV_A_DET"
+        },
+        "BLDG_ID": {
+            "@type": "Property",
+            "@id": "gis_context:BLDG_ID"
+        },
+        "CIVA_ID": {
+            "@type": "Property",
+            "@id": "gis_context:CIVA_ID"
+        },
+        "PCL_ID": {
+            "@type": "Property",
+            "@id": "gis_context:PCL_ID"
+        },
+        "CAPACITY": {
+            "@type": "QuantitativeProperty",
+            "@id": "gis_context:CAPACITY"
+        },
         "Z_ID": {
             "@type": "Property",
             "@id": "gis_context:Z_ID"
@@ -75,6 +95,30 @@
         "Unique_Id": {
             "@type": "Property",
             "@id": "gis_context:Unique_Id"
+        },
+        "BRG_ID": {
+            "@type": "Property",
+            "@id": "gis_context:BRG_ID"
+        },
+        "BRG_LTH": {
+            "@type": "QuantitativeProperty",
+            "@id": "gis_context:BRG_LTH"
+        },
+        "BRG_WTH": {
+            "@type": "QuantitativeProperty",
+            "@id": "gis_context:BRG_WTH"
+        },
+        "BRG_NAM": {
+            "@type": "Property",
+            "@id": "gis_context:BRG_NAM"
+        },
+        "CONS_MAT": {
+            "@type": "Property",
+            "@id": "gis_context:CONS_MAT"
+        },
+        "COM_YEAR": {
+            "@type": "TimeProperty",
+            "@id": "gis_context:COM_YEAR"
         },
         "Zone_Name": {
             "@type": "Property",
@@ -204,6 +248,38 @@
             "@type": "QuantitativeProperty",
             "@id": "gis_context:ROW_WD"
         },
+        "DR_DEPTH": {
+            "@type": "QuantitativeProperty",
+            "@id": "gis_context:DR_DEPTH"
+        },
+        "DR_NAME": {
+            "@type": "Property",
+            "@id": "gis_context:DR_NAME"
+        },
+        "DR_FLOOR": {
+            "@type": "Property",
+            "@id": "gis_context:DR_FLOOR"
+        },
+        "CON_TYPE": {
+            "@type": "Property",
+            "@id": "gis_context:CON_TYPE"
+        },
+        "FLO_LTH": {
+            "@type": "QuantitativeProperty",
+            "@id": "gis_context:FLO_LTH"
+        },
+        "FLO_WTH": {
+            "@type": "QuantitativeProperty",
+            "@id": "gis_context:FLO_WTH"
+        },
+        "FLO_NAM": {
+            "@type": "Property",
+            "@id": "gis_context:FLO_NAM"
+        },
+        "FLO_ID": {
+            "@type": "Property",
+            "@id": "gis_context:FLO_ID"
+        },
         "SUR_TYPE": {
             "@type": "Property",
             "@id": "gis_context:"
@@ -230,16 +306,31 @@
         "describes": "As per zone table"
     },
     "A_PB*": {
-            "describes": "Quantity of calcium in water - as per client specifications/record"
+        "describes": "Quantity of calcium in water - as per client specifications/record"
     },
-    "AQMS_ID": { 
-            "describes": "It will be like AQM01, AQM02\u2026"
+    "AQMS_ID": {
+        "describes": "It will be like AQM01, AQM02\u2026"
     },
     "A_PM2*": {
-            "describes": "Minimum and maximum air particles of 2 micrometer size in air as min quantity/maximum quantity on a day/month as per client specifications"
+        "describes": "Minimum and maximum air particles of 2 micrometer size in air as min quantity/maximum quantity on a day/month as per client specifications"
+    },
+    "CIV_A_DET": {
+        "describes": "01 - Public Toilet; 02 - Public Urinals; 03 - Deluxe Toilet; 04 - Any Other"
+    },
+    "BLDG_ID": {
+        "describes": "As per building table"
+    },
+    "CAPACITY": {
+        "describes": "Capacity of the civic amenities like 1,2,3,4\u202610"
+    },
+    "CIVA_ID": {
+        "describes": "It will be like CA001, CA002\u2026"
+    },
+    "PCL_ID": {
+        "describes": "As per land use table"
     },
     "NH3": {
-            "describes": "Quantity of ammonia in air (micro gram per cubic meter) - as per client specifications/record"
+        "describes": "Quantity of ammonia in air (micro gram per cubic meter) - as per client specifications/record"
     },
     "W_AREA": {
         "describes": "Ward area for each ward in sq. km as per GIS- based calculation"
@@ -257,19 +348,37 @@
         "describes": "Class Code and Sub Class Code will be"
     },
     "Address": {
-            "describes": "Address of the kooda ghar in Varanasi city"
+        "describes": "Address of the kooda ghar in Varanasi city"
+    },
+    "BRG_ID": {
+        "describes": "Bridge Id will start with \u201cBR\u201d followed by next 4 digits in incremental order"
+    },
+    "BRG_LTH": {
+        "describes": "Bridge length in meter as per field survey or GIS Application"
+    },
+    "BRG_NAM": {
+        "describes": "Mention bridge name as per survey"
+    },
+    "COM_YEAR": {
+        "describes": "Month and year of commissioning year if available or mention NA"
+    },
+    "CONS_MAT": {
+        "describes": "Bridge construction material like concrete/ iron /masonry/wood/any other"
+    },
+    "BRG_WTH": {
+        "describes": "Bridge width in meter"
     },
     "K_ID": {
-            "describes": "It will start with K followed by 1 for Kooda Ghar 1, 2 for Kooda Ghar 2 and so on"
+        "describes": "It will start with K followed by 1 for Kooda Ghar 1, 2 for Kooda Ghar 2 and so on"
     },
     "LOCALITY": {
-            "describes": "Locality of the kooda ghar in Varanasi city"
+        "describes": "Locality of the kooda ghar in Varanasi city"
     },
     "Unique_Id": {
-            "describes": "Unique ID assigned to the kooda ghar"
+        "describes": "Unique ID assigned to the kooda ghar"
     },
     "Zone_Name": {
-            "describes": "Zonal division of the kooda ghar"
+        "describes": "Zonal division of the kooda ghar"
     },
     "SUB_CLASS": {
         "describes": "updated as per AMRUT guidelines given in Annexure XI, Volume II of the Inception  Report"
@@ -364,6 +473,30 @@
     "ROW_WD": {
         "describes": "Right of Way width in meter (Collected during field survey)"
     },
+        "CON_TYPE": {
+            "describes": "Construction Type Code as 01 - Box, 02 - Open, 03 - Pipe, 04 - Others"
+        },
+        "DR_DEPTH": {
+            "describes": "Depth of Drainage in meter if it is on the ground it will be 0, in case of underground it  will be taken as per municipal records and or   by the ground level staff by VNN."
+        },
+        "DR_NAME": {
+            "describes": "Drainage Name if any or mention NA"
+        },
+        "DR_FLOOR": {
+            "describes": "Drainage Floor \u201cLined\u201d OR \u201cUnlined\u201d"
+        },
+        "FLO_LTH": {
+            "describes": "Flyover length in meter as per field survey or GIS Application"
+        },
+        "FLO_WTH": {
+            "describes": "Flyover width in meter"
+        },
+        "FLO_ID": {
+            "describes": "Fly Over ID will start with \u201cFL\u201d followed by next 2 digits in incremental order"
+        },
+        "FLO_NAM": {
+            "describes": "Mention Flyover name as per survey"
+        },
     "SUR_TYPE": {
         "describes": "Surface Type of Road as per field survey like \"Concrete\" Or \"Asphalt\" Or \"WBM\" Or \"Any  Other\" (Collected during field survey)"
     }

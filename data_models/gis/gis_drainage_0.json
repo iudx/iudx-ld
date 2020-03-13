@@ -1,0 +1,50 @@
+{
+    "type": "object",
+    "@context": [
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_context.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_context.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/geometry-schema.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/gis/gis_context.json",
+        {
+            "CON_MAT": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/gis/gis_context.json#/CONS_MAT"
+        }
+    ],
+    "describes": "Drainage",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "properties": {
+        "RD_ID": {
+            "describes": "Road ID as per Road attribute table",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+        },
+        "CLASS": {
+            "describes": "Class Code and Sub Class Code will be updated",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+        },
+        "SUB_CLASS": {
+            "describes": "as per AMRUT guidelines given in Annexure XI, Volume II of the Inception Report",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+        },
+        "TIME_ST": {
+            "describes": "Date of survey",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/TimeProperty"
+        },
+        "CON_MAT": "CON_MAT",
+        "CON_TYPE": {
+            "describes": "Construction Type Code as 01 - Box, 02 - Open, 03 - Pipe, 04 - Others",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+        },
+        "DR_DEPTH": {
+            "describes": "Depth of Drainage in meter if it is on the ground it will be 0, in case of underground it  will be taken as per municipal records and or   by the ground level staff by VNN.",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty"
+        },
+        "DR_NAME": {
+            "describes": "Drainage Name if any or mention NA",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+        },
+        "DR_FLOOR": {
+            "describes": "Drainage Floor \u201cLined\u201d OR \u201cUnlined\u201d",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+        }
+    }
+}
