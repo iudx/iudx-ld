@@ -20,6 +20,22 @@
             "@type": "QuantitativeProperty",
             "@id": "gis_context:W_HH_SC"
         },
+        "A_PB*": {
+            "@type": "QuantitativeProperty",
+            "@id": "gis_context:A_PB*"
+        },
+        "A_PM2*": {
+            "@type": "QuantitativeProperty",
+            "@id": "gis_context:A_PM2*"
+        },
+        "NH3": {
+            "@type": "QuantitativeProperty",
+            "@id": "gis_context:NH3"
+        },
+        "AQMS_ID": {
+            "@type": "Property",
+            "@id": "gis_context:AQMS_ID"
+        },
         "Z_ID": {
             "@type": "Property",
             "@id": "gis_context:Z_ID"
@@ -43,6 +59,26 @@
         "CLASS": {
             "@type": "Property",
             "@id": "gis_context:CLASS"
+        },
+        "Address": {
+            "@type": "Property",
+            "@id": "gis_context:Address"
+        },
+        "K_ID": {
+            "@type": "Property",
+            "@id": "gis_context:K_ID"
+        },
+        "LOCALITY": {
+            "@type": "Property",
+            "@id": "gis_context:LOCALITY"
+        },
+        "Unique_Id": {
+            "@type": "Property",
+            "@id": "gis_context:Unique_Id"
+        },
+        "Zone_Name": {
+            "@type": "Property",
+            "@id": "gis_context:Zone_Name"
         },
         "W_NUM": {
             "@type": "Property",
@@ -193,6 +229,18 @@
     "Z_ID": {
         "describes": "As per zone table"
     },
+    "A_PB*": {
+            "describes": "Quantity of calcium in water - as per client specifications/record"
+    },
+    "AQMS_ID": { 
+            "describes": "It will be like AQM01, AQM02\u2026"
+    },
+    "A_PM2*": {
+            "describes": "Minimum and maximum air particles of 2 micrometer size in air as min quantity/maximum quantity on a day/month as per client specifications"
+    },
+    "NH3": {
+            "describes": "Quantity of ammonia in air (micro gram per cubic meter) - as per client specifications/record"
+    },
     "W_AREA": {
         "describes": "Ward area for each ward in sq. km as per GIS- based calculation"
     },
@@ -207,6 +255,21 @@
     },
     "CLASS": {
         "describes": "Class Code and Sub Class Code will be"
+    },
+    "Address": {
+            "describes": "Address of the kooda ghar in Varanasi city"
+    },
+    "K_ID": {
+            "describes": "It will start with K followed by 1 for Kooda Ghar 1, 2 for Kooda Ghar 2 and so on"
+    },
+    "LOCALITY": {
+            "describes": "Locality of the kooda ghar in Varanasi city"
+    },
+    "Unique_Id": {
+            "describes": "Unique ID assigned to the kooda ghar"
+    },
+    "Zone_Name": {
+            "describes": "Zonal division of the kooda ghar"
     },
     "SUB_CLASS": {
         "describes": "updated as per AMRUT guidelines given in Annexure XI, Volume II of the Inception  Report"

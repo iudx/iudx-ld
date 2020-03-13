@@ -1,0 +1,60 @@
+{
+    "describes": "Air Quality Monitoring Station (Data Not Available with VNN/IDP)",
+    "@context": [
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_context.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_context.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/geometry-schema.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/gis/gis_context.json",
+        {
+            "Latitude": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/gis/gis_context.json#/GCP_LAT",
+            "Longitude": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/gis/gis_context.json#/GCP_LON",
+            "WARD_ID" : "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/gis/gis_context.json#/W_ID",
+            "ROAD_ID": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/gis/gis_context.json#/RD_ID",
+            "CO": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/airQuality_context.json#/CO",
+            "PM2_5": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/airQuality_context.json#/PM2_5",
+            "PM10": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/airQuality_context.json#/PM10",
+            "NO2": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/airQuality_context.json#/NO2",
+            "O3": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/airQuality_context.json#/O3",
+            "SO2": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/airQuality_context.json#/SO2"
+        }
+    ],
+    "properties": {
+        "TIME_ST": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/TimeProperty",
+            "describes": "Date of survey (DD-Month-YYYY)"
+        },
+        "A_PB*": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
+            "describes": "Quantity of calcium in water - as per client specifications/record"
+        },
+        "A_CO*": "CO",
+        "AQMS_ID": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "It will be like AQM01, AQM02\u2026"
+        },
+        "A_PM2*": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
+            "describes": "Minimum and maximum air particles of 2 micrometer size in air as min quantity/maximum quantity on a day/month as per client specifications"
+        },
+        "A_SO2*": "SO2",
+        "LOCALITY": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Road name, Colony"
+        },
+        "LAT": "Latitude",
+        "A_O3*": "O3",
+        "A_NH3*": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
+            "describes": "Quantity of ammonia in air (micro gram per cubic meter) - as per client specifications/record"
+        },
+        "A_PM2.5*": "PM2_5",
+        "ROAD_ID": "ROAD_ID",
+        "A_NO2*": "NO2",
+        "LONG": "Longitude",
+        "WARD_ID": "WARD_ID",
+        "A_PM10*": "PM10"
+    },
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object"
+}
