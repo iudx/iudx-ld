@@ -1,0 +1,62 @@
+{
+    "type": "object",
+    "properties": {
+        "TIME_ST": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/TimeProperty",
+            "describes": "Date of survey (DD-Month-YYYY)"
+        },
+        "PCL_ID": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Unique ID for Parcel, start with 1 followed by Mohallah ID and then followed by 5 digits of parcel  id  in  incremental  order  for  each mohallah"
+        },
+        "CLASS": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "AMRUT guidelines will be followed for different"
+        },
+        "SUB_CLASS": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "type of Land Use class and sub class. The details of class and sub class given in Annexure XI"
+        },
+        "RD_NAME": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Road name as per road thematic layer"
+        },
+        "ZONE_ID": "ZONE_ID",
+        "WARD_ID": "WARD_ID",
+        "ROAD_ID": "ROAD_ID",
+        "PCL_LOC": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Address of parcel, road name, colony name, town, pin code"
+        },
+        "PCL_AREA": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
+            "describes": "Area of the parcel in sq. feet as per GIS software calculation"
+        },
+        "TAX_ZONE": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "As per tax zone thematic layer"
+        },
+        "LUSE_DET": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Details  of  land  use  as  found  during  field verification"
+        },
+        "LU_CODE": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Land use code used for field data collection as well as databation updation, it will be as -"
+        }
+    },
+    "@context": [
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_context.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_context.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/geometry-schema.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/gis/gis_context.json",
+        {
+            "WARD_ID": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/gis/gis_context.json#/W_ID",
+            "ROAD_ID": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/gis/gis_context.json#/RD_ID",
+            "ZONE_ID": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/gis/gis_context.json#/Z_ID"
+        }
+    ],
+    "describes": "Land Use",
+    "$schema": "http://json-schema.org/draft-07/schema#"
+}

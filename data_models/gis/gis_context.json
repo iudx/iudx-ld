@@ -32,6 +32,26 @@
             "@type": "QuantitativeProperty",
             "@id": "gis_context:NH3"
         },
+        "TOT_PROP": {
+            "@type": "QuantitativeProperty",
+            "@id": "gis_context:TOT_PROP"
+        },
+        "MOH_AREA": {
+            "@type": "QuantitativeProperty",
+            "@id": "gis_context:MOH_AREA"
+        },
+        "MOH_NAME": {
+            "@type": "Property",
+            "@id": "gis_context:MOH_NAME"
+        },
+        "MOH_ID": {
+            "@type": "Property",
+            "@id": "gis_context:MOH_ID"
+        },
+        "MOH_NO": {
+            "@type": "Property",
+            "@id": "gis_context:MOH_NO"
+        },
         "AQMS_ID": {
             "@type": "Property",
             "@id": "gis_context:AQMS_ID"
@@ -47,6 +67,18 @@
         "CIVA_ID": {
             "@type": "Property",
             "@id": "gis_context:CIVA_ID"
+        },
+        "LM_ID": {
+            "@type": "Property",
+            "@id": "gis_context:LM_ID"
+        },
+        "LM_DESC": {
+            "@type": "Property",
+            "@id": "gis_context:LM_DESC"
+        },
+        "LM_CODE": {
+            "@type": "Property",
+            "@id": "gis_context:LM_CODE"
         },
         "PCL_ID": {
             "@type": "Property",
@@ -232,9 +264,29 @@
             "@type": "Property",
             "@id": "gis_context:RD_ID"
         },
+        "PCL_LOC": {
+            "@type": "Property",
+            "@id": "gis_context:PCL_LOC"
+        },
+        "TAX_ZONE": {
+            "@type": "Property",
+            "@id": "gis_context:TAX_ZONE"
+        },
+        "LUSE_DET": {
+            "@type": "Property",
+            "@id": "gis_context:LUSE_DET"
+        },
+        "LU_CODE": {
+            "@type": "Property",
+            "@id": "gis_context:LU_CODE"
+        },
         "RD_LEN": {
             "@type": "QuantitativeProperty",
             "@id": "gis_context:RD_LEN"
+        },
+        "PCL_AREA": {
+            "@type": "QuantitativeProperty",
+            "@id": "gis_context:PCL_AREA"
         },
         "RD_NAME": {
             "@type": "Property",
@@ -243,6 +295,22 @@
         "RD_TYPE": {
             "@type": "Property",
             "@id": "gis_context:RD_TYPE"
+        },
+        "PCL_ID": {
+            "@type": "Property",
+            "@id": "gis_context:PCL_ID"
+        },
+        "KUND_TYPE": {
+            "@type": "Property",
+            "@id": "gis_context:KUND_TYPE"
+        },
+        "KUND_ID": {
+            "@type": "Property",
+            "@id": "gis_context:KUND_ID"
+        },
+        "KUND_NAME": {
+            "@type": "Property",
+            "@id": "gis_context:KUND_NAME"
         },
         "ROW_WD": {
             "@type": "QuantitativeProperty",
@@ -280,9 +348,157 @@
             "@type": "Property",
             "@id": "gis_context:FLO_ID"
         },
+        "T_CAP*": {
+            "@type": "QuantitativeProperty",
+            "@id": "gis_context:T_CAP*"
+        },
+        "STAGE_H*": {
+            "@type": "QuantitativeProperty",
+            "@id": "gis_context:STAGE_H*"
+        },
+        "T_CAP_KLIT": {
+            "@type": "QuantitativeProperty",
+            "@id": "gis_context:T_CAP_KLIT"
+        },
+        "CWR_CONDIT": {
+            "@type": "Property",
+            "@id": "gis_context:CWR_CONDIT"
+        },
+        "ENTRY_GATE": {
+            "@type": "Property",
+            "@id": "gis_context:ENTRY_GATE"
+        },
+        "WASHOUT_PI": {
+            "@type": "Property",
+            "@id": "gis_context:WASHOUT_PI"
+        },
+        "RISING_MAI": {
+            "@type": "Property",
+            "@id": "gis_context:RISING_MAI"
+        },
+        "STAIRS": {
+            "@type": "Property",
+            "@id": "gis_context:STAIRS"
+        },
+        "OVERFLOW_D": {
+            "@type": "Property",
+            "@id": "gis_context:OVERFLOW_D"
+        },
+        "OHT_ID": {
+            "@type": "Property",
+            "@id": "gis_context:OHT_ID"
+        },
+        "DISTRIBUTI": {
+            "@type": "Property",
+            "@id": "gis_context:DISTRIBUTI"
+        },
+        "DIV_ID": {
+            "@type": "Property",
+            "@id": "gis_context:DIV_ID"
+        },
+        "SDIV_ID": {
+            "@type": "Property",
+            "@id": "gis_context:SDIV_ID"
+        },
+        "PARK_ID": {
+            "@type": "Property",
+            "@id": "gis_context:PARK_ID"
+        },
+        "PARK_NAM": {
+            "@type": "Property",
+            "@id": "gis_context:PARK_NAM"
+        },
+        "PARK_TYPE": {
+            "@type": "Property",
+            "@id": "gis_context:PARK_TYPE"
+        },
+        "RAIL_ID": {
+            "@type": "Property",
+            "@id": "gis_context:RAIL_ID"
+        },
+        "R_L_NAM": {
+            "@type": "Property",
+            "@id": "gis_context:R_L_NAM"
+        },
+        "WATM_ID": {
+            "@type": "Property",
+            "@id": "gis_context:WATM_ID"
+        },
+        "DEITY": {
+            "@type": "Property",
+            "@id": "gis_context:DEITY"
+        },
+        "RELS_CODE": {
+            "@type": "Property",
+            "@id": "gis_context:RELS_CODE"
+        },
+        "RIV_ID": {
+            "@type": "Property",
+            "@id": "gis_context:RIV_ID"
+        },
+        "RIV_NAME": {
+            "@type": "Property",
+            "@id": "gis_context:RIV_NAME"
+        },
+        "MH_STAT": {
+            "@type": "Property",
+            "@id": "gis_context:MH_STAT"
+        },
+        "MH_ID": {
+            "@type": "Property",
+            "@id": "gis_context:MH_ID"
+        },
+        "MH_CAT*": {
+            "@type": "Property",
+            "@id": "gis_context:MH_CAT*"
+        },
+        "MH_MAT*": {
+            "@type": "Property",
+            "@id": "gis_context:MH_MAT*"
+        },
+        "CLEAN_FREQ*": {
+            "@type": "Property",
+            "@id": "gis_context:CLEAN_FREQ*"
+        },
+        "MANHOLE_CO": {
+            "@type": "Property",
+            "@id": "gis_context:MANHOLE_CO"
+        },
+        "MH_TYPE": {
+            "@type": "Property",
+            "@id": "gis_context:MH_TYPE"
+        },
+        "MH_SIZE_IN": {
+            "@type": "QuantitativeProperty",
+            "@id": "gis_context:MH_SIZE_IN"
+        },
+        "MH_SIZE*": {
+            "@type": "QuantitativeProperty",
+            "@id": "gis_context:MH_SIZE*"
+        },
+        "MH_DEPTH": {
+            "@type": "QuantitativeProperty",
+            "@id": "gis_context:MH_DEPTH"
+        },
+        "DIS_CAP*": {
+            "@type": "QuantitativeProperty",
+            "@id": "gis_context:DIS_CAP*"
+        },
+        "T_PUMPS*": {
+            "@type": "QuantitativeProperty",
+            "@id": "gis_context:T_PUMPS*"
+        },
+        "SDP_ID": {
+            "@type": "Property",
+            "@id": "gis_context:SDP_ID"
+        },
+        "WAT_Q*": {
+            "@type": "Property",
+            "@id": "gis_context:WAT_Q*"
+        },
         "SUR_TYPE": {
             "@type": "Property",
-            "@id": "gis_context:"
+            "@id": "gis_context:SUR_TYPE"
         },
         "properties": "@nest",
         "gis_context": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/gis/gis_context.json#/"
@@ -496,6 +712,144 @@
         },
         "FLO_NAM": {
             "describes": "Mention Flyover name as per survey"
+        },
+        "KUND_TYPE": {
+            "describes": "As per client specifications"
+        },
+        "PCL_ID": {
+            "describes": "As per land use table"
+        },
+        "KUND_NAME": {
+            "describes": "Name of the Kund/Pond"
+        },
+        "KUND_ID": {
+            "describes": "It will be K01, K02\u2026"
+        },
+        "LM_ID": {
+            "describes": "It will start with \u201cLM\u201d followed by 4 digits in incremental order."
+        },
+        "LM_DESC": {
+            "describes": "Landmark details (Name and or Description) In case of temple (Landmark code - 03) mention name of the main deity"
+        },
+        "LM_CODE": {
+            "describes": "Landmark  code  that  used  for  field  data collection as well as data updation will be as - All Traffic  Junctions/Chowks  -  01;  Historical Monument (Specific   Buildings/Statute/Any other land base feature of historical importance  - 02; Temples - 03; Mosques - 04; Churches -  05;  Gurudwara  -  05;  Any  Other  Religious  Structure - 06; Important Government Offices  (Like DM Office, Court, Any Other Central or  State Government Offices - 07; Municipal Assets & Offices - 08; Jal Kal Vibhag Assets & Offices - 09; Popular Colleges or Big Institutes - 10; Bus  Station - 11; Railway Station - 12; Post Offices - 13; Police Stations - 14; Ghats - 15; Big and or Popular Hotels and Restaurants - 16; Cremation  Grounds - 17; Kabristan - 18; Graveyard - 19; Open Market/Vending Area - 20; Any Other - 21."
+        },
+        "PCL_LOC": {
+            "describes": "Address of parcel, road name, colony name, town, pin code"
+        },
+        "PCL_AREA": {
+            "describes": "Area of the parcel in sq. feet as per GIS software calculation"
+        },
+        "TAX_ZONE": {
+            "describes": "As per tax zone thematic layer"
+        },
+        "LUSE_DET": {
+            "describes": "Details  of  land  use  as  found  during  field verification"
+        },
+        "LU_CODE": {
+            "describes": "Land use code used for field data collection as well as databation updation, it will be as -"
+        },
+        "MOH_NAME": {
+            "describes": "Name of the Mohallah as per Municipal record"
+        },
+        "TOT_PROP": {
+            "describes": "Total no. of Property in the Mohallah will be updated after property survey"
+        },
+        "MOH_ID": {
+            "describes": "Mohallah ID as per VNN records"
+        },
+        "MOH_NO": {
+            "describes": "Mohallah   Number   as   per   Municipal Assessment Record"
+        },
+        "MOH_AREA": {
+            "describes": "In Hectare as per GIS-based calculation"
+        },
+        "T_CAP*": {
+            "describes": "Total capacity of OHT in MLD"
+        },
+        "STAGE_H*": {
+            "describes": "Stage height in meter"
+        },
+        "T_CAP_KLIT": {
+            "describes": "Total Capacity in Kilo Litres"
+        },
+        "VALVE_CHAM": {
+            "describes": "Valve Chamber- Yes/No"
+        },
+        "WATER_LEVE": {
+            "describes": "Water Level- Yes/No"
+        },
+        "OHT_STATUS": {
+            "describes": "OHT Status- Working/Not Working"
+        },
+        "SEEPAGE": {
+            "describes": "Seepage- Yes/No"
+        },
+        "VALVE_FUNC": {
+            "describes": "Valve Function- Yes/No"
+        },
+        "CWR_CONDIT": {
+            "describes": "CWR Condition- Good/Bad"
+        },
+        "ENTRY_GATE": {
+            "describes": "Entry Gate- Yes/No"
+        },
+        "WASHOUT_PI": {
+            "describes": "Washout Pipe Diameter"
+        },
+        "RISING_MAI": {
+            "describes": "Rising Main Pipe Diameter"
+        },
+        "STAIRS": {
+            "describes": "Stairs- Yes/No"
+        },
+        "OVERFLOW_D": {
+            "describes": "Overflow Pipe Diameter"
+        },
+        "OHT_ID": {
+            "describes": "Start with OHT followed by 001, 002,003\u2026"
+        },
+        "DISTRIBUTI": {
+            "describes": "Distribution Pipe Diameter"
+        },
+        "DIV_ID": {
+            "describes": "As per Jal Kal division data"
+        },
+        "SDIV_ID": {
+            "describes": "As per Jal Kal sub division data"
+        },
+        "PARK_ID": {
+            "describes": "It will start with \u201cPK\u201d followed by Ward ID and then 3 digits in incremental order as 001 for each  ward"
+        },
+        "PARK_NAM": {
+            "describes": "Name or Description of Park if any"
+        },
+        "PARK_TYPE": {
+            "describes": "\u201cPark\u201d Or \u201cGarden\u201d Or \u201cZoological Park\u201d Or \u201cBotanical Park\u201d Or \u201cPlay Ground\u201d"
+        },
+        "RAIL_ID": {
+            "describes": "It will start with \u201cRA\u201d followed by 3 digits in incremental order will start with 001"
+        },
+        "R_L_NAM": {
+            "describes": "Railway Line Name like Varanasi - Mughal Sarai, Varanasi - Ballia etc."
+        },
+        "RIV_ID": {
+            "describes": "It will start with \u201cRIV\u201d followed by 2 digits in incremental order as 01 onwards"
+        },
+        "RIV_NAME": {
+            "describes": "Name of the River"
+        },
+        "DIS_CAP*": {
+            "describes": "Maximum quantity of discharge in MLD per day or as per client requirement"
+        },
+        "SDP_ID": {
+            "describes": "Will start with SDP followed by 01, 02, 03\u2026."
+        },
+        "WAT_Q*": {
+            "describes": "Water quality at discharge point as per client specification"
+        },
+        "T_PUMPS*": {
+            "describes": "Total number of pumps"
         },
     "SUR_TYPE": {
         "describes": "Surface Type of Road as per field survey like \"Concrete\" Or \"Asphalt\" Or \"WBM\" Or \"Any  Other\" (Collected during field survey)"

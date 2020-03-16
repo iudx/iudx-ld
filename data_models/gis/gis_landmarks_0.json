@@ -1,0 +1,50 @@
+{
+    "type": "object",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "describes": "Landmarks",
+    "@context": [
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_context.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_context.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/geometry-schema.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/gis/gis_context.json",
+        {
+            "WARD_ID": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/gis/gis_context.json#/W_ID"
+        }
+    ],
+    "properties": {
+        "CLASS": {
+            "describes": "AMRUT guidelines will be followed for different",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+        },
+        "SUB_CLASS": {
+            "describes": "type of Land Use class and sub class. The details of class and sub class given in Annexure XI",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+        },
+        "RD_ID": {
+            "describes": "As per road table",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+        },
+        "LOCALITY": {
+            "describes": "Road name, Colony",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+        },
+        "TIME_ST": {
+            "describes": "Date of Survey (DD-Month-YYYY)",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/TimeProperty"
+        },
+        "WRD_ID": "WARD_ID",
+        "LM_ID": {
+            "describes": "It will start with \u201cLM\u201d followed by 4 digits in incremental order.",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+        },
+        "LM_DESC": {
+            "describes": "Landmark details (Name and or Description) In case of temple (Landmark code - 03) mention name of the main deity",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+        },
+        "LM_CODE": {
+            "describes": "Landmark  code  that  used  for  field  data collection as well as data updation will be as - All Traffic  Junctions/Chowks  -  01;  Historical Monument (Specific   Buildings/Statute/Any other land base feature of historical importance  - 02; Temples - 03; Mosques - 04; Churches -  05;  Gurudwara  -  05;  Any  Other  Religious  Structure - 06; Important Government Offices  (Like DM Office, Court, Any Other Central or  State Government Offices - 07; Municipal Assets & Offices - 08; Jal Kal Vibhag Assets & Offices - 09; Popular Colleges or Big Institutes - 10; Bus  Station - 11; Railway Station - 12; Post Offices - 13; Police Stations - 14; Ghats - 15; Big and or Popular Hotels and Restaurants - 16; Cremation  Grounds - 17; Kabristan - 18; Graveyard - 19; Open Market/Vending Area - 20; Any Other - 21.",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+        }
+    }
+}
