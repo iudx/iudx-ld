@@ -496,6 +496,222 @@
             "@type": "Property",
             "@id": "gis_context:WAT_Q*"
         },
+        "PIPE_LEN": {
+            "@type": "QuantitativeProperty",
+            "@id": "gis_context:PIPE_LEN"
+        },
+        "PIPE_DIA*": {
+            "@type": "QuantitativeProperty",
+            "@id": "gis_context:PIPE_DIA*"
+        },
+        "PIP_DEP*": {
+            "@type": "QuantitativeProperty",
+            "@id": "gis_context:PIP_DEP*"
+        },
+        "SEWN_ID": {
+            "@type": "Property",
+            "@id": "gis_context:SEWN_ID"
+        },
+        "SEW_STAT*": {
+            "@type": "Property",
+            "@id": "gis_context:SEW_STAT*"
+        },
+        "PIPE_MAT*": {
+            "@type": "Property",
+            "@id": "gis_context:PIPE_MAT*"
+        },
+        "PIPE_DIA_I": {
+            "@type": "Property",
+            "@id": "gis_context:PIPE_DIA_I"
+        },
+        "SEWER_LINE": {
+            "@type": "Property",
+            "@id": "gis_context:SEWER_LINE"
+        },
+        "PIP_GRDE*": {
+            "@type": "Property",
+            "@id": "gis_context:PIP_GRDE*"
+        },
+        "T_CAP*": {
+            "@type": "QuantitativeProperty",
+            "@id": "gis_context:T_CAP*"
+        },
+        "RUN_HRS*": {
+            "@type": "QuantitativeProperty",
+            "@id": "gis_context:RUN_HRS*"
+        },
+        "MOT_TYP*": {
+            "@type": "Property",
+            "@id": "gis_context:MOT_TYP*"
+        },
+        "MOT_CAP*": {
+            "@type": "Property",
+            "@id": "gis_context:MOT_CAP*"
+        },
+        "M_MANU*": {
+            "@type": "Property",
+            "@id": "gis_context:M_MANU*"
+        },
+        "SPS_ID": {
+            "@type": "Property",
+            "@id": "gis_context:SPS_ID"
+        },
+        "T_PUMPS*": {
+            "@type": "QuantitativeProperty",
+            "@id": "gis_context:T_PUMPS*"
+        },
+        "STP_STA*": {
+            "@type": "Property",
+            "@id": "gis_context:STP_STA*"
+        },
+        "STP_ID": {
+            "@type": "Property",
+            "@id": "gis_context:STP_ID"
+        },
+        "SL_TYPE": {
+            "@type": "Property",
+            "@id": "gis_context:SL_TYPE"
+        },
+        "POL_TYPE": {
+            "@type": "Property",
+            "@id": "gis_context:POL_TYPE"
+        },
+        "ENG_SRC": {
+            "@type": "Property",
+            "@id": "gis_context:ENG_SRC"
+        },
+        "SL_ID": {
+            "@type": "Property",
+            "@id": "gis_context:SL_ID"
+        },
+        "TPOST_NO": {
+            "@type": "Property",
+            "@id": "gis_context:TPOST_NO"
+        },
+        "CON_RD": {
+            "@type": "Property",
+            "@id": "gis_context:CON_RD"
+        },
+        "LOW_DIA*": {
+            "@type": "QuantitativeProperty",
+            "@id": "gis_context:LOW_DIA*"
+        },
+        "DEPTH*": {
+            "@type": "QuantitativeProperty",
+            "@id": "gis_context:DEPTH*"
+        },
+        "TW_DISC*": {
+            "@type": "QuantitativeProperty",
+            "@id": "gis_context:TW_DISC*"
+        },
+        "DIA*": {
+            "@type": "QuantitativeProperty",
+            "@id": "gis_context:DIA*"
+        },
+        "M_MANU*": {
+            "@type": "Property",
+            "@id": "gis_context:M_MANU*"
+        },
+        "STARTER": {
+            "@type": "Property",
+            "@id": "gis_context:STARTER"
+        },
+        "KIT_KAT": {
+            "@type": "Property",
+            "@id": "gis_context:KIT_KAT"
+        },
+        "WIRING_CON": {
+            "@type": "Property",
+            "@id": "gis_context:WIRING_CON"
+        },
+        "ELECTRIC_M": {
+            "@type": "Property",
+            "@id": "gis_context:ELECTRIC_M"
+        },
+        "LOW_DIA_IN": {
+            "@type": "Property",
+            "@id": "gis_context:LOW_DIA_IN"
+        },
+        "ID": {
+            "@type": "Property",
+            "@id": "gis_context:ID"
+        },
+        "CHLORINE_D": {
+            "@type": "Property",
+            "@id": "gis_context:CHLORINE_D"
+        },
+        "DISCHARGE_": {
+            "@type": "Property",
+            "@id": "gis_context:DISCHARGE_"
+        },
+        "HEAD_CAPAC": {
+            "@type": "Property",
+            "@id": "gis_context:HEAD_CAPAC"
+        },
+        "NAME": {
+            "@type": "Property",
+            "@id": "gis_context:NAME"
+        },
+        "MAIN_SWITC": {
+            "@type": "Property",
+            "@id": "gis_context:MAIN_SWITC"
+        },
+        "VALVE_ID": {
+            "@type": "Property",
+            "@id": "gis_context:VALVE_ID"
+        },
+        "VAL_MAT*": {
+            "@type": "Property",
+            "@id": "gis_context:VAL_MAT*"
+        },
+        "VAL_TYPE*": {
+            "@type": "Property",
+            "@id": "gis_context:VAL_TYPE*"
+        },
+        "NO_OF_MOT": {
+            "@type": "QuantitativeProperty",
+            "@id": "gis_context:NO_OF_MOT"
+        },
+        "WORK_ST": {
+            "@type": "Property",
+            "@id": "gis_context:WORK_ST"
+        },
+        "T_PROP": {
+            "@type": "QuantitativeProperty",
+            "@id": "gis_context:T_PROP"
+        },
+        "WTZ_ID": {
+            "@type": "Property",
+            "@id": "gis_context:WTZ_ID"
+        },
+        "RES_AREA": {
+            "@type": "QuantitativeProperty",
+            "@id": "gis_context:RES_AREA"
+        },
+        "RES_SHP": {
+            "@type": "Property",
+            "@id": "gis_context:RES_SHP"
+        },
+        "RESV_ID": {
+            "@type": "Property",
+            "@id": "gis_context:RESV_ID"
+        },
+        "WSN_ID": {
+            "@type": "Property",
+            "@id": "gis_context:WSN_ID"
+        },
+        "PIP_CLS*": {
+            "@type": "Property",
+            "@id": "gis_context:PIP_CLS*"
+        },
+        "Z_WARDS": {
+            "@type": "QuantitativeProperty",
+            "@id": "gis_context:Z_WARDS"
+        },
+        "RWN_ID": {
+            "@type": "Property",
+            "@id": "gis_context:RWN_ID"
+        },
         "SUR_TYPE": {
             "@type": "Property",
             "@id": "gis_context:SUR_TYPE"
@@ -850,6 +1066,158 @@
         },
         "T_PUMPS*": {
             "describes": "Total number of pumps"
+        },
+        "PIPE_LEN": {
+            "describes": "Length of pipe as per GIS in meter"
+        },
+        "PIPE_DIA*": {
+            "describes": "Diameter of the pipe in mm (It will be taken as per municipal records and or by the ground  level staff by VNN)"
+        },
+        "PIP_DEP*": {
+            "describes": "Depth of the pipe in meter (Depth of the Pipe will be taken as per municipal records and or  by the ground level staff by VNN)"
+        },
+        "SEWN_ID": {
+            "describes": "Will start with SN followed by 0001, 0002\u2026."
+        },
+        "SEW_STAT*": {
+            "describes": "Working  status  of  sewerage  network  - working or not working"
+        },
+        "PIPE_MAT*": {
+            "describes": "Material of the pipe like \u201cRCC\u201d OR \"GI\" OR \"CI\" OR \"PVC\" OR \"OTHER\" (It will be taken as per  municipal records and or by the ground level   staff by VNN)"
+        },
+        "PIPE_DIA_I": {
+            "describes": "Pipe Diameter in Inch"
+        },
+        "SEWER_LINE": {
+            "describes": "Type of Sewer Line- Branch/Main/Trunk",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+        },
+        "PIP_GRDE*": {
+            "describes": "Grade of the pipe",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+        },
+        "MOT_TYP*": {
+            "describes": "Type of motor as per VVN/JKV records"
+        },
+        "T_CAP*": {
+            "describes": "Total capacity of WPS in LPS"
+        },
+        "MOT_CAP*": {
+            "describes": "Motor capacity of water pump in Kw (Kilo Watt) as per available data"
+        },
+        "M_MANU*": {
+            "describes": "Manufacturer  of  the  motor  as  per  VNN records"
+        },
+        "RUN_HRS*": {
+            "describes": "Total running hours of a motor in 24 hours in hours and seconds"
+        },
+        "SPS_ID": {
+            "describes": "Will start with SPS followed by 01,02,03\u2026."
+        },
+        "STP_STA*": {
+            "describes": "Working status of STP - working or not working"
+        },
+        "T_PUMPS*": {
+            "describes": "Total number of pumps"
+        },
+        "STP_ID": {
+            "describes": "Will start with STP followed by 01,02,03\u2026."
+        },
+        "SL_TYPE": {
+            "describes": "HPMV/sodium lamp /tube light/cell/ led or any other"
+        },
+        "POL_TYPE": {
+            "describes": "IRON or CONCRETE or HERITAGE"
+        },
+        "ENG_SRC": {
+            "describes": "Energy source - electricity /solar/other"
+        },
+        "SL_ID": {
+            "describes": "The unique ID for Street Light will start with \u201cSL\u201d followed by next 3 digits for ward number  and then 4 digits in incremental for each ward"
+        },
+        "TPOST_NO": {
+            "describes": "Traffic Post No. if available or mention NA"
+        },
+        "CON_RD": {
+            "describes": "Total No. of Roads connected with Junction as 01 - Two Road Junction, 02 - Three Road  Junction, 03 - Four Road Junction, 04 - Round   about"
+        },
+        "M_MANU*": {
+            "describes": "Manufacturer of the motor as per records and or field survey"
+        },
+        "STARTER": {
+            "describes": "Starter Type- Manual/Automatic"
+        },
+        "KIT_KAT": {
+            "describes": "KIT-KAT- Yes/No"
+        },
+        "WIRING_CON": {
+            "describes": "Wiring Connection Status- Good Condition/Bad Condition"
+        },
+        "ELECTRIC_M": {
+            "describes": "Electric Motor-Yes/No"
+        },
+        "LOW_DIA_IN": {
+            "describes": "Lower Diameter in Inch"
+        },
+        "ID": {
+            "describes": "Will start with TW followed by 001, 002, 003\u2026"
+        },
+        "CHLORINE_D": {
+            "describes": "Chlorine Doser- Yes/No"
+        },
+        "DISCHARGE_": {
+            "describes": "Discharge capacity in LPM"
+        },
+        "HEAD_CAPAC": {
+            "describes": "Capacity of Motor Head"
+        },
+        "NAME": {
+            "describes": "Type-Tube well/Mini Tube well"
+        },
+        "MAIN_SWITC": {
+            "describes": "Main Switch-Yes/No"
+        },
+        "VALVE_ID": {
+            "describes": "Will start with V followed by 0001,0002\u2026"
+        },
+        "VAL_MAT*": {
+            "describes": "Material of the pipe like \u201cGI\" OR \"CI\" OR \"PVC\" OR \"OTHER\""
+        },
+        "VAL_TYPE*": {
+            "describes": "Type of the valve"
+        },
+        "NO_OF_MOT": {
+            "describes": "Total Numbers of Motors"
+        },
+        "WORK_ST": {
+            "describes": "Status of WPS- Working/Not Working"
+        },
+        "WTZ_ID": {
+            "describes": "For this thematic layer the unique ID will start with 39-04 as per AMRUT guide lines followed  by Tax Zone No in three digits so the complete   structure will be as 39-04-XXXX"
+        },
+        "T_PROP": {
+            "describes": "Total number of properties as per property database after property survey."
+        },
+        "RESV_ID": 
+            "describes": "Start with CWR followed by 001, 002,003\u2026"
+        },
+        "RES_SHP": {
+            "describes": "As  per  field  survey  (like  circular/semi- circular/rectangular/oval etc.)"
+        },
+        "RES_AREA*": {
+            "describes": "In sq. meter as per available data"
+        },
+        "WSN_ID": {
+            "describes": "Will  start  with  WSN  followed  by  00001, 00002\u2026"
+        },
+        "PIP_CLS*": {
+            "describes": "Class of the pipe (That information will be updated as per municipal records and or by  the ground level staff by VNN)"
+        },
+        "Z_WARDS": {
+            "describes": "Total number of wards in the zone"
+        },
+        "RWN_ID": {
+            "describes": "Will start with RW followed by 0001, 0002\u2026"
         },
     "SUR_TYPE": {
         "describes": "Surface Type of Road as per field survey like \"Concrete\" Or \"Asphalt\" Or \"WBM\" Or \"Any  Other\" (Collected during field survey)"

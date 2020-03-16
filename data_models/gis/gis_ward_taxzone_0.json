@@ -1,0 +1,44 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "SUB_CLASS": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "as per AMRUT guidelines given in Annexure XI, Volume II of the Inception Report"
+        },
+        "TIME_ST": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/TimeProperty",
+            "describes": "Date of final delineation (DD-Month-YYYY)"
+        },
+        "LOCALITY": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Colony and or road name"
+        },
+        "ZONE_ID": "ZONE_ID",
+        "WTZ_ID": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "For this thematic layer the unique ID will start with 39-04 as per AMRUT guide lines followed  by Tax Zone No in three digits so the complete   structure will be as 39-04-XXXX"
+        },
+        "WRD_ID": "WARD_ID",
+        "T_PROP": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
+            "describes": "Total number of properties as per property database after property survey."
+        },
+        "CLASS": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Class Code and Sub Class Code will be updated"
+        }
+    },
+    "@context": [
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_context.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_context.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/geometry-schema.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/gis/gis_context.json",
+        {
+            "WARD_ID" : "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/gis/gis_context.json#/W_ID",
+            "ZONE_ID" : "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/gis/gis_context.json#/Z_ID"
+        }
+    ],
+    "describes": "Ward Tax Zone"
+}

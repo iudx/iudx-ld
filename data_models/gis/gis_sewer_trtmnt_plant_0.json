@@ -1,0 +1,66 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "@context": [
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_context.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_context.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/geometry-schema.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/gis/gis_context.json",
+        {
+            "COM_YEAR" : "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/gis/gis_context.json#/COM_YEAR",
+            "ROAD_ID" : "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/gis/gis_context.json#/RD_ID",
+            "WARD_ID" : "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/gis/gis_context.json#/W_ID",
+            "Latitude": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/gis/gis_context.json#/GCP_LAT",
+            "Longitude": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/gis/gis_context.json#/GCP_LON"
+        }
+    ],
+    "type": "object",
+    "describes": "Sewer Treatment Plant (STP)",
+    "properties": {
+        "CLASS": {
+            "describes": "AMRUT guidelines will be followed. The details",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+        },
+        "TIME_ST": {
+            "describes": "Date of survey (DD-Month-YYYY)",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/TimeProperty"
+        },
+        "SUB_CLASS": {
+            "describes": "of class and sub class given in Annexure XI",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+        },
+        "T_CAP*": {
+            "describes": "Total capacity of pumps in MLD",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty"
+        },
+        "LOCALITY": {
+            "describes": "Road name, Colony name",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+        },
+        "DIV_ID": {
+            "describes": "As per Jal Kal division data",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+        },
+        "SDIV_ID": {
+            "describes": "As per Jal Kal sub division data",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+        },
+        "COM_YR*": "COM_YEAR",
+        "WARD_ID": "WARD_ID",
+        "ROAD_ID": "ROAD_ID",
+        "LAT": "Latitude",
+        "LONG": "Longitude",
+        "STP_STA*": {
+            "describes": "Working status of STP - working or not working",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+        },
+        "T_PUMPS*": {
+            "describes": "Total number of pumps",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty"
+        },
+        "STP_ID": {
+            "describes": "Will start with STP followed by 01,02,03\u2026.",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+        }
+    }
+}

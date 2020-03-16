@@ -1,0 +1,78 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_context.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_context.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/geometry-schema.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/gis/gis_context.json",
+        {
+            "COM_YEAR" : "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/gis/gis_context.json#/COM_YEAR",
+            "ROAD_ID" : "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/gis/gis_context.json#/RD_ID",
+            "WARD_ID" : "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/gis/gis_context.json#/W_ID",
+            "Latitude": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/gis/gis_context.json#/GCP_LAT",
+            "Longitude": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/gis/gis_context.json#/GCP_LON"
+        }
+    ],
+    "properties": {
+        "TIME_ST": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/TimeProperty",
+            "describes": "Date of survey (DD-Month-YYYY)"
+        },
+        "MOT_CAP*": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Motor capacity of water pump in Kw (Kilo Watt)"
+        },
+        "ID": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Will start with WPS followed by 001,002,003\u2026"
+        },
+        "LAT": "Latitude",
+        "NO_OF_MOT": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
+            "describes": "Total Numbers of Motors"
+        },
+        "RUN_HRS*": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
+            "describes": "Total running hours of a motor in 24 Hours in hours and seconds"
+        },
+        "MOT_TYP*": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Type of motor as per records/field information"
+        },
+        "ROAD_ID": "ROAD_ID",
+        "LONG": "Longitude",
+        "WORK_ST": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Status of WPS- Working/Not Working"
+        },
+        "COM_YR": "COM_YEAR",
+        "SUB_CLASS": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "of class and sub class given in Annexure XI"
+        },
+        "DIV_ID": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "As per Jal Kal division data"
+        },
+        "CLASS": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "AMRUT guidelines will be followed. The details"
+        },
+        "M_MANU*": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Manufacturer of the motor as per records and or field survey"
+        },
+        "T_CAP*": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
+            "describes": "Total capacity of WPS in LPS"
+        },
+        "SDIV_ID": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "As per Jal Kal sub division data"
+        },
+        "WARD_ID": "WARD_ID"
+    },
+    "describes": "Water Supply Pumping Station",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object"
+}

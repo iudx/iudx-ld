@@ -1,0 +1,68 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "describes": "Water Reservoir",
+    "properties": {
+        "CLASS": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "AMRUT guidelines will be followed. The details"
+        },
+        "SUB_CLASS": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "of class and sub class given in Annexure XI"
+        },
+        "SDIV_ID": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "As per Jal Kal sub division data"
+        },
+        "TIME_ST": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/TimeProperty",
+            "describes": "Date of survey (DD-Month-YYYY)"
+        },
+        "DIV_ID": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "As per Jal Kal division data"
+        },
+        "T_CAP*": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
+            "describes": "Total capacity of reservoir in MLD"
+        },
+        "T_CAP_KLIT": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Total Capacity in Kilo Litres"
+        },
+        "COM_YR*": "COM_YEAR",
+        "LAT": "Latitude",
+        "LONG": "Longitude",
+        "ROAD_ID": "ROAD_ID",
+        "WARD_ID": "WARD_ID",
+        "WORKING_ST": WORK_ST,
+        "RESV_ID": 
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Start with CWR followed by 001, 002,003\u2026"
+        },
+        "RES_SHP": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "As  per  field  survey  (like  circular/semi- circular/rectangular/oval etc.)"
+        },
+        "RES_AREA*": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
+            "describes": "In sq. meter as per available data"
+        }
+    },
+    "@context": [
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_context.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_context.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/geometry-schema.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/gis/gis_context.json",
+        {
+            "COM_YEAR" : "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/gis/gis_context.json#/COM_YEAR",
+            "ROAD_ID" : "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/gis/gis_context.json#/RD_ID",
+            "WARD_ID" : "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/gis/gis_context.json#/W_ID",
+            "WORK_ST" : "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/gis/gis_context.json#/WORK_ST",
+            "Latitude": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/gis/gis_context.json#/GCP_LAT",
+            "Longitude": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/gis/gis_context.json#/GCP_LON"
+        }
+    ],
+    "type": "object"
+}

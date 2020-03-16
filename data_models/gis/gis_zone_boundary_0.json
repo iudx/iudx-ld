@@ -1,0 +1,52 @@
+{
+    "type": "object",
+    "describes": "Zone Boundary",
+    "@context": [
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_context.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_context.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/geometry-schema.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/gis/gis_context.json",
+        {
+            "W_HH_SC" : "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/gis/gis_context.json#/W_HH_SC",
+            "W_HH_WC" : "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/gis/gis_context.json#/W_HH_WC",
+            "W_SL_AR" : "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/gis/gis_context.json#/W_SL_AR",
+            "W_NAME" : "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/gis/gis_context.json#/W_NAME",
+            "W_AREA" : "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/gis/gis_context.json#/W_AREA",
+            "W_POP" : "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/gis/gis_context.json#/W_POP",
+            "W_HH" : "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/gis/gis_context.json#/W_HH",
+            "W_PROP" : "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/gis/gis_context.json#/W_PROP"
+        }
+    ],
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "properties": {
+        "Z_ID": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "It will start with Z followed by 01, 02,03,04 and 05 for the five zones like Z01 for zone 1"
+        },
+        "CLASS": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Class Code and Sub Class Code will be updated"
+        },
+        "SUB_CLASS": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "as per AMRUT guidelines given in Annexure XI, Volume II of the Inception Report"
+        },
+        "TIME_ST": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/TimeProperty",
+            "describes": "Date of final delineation (DD-Month-YYYY) like 30 June 2018"
+        },
+        "Z_HH_SC": "W_HH_SC", 
+        "Z_HH_WC": "W_HH_WC",
+        "Z_SL_AR": "W_SL_AR",
+        "Z_NAME": "W_NAME",
+        "Z_AREA": "W_AREA",
+        "Z_POP": "W_POP",
+        "Z_HH": "W_HH",
+        "Z_PROP": "W_PROP",
+        "Z_WARDS": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
+            "describes": "Total number of wards in the zone"
+        }
+    }
+}

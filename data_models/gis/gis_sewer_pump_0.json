@@ -1,0 +1,70 @@
+{
+    "describes": "Sewer Pump/Pump House",
+    "type": "object",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "@context": [
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_context.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_context.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/geometry-schema.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/gis/gis_context.json",
+        {
+            "COM_YEAR" : "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/gis/gis_context.json#/COM_YEAR",
+            "ROAD_ID" : "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/gis/gis_context.json#/RD_ID",
+            "WARD_ID" : "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/gis/gis_context.json#/W_ID",
+            "Latitude": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/gis/gis_context.json#/GCP_LAT",
+            "Longitude": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/gis/gis_context.json#/GCP_LON"
+        }
+    ],
+    "properties": {
+        "SUB_CLASS": {
+            "describes": "",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+        },
+        "DIV_ID": {
+            "describes": "As per Jal Kal division data",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+        },
+        "CLASS": {
+            "describes": "AMRUT guidelines will be followed. The details of class and sub class given in Annexure XI",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+        },
+        "TIME_ST": {
+            "describes": "Date of survey (DD-Month-YYYY)",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/TimeProperty"
+        },
+        "SDIV_ID": {
+            "describes": "As per Jal Kal sub division data",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+        },
+        "WARD_ID": "WARD_ID",
+        "ROAD_ID": "ROAD_ID",
+        "COM_YR*": "COM_YEAR",
+        "LAT": "Latitude",
+        "LONG": "Longitude",
+        "MOT_TYP*": {
+            "describes": "Type of motor as per VVN/JKV records",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+        },
+        "T_CAP*": {
+            "describes": "Total capacity of WPS in LPS",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty"
+        },
+        "MOT_CAP*": {
+            "describes": "Motor capacity of water pump in Kw (Kilo Watt) as per available data",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+        },
+        "M_MANU*": {
+            "describes": "Manufacturer  of  the  motor  as  per  VNN records",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+        },
+        "RUN_HRS*": {
+            "describes": "Total running hours of a motor in 24 hours in hours and seconds",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty"
+        },
+        "SPS_ID": {
+            "describes": "Will start with SPS followed by 01,02,03\u2026.",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+        }
+    }
+}

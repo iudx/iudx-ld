@@ -1,0 +1,58 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_context.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_context.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/geometry-schema.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/gis/gis_context.json",
+        {
+            "WARD_ID" : "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/gis/gis_context.json#/W_ID"
+        }
+    ],
+    "properties": {
+        "CLASS": {
+            "describes": "Class Code and Sub Class Code will be updated",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+        },
+        "SUBCLASS": {
+            "describes": "as per AMRUT guidelines given in Annexure XI, Volume II of the Inception Report",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+        },
+        "TIME_ST": {
+            "describes": "Date of survey (DD-Month-YYYY)",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/TimeProperty"
+        },
+        "RD_ID": {
+            "describes": "As per road table",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty"
+        },
+        "LOCALITY": {
+            "describes": "Locality/Colony Name",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+        },
+        "Z_ID": {
+            "describes": "As per zone table",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+        },
+        "WRD_ID": "WARD_ID",
+        "SL_TYPE": {
+            "describes": "HPMV/sodium lamp /tube light/cell/ led or any other",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+        },
+        "POL_TYPE": {
+            "describes": "IRON or CONCRETE or HERITAGE",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+        },
+        "ENG_SRC": {
+            "describes": "Energy source - electricity /solar/other",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+        },
+        "SL_ID": {
+            "describes": "The unique ID for Street Light will start with \u201cSL\u201d followed by next 3 digits for ward number  and then 4 digits in incremental for each ward",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+        }
+    },
+    "describes": "Street Light",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object"
+}

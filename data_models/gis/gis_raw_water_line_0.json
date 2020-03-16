@@ -1,0 +1,64 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "describes": "Raw Water Pipe Line",
+    "properties": {
+        "RWN_ID": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Will start with RW followed by 0001, 0002\u2026"
+        },
+        "PIP_DEP*": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
+            "describes": "Depth of the pipe in meter (Depth of the Pipe will be taken as per municipal records and or  by the ground level staff by VNN)"
+        },
+        "RD_ID": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "As per Road Table"
+        },
+        "PIPE_GRADE*": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Grade of the pipe (That information will be updated as per municipal records and or by  the ground level staff by VNN)"
+        },
+        "COM_YR*": "COM_YEAR",
+        "PIPE_DIA*": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
+            "describes": "Diameter  of  the  pipe  in  mm  (That information will be updated as per municipal  records and or by the ground level staff by   VNN)"
+        },
+        "CLASS": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "AMRUT guidelines  will be  followed. The"
+        },
+        "PIPE_MAT*": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Material of the pipe like \u201cRCC\u201d OR \"GI\" OR \"CI\" OR \"PVC\" OR \"OTHER\" (That information  will be updated as per municipal records and   or by the ground level staff by VNN)"
+        },
+        "SUB_CLASS": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "details  of  class  and  sub  class  given  in Annexure XI"
+        },
+        "PIPE_CLASS*": PIPE_CLASS,
+        "PIPE_DIA_I": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Pipe Diameter in Inch"
+        },
+        "PIPE_LEN": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
+            "describes": "Length of pipe as per GIS in meter"
+        },
+        "TIME_ST": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/TimeProperty",
+            "describes": "Date of Survey (DD-Month-YYYY)"
+        }
+    },
+    "@context": [
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_context.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_context.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/geometry-schema.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/gis/gis_context.json",
+        {
+            "COM_YEAR" : "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/gis/gis_context.json#/COM_YEAR",
+            "PIPE_CLASS" : "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/gis/gis_context.json#/PIP_CLS*"
+        }
+    ],
+    "type": "object"
+}

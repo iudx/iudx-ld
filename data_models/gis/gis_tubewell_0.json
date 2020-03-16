@@ -1,0 +1,121 @@
+{
+    "properties": {
+        "LOCALITY": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Road Name, Colony"
+        },
+        "CLASS": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "AMRUT  guidelines  will  be  followed.  The"
+        },
+        "SUB_CLASS": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "details  of  class  and  sub  class  given  in Annexure XI"
+        },
+        "DIV_ID": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "As per Jal Kal Division Data"
+        },
+        "SDIV_ID": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "As per Jal Kal Sub Division Data"
+        },
+        " TIME_ST": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/TimeProperty",
+            "describes": "  Date of Survey (DD-Month-YYYY)"
+        },
+        "PIPE_MAT*": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Material of the pipe \"GI\" OR \"CI\" OR \"PVC\" OR \"OTHER\" (That information will be updated as per municipal records and or by the ground level staff by VNN)"
+        },
+        "MOT_CAP*": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Motor capacity of water pump in Kw (Kilo Watt)"
+        },
+        "RUN_HRS*": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
+            "describes": "Total running hours of a motor in 24 Hours in hours and seconds"
+        },
+        "ROAD_ID": "ROAD_ID", 
+        "WARD_ID": "WARD_ID",
+        "COM_YR*": "COM_YEAR",
+        "LAT": "Latitude",
+        "LONG": "Longitude",
+        "LOW_DIA*": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
+            "describes": "Lower Diameter of the Tube Well in mm"
+        },
+        "DEPTH*": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
+            "describes": "Depth of the Tube Well in Meter"
+        },
+        "DIA*": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
+            "describes": "Diameter of the Tube Well in mm"
+        },
+        "TW_DISC*": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
+            "describes": "Tube Well Discharge"
+        },
+        "M_MANU*": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Manufacturer of the motor as per records and or field survey"
+        },
+        "STARTER": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Starter Type- Manual/Automatic"
+        },
+        "KIT_KAT": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "KIT-KAT- Yes/No"
+        },
+        "WIRING_CON": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Wiring Connection Status- Good Condition/Bad Condition"
+        },
+        "ELECTRIC_M": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Electric Motor-Yes/No"
+        },
+        "LOW_DIA_IN": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Lower Diameter in Inch"
+        },
+        "ID": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Will start with TW followed by 001, 002, 003\u2026"
+        },
+        "CHLORINE_D": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Chlorine Doser- Yes/No"
+        },
+        "DISCHARGE_": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Discharge capacity in LPM"
+        },
+        "HEAD_CAPAC": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Capacity of Motor Head"
+        },
+        "NAME": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Type-Tube well/Mini Tube well"
+        },
+        "MAIN_SWITC": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Main Switch-Yes/No"
+        }
+    },
+    "describes": "Tube Well",
+    "type": "object",
+    "@context": [
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_context.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_context.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/geometry-schema.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/gis/gis_context.json",
+        {
+        }
+    ],
+    "$schema": "http://json-schema.org/draft-07/schema#"
+}

@@ -1,0 +1,34 @@
+{
+    "type": "object",
+    "@context": [
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_context.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_context.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/geometry-schema.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/gis/gis_context.json",
+        {
+            "LOCALITY": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/gis/gis_context.json#/LOCALITY"
+        }
+    ],
+    "properties": {
+        "RD_ID": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Road ID as per Road attribute table"
+        },
+        "TIME_ST": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/TimeProperty",
+            "describes": "Date of Survey"
+        },
+        "LOC_NAME": "LOCALITY",
+        "TPOST_NO": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Traffic Post No. if available or mention NA"
+        },
+        "CON_RD": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Total No. of Roads connected with Junction as 01 - Two Road Junction, 02 - Three Road  Junction, 03 - Four Road Junction, 04 - Round   about"
+        }
+    },
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "describes": "Traffic Signal Post"
+}
