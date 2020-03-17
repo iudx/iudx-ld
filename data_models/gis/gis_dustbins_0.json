@@ -1,0 +1,49 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_context.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_context.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/geometry-schema.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/gis/gis_context.json",
+        {
+            "WARD_ID" : "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/gis/gis_context.json#/W_ID",
+            "Zone" : "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/gis/gis_context.json#/LOCALITY",
+            "Latitude": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/gis/gis_context.json#/GCP_LAT",
+            "Longitude": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/gis/gis_context.json#/GCP_LON"
+        }
+    ],
+    "properties": {
+        "TIME_ST": {
+            "describes": "Date of survey (DD-Month-YYYY)",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/TimeProperty"
+        },
+        "SUB_CLASS": {
+            "describes": "of class and sub class given in Annexure XI",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+        },
+        "CLASS": {
+            "describes": "AMRUT guidelines will be followed. The details",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+        },
+        "D_ID": {
+            "describes": "AMRUT guidelines will be followed. The details",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+        },
+        "LOCALITY": {
+            "describes": "Location of the dustbin",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property"
+        },
+        "CAPACITY": {
+            "describes": "Total capacity of the dustbin",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty"
+        },
+        "WARD_ID": "WARD_ID",
+        "LAT": "Latitude",
+        "LONG": "Longitude",
+        "ZONE": "Zone",
+        "SUB_ZONE": "Zone"
+    },
+    "type": "object",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "describes": "dustbins"
+}

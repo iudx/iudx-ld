@@ -164,6 +164,14 @@
             "@type": "QuantitativeProperty",
             "@id": "gis_context:W_POP"
         },
+        "CL_CODE": {
+            "@type": "Property",
+            "@id": "gis_context:CL_CODE"
+        },
+        "GCP_ID": {
+            "@type": "Property",
+            "@id": "gis_context:GCP_ID"
+        },
         "GCP_PHID": {
             "@type": "Property",
             "@id": "gis_context:GCP_PHID"
@@ -712,6 +720,10 @@
             "@type": "Property",
             "@id": "gis_context:RWN_ID"
         },
+        "D_ID": {
+            "@type": "Property",
+            "@id": "gis_context:D_ID"
+        },
         "SUR_TYPE": {
             "@type": "Property",
             "@id": "gis_context:SUR_TYPE"
@@ -1218,6 +1230,15 @@
         },
         "RWN_ID": {
             "describes": "Will start with RW followed by 0001, 0002\u2026"
+        },
+        "D_ID": {
+            "describes": "the ID of the dustbin"
+        },
+        "GCP_ID": {
+            "describes": "Unique ID for Photo will start with GCP"
+        },
+        "CL_CODE": {
+            "describes": "Unique code for the GCP"
         },
     "SUR_TYPE": {
         "describes": "Surface Type of Road as per field survey like \"Concrete\" Or \"Asphalt\" Or \"WBM\" Or \"Any  Other\" (Collected during field survey)"
