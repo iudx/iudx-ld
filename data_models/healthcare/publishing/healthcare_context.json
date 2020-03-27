@@ -1,0 +1,73 @@
+{
+    "@context": {
+        "healthcare_context": "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/healthare/publishing/healthare_publishing.json#/",
+        "location": {
+            "@id": "healthcare_context:location",
+            "@type": "GeoProperty"
+        },
+        "datasetDownloadLink": {
+            "@id": "healthcare_context:datasetDownloadLink",
+            "@type": "Property"
+        },
+        "paper_id": {
+            "@id": "healthcare_context:paper_id",
+            "@type": "Property"
+        },
+        "metadata": {
+            "@id": "healthcare_context:metadata",
+            "@type": "Property"
+        },
+        "title": {
+            "@id": "healthcare_context:title",
+            "@type": "Property"
+        },
+        "authors": {
+            "@id": "healthcare_context:authors",
+            "@type": "Property"
+        },
+        "abstract": {
+            "@id": "healthcare_context:abstract",
+            "@type": "Property"
+        },
+        "cite_spans": {
+            "@id": "healthcare_context:cite_spans",
+            "@type": "Property"
+        },
+        "ref_spans": {
+            "@id": "healthcare_context:ref_spans",
+            "@type": "Property"
+        },
+        "ref_spans": {
+            "@id": "healthcare_context:ref_spans",
+            "@type": "Property"
+        },
+        "authors": {
+            "@id": "healthcare_context:authors",
+            "@type": "Property"
+        },
+        "section": {
+            "@id": "healthcare_context:section",
+            "@type": "Property"
+        },
+        "body_text": {
+            "@id": "healthcare_context:body_text",
+            "@type": "Property"
+        },
+        "text": {
+            "@id": "healthcare_context:text",
+            "@type": "Property"
+        },
+        "bib_entries": {
+            "@id": "healthcare_context:bib_entries",
+            "@type": "Property"
+        },
+        "ref_entries": {
+            "@id": "healthcare_context:ref_entries",
+            "@type": "Property"
+        },
+        "properties": "@nest"
+    },
+    "abstract": {
+        "describes": "$$$$$$$$$$$$$$$$"
+    },
+}

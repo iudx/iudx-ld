@@ -1,0 +1,263 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "@context": [
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_context.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_context.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/geometry-schema.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/healthcare/publishing/healthcare_publishing.json"
+    ],
+    "describes": "Health care publishing from CORD-19",
+    "properties": {
+        "location": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/GeoProperty",
+            "describes": "Describes the coordinates (in GeoJSON Point type) for the installation location of the AQM device"
+        },
+        "datasetDownloadLink": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Download link to downlad a compressed folder of papers"
+        },
+        "paper_id": {
+            "type": "string",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "40-character sha1 ID of the PDF"
+        },
+        "metadata": {
+            "type": "object",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "Paper matadata",
+            "properties": {
+                "title": {
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+                    "describes": "Paper title"
+                },
+                "authors": {
+                    "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+                    "describes": "list of author dicts, in order",
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "first": {
+                                "type": "string"
+                            },
+                            "middle": {
+                                "type": "array",
+                                "items": {
+                                    "type": "string"
+                                }
+                            },
+                            "last": {
+                                "type": "string"
+                            },
+                            "suffix": {
+                                "type": "string"
+                            },
+                            "affiliation": {
+                                "type": "object"
+                            },
+                            "email": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "abstract": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "list of paragraphs in the abstract",
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "text": {
+                        "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+                        "type": "string",
+                        "describes": "Text paragraph"
+                    },
+                    "cite_spans": {
+                        "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+                        "type": "array",
+                        "describes": "list of character indices of inline citations e.g. citation [7] occurs at positions 151-154 in text linked to bibliography entry BIBREF3",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "start": {
+                                    "type": "integer"
+                                },
+                                "end": {
+                                    "type": "integer"
+                                },
+                                "text": {
+                                    "type": "string"
+                                },
+                                "ref_id": {
+                                    "type": ["string", "null"]
+                                }
+                            }
+                        }
+                    },
+                    "ref_spans": {
+                        "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+                        "type": "array",
+                        "describes": "list of character indices of inline citations e.g. citation [7] occurs at positions 151-154 in text linked to bibliography entry BIBREF3",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "start": {
+                                    "type": "integer"
+                                },
+                                "end": {
+                                    "type": "integer"
+                                },
+                                "text": {
+                                    "type": "string"
+                                },
+                                "ref_id": {
+                                    "type": ["string", "null"]
+                                }
+                            }
+                        }
+                    },
+                    "section": {
+                        "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+                        "type": "string",
+                        "describes": "section heading, Abstract in this case"
+                    }
+                }
+            }
+        },
+        "body_text": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "describes": "list of paragraphs in the body",
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "text": {
+                        "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+                        "type": "string",
+                        "describes": "Text paragraph"
+                    },
+                    "cite_spans": {
+                        "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+                        "type": "array",
+                        "describes": "list of character indices of inline citations e.g. citation [7] occurs at positions 151-154 in text linked to bibliography entry BIBREF3",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "start": {
+                                    "type": "integer"
+                                },
+                                "end": {
+                                    "type": "integer"
+                                },
+                                "text": {
+                                    "type": "string"
+                                },
+                                "ref_id": {
+                                    "type": ["string", "null"]
+                                }
+                            }
+                        }
+                    },
+                    "ref_spans": {
+                        "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+                        "type": "array",
+                        "describes": "list of character indices of inline citations e.g. citation [7] occurs at positions 151-154 in text linked to bibliography entry BIBREF3",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "start": {
+                                    "type": "integer"
+                                },
+                                "end": {
+                                    "type": "integer"
+                                },
+                                "text": {
+                                    "type": "string"
+                                },
+                                "ref_id": {
+                                    "type": ["string", "null"]
+                                }
+                            }
+                        }
+                    },
+                    "section": {
+                        "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+                        "type": "string",
+                        "describes": "section heading of the text"
+                    }
+                }
+            }
+        },
+        "bib_entries": {
+            "type": "object",
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "patternProperties": {
+                "^.*$": {
+                    "type": "object",
+                    "properties": {
+                        "ref_id": {
+                            "type": ["string", "null"]
+                        },
+                        "title": {
+                            "type": "string"
+                        },
+                        "authors": {
+                            "type": "array",
+                            "items": {
+                                "type": ["object", "string", "null"]
+                            }
+                        },
+                        "year": {
+                            "type": "integer"
+                        },
+                        "venue": {
+                            "type": "string"
+                        },
+                        "volume": {
+                            "type": "string"
+                        },
+                        "issn": {
+                            "type": "string"
+                        },
+                        "pages": {
+                            "type": "string"
+                        },
+                        "other_ids": {
+                            "type": "object"
+                        },
+                        "DOI": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "ref_entries": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/Property",
+            "type": "object",
+            "patternProperties": {
+                "^.*$": {
+                    "type": "object",
+                    "properties": {
+                        "text": {
+                            "type": "string",
+                            "describes": "Caption"
+                        },
+                        "type": {
+                            "type": "string",
+                            "enum": ["table", "figure"]
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "type": "object"
+}
