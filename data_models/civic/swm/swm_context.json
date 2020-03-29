@@ -97,16 +97,8 @@
             "@id": "swm_context:Value",
             "@type": "QuantitativeProperty"
         },
-        "Value": {
-            "@id": "swm_context:Value",
-            "@type": "QuantitativeProperty"
-        },
         "Status": {
             "@id": "swm_context:Status",
-            "@type": "Property"
-        },
-        "angle": {
-            "@id": "swm_context:angle",
             "@type": "Property"
         },
         "altitude": {
@@ -187,9 +179,6 @@
     },
     "TotalEmployee": {
         "describes": "Total Number of employees employed in the ward"
-    },
-    "angle": {
-        "describes": "GPS angle where the vehicle is at"
     },
     "altitude": {
         "describes": "GPS altitude where the vehicle is at"
