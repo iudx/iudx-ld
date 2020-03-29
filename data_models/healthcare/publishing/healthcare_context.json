@@ -37,14 +37,6 @@
             "@id": "healthcare_context:ref_spans",
             "@type": "Property"
         },
-        "ref_spans": {
-            "@id": "healthcare_context:ref_spans",
-            "@type": "Property"
-        },
-        "authors": {
-            "@id": "healthcare_context:authors",
-            "@type": "Property"
-        },
         "section": {
             "@id": "healthcare_context:section",
             "@type": "Property"
@@ -67,7 +59,46 @@
         },
         "properties": "@nest"
     },
-    "abstract": {
-        "describes": "$$$$$$$$$$$$$$$$"
-    },
+    "location": {
+            "describes": "Describes the coordinates (in GeoJSON Point type) for the installation location of the AQM device"
+        },
+        "datasetDownloadLink": {
+            "describes": "Download link to downlad a compressed folder of papers"
+        },
+        "paper_id": {
+            "describes": "40-character sha1 ID of the PDF"
+        },
+        "metadata": {
+            "describes": "Paper matadata"
+        },
+        "title": {
+            "describes": "Paper title"
+        },
+        "authors": {
+            "describes": "list of author dicts, in order"
+        },
+        "abstract": {
+            "describes": "list of paragraphs in the abstract"
+        },
+        "cite_spans": {
+            "describes": "list of character indices of inline citations e.g. citation [7] occurs at positions 151-154 in text linked to bibliography entry BIBREF3"
+        },
+        "ref_spans": {
+            "describes": "list of character indices of inline citations e.g. citation [7] occurs at positions 151-154 in text linked to bibliography entry BIBREF3"
+        },
+        "section": {
+            "describes": "section heading, Abstract in this case"
+        },
+        "body_text": {
+            "describes": "list of paragraphs in the body"
+        },
+        "text": {
+            "describes": "Text paragraph"
+        },
+        "bib_entries": {
+            "describes": "list of entries in the bibliography" 
+        },
+        "ref_entries": {
+            "describes": "list of references"
+        }
 }
