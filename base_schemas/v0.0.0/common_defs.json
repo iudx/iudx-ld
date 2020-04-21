@@ -349,7 +349,8 @@
                                     }
                                 },
                                 {
-                                    "type": "boolean"
+                                    "type": "string",
+                                    "enum": ["true", "false"]
                                 }
                             ]
                         }
