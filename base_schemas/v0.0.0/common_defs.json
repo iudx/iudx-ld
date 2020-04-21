@@ -339,12 +339,19 @@
                             }
                         },
                         "secure": {
-                            "type": "array",
-                            "minItems": 0,
-                            "uniqueItems":true,
-                            "items": {
-                                "type": "string"
-                            }
+                            "oneOf": [
+                                {
+                                    "type": "array",
+                                    "minItems": 0,
+                                    "uniqueItems":true,
+                                    "items": {
+                                        "type": "string"
+                                    }
+                                },
+                                {
+                                    "type": "boolean"
+                                }
+                            ]
                         }
                     },
                     "additionalProperties": false
