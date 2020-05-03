@@ -1,0 +1,71 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "@context": [
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_context.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/common_context.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscSchemaOrgDefs.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/miscWOTSecurityDefs.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/geometry-schema.json",
+        "https://raw.githubusercontent.com/iudx/iudx-ld/master/data_models/environment/airQuality/airQuality_context.json"
+    ],
+    "describes": "Air Quality dataModel for AQM data from PCB Stations in Pune City.",
+    "name": "env_waqi",
+    "properties": {
+        "PRESSURE": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
+            "describes": "Measured Air pressure",
+            "unitCode": "ATM",
+            "unitText": "standard atmosphere"
+        },
+        "AQI": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
+            "describes": "Overall AQI ",
+            "unitText": "dimensionless"
+        },
+        "CO": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
+            "describes": "Measured value of CO, converted from ug/m3 to AQI levels",
+            "symbol": "AQI",
+            "unitText": "Air Quality Index"
+        },
+        "HUMIDITY": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
+            "describes": "Relative humidity",
+            "unitText": "percent"
+        },
+        "LASTUPDATEDATETIME": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/TimeProperty"
+        },
+        "NO2": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
+            "describes": "Measured value of NO2, converted from ug/m3 to AQI levels",
+            "symbol": "AQI",
+            "unitText": "Air Quality Index"
+        },
+        "OZONE": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
+            "describes": "Measured value of Ozone, converted from ug/m3 to AQI levels",
+            "symbol": "AQI",
+            "unitText": "Air Quality Index"
+        },
+        "PM10": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
+            "describes": "Measured value of PM10, converted from ug/m3 to AQI levels",
+            "symbol": "AQI",
+            "unitText": "Air Quality Index"
+        },
+        "PM25": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
+            "describes": "Measured value of PM2.5, converted from ug/m3 to AQI levels",
+            "symbol": "AQI",
+            "unitText": "Air Quality Index"
+        },
+        "TEMPERATURE": {
+            "$ref": "https://raw.githubusercontent.com/iudx/iudx-ld/master/base_schemas/v0.0.0/core_defs.json#/definitions/QuantitativeProperty",
+            "describes": "Measured value of Temperature",
+            "unitCode": "CEL",
+            "unitText": "degree Celsius"
+        }
+    },
+    "type": "object"
+}
